@@ -18,6 +18,17 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
+# Support ZeroGPU environments if the Space runs on a GPU/ZeroGPU tier
+try:
+    import spaces
+
+    @spaces.GPU(duration=1)
+    def _zero_gpu_init():
+        """Satisfies ZeroGPU startup scanner requirement without reserving GPU."""
+        pass
+except (ImportError, Exception):
+    pass
+
 BASE_DIR = Path(__file__).resolve().parent
 TESTS_DIR = Path(os.environ.get("TESTS_DIR", str(BASE_DIR / "tests"))).resolve()
 LIBS_DIR = Path(os.environ.get("LIBS_DIR", str(BASE_DIR / "libs"))).resolve()
