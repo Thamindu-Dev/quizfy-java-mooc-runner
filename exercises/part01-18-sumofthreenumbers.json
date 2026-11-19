@@ -1,0 +1,11 @@
+{
+  "id": "part01-18-sumofthreenumbers",
+  "part": 1,
+  "order": 18,
+  "title": "Sum Of Three Numbers",
+  "description": "Complete the Java programming exercise: Sum Of Three Numbers.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/SumOfThreeNumbers.java": "\nimport java.util.Scanner;\n\npublic class SumOfThreeNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  }
+}

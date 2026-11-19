@@ -1,0 +1,11 @@
+{
+  "id": "part01-10-story",
+  "part": 1,
+  "order": 10,
+  "title": "Story",
+  "description": "Complete the Java programming exercise: Story.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Story.java": "\nimport java.util.Scanner;\n\npublic class Story {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  }
+}

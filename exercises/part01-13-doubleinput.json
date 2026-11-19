@@ -1,0 +1,11 @@
+{
+  "id": "part01-13-doubleinput",
+  "part": 1,
+  "order": 13,
+  "title": "Double Input",
+  "description": "Complete the Java programming exercise: Double Input.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/DoubleInput.java": "\nimport java.util.Scanner;\n\npublic class DoubleInput {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // write your program here\n\n    }\n}\n"
+  }
+}

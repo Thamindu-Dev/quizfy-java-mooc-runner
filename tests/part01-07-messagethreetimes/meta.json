@@ -1,0 +1,10 @@
+{
+  "id": "part01-07-messagethreetimes",
+  "part": 1,
+  "order": 7,
+  "title": "Message Three Times",
+  "testClasses": [
+    "MessageThreeTimesTest"
+  ],
+  "dataFiles": []
+}

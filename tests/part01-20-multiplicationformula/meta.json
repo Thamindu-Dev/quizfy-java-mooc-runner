@@ -1,0 +1,10 @@
+{
+  "id": "part01-20-multiplicationformula",
+  "part": 1,
+  "order": 20,
+  "title": "Multiplication Formula",
+  "testClasses": [
+    "MultiplicationFormulaTest"
+  ],
+  "dataFiles": []
+}

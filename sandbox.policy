@@ -1,0 +1,20 @@
+// Trust JUnit, edu-test-utils, and JsonTestRunner
+grant codeBase "file:/app/libs/-" {
+    permission java.security.AllPermission;
+};
+
+// Trust compiled MOOC test classes for this run
+grant codeBase "file:${test.classes.dir}/-" {
+    permission java.security.AllPermission;
+};
+
+// Restrict student compiled classes to their isolated temp directory only
+grant codeBase "file:${main.classes.dir}/-" {
+    permission java.io.FilePermission "${sandbox.dir}", "read";
+    permission java.io.FilePermission "${sandbox.dir}/-", "read, write, delete";
+    permission java.util.PropertyPermission "line.separator", "read";
+    permission java.util.PropertyPermission "file.encoding", "read";
+    permission java.util.PropertyPermission "user.dir", "read";
+    permission java.util.PropertyPermission "java.version", "read";
+    permission java.lang.RuntimePermission "accessDeclaredMembers";
+};

@@ -1,0 +1,10 @@
+{
+  "id": "part01-37-gifttax",
+  "part": 1,
+  "order": 37,
+  "title": "Gift Tax",
+  "testClasses": [
+    "GiftTaxTest"
+  ],
+  "dataFiles": []
+}

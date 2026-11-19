@@ -1,0 +1,10 @@
+{
+  "id": "part01-14-booleaninput",
+  "part": 1,
+  "order": 14,
+  "title": "Boolean Input",
+  "testClasses": [
+    "BooleanInputTest"
+  ],
+  "dataFiles": []
+}

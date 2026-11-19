@@ -1,0 +1,11 @@
+{
+  "id": "part01-03-onceuponatime",
+  "part": 1,
+  "order": 3,
+  "title": "Once Upon A Time",
+  "description": "Complete the Java programming exercise: Once Upon A Time.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/OnceUponATime.java": "\npublic class OnceUponATime {\n\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}\n"
+  }
+}

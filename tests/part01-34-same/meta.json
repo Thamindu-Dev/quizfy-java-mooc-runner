@@ -1,0 +1,10 @@
+{
+  "id": "part01-34-same",
+  "part": 1,
+  "order": 34,
+  "title": "Same",
+  "testClasses": [
+    "SameTest"
+  ],
+  "dataFiles": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "part01-22-averageofthreenumbers",
+  "part": 1,
+  "order": 22,
+  "title": "Average Of Three Numbers",
+  "description": "Complete the Java programming exercise: Average Of Three Numbers.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/AverageOfThreeNumbers.java": "\nimport java.util.Scanner;\n\npublic class AverageOfThreeNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "part01-12-integerinput",
+  "part": 1,
+  "order": 12,
+  "title": "Integer Input",
+  "description": "Complete the Java programming exercise: Integer Input.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/IntegerInput.java": "\nimport java.util.Scanner;\n\npublic class IntegerInput {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // write your program here\n\n    }\n}\n"
+  }
+}

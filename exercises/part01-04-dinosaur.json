@@ -1,0 +1,11 @@
+{
+  "id": "part01-04-dinosaur",
+  "part": 1,
+  "order": 4,
+  "title": "Dinosaur",
+  "description": "Complete the Java programming exercise: Dinosaur.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Dinosaur.java": "\npublic class Dinosaur {\n\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}\n"
+  }
+}

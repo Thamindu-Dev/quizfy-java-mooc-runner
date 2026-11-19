@@ -1,0 +1,10 @@
+{
+  "id": "part01-29-adulthood",
+  "part": 1,
+  "order": 29,
+  "title": "Adulthood",
+  "testClasses": [
+    "AdulthoodTest"
+  ],
+  "dataFiles": []
+}

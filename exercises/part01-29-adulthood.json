@@ -1,0 +1,11 @@
+{
+  "id": "part01-29-adulthood",
+  "part": 1,
+  "order": 29,
+  "title": "Adulthood",
+  "description": "Complete the Java programming exercise: Adulthood.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Adulthood.java": "\nimport java.util.Scanner;\n\npublic class Adulthood {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here \n    }\n}\n"
+  }
+}

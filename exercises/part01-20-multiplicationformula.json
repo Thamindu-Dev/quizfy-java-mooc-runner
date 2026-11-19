@@ -1,0 +1,11 @@
+{
+  "id": "part01-20-multiplicationformula",
+  "part": 1,
+  "order": 20,
+  "title": "Multiplication Formula",
+  "description": "Complete the Java programming exercise: Multiplication Formula.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/MultiplicationFormula.java": "\nimport java.util.Scanner;\n\npublic class MultiplicationFormula {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  }
+}

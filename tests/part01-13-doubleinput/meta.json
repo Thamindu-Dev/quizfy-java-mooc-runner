@@ -1,0 +1,10 @@
+{
+  "id": "part01-13-doubleinput",
+  "part": 1,
+  "order": 13,
+  "title": "Double Input",
+  "testClasses": [
+    "DoubleInputTest"
+  ],
+  "dataFiles": []
+}

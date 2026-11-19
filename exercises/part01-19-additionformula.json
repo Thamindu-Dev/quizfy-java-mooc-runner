@@ -1,0 +1,11 @@
+{
+  "id": "part01-19-additionformula",
+  "part": 1,
+  "order": 19,
+  "title": "Addition Formula",
+  "description": "Complete the Java programming exercise: Addition Formula.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/AdditionFormula.java": "\nimport java.util.Scanner;\n\npublic class AdditionFormula {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // write your program here\n\n    }\n}\n"
+  }
+}

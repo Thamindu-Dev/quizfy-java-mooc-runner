@@ -1,0 +1,11 @@
+{
+  "id": "part01-34-same",
+  "part": 1,
+  "order": 34,
+  "title": "Same",
+  "description": "Complete the Java programming exercise: Same.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Same.java": "\nimport java.util.Scanner;\n\npublic class Same {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here. \n    }\n}\n"
+  }
+}

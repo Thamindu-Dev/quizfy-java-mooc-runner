@@ -1,0 +1,11 @@
+{
+  "id": "part01-11-variousvariables",
+  "part": 1,
+  "order": 11,
+  "title": "Various Variables",
+  "description": "Complete the Java programming exercise: Various Variables.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/VariousVariables.java": "\npublic class VariousVariables {\n\n    public static void main(String[] args) {\n        // MODIFY THESE:\n\n        int numberOfChicken = 3;\n        double baconWeight = 0.5;\n        String tractor = \"None!\";\n\n        // DON'T MODIFY THESE:\n        System.out.println(\"Chicken:\");\n        System.out.println(numberOfChicken);\n        System.out.println(\"Bacon (kg):\");\n        System.out.println(baconWeight);\n        System.out.println(\"Tractor:\");\n        System.out.println(tractor);\n        System.out.println(\"\");\n        System.out.println(\"And finally, a summary:\");\n        System.out.println(numberOfChicken);\n        System.out.println(baconWeight);\n        System.out.println(tractor);\n    }\n}\n"
+  }
+}

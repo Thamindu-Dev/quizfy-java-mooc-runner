@@ -1,0 +1,298 @@
+[
+  {
+    "id": "part01-01-sandbox",
+    "part": 1,
+    "order": 1,
+    "title": "Sandbox",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-02-adalovelace",
+    "part": 1,
+    "order": 2,
+    "title": "Ada Lovelace",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-03-onceuponatime",
+    "part": 1,
+    "order": 3,
+    "title": "Once Upon A Time",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-04-dinosaur",
+    "part": 1,
+    "order": 4,
+    "title": "Dinosaur",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-05-message",
+    "part": 1,
+    "order": 5,
+    "title": "Message",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-06-hiadalovelace",
+    "part": 1,
+    "order": 6,
+    "title": "Hi Ada Lovelace",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-07-messagethreetimes",
+    "part": 1,
+    "order": 7,
+    "title": "Message Three Times",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-08-greeting",
+    "part": 1,
+    "order": 8,
+    "title": "Greeting",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-09-conversation",
+    "part": 1,
+    "order": 9,
+    "title": "Conversation",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-10-story",
+    "part": 1,
+    "order": 10,
+    "title": "Story",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-11-variousvariables",
+    "part": 1,
+    "order": 11,
+    "title": "Various Variables",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-12-integerinput",
+    "part": 1,
+    "order": 12,
+    "title": "Integer Input",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-13-doubleinput",
+    "part": 1,
+    "order": 13,
+    "title": "Double Input",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-14-booleaninput",
+    "part": 1,
+    "order": 14,
+    "title": "Boolean Input",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-15-differenttypesofinput",
+    "part": 1,
+    "order": 15,
+    "title": "Different Types Of Input",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-16-secondsinaday",
+    "part": 1,
+    "order": 16,
+    "title": "Seconds In A Day",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-17-sumoftwonumbers",
+    "part": 1,
+    "order": 17,
+    "title": "Sum Of Two Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-18-sumofthreenumbers",
+    "part": 1,
+    "order": 18,
+    "title": "Sum Of Three Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-19-additionformula",
+    "part": 1,
+    "order": 19,
+    "title": "Addition Formula",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-20-multiplicationformula",
+    "part": 1,
+    "order": 20,
+    "title": "Multiplication Formula",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-21-averageoftwonumbers",
+    "part": 1,
+    "order": 21,
+    "title": "Average Of Two Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-22-averageofthreenumbers",
+    "part": 1,
+    "order": 22,
+    "title": "Average Of Three Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-23-simplecalculator",
+    "part": 1,
+    "order": 23,
+    "title": "Simple Calculator",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-24-speedingticket",
+    "part": 1,
+    "order": 24,
+    "title": "Speeding Ticket",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-25-checkyourindentation",
+    "part": 1,
+    "order": 25,
+    "title": "Check Your Indentation",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-26-orwell",
+    "part": 1,
+    "order": 26,
+    "title": "Orwell",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-27-ancient",
+    "part": 1,
+    "order": 27,
+    "title": "Ancient",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-28-positivity",
+    "part": 1,
+    "order": 28,
+    "title": "Positivity",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-29-adulthood",
+    "part": 1,
+    "order": 29,
+    "title": "Adulthood",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-30-largerthanorequalto",
+    "part": 1,
+    "order": 30,
+    "title": "Larger Than Or Equal To",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-31-gradesandpoints",
+    "part": 1,
+    "order": 31,
+    "title": "Grades And Points",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-32-oddoreven",
+    "part": 1,
+    "order": 32,
+    "title": "Odd Or Even",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-33-password",
+    "part": 1,
+    "order": 33,
+    "title": "Password",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-34-same",
+    "part": 1,
+    "order": 34,
+    "title": "Same",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-35-checkingtheage",
+    "part": 1,
+    "order": 35,
+    "title": "Checking The Age",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-36-leapyear",
+    "part": 1,
+    "order": 36,
+    "title": "Leap Year",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part01-37-gifttax",
+    "part": 1,
+    "order": 37,
+    "title": "Gift Tax",
+    "fileCount": 1,
+    "hasDataFiles": false
+  }
+]

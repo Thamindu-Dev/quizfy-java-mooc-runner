@@ -1,0 +1,11 @@
+{
+  "id": "part01-09-conversation",
+  "part": 1,
+  "order": 9,
+  "title": "Conversation",
+  "description": "Complete the Java programming exercise: Conversation.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Conversation.java": "\nimport java.util.Scanner;\n\npublic class Conversation {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  }
+}

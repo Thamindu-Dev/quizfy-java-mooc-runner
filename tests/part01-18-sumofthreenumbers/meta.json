@@ -1,0 +1,10 @@
+{
+  "id": "part01-18-sumofthreenumbers",
+  "part": 1,
+  "order": 18,
+  "title": "Sum Of Three Numbers",
+  "testClasses": [
+    "SumOfThreeNumbersTest"
+  ],
+  "dataFiles": []
+}

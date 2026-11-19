@@ -1,0 +1,11 @@
+{
+  "id": "part01-26-orwell",
+  "part": 1,
+  "order": 26,
+  "title": "Orwell",
+  "description": "Complete the Java programming exercise: Orwell.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Orwell.java": "\nimport java.util.Scanner;\n\npublic class Orwell {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here\n    }\n}\n"
+  }
+}

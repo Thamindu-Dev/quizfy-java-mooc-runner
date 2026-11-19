@@ -1,0 +1,11 @@
+{
+  "id": "part01-24-speedingticket",
+  "part": 1,
+  "order": 24,
+  "title": "Speeding Ticket",
+  "description": "Complete the Java programming exercise: Speeding Ticket.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/SpeedingTicket.java": "\nimport java.util.Scanner;\n\npublic class SpeedingTicket {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here. \n    }\n}\n"
+  }
+}

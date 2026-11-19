@@ -1,0 +1,10 @@
+{
+  "id": "part01-32-oddoreven",
+  "part": 1,
+  "order": 32,
+  "title": "Odd Or Even",
+  "testClasses": [
+    "OddOrEvenTest"
+  ],
+  "dataFiles": []
+}

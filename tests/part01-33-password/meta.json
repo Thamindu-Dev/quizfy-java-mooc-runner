@@ -1,0 +1,10 @@
+{
+  "id": "part01-33-password",
+  "part": 1,
+  "order": 33,
+  "title": "Password",
+  "testClasses": [
+    "PasswordTest"
+  ],
+  "dataFiles": []
+}

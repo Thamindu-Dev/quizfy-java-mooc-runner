@@ -1,0 +1,10 @@
+{
+  "id": "part01-19-additionformula",
+  "part": 1,
+  "order": 19,
+  "title": "Addition Formula",
+  "testClasses": [
+    "AdditionFormulaTest"
+  ],
+  "dataFiles": []
+}

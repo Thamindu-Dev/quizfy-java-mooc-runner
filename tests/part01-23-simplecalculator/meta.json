@@ -1,0 +1,10 @@
+{
+  "id": "part01-23-simplecalculator",
+  "part": 1,
+  "order": 23,
+  "title": "Simple Calculator",
+  "testClasses": [
+    "SimpleCalculatorTest"
+  ],
+  "dataFiles": []
+}

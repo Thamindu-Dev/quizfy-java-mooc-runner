@@ -1,0 +1,11 @@
+{
+  "id": "part01-16-secondsinaday",
+  "part": 1,
+  "order": 16,
+  "title": "Seconds In A Day",
+  "description": "Complete the Java programming exercise: Seconds In A Day.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/SecondsInADay.java": "\nimport java.util.Scanner;\n\npublic class SecondsInADay {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  }
+}

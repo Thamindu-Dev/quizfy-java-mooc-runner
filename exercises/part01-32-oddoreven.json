@@ -1,0 +1,11 @@
+{
+  "id": "part01-32-oddoreven",
+  "part": 1,
+  "order": 32,
+  "title": "Odd Or Even",
+  "description": "Complete the Java programming exercise: Odd Or Even.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/OddOrEven.java": "\nimport java.util.Scanner;\n\npublic class OddOrEven {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here \n        // HINT:\n        // You can find out if a number is even or odd easily using the modulo operator %\n        // Try the following commands to see what they print\n        // System.out.println( 1%2 );\n        // System.out.println( 2%2 );\n        // System.out.println( 3%2 );\n        // System.out.println( 4%2 );\n        // System.out.println( 5%2 );\n        // System.out.println( 6%2 );\n        // System.out.println( 7%2 );\n        // int luku = 8\n        // System.out.println( luku%2 );\n        // So, by taking the modulo of a number and two you can find out if it is even or odd !\n    }\n}\n"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "part01-26-orwell",
+  "part": 1,
+  "order": 26,
+  "title": "Orwell",
+  "testClasses": [
+    "OrwellTest"
+  ],
+  "dataFiles": []
+}

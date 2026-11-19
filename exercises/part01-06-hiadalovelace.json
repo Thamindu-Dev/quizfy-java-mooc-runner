@@ -1,0 +1,11 @@
+{
+  "id": "part01-06-hiadalovelace",
+  "part": 1,
+  "order": 6,
+  "title": "Hi Ada Lovelace",
+  "description": "Complete the Java programming exercise: Hi Ada Lovelace.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/HiAdaLovelace.java": "\npublic class HiAdaLovelace {\n\n    public static void main(String[] args) {\n        String name = \"Ada Lovelace\";\n        \n\n\n    }\n}\n"
+  }
+}

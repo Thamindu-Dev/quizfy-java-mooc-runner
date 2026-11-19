@@ -1,0 +1,10 @@
+{
+  "id": "part01-15-differenttypesofinput",
+  "part": 1,
+  "order": 15,
+  "title": "Different Types Of Input",
+  "testClasses": [
+    "DifferentTypesOfInputTest"
+  ],
+  "dataFiles": []
+}

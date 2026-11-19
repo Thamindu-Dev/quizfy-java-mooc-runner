@@ -1,0 +1,11 @@
+{
+  "id": "part01-15-differenttypesofinput",
+  "part": 1,
+  "order": 15,
+  "title": "Different Types Of Input",
+  "description": "Complete the Java programming exercise: Different Types Of Input.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/DifferentTypesOfInput.java": "\nimport java.util.Scanner;\n\npublic class DifferentTypesOfInput {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  }
+}

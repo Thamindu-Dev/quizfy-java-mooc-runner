@@ -1,0 +1,11 @@
+{
+  "id": "part01-30-largerthanorequalto",
+  "part": 1,
+  "order": 30,
+  "title": "Larger Than Or Equal To",
+  "description": "Complete the Java programming exercise: Larger Than Or Equal To.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/LargerThanOrEqualTo.java": "\nimport java.util.Scanner;\n\npublic class LargerThanOrEqualTo {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

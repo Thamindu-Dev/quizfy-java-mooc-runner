@@ -1,0 +1,11 @@
+{
+  "id": "part01-25-checkyourindentation",
+  "part": 1,
+  "order": 25,
+  "title": "Check Your Indentation",
+  "description": "Complete the Java programming exercise: Check Your Indentation.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/CheckYourIndentation.java": "\nimport java.util.Scanner;\n\npublic class CheckYourIndentation {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n        \nSystem.out.println(\"Give a number: \");\nint first = Integer.valueOf(scan.nextLine());\nSystem.out.println(\"Give another number: \");\nint second = Integer.valueOf(scan.nextLine());\nif (first == second) { System.out.println(\"Same!\"); }\nelse if (first > second) { System.out.println(\"The first was larger than the second!\"); }\nelse {\nSystem.out.println(\"The second was larger than the first!\");\n}\n\n    }\n}\n"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "part01-35-checkingtheage",
+  "part": 1,
+  "order": 35,
+  "title": "Checking The Age",
+  "description": "Complete the Java programming exercise: Checking The Age.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/CheckingTheAge.java": "\nimport java.util.Scanner;\n\npublic class CheckingTheAge {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

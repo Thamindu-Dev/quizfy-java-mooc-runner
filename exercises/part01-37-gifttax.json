@@ -1,0 +1,11 @@
+{
+  "id": "part01-37-gifttax",
+  "part": 1,
+  "order": 37,
+  "title": "Gift Tax",
+  "description": "Complete the Java programming exercise: Gift Tax.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/GiftTax.java": "\nimport java.util.Scanner;\n\npublic class GiftTax {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

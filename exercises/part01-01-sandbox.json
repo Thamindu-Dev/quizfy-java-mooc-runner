@@ -1,0 +1,11 @@
+{
+  "id": "part01-01-sandbox",
+  "part": 1,
+  "order": 1,
+  "title": "Sandbox",
+  "description": "Complete the Java programming exercise: Sandbox.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Sandbox.java": "\npublic class Sandbox {\n\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}\n"
+  }
+}

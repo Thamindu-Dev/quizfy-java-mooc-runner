@@ -1,0 +1,10 @@
+{
+  "id": "part01-06-hiadalovelace",
+  "part": 1,
+  "order": 6,
+  "title": "Hi Ada Lovelace",
+  "testClasses": [
+    "HiAdaLovelaceTest"
+  ],
+  "dataFiles": []
+}

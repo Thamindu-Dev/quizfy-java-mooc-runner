@@ -1,0 +1,11 @@
+{
+  "id": "part01-27-ancient",
+  "part": 1,
+  "order": 27,
+  "title": "Ancient",
+  "description": "Complete the Java programming exercise: Ancient.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Ancient.java": "\nimport java.util.Scanner;\n\npublic class Ancient {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here\n    }\n}\n"
+  }
+}

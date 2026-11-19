@@ -1,0 +1,11 @@
+{
+  "id": "part01-17-sumoftwonumbers",
+  "part": 1,
+  "order": 17,
+  "title": "Sum Of Two Numbers",
+  "description": "Complete the Java programming exercise: Sum Of Two Numbers.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/SumOfTwoNumbers.java": "\nimport java.util.Scanner;\n\npublic class SumOfTwoNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  }
+}

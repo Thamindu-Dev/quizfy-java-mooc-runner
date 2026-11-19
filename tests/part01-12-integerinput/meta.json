@@ -1,0 +1,10 @@
+{
+  "id": "part01-12-integerinput",
+  "part": 1,
+  "order": 12,
+  "title": "Integer Input",
+  "testClasses": [
+    "IntegerInputTest"
+  ],
+  "dataFiles": []
+}

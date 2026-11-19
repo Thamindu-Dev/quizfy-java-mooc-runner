@@ -1,0 +1,10 @@
+{
+  "id": "part01-11-variousvariables",
+  "part": 1,
+  "order": 11,
+  "title": "Various Variables",
+  "testClasses": [
+    "VariousVariablesTest"
+  ],
+  "dataFiles": []
+}

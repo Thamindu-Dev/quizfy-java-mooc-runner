@@ -1,0 +1,11 @@
+{
+  "id": "part01-23-simplecalculator",
+  "part": 1,
+  "order": 23,
+  "title": "Simple Calculator",
+  "description": "Complete the Java programming exercise: Simple Calculator.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/SimpleCalculator.java": "\nimport java.util.Scanner;\n\npublic class SimpleCalculator {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  }
+}

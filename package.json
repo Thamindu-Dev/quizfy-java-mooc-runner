@@ -1,0 +1,14 @@
+{
+  "name": "quizfy-java-mooc-runner",
+  "version": "1.0.0",
+  "type": "module",
+  "private": false,
+  "license": "CC-BY-NC-SA-4.0",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

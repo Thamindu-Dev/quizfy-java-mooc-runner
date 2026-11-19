@@ -1,0 +1,10 @@
+{
+  "id": "part01-16-secondsinaday",
+  "part": 1,
+  "order": 16,
+  "title": "Seconds In A Day",
+  "testClasses": [
+    "SecondsInADayTest"
+  ],
+  "dataFiles": []
+}

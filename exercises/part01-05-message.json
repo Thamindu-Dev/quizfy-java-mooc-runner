@@ -1,0 +1,11 @@
+{
+  "id": "part01-05-message",
+  "part": 1,
+  "order": 5,
+  "title": "Message",
+  "description": "Complete the Java programming exercise: Message.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Message.java": "\nimport java.util.Scanner;\n\npublic class Message {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message:\");\n        // Write your program here\n\n    }\n}\n"
+  }
+}

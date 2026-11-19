@@ -1,0 +1,10 @@
+{
+  "id": "part01-24-speedingticket",
+  "part": 1,
+  "order": 24,
+  "title": "Speeding Ticket",
+  "testClasses": [
+    "SpeedingTicketTest"
+  ],
+  "dataFiles": []
+}

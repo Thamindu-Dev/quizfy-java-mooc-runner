@@ -1,0 +1,11 @@
+{
+  "id": "part01-21-averageoftwonumbers",
+  "part": 1,
+  "order": 21,
+  "title": "Average Of Two Numbers",
+  "description": "Complete the Java programming exercise: Average Of Two Numbers.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/AverageOfTwoNumbers.java": "\nimport java.util.Scanner;\n\npublic class AverageOfTwoNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  }
+}

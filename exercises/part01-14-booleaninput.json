@@ -1,0 +1,11 @@
+{
+  "id": "part01-14-booleaninput",
+  "part": 1,
+  "order": 14,
+  "title": "Boolean Input",
+  "description": "Complete the Java programming exercise: Boolean Input.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/BooleanInput.java": "\nimport java.util.Scanner;\n\npublic class BooleanInput {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // write your program here\n\n    }\n}\n"
+  }
+}

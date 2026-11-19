@@ -1,0 +1,10 @@
+{
+  "id": "part01-09-conversation",
+  "part": 1,
+  "order": 9,
+  "title": "Conversation",
+  "testClasses": [
+    "ConversationTest"
+  ],
+  "dataFiles": []
+}
