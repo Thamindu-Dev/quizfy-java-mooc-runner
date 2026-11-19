@@ -495,6 +495,7 @@ def get_system_status() -> Dict[str, Any]:
 
 
 @spaces.GPU
+@spaces.GPU
 def run_gradio_test(exercise_id: str, file_path: str, java_code: str) -> Dict[str, Any]:
     return grade_submission(exercise_id.strip(), {file_path.strip(): java_code})
 
@@ -537,4 +538,8 @@ with demo:
         status_btn.click(fn=get_system_status, inputs=[], outputs=status_output)
 
 app = gr.mount_gradio_app(app, demo, path="/")
+
+if __name__ == "__main__":
+    uvicorn.run("app:app", host="0.0.0.0", port=PORT, reload=False)
+
 
