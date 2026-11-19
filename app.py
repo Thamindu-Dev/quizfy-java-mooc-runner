@@ -1,9 +1,14 @@
-import spaces
-
-@spaces.GPU
-def _zero_gpu_init():
-    """Satisfies ZeroGPU startup scanner requirement without reserving GPU."""
-    pass
+try:
+    import spaces
+except ImportError:
+    class _MockSpaces:
+        def GPU(self, fn=None, *args, **kwargs):
+            if fn is not None:
+                return fn
+            def decorator(f):
+                return f
+            return decorator
+    spaces = _MockSpaces()
 
 import asyncio
 import json
@@ -396,19 +401,7 @@ async def enqueue_grade(exercise_id: Any, files: Any) -> Dict[str, Any]:
         semaphore.release()
 
 
-# --- FastAPI Application ---
-app = FastAPI(title="Quizfy Java MOOC Runner")
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=False,
-    allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["*"],
-)
-
-
-@app.get("/health")
+# --- REST API Handlers ---
 async def health_endpoint():
     return {
         "ok": True,
@@ -417,7 +410,6 @@ async def health_endpoint():
     }
 
 
-@app.post("/grade")
 async def grade_endpoint(request: Request):
     forwarded = request.headers.get("x-forwarded-for", "")
     client_ip = (
@@ -495,14 +487,11 @@ def get_system_status() -> Dict[str, Any]:
 
 
 @spaces.GPU
-@spaces.GPU
 def run_gradio_test(exercise_id: str, file_path: str, java_code: str) -> Dict[str, Any]:
     return grade_submission(exercise_id.strip(), {file_path.strip(): java_code})
 
 
-demo = gr.Blocks(title="Quizfy Java MOOC Runner")
-
-with demo:
+with gr.Blocks(title="Quizfy Java MOOC Runner") as demo:
     gr.Markdown(
         """
         # ☕ Quizfy Java MOOC Runner
@@ -537,9 +526,32 @@ with demo:
         status_output = gr.JSON(label="Health & Environment", value=get_system_status)
         status_btn.click(fn=get_system_status, inputs=[], outputs=status_output)
 
-app = gr.mount_gradio_app(app, demo, path="/")
+
+# Attach custom routes & CORS to Gradio's internal FastAPI app
+app = demo.app
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ALLOWED_ORIGINS,
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["*"],
+)
+
+app.add_api_route("/health", health_endpoint, methods=["GET"])
+app.add_api_route("/grade", grade_endpoint, methods=["POST"])
+
 
 if __name__ == "__main__":
-    uvicorn.run("app:app", host="0.0.0.0", port=PORT, reload=False)
+    import inspect
+
+    launch_kwargs = {
+        "server_name": "0.0.0.0",
+        "server_port": PORT,
+    }
+    if "ssr_mode" in inspect.signature(demo.launch).parameters:
+        launch_kwargs["ssr_mode"] = False
+
+    demo.queue().launch(**launch_kwargs)
 
 
