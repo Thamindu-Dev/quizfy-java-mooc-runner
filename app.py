@@ -491,7 +491,9 @@ def run_gradio_test(exercise_id: str, file_path: str, java_code: str) -> Dict[st
     return grade_submission(exercise_id.strip(), {file_path.strip(): java_code})
 
 
-with gr.Blocks(title="Quizfy Java MOOC Runner") as demo:
+demo = gr.Blocks(title="Quizfy Java MOOC Runner")
+
+with demo:
     gr.Markdown(
         """
         # ☕ Quizfy Java MOOC Runner
@@ -528,5 +530,3 @@ with gr.Blocks(title="Quizfy Java MOOC Runner") as demo:
 
 app = gr.mount_gradio_app(app, demo, path="/")
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=PORT)

@@ -1,11 +1,14 @@
 ---
-title: Quizfy Java MOOC Runner
+title: Quizfy Java Mooc Runner
 emoji: ☕
 colorFrom: indigo
 colorTo: blue
 sdk: gradio
+sdk_version: 6.32.0
+python_version: '3.12'
 app_file: app.py
-app_port: 7860
+pinned: false
+license: cc-by-nc-sa-4.0
 ---
 
 # Quizfy Java MOOC Runner
@@ -14,7 +17,7 @@ Open-source JUnit grading runner and exercise bank for **Quizfy**, adapted from 
 
 ## Endpoints
 
-- `GET /health` - Container health & queue status (also wakes up sleeping HF Spaces).
+- `GET /health` - Container health & queue status (wakes up sleeping HF Spaces).
 - `POST /grade` - Compiles and runs JUnit tests against submitted Java files.
   ```json
   {
@@ -27,4 +30,4 @@ Open-source JUnit grading runner and exercise bank for **Quizfy**, adapted from 
 
 ## License
 
-Exercise content and test suites are adapted from the University of Helsinki MOOC.fi Java Programming course and are licensed under **CC BY-NC-SA 4.0** .
+Exercise content and test suites are adapted from the University of Helsinki MOOC.fi Java Programming course and are licensed under **CC BY-NC-SA 4.0**.
