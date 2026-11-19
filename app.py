@@ -498,6 +498,15 @@ def get_system_status() -> Dict[str, Any]:
     }
 
 
+try:
+    import spaces
+    gpu_decorator = spaces.GPU(duration=1)
+except Exception:
+    def gpu_decorator(fn):
+        return fn
+
+
+@gpu_decorator
 def run_gradio_test(exercise_id: str, file_path: str, java_code: str) -> Dict[str, Any]:
     return grade_submission(exercise_id.strip(), {file_path.strip(): java_code})
 
