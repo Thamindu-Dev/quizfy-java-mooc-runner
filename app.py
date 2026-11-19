@@ -50,13 +50,37 @@ ALLOWED_ORIGINS = [
 RUNTIME_POLICY_PATH = TMP_ROOT / "quizfy-runtime-sandbox.policy"
 
 
+# --- Required JAR Dependencies ---
+REQUIRED_JARS = {
+    "junit-4.12.jar": "https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar",
+    "hamcrest-core-1.3.jar": "https://repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+    "edu-test-utils-0.4.2.jar": "https://raw.githubusercontent.com/Thamindu-Dev/quizfy-java-mooc-runner/main/libs/edu-test-utils-0.4.2.jar",
+}
+
+
+def ensure_jars_exist() -> None:
+    LIBS_DIR.mkdir(parents=True, exist_ok=True)
+    import urllib.request
+    for jar_name, jar_url in REQUIRED_JARS.items():
+        jar_path = LIBS_DIR / jar_name
+        if not jar_path.exists() or jar_path.stat().st_size == 0:
+            print(f"[STARTUP] Downloading missing {jar_name} from {jar_url}...")
+            try:
+                urllib.request.urlretrieve(jar_url, str(jar_path))
+                print(f"[STARTUP] Downloaded {jar_name} ({jar_path.stat().st_size} bytes)")
+            except Exception as e:
+                print(f"[STARTUP WARNING] Could not download {jar_name}: {e}")
+
+
 def prepare_runtime_environment() -> Tuple[bool, str]:
     """
-    Compiles runner/JsonTestRunner.java into libs/runner.jar on startup and prepares
-    a runtime security policy file that trusts both /app/libs/- and the actual LIBS_DIR.
+    Ensures test libraries exist, compiles runner/JsonTestRunner.java into libs/runner.jar on startup,
+    and prepares a runtime security policy file that trusts both /app/libs/- and the actual LIBS_DIR.
     """
     LIBS_DIR.mkdir(parents=True, exist_ok=True)
     TMP_ROOT.mkdir(parents=True, exist_ok=True)
+
+    ensure_jars_exist()
 
     # Prepare runtime security policy so sandbox.policy works in any directory (/home/user/app, /app, etc.)
     policy_text = POLICY_PATH.read_text(encoding="utf-8")
