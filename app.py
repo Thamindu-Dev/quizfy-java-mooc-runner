@@ -1,3 +1,10 @@
+import spaces
+
+@spaces.GPU
+def _zero_gpu_init():
+    """Satisfies ZeroGPU startup scanner requirement without reserving GPU."""
+    pass
+
 import asyncio
 import json
 import os
@@ -17,17 +24,6 @@ import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-
-# Support ZeroGPU environments if the Space runs on a GPU/ZeroGPU tier
-try:
-    import spaces
-
-    @spaces.GPU(duration=1)
-    def _zero_gpu_init():
-        """Satisfies ZeroGPU startup scanner requirement without reserving GPU."""
-        pass
-except (ImportError, Exception):
-    pass
 
 BASE_DIR = Path(__file__).resolve().parent
 TESTS_DIR = Path(os.environ.get("TESTS_DIR", str(BASE_DIR / "tests"))).resolve()
@@ -498,15 +494,7 @@ def get_system_status() -> Dict[str, Any]:
     }
 
 
-try:
-    import spaces
-    gpu_decorator = spaces.GPU(duration=1)
-except Exception:
-    def gpu_decorator(fn):
-        return fn
-
-
-@gpu_decorator
+@spaces.GPU
 def run_gradio_test(exercise_id: str, file_path: str, java_code: str) -> Dict[str, Any]:
     return grade_submission(exercise_id.strip(), {file_path.strip(): java_code})
 
