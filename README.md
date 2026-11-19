@@ -3,7 +3,8 @@ title: Quizfy Java MOOC Runner
 emoji: ☕
 colorFrom: indigo
 colorTo: blue
-sdk: docker
+sdk: gradio
+app_file: app.py
 app_port: 7860
 ---
 

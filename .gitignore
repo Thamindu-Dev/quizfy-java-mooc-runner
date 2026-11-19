@@ -1,4 +1,6 @@
 node_modules/
+__pycache__/
+libs/runner.jar
 .env
 .DS_Store
 *.log
