@@ -13,7 +13,7 @@
     "paragraphs": [
       "Write a program that asks the user for two numbers. After this, the program prints the sum of the numbers given by the user.",
       "When you ask for multiple numbers, create a separate variable for each:",
-      "Scanner scanner = new Scanner(System.in);\n\nSystem.out.println(\"Give the first number:\");\nint first = Integer.valueOf(scanner.nextLine());\nSystem.out.println(\"Give the second number:\");\nint second = Integer.valueOf(scanner.nextLine());\n\n// do something with the numbersHere's how the program is expected to work:"
+      "Here's how the program is expected to work:"
     ],
     "codeSnippet": "Scanner scanner = new Scanner(System.in);\n\nSystem.out.println(\"Give the first number:\");\nint first = Integer.valueOf(scanner.nextLine());\nSystem.out.println(\"Give the second number:\");\nint second = Integer.valueOf(scanner.nextLine());\n\n// do something with the numbers",
     "sampleOutputs": [

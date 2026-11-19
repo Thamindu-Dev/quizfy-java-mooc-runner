@@ -115,8 +115,14 @@ def parse_exercise_block(block_html: str) -> Dict[str, Any]:
         if so["lines"]:
             sample_outputs.append(so)
 
-    # Remove <sample-output> blocks from text parsing
+    # Extract code snippets (<pre><code>) if any
+    code_snippets = []
+    for c_m in re.finditer(r"<pre[^>]*><code[^>]*>(.*?)</code></pre>", clean_block, re.DOTALL):
+        code_snippets.append(html.unescape(re.sub(r"<[^>]+>", "", c_m.group(1))).strip())
+
+    # Remove <sample-output> and <pre> code blocks from text parsing
     text_content = re.sub(r"<sample-output[^>]*>.*?</sample-output>", "", clean_block, flags=re.DOTALL)
+    text_content = re.sub(r"<pre[^>]*>.*?</pre>", "</p><p>", text_content, flags=re.DOTALL)
 
     # Extract paragraphs (<p>...</p>)
     paragraphs = []
@@ -124,11 +130,6 @@ def parse_exercise_block(block_html: str) -> Dict[str, Any]:
         p_text = clean_html_text(p_m.group(1))
         if p_text and not p_text.lower().startswith("sample output"):
             paragraphs.append(p_text)
-
-    # Extract code snippets (<pre><code>) if any
-    code_snippets = []
-    for c_m in re.finditer(r"<pre[^>]*><code[^>]*>(.*?)</code></pre>", clean_block, re.DOTALL):
-        code_snippets.append(html.unescape(re.sub(r"<[^>]+>", "", c_m.group(1))).strip())
 
     prompt = {
         "points": 1,
@@ -212,7 +213,7 @@ def main():
 
     print(f"[UPDATED] {updated_count} individual exercise JSON files in {EXERCISES_DIR}")
 
-    # 3. Generate TypeScript file for Quizfy frontend
+    # 3. Generate local TypeScript export in Repo 2 (Quizfy frontend fetches exercises/<id>.json on demand)
     ts_code = [
         'import type { JavaExercisePrompt } from "@/lib/java-runner/types";',
         "",
@@ -223,12 +224,6 @@ def main():
         "export const JAVA_EXERCISE_PROMPTS: Record<string, JavaExercisePrompt> = " + json.dumps(prompts_dict, indent=2, ensure_ascii=False) + ";\n",
     ]
     ts_content = "\n".join(ts_code)
-
-    frontend_prompts_ts = Path(r"C:\Users\User\Desktop\Projects\Projects\quizfy\src\data\java-prompts.ts")
-    if frontend_prompts_ts.parent.exists():
-        with open(frontend_prompts_ts, "w", encoding="utf-8") as f:
-            f.write(ts_content)
-        print(f"[SAVED FRONTEND] Updated {frontend_prompts_ts}")
 
     local_ts = EXERCISES_DIR / "java-prompts.ts"
     with open(local_ts, "w", encoding="utf-8") as f:

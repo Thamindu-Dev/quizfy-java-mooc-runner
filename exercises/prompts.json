@@ -3,7 +3,7 @@
     "points": 1,
     "paragraphs": [
       "The exercise template already contains the following template of code:",
-      "public class Sandbox {\n    public static void main(String[] args) {\n        // Write your program here\n\n    }\n}The line \"// Write your program here\" is a line comment, and the computer will ignore it when executing the program.",
+      "The line \"// Write your program here\" is a line comment, and the computer will ignore it when executing the program.",
       "First, submit the exercise template to be checked on the server without changing anything. In this way, you practice submitting an exercise. You can submit an exercise by selecting the TMC menu within TMC, and then \"Submit\".",
       "Once you have submitted the exercise, try following the video above to add a print command to the program and to execute the program (by pressing the play - button). When you've been able to get your program to print some text (this text can be anything), submit the exercise to the server once more.",
       "You should use this sandbox exercise to try out different things later on. When you encounter something new in the material, try it out in the sandbox first, and then solve the exercises on the topic."
@@ -14,7 +14,7 @@
     "points": 1,
     "paragraphs": [
       "The exercise template has the following boilerplate code:",
-      "public class AdaLovelace {\n    public static void main(String[] args) {\n        // Write your program here\n\n    }\n}The line \"// Write your program here\" is a line comment, and the computer will ignore it when executing the program. Add a new line below the line comment that prints the string \"Ada Lovelace\" and run the program. The output of the program should be:",
+      "The line \"// Write your program here\" is a line comment, and the computer will ignore it when executing the program. Add a new line below the line comment that prints the string \"Ada Lovelace\" and run the program. The output of the program should be:",
       "Once you've finished the exercise and see that it prints the correct string, return the exercise to the TMC server. After that, you can read more about Ada Lovelace, who was one of the first programmers."
     ],
     "codeSnippet": "public class AdaLovelace {\n    public static void main(String[] args) {\n        // Write your program here\n\n    }\n}",
@@ -31,7 +31,7 @@
     "points": 1,
     "paragraphs": [
       "The exercise template comes with the following template:",
-      "public class OnceUponATime {\n    public static void main(String[] args) {\n        // Write your program here\n\n    }\n}Modify the program so that it will print the following text. Use three System.out.println-commands for printing."
+      "Modify the program so that it will print the following text. Use three System.out.println-commands for printing."
     ],
     "codeSnippet": "public class OnceUponATime {\n    public static void main(String[] args) {\n        // Write your program here\n\n    }\n}",
     "sampleOutputs": [
@@ -49,7 +49,7 @@
     "points": 1,
     "paragraphs": [
       "The exercise comes ready with the following template:",
-      "public class Dinosaur {\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}Edit the program so that it will print the following text. Use the \"sout\"-shorthand for writing the print commands."
+      "Edit the program so that it will print the following text. Use the \"sout\"-shorthand for writing the print commands."
     ],
     "codeSnippet": "public class Dinosaur {\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}",
     "sampleOutputs": [
@@ -68,7 +68,7 @@
     "paragraphs": [
       "Write a program that asks the user to write a string. When the user has provided a string (i.e., written some text and pressed the enter key), the program should print the string that was provided by the user.",
       "The exercise template comes with a program template that includes the creation of a Scanner tool.",
-      "import java.util.Scanner;\n\npublic class Message {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message: \");\n        // Write your program here\n    }\n}Example output for when the user writes \"Bye\".",
+      "Example output for when the user writes \"Bye\".",
       "Example output for when the user writes \"Once upon a time...\"."
     ],
     "codeSnippet": "import java.util.Scanner;\n\npublic class Message {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message: \");\n        // Write your program here\n    }\n}",
@@ -101,7 +101,7 @@
     "points": 1,
     "paragraphs": [
       "The exercise template contains the following program.",
-      "public class HiAdaLovelace {\n\n    public static void main(String[] args) {\n        String name = \"Ada Lovelace\";\n\n    }\n}Modify the program so that it prints the contents of the variable name, and the printed text is the following in its full form:",
+      "Modify the program so that it prints the contents of the variable name, and the printed text is the following in its full form:",
       "NB! When using the System.out.println command, do not pass in the string \"Ada Lovelace\" as a parameter. Instead, use the existing variable name: System.out.println(\"Hi \" + ...)"
     ],
     "codeSnippet": "public class HiAdaLovelace {\n\n    public static void main(String[] args) {\n        String name = \"Ada Lovelace\";\n\n    }\n}",
@@ -119,7 +119,7 @@
     "paragraphs": [
       "Write a program that asks the user to write a string. When the user has given a string (that is, written some text and pressed enter), the program must print the user's string three times (you can use the System.out.println command multiple times).",
       "The exercise template already includes the code that creates the Scanner tool.",
-      "import java.util.Scanner;\n\npublic class MessageThreeTimes {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message: \");\n        // Write your program here\n    }\n}Example output for when the user writes the string \"Hi\".",
+      "Example output for when the user writes the string \"Hi\".",
       "Example output when the user writes \"Once upon a time...\"."
     ],
     "codeSnippet": "import java.util.Scanner;\n\npublic class MessageThreeTimes {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message: \");\n        // Write your program here\n    }\n}",
@@ -157,7 +157,7 @@
     "paragraphs": [
       "Write a program that prompts the user for their name with the message \"What's your name?\". When the user has written their name, the program has to print \"Hi \" followed by the user's name.",
       "The exercise template already includes the code that creates the Scanner tool.",
-      "import java.util.Scanner;\n\npublic class Greeting {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}Example output when user gives the name Ada.",
+      "Example output when user gives the name Ada.",
       "Example output when user gives the name Lily."
     ],
     "codeSnippet": "import java.util.Scanner;\n\npublic class Greeting {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}",
@@ -235,7 +235,7 @@
       "Write a program that asks the user for a character's name and their job. The program then prints a short story.",
       "The output must be as shown below — note, the name and job depend on the user's input.",
       "The exercise template already includes the code that creates the Scanner tool.",
-      "import java.util.Scanner;\n\npublic class Story {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}Here's another example output:"
+      "Here's another example output:"
     ],
     "codeSnippet": "import java.util.Scanner;\n\npublic class Story {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}",
     "sampleOutputs": [
@@ -483,7 +483,7 @@
     "paragraphs": [
       "In the exercise template, implement a program that asks the user for the number of days. After that, the program prints the number of seconds in the given number of days.",
       "Earlier we learned to read an integer in the following manner:",
-      "Scanner scanner = new Scanner(System.in);\n\nSystem.out.println(\"Give a number:\");\nint number = Integer.valueOf(scanner.nextLine());\nSystem.out.println(\"You gave \" + number);Examples of expected output:"
+      "Examples of expected output:"
     ],
     "codeSnippet": "Scanner scanner = new Scanner(System.in);\n\nSystem.out.println(\"Give a number:\");\nint number = Integer.valueOf(scanner.nextLine());\nSystem.out.println(\"You gave \" + number);",
     "sampleOutputs": [
@@ -527,7 +527,7 @@
     "paragraphs": [
       "Write a program that asks the user for two numbers. After this, the program prints the sum of the numbers given by the user.",
       "When you ask for multiple numbers, create a separate variable for each:",
-      "Scanner scanner = new Scanner(System.in);\n\nSystem.out.println(\"Give the first number:\");\nint first = Integer.valueOf(scanner.nextLine());\nSystem.out.println(\"Give the second number:\");\nint second = Integer.valueOf(scanner.nextLine());\n\n// do something with the numbersHere's how the program is expected to work:"
+      "Here's how the program is expected to work:"
     ],
     "codeSnippet": "Scanner scanner = new Scanner(System.in);\n\nSystem.out.println(\"Give the first number:\");\nint first = Integer.valueOf(scanner.nextLine());\nSystem.out.println(\"Give the second number:\");\nint second = Integer.valueOf(scanner.nextLine());\n\n// do something with the numbers",
     "sampleOutputs": [
@@ -1241,7 +1241,7 @@
       "A year is a leap year if it is divisible by 4. However, if the year is divisible by 100, then it is a leap year only when it is also divisible by 400.",
       "Write a program that reads a year from the user, and checks whether or not it is a leap year.",
       "Hint 1: The divisibility by a particular number can be checked using the modulo operator, aka %, in the following way.",
-      "int number = 5;\n\nif (number % 5 == 0) {\n    System.out.println(\"The number is divisible by five!\");\n}\n\nif (number % 6 != 0) {\n    System.out.println(\"The number is not divisible by six!\")\n}Hint 2: Think of the problem as a chain of if, else if, else if, ... comparisons, and start building the program from a situation in which you can be certain that the year is not a leap year."
+      "Hint 2: Think of the problem as a chain of if, else if, else if, ... comparisons, and start building the program from a situation in which you can be certain that the year is not a leap year."
     ],
     "codeSnippet": "int number = 5;\n\nif (number % 5 == 0) {\n    System.out.println(\"The number is divisible by five!\");\n}\n\nif (number % 6 != 0) {\n    System.out.println(\"The number is not divisible by six!\")\n}",
     "sampleOutputs": [

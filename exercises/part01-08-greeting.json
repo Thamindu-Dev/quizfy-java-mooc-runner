@@ -13,7 +13,7 @@
     "paragraphs": [
       "Write a program that prompts the user for their name with the message \"What's your name?\". When the user has written their name, the program has to print \"Hi \" followed by the user's name.",
       "The exercise template already includes the code that creates the Scanner tool.",
-      "import java.util.Scanner;\n\npublic class Greeting {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}Example output when user gives the name Ada.",
+      "Example output when user gives the name Ada.",
       "Example output when user gives the name Lily."
     ],
     "codeSnippet": "import java.util.Scanner;\n\npublic class Greeting {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}",

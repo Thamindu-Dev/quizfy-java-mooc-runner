@@ -14,7 +14,7 @@
       "A year is a leap year if it is divisible by 4. However, if the year is divisible by 100, then it is a leap year only when it is also divisible by 400.",
       "Write a program that reads a year from the user, and checks whether or not it is a leap year.",
       "Hint 1: The divisibility by a particular number can be checked using the modulo operator, aka %, in the following way.",
-      "int number = 5;\n\nif (number % 5 == 0) {\n    System.out.println(\"The number is divisible by five!\");\n}\n\nif (number % 6 != 0) {\n    System.out.println(\"The number is not divisible by six!\")\n}Hint 2: Think of the problem as a chain of if, else if, else if, ... comparisons, and start building the program from a situation in which you can be certain that the year is not a leap year."
+      "Hint 2: Think of the problem as a chain of if, else if, else if, ... comparisons, and start building the program from a situation in which you can be certain that the year is not a leap year."
     ],
     "codeSnippet": "int number = 5;\n\nif (number % 5 == 0) {\n    System.out.println(\"The number is divisible by five!\");\n}\n\nif (number % 6 != 0) {\n    System.out.println(\"The number is not divisible by six!\")\n}",
     "sampleOutputs": [
