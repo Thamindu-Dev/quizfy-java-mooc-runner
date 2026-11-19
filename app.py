@@ -528,18 +528,25 @@ with gr.Blocks(title="Quizfy Java MOOC Runner") as demo:
 
 
 # Attach custom routes & CORS to Gradio's internal FastAPI app
+def register_custom_routes(fastapi_app):
+    if fastapi_app is None:
+        return
+    try:
+        fastapi_app.add_middleware(
+            CORSMiddleware,
+            allow_origins=ALLOWED_ORIGINS,
+            allow_credentials=False,
+            allow_methods=["GET", "POST", "OPTIONS"],
+            allow_headers=["*"],
+        )
+    except Exception:
+        pass
+    fastapi_app.add_api_route("/health", health_endpoint, methods=["GET"])
+    fastapi_app.add_api_route("/grade", grade_endpoint, methods=["POST"])
+
+
 app = demo.app
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=False,
-    allow_methods=["GET", "POST", "OPTIONS"],
-    allow_headers=["*"],
-)
-
-app.add_api_route("/health", health_endpoint, methods=["GET"])
-app.add_api_route("/grade", grade_endpoint, methods=["POST"])
+register_custom_routes(app)
 
 
 if __name__ == "__main__":
@@ -548,10 +555,17 @@ if __name__ == "__main__":
     launch_kwargs = {
         "server_name": "0.0.0.0",
         "server_port": PORT,
+        "prevent_thread_lock": True,
     }
     if "ssr_mode" in inspect.signature(demo.launch).parameters:
         launch_kwargs["ssr_mode"] = False
 
-    demo.queue().launch(**launch_kwargs)
+    res = demo.queue().launch(**launch_kwargs)
+    if isinstance(res, tuple) and len(res) >= 1:
+        register_custom_routes(res[0])
+    if hasattr(demo, "server") and hasattr(demo.server, "app"):
+        register_custom_routes(demo.server.app)
+
+    demo.block_thread()
 
 
