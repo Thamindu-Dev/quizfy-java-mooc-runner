@@ -3,9 +3,52 @@
   "part": 1,
   "order": 17,
   "title": "Sum Of Two Numbers",
-  "description": "Complete the Java programming exercise: Sum Of Two Numbers.",
+  "description": "Write a program that asks the user for two numbers. After this, the program prints the sum of the numbers given by the user.",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/SumOfTwoNumbers.java": "\nimport java.util.Scanner;\n\npublic class SumOfTwoNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for two numbers. After this, the program prints the sum of the numbers given by the user.",
+      "When you ask for multiple numbers, create a separate variable for each:",
+      "Scanner scanner = new Scanner(System.in);\n\nSystem.out.println(\"Give the first number:\");\nint first = Integer.valueOf(scanner.nextLine());\nSystem.out.println(\"Give the second number:\");\nint second = Integer.valueOf(scanner.nextLine());\n\n// do something with the numbersHere's how the program is expected to work:"
+    ],
+    "codeSnippet": "Scanner scanner = new Scanner(System.in);\n\nSystem.out.println(\"Give the first number:\");\nint first = Integer.valueOf(scanner.nextLine());\nSystem.out.println(\"Give the second number:\");\nint second = Integer.valueOf(scanner.nextLine());\n\n// do something with the numbers",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "The sum of the numbers is 11"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "The sum of the numbers is 2"
+        ]
+      }
+    ]
   }
 }

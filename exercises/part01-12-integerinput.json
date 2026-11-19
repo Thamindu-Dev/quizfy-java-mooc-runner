@@ -3,9 +3,40 @@
   "part": 1,
   "order": 12,
   "title": "Integer Input",
-  "description": "Complete the Java programming exercise: Integer Input.",
+  "description": "Write a program that asks the user for a value. The program should then print the value provided by the user.",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/IntegerInput.java": "\nimport java.util.Scanner;\n\npublic class IntegerInput {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // write your program here\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for a value. The program should then print the value provided by the user.",
+      "Here's a couple of examples:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "You gave the number 3"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "42",
+            "isInput": true
+          },
+          "You gave the number 42"
+        ]
+      }
+    ]
   }
 }

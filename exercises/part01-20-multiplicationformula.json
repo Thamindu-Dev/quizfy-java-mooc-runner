@@ -3,9 +3,51 @@
   "part": 1,
   "order": 20,
   "title": "Multiplication Formula",
-  "description": "Complete the Java programming exercise: Multiplication Formula.",
+  "description": "Similar to the previous exercise, create a program that multiplies the values stored in two integer variables.",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/MultiplicationFormula.java": "\nimport java.util.Scanner;\n\npublic class MultiplicationFormula {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Similar to the previous exercise, create a program that multiplies the values stored in two integer variables.",
+      "For instance, if the entered numbers are 2 and 8, the program should print the following:",
+      "Likewise, if the entered numbers are 277 and 111, the print should be the following:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "2 * 8 = 16"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "277",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "111",
+            "isInput": true
+          },
+          "277 * 111 = 30747"
+        ]
+      }
+    ]
   }
 }

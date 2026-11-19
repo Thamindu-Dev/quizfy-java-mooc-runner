@@ -3,9 +3,49 @@
   "part": 1,
   "order": 34,
   "title": "Same",
-  "description": "Complete the Java programming exercise: Same.",
+  "description": "Write a program that prompts the user for two strings. If the strings are the same, then the program prints \"Same\". Otherwise, it prints \"Different\".",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/Same.java": "\nimport java.util.Scanner;\n\npublic class Same {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here. \n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for two strings. If the strings are the same, then the program prints \"Same\". Otherwise, it prints \"Different\"."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Enter the first string:",
+          {
+            "text": "hello",
+            "isInput": true
+          },
+          "Enter the second string:",
+          {
+            "text": "hello",
+            "isInput": true
+          },
+          "Same"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Enter the first string:",
+          {
+            "text": "hello",
+            "isInput": true
+          },
+          "Enter the second string:",
+          {
+            "text": "world",
+            "isInput": true
+          },
+          "Different"
+        ]
+      }
+    ]
   }
 }

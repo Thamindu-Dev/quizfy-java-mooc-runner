@@ -3,9 +3,76 @@
   "part": 1,
   "order": 15,
   "title": "Different Types Of Input",
-  "description": "Complete the Java programming exercise: Different Types Of Input.",
+  "description": "Write a program that asks the user for a string, an integer, a floating-point number, and a boolean. The program should then print the values given by the user.",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/DifferentTypesOfInput.java": "\nimport java.util.Scanner;\n\npublic class DifferentTypesOfInput {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for a string, an integer, a floating-point number, and a boolean. The program should then print the values given by the user.",
+      "Example prints for the program can be seen below."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a string:",
+          {
+            "text": "bye-bye",
+            "isInput": true
+          },
+          "Give an integer:",
+          {
+            "text": "11",
+            "isInput": true
+          },
+          "Give a double:",
+          {
+            "text": "4.2",
+            "isInput": true
+          },
+          "Give a boolean:",
+          {
+            "text": "true",
+            "isInput": true
+          },
+          "You gave the string bye-bye",
+          "You gave the integer 11",
+          "You gave the double 4.2",
+          "You gave the boolean true"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a string:",
+          {
+            "text": "Oops!",
+            "isInput": true
+          },
+          "Give an integer:",
+          {
+            "text": "-4",
+            "isInput": true
+          },
+          "Give a double:",
+          {
+            "text": "3200.1",
+            "isInput": true
+          },
+          "Give a boolean:",
+          {
+            "text": "false",
+            "isInput": true
+          },
+          "You gave the string Oops!",
+          "You gave the integer -4",
+          "You gave the double 3200.1",
+          "You gave the boolean false"
+        ]
+      }
+    ]
   }
 }

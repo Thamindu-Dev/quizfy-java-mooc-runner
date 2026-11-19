@@ -3,9 +3,62 @@
   "part": 1,
   "order": 10,
   "title": "Story",
-  "description": "Complete the Java programming exercise: Story.",
+  "description": "NB! The example output might align wrong on narrow displays. If you're using only a limited portion of the browser window, or your display is otherwise very narrow, try to stretch the display horizontally to see if the text aligns differently. The exercise expects the text to align as it does on wider displays.",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/Story.java": "\nimport java.util.Scanner;\n\npublic class Story {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "NB! The example output might align wrong on narrow displays. If you're using only a limited portion of the browser window, or your display is otherwise very narrow, try to stretch the display horizontally to see if the text aligns differently. The exercise expects the text to align as it does on wider displays.",
+      "Write a program that asks the user for a character's name and their job. The program then prints a short story.",
+      "The output must be as shown below — note, the name and job depend on the user's input.",
+      "The exercise template already includes the code that creates the Scanner tool.",
+      "import java.util.Scanner;\n\npublic class Story {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}Here's another example output:"
+    ],
+    "codeSnippet": "import java.util.Scanner;\n\npublic class Story {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "I will tell you a story, but I need some information first.",
+          "What is the main character called?",
+          {
+            "text": "Bob",
+            "isInput": true
+          },
+          "What is their job?",
+          {
+            "text": "a builder",
+            "isInput": true
+          },
+          "Here is the story:",
+          "Once upon a time there was Bob, who was a builder.",
+          "On the way to work, Bob reflected on life.",
+          "Perhaps Bob will not be a builder forever."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "I will tell you a story, but I need some information first.",
+          "What is the main character called?",
+          {
+            "text": "Ada",
+            "isInput": true
+          },
+          "What is their job?",
+          {
+            "text": "a Data scientist",
+            "isInput": true
+          },
+          "Here is the story:",
+          "Once upon a time there was Ada, who was a Data scientist.",
+          "On the way to work, Ada reflected on life.",
+          "Perhaps Ada will not be a Data scientist forever."
+        ]
+      }
+    ]
   }
 }

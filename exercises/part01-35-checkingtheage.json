@@ -3,9 +3,61 @@
   "part": 1,
   "order": 35,
   "title": "Checking The Age",
-  "description": "Complete the Java programming exercise: Checking The Age.",
+  "description": "Write a program that prompts the user to input their age and checks whether or not it is possible (at least 0 and at most 120). Only use a single if-command in your program.",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/CheckingTheAge.java": "\nimport java.util.Scanner;\n\npublic class CheckingTheAge {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user to input their age and checks whether or not it is possible (at least 0 and at most 120). Only use a single if-command in your program."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How old are you?",
+          {
+            "text": "10",
+            "isInput": true
+          },
+          "OK"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How old are you?",
+          {
+            "text": "55",
+            "isInput": true
+          },
+          "OK"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How old are you?",
+          {
+            "text": "-3",
+            "isInput": true
+          },
+          "Impossible!"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How old are you?",
+          {
+            "text": "150",
+            "isInput": true
+          },
+          "Impossible!"
+        ]
+      }
+    ]
   }
 }

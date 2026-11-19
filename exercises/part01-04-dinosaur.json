@@ -3,9 +3,27 @@
   "part": 1,
   "order": 4,
   "title": "Dinosaur",
-  "description": "Complete the Java programming exercise: Dinosaur.",
+  "description": "The exercise comes ready with the following template:",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/Dinosaur.java": "\npublic class Dinosaur {\n\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise comes ready with the following template:",
+      "public class Dinosaur {\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}Edit the program so that it will print the following text. Use the \"sout\"-shorthand for writing the print commands."
+    ],
+    "codeSnippet": "public class Dinosaur {\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Once upon a time",
+          "there was",
+          "a dinosaur"
+        ]
+      }
+    ]
   }
 }

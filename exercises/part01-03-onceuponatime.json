@@ -3,9 +3,27 @@
   "part": 1,
   "order": 3,
   "title": "Once Upon A Time",
-  "description": "Complete the Java programming exercise: Once Upon A Time.",
+  "description": "The exercise template comes with the following template:",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/OnceUponATime.java": "\npublic class OnceUponATime {\n\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template comes with the following template:",
+      "public class OnceUponATime {\n    public static void main(String[] args) {\n        // Write your program here\n\n    }\n}Modify the program so that it will print the following text. Use three System.out.println-commands for printing."
+    ],
+    "codeSnippet": "public class OnceUponATime {\n    public static void main(String[] args) {\n        // Write your program here\n\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Once upon a time",
+          "there was",
+          "a program"
+        ]
+      }
+    ]
   }
 }

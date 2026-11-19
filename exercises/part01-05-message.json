@@ -3,9 +3,43 @@
   "part": 1,
   "order": 5,
   "title": "Message",
-  "description": "Complete the Java programming exercise: Message.",
+  "description": "Write a program that asks the user to write a string. When the user has provided a string (i.e., written some text and pressed the enter key), the program should print the string that was provided by the user.",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/Message.java": "\nimport java.util.Scanner;\n\npublic class Message {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message:\");\n        // Write your program here\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user to write a string. When the user has provided a string (i.e., written some text and pressed the enter key), the program should print the string that was provided by the user.",
+      "The exercise template comes with a program template that includes the creation of a Scanner tool.",
+      "import java.util.Scanner;\n\npublic class Message {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message: \");\n        // Write your program here\n    }\n}Example output for when the user writes \"Bye\".",
+      "Example output for when the user writes \"Once upon a time...\"."
+    ],
+    "codeSnippet": "import java.util.Scanner;\n\npublic class Message {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message: \");\n        // Write your program here\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Write a message:",
+          {
+            "text": "Bye",
+            "isInput": true
+          },
+          "Bye"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Write a message:",
+          {
+            "text": "Once upon a time...",
+            "isInput": true
+          },
+          "Once upon a time..."
+        ]
+      }
+    ]
   }
 }

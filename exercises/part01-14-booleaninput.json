@@ -3,9 +3,40 @@
   "part": 1,
   "order": 14,
   "title": "Boolean Input",
-  "description": "Complete the Java programming exercise: Boolean Input.",
+  "description": "Write a program that asks the user for a boolean value. The program should then print the value provided by the user.",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/BooleanInput.java": "\nimport java.util.Scanner;\n\npublic class BooleanInput {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // write your program here\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for a boolean value. The program should then print the value provided by the user.",
+      "Example prints for the program can be seen below."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Write something:",
+          {
+            "text": "santa does not exist",
+            "isInput": true
+          },
+          "True or false? false"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Write something:",
+          {
+            "text": "TRUE",
+            "isInput": true
+          },
+          "True or false? true"
+        ]
+      }
+    ]
   }
 }
