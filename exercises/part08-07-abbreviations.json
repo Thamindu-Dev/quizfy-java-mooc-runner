@@ -1,0 +1,28 @@
+{
+  "id": "part08-07-abbreviations",
+  "part": 8,
+  "order": 7,
+  "title": "Abbreviations",
+  "description": "Create a class `Abbreviations` for managing common abbreviations. The class must have a constructor, which does not take any parameters. The class must also provide the following methods:",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Abbreviations.java": "\nimport java.util.Scanner;\n\npublic class Abbreviations {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a class `Abbreviations` for managing common abbreviations. The class must have a constructor, which does not take any parameters. The class must also provide the following methods:",
+      "- `public void addAbbreviation(String abbreviation, String explanation)` adds a new abbreviation and its explanation.\n- `public boolean hasAbbreviation(String abbreviation)` checks if an abbreviation has already been added; returns `true` if it has and `false` if it has not.\n- `public String findExplanationFor(String abbreviation)` finds the explanation for an abbreviation; returns `null` if the abbreviation has not been added yet.",
+      "Example:"
+    ],
+    "codeSnippet": "Abbreviations abbreviations = new Abbreviations();\nabbreviations.addAbbreviation(\"e.g.\", \"for example\");\nabbreviations.addAbbreviation(\"etc.\", \"and so on\");\nabbreviations.addAbbreviation(\"i.e.\", \"more precisely\");\n\nString text = \"e.g. i.e. etc. lol\";\n\nfor (String part: text.split(\" \")) {\n    if(abbreviations.hasAbbreviation(part)) {\n        part = abbreviations.findExplanationFor(part);\n    }\n\n    System.out.print(part);\n    System.out.print(\" \");\n}\n\nSystem.out.println();",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "for example more precisely and so on lol"
+        ]
+      }
+    ]
+  }
+}

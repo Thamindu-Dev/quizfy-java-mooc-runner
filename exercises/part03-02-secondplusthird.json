@@ -1,0 +1,68 @@
+{
+  "id": "part03-02-secondplusthird",
+  "part": 3,
+  "order": 2,
+  "title": "Second plus third",
+  "description": "In the exercise template there is a program that reads integers from the user and adds them to a list. This ends when the user enters 0. The program then prints the first value on the list.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Secondplusthird.java": "\nimport java.util.Scanner;\n\npublic class Secondplusthird {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the exercise template there is a program that reads integers from the user and adds them to a list. This ends when the user enters 0. The program then prints the first value on the list.",
+      "Modify the program so that instead of the first value, the program prints the sum of the second and third numbers. The program is allowed to malfunction if there are fewer than three entries on the list, so you don't need to prepare for such an event at all."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "3",
+            "isInput": true
+          },
+          {
+            "text": "5",
+            "isInput": true
+          },
+          {
+            "text": "7",
+            "isInput": true
+          },
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "8"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "3",
+            "isInput": true
+          },
+          {
+            "text": "4",
+            "isInput": true
+          },
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "7"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "part08-02-averageofpositivenumbers",
+  "part": 8,
+  "order": 2,
+  "title": "Average of positive numbers",
+  "description": "Write a program that asks user for input until the user inputs 0.\nAfter this, the program prints the average of the positive numbers (numbers that are greater than zero).",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Averageofpositivenumbers.java": "\nimport java.util.Scanner;\n\npublic class Averageofpositivenumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks user for input until the user inputs 0.\nAfter this, the program prints the average of the positive numbers (numbers that are greater than zero).",
+      "If no positive number is inputted, the program prints \"Cannot calculate the average\"",
+      "Below a few examples of the program's output"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "3",
+            "isInput": true
+          },
+          {
+            "text": "5",
+            "isInput": true
+          },
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "-3",
+            "isInput": true
+          },
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "3.0"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Cannot calculate the average"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "-3",
+            "isInput": true
+          },
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "1.0"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "1.0"
+        ]
+      }
+    ]
+  }
+}

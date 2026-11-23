@@ -1,0 +1,18 @@
+{
+  "id": "part04-04-room",
+  "part": 4,
+  "order": 4,
+  "title": "Room",
+  "description": "Create a class named `Room`. Add the variables `private String code` and `private int seats` to the class. Then create a constructor `public Room(String classCode, int numberOfSeats)` through which values are assigned to the instance variables.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Room.java": "\nimport java.util.Scanner;\n\npublic class Room {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a class named `Room`. Add the variables `private String code` and `private int seats` to the class. Then create a constructor `public Room(String classCode, int numberOfSeats)` through which values are assigned to the instance variables.",
+      "This class doesn't do much either. However, in the following exercise the object instantiated from our class is already capable of printing text."
+    ]
+  }
+}

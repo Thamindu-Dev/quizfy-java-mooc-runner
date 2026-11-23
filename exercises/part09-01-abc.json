@@ -1,0 +1,41 @@
+{
+  "id": "part09-01-abc",
+  "part": 9,
+  "order": 1,
+  "title": "ABC (2 parts)",
+  "description": "Let's practice creating and inheriting classes.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Abc.java": "\nimport java.util.Scanner;\n\npublic class Abc {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Let's practice creating and inheriting classes.",
+      "Creating classes",
+      "Create the following three classes:",
+      "- Class `A`. Class should have no object variables nor should you specify a constructor for it. It only has the method `public void a()`, which prints a string \"A\".\n- Class `B`. Class should have no object variables nor should you specify a constructor for it. It only has the method `public void b()`, which prints a string \"B\".\n- Class `C`. Class should have no object variables nor should you specify a constructor for it. It only has the method `public void c()`, which prints a string \"C\".",
+      "Class inheritance",
+      "Modify the classes so that class B inherits class A, and class C inherits class B. In other words, class A will be a superclass for class B, and class B will be a superclass for class C."
+    ],
+    "codeSnippet": "A a = new A();\nB b = new B();\nC c = new C();\n\na.a();\nb.b();\nc.c();",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "A",
+          "B",
+          "C"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "A",
+          "B",
+          "C"
+        ]
+      }
+    ]
+  }
+}

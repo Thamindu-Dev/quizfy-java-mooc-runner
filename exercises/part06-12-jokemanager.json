@@ -1,0 +1,84 @@
+{
+  "id": "part06-12-jokemanager",
+  "part": 6,
+  "order": 12,
+  "title": "Joke Manager (2 parts)",
+  "description": "The exercise base contains the following program that has been written \"in the main\".",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Jokemanager.java": "\nimport java.util.Scanner;\n\npublic class Jokemanager {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise base contains the following program that has been written \"in the main\".",
+      "The application is in practice a storage for jokes. You can add jokes, get a randomized joke, and the stored jokes can be printed. In this exercise the program is divided into parts in a guided manner.",
+      "Joke manager",
+      "Create a class called `JokeManager` and move the functionality to manage jokes in it. The class must have a parameter-free constructor, and the following methods:",
+      "- `public void addJoke(String joke)` - adds a joke to the manager.\n- `public String drawJoke()` - chooses one joke at random and returns it. It there are no jokes stored in the joke manager, the method should return the string \"Jokes are in short supply.\".\n- `public void printJokes()` - prints all the jokes stored in the joke manager.",
+      "An example of how to use the class:",
+      "Below is a possible output of the program. Notice that the jokes will probably not be drawn as in this example.",
+      "User interface",
+      "Create a class called `UserInterface` and move the UI functionality of the program there. The class must have a constructor with two parameters. The first parameter is an instance of the JokeManager class, and the second parameter is an instance of the Scanner class. In addition, the class should have the method `public void start()` that can be used to start the user interface.",
+      "The user interface should provide the user with the following commands:",
+      "- `X` - ending: exits the method `start`.\n- `1` - adding: asks the user for the joke to be added to the joke manager, and then adds it.\n- `2` - drawing: chooses a random joke from the joke manager and prints it. If there are no jokes in the manager, thi string \"Jokes are in short supply.\" will be printed.\n- `3` - printing: prints all the jokes stored in the joke manager.",
+      "An example of how to use the UI:"
+    ],
+    "codeSnippet": "Scanner scanner = new Scanner(System.in);\nArrayList<String> jokes = new ArrayList<>();\nSystem.out.println(\"What a joke!\");\n\nwhile (true) {\n    System.out.println(\"Commands:\");\n    System.out.println(\" 1 - add a joke\");\n    System.out.println(\" 2 - draw a joke\");\n    System.out.println(\" 3 - list jokes\");\n    System.out.println(\" X - stop\");\n\n    String command = scanner.nextLine();\n\n    if (command.equals(\"X\")) {\n        break;\n    }\n\n    if (command.equals(\"1\")) {\n        System.out.println(\"Write the joke to be added:\");\n        String joke = scanner.nextLine();\n        jokes.add(joke);\n    } else if (command.equals(\"2\")) {\n        System.out.println(\"Drawing a joke.\");\n\n        if (jokes.isEmpty()) {\n            System.out.println(\"Jokes are in short supply.\");\n        } else {\n            Random draw = new Random();\n            int index = draw.nextInt(jokes.size());\n            System.out.println(jokes.get(index));\n        }\n\n    } else if (command.equals(\"3\")) {\n        System.out.println(\"Printing the jokes.\");\n        for (String joke : jokes) {\n            System.out.println(joke);\n        }\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Drawing jokes:",
+          "What is blue and smells of red paint? - Blue paint.",
+          "What is red and smells of blue paint? - Red paint.",
+          "What is blue and smells of red paint? - Blue paint.",
+          "What is blue and smells of red paint? - Blue paint.",
+          "What is blue and smells of red paint? - Blue paint.",
+          "Printing jokes:",
+          "What is red and smells of blue paint? - Red paint.",
+          "What is blue and smells of red paint? - Blue paint."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Commands:",
+          "1 - add a joke",
+          "2 - draw a joke",
+          "3 - list jokes",
+          "X - stop",
+          {
+            "text": "1",
+            "isInput": true
+          },
+          "Write the joke to be added:",
+          {
+            "text": "Did you hear about the claustrophobic astronaut? -- He just needed a little space.",
+            "isInput": true
+          },
+          "Commands:",
+          "1 - add a joke",
+          "2 - draw a joke",
+          "3 - list jokes",
+          "X - stop",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "Printing the jokes.",
+          "Did you hear about the claustrophobic astronaut? -- He just needed a little space.",
+          "Commands:",
+          "1 - add a joke",
+          "2 - draw a joke",
+          "3 - list jokes",
+          "X - stop",
+          {
+            "text": "X",
+            "isInput": true
+          }
+        ]
+      }
+    ]
+  }
+}

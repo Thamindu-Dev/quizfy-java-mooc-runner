@@ -1,0 +1,17 @@
+{
+  "id": "part13-01-myfirstapplication",
+  "part": 13,
+  "order": 1,
+  "title": "My first application",
+  "description": "Create a GUI app with the title \"My first application\". The app should start when the main method is executed.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Myfirstapplication.java": "\nimport java.util.Scanner;\n\npublic class Myfirstapplication {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a GUI app with the title \"My first application\". The app should start when the main method is executed."
+    ]
+  }
+}

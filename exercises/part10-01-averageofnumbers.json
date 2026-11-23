@@ -1,0 +1,66 @@
+{
+  "id": "part10-01-averageofnumbers",
+  "part": 10,
+  "order": 1,
+  "title": "Average of Numbers",
+  "description": "Implement a program, which reads user input. If the user input is \"end\", the program stops reading input. The rest of the input is numbers. When the user input is \"end\", the program prints the average of all of the numbers.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Averageofnumbers.java": "\nimport java.util.Scanner;\n\npublic class Averageofnumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Implement a program, which reads user input. If the user input is \"end\", the program stops reading input. The rest of the input is numbers. When the user input is \"end\", the program prints the average of all of the numbers.",
+      "Implement calculating the average using a stream!"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Input numbers, type \"end\" to stop.",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "4",
+            "isInput": true
+          },
+          {
+            "text": "6",
+            "isInput": true
+          },
+          {
+            "text": "end",
+            "isInput": true
+          },
+          "average of the numbers: 4.0"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Input numbers, type \"end\" to stop.",
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "end",
+            "isInput": true
+          },
+          "average of the numbers: 0.6666666666666666"
+        ]
+      }
+    ]
+  }
+}

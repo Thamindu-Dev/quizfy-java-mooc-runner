@@ -1,0 +1,18 @@
+{
+  "id": "part10-03-positivenumbers",
+  "part": 10,
+  "order": 3,
+  "title": "Positive Numbers",
+  "description": "In the exercise template, implement the class method `public static List positive(List numbers)`, which receives an ArrayList of integers, and returns the positive integers from the list.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Positivenumbers.java": "\nimport java.util.Scanner;\n\npublic class Positivenumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the exercise template, implement the class method `public static List positive(List numbers)`, which receives an ArrayList of integers, and returns the positive integers from the list.",
+      "Implement the method using stream! For collecting the numbers try the command `Collectors.toList()` in addition to the `Collectors.toCollection(ArrayList::new)` command."
+    ]
+  }
+}

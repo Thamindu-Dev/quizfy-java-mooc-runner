@@ -1,0 +1,117 @@
+{
+  "id": "part07-08-bigyear",
+  "part": 7,
+  "order": 8,
+  "title": "Big year (3 parts)",
+  "description": "**This exercise is worth three one-part exercises**",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Bigyear.java": "\nimport java.util.Scanner;\n\npublic class Bigyear {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "**This exercise is worth three one-part exercises**",
+      "In this exercise you will design and implement a database for bird-watchers. The database contains birds, each of which has a name (string) and a name in Latin (string). The database also counts the observations of each bird.",
+      "The program must implement the following commands:",
+      "-  `Add` - adds a bird",
+      "-  `Observation` - adds an observation",
+      "-  `All` - prints all birds",
+      "-  `One` - prints one bird",
+      "- `Quit` - ends the program",
+      "Incorrect input must also be handled.\nThe following is an example of the program functionality:",
+      "**NB** You're free to structure your program the way you want. We only test that the `main` method of the `mainProgram` class works as shown above. You will most likely find it useful to use classes that are descriptive of the problem domain."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "?",
+          {
+            "text": "Add",
+            "isInput": true
+          },
+          "Name:",
+          {
+            "text": "Crow",
+            "isInput": true
+          },
+          "Name in Latin:",
+          {
+            "text": "Corvus Corvus",
+            "isInput": true
+          },
+          "?",
+          {
+            "text": "Add",
+            "isInput": true
+          },
+          "Name:",
+          {
+            "text": "Hawk",
+            "isInput": true
+          },
+          "Name in Latin:",
+          {
+            "text": "Dorkus Dorkus",
+            "isInput": true
+          },
+          "?",
+          {
+            "text": "Observation",
+            "isInput": true
+          },
+          "Bird?",
+          {
+            "text": "Hawk",
+            "isInput": true
+          },
+          "?",
+          {
+            "text": "Observation",
+            "isInput": true
+          },
+          "Bird?",
+          {
+            "text": "Lion",
+            "isInput": true
+          },
+          "Not a bird!",
+          "?",
+          {
+            "text": "Observation",
+            "isInput": true
+          },
+          "Bird?",
+          {
+            "text": "Hawk",
+            "isInput": true
+          },
+          "?",
+          {
+            "text": "All",
+            "isInput": true
+          },
+          "Hawk (Dorkus Dorkus): 2 observations",
+          "Crow (Corvus Corvus): 0 observations",
+          "?",
+          {
+            "text": "One",
+            "isInput": true
+          },
+          "Bird?",
+          {
+            "text": "Hawk",
+            "isInput": true
+          },
+          "Hawk (Dorkus Dorkus): 2 observations",
+          "?",
+          {
+            "text": "Quit",
+            "isInput": true
+          }
+        ]
+      }
+    ]
+  }
+}

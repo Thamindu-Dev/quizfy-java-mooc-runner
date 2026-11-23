@@ -1,0 +1,17 @@
+{
+  "id": "part14-05-cyclingstatistics",
+  "part": 14,
+  "order": 5,
+  "title": "Cycling statistics",
+  "description": "In the exercise base there is a ready application that illustrates cycling statistics as a line chart. Modify the program so that it uses a bar chart instead of the line chart. All the references to line charts must be removed in the course of the editing.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Cyclingstatistics.java": "\nimport java.util.Scanner;\n\npublic class Cyclingstatistics {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the exercise base there is a ready application that illustrates cycling statistics as a line chart. Modify the program so that it uses a bar chart instead of the line chart. All the references to line charts must be removed in the course of the editing."
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "part11-01-customer",
+  "part": 11,
+  "order": 1,
+  "title": "Customer",
+  "description": "The class diagram below shows the class Customer. Implement the class in the exercise.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Customer.java": "\nimport java.util.Scanner;\n\npublic class Customer {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The class diagram below shows the class Customer. Implement the class in the exercise."
+    ]
+  }
+}

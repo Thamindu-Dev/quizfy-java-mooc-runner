@@ -1,0 +1,33 @@
+{
+  "id": "part05-05-constructoroverload",
+  "part": 5,
+  "order": 5,
+  "title": "Constructor Overload",
+  "description": "The exercise template has a class `Product`, which represents a product in a shop. Every product has a name, location and weight.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Constructoroverload.java": "\nimport java.util.Scanner;\n\npublic class Constructoroverload {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template has a class `Product`, which represents a product in a shop. Every product has a name, location and weight.",
+      "Add the following three constructors to the `Product` class:",
+      "- `public Product(String name)` creates a product with the given name. Its location is set to \"shelf\" and its weight is set to 1.",
+      "-  `public Product(String name, String location)` creates a product with the given name and the given location. Its weight is set to 1.",
+      "- `public Product(String name, int weight)` creates a product with the given name and the given weight. Its location is set to \"shelf\".",
+      "You can test your program with the following code:"
+    ],
+    "codeSnippet": "Product tapeMeasure = new Product(\"Tape measure\");\nProduct plaster = new Product(\"Plaster\", \"home improvement section\");\nProduct tyre = new Product(\"Tyre\", 5);\n\nSystem.out.println(tapeMeasure);\nSystem.out.println(plaster);\nSystem.out.println(tyre);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Tape measure (1 kg) can be found from the shelf",
+          "Plaster (1 kg) can be found from the home improvement section",
+          "Tyre (5 kg) can be found from the shelf"
+        ]
+      }
+    ]
+  }
+}

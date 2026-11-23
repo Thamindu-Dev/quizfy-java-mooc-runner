@@ -1,0 +1,17 @@
+{
+  "id": "part12-05-hashmap",
+  "part": 12,
+  "order": 5,
+  "title": "Hash map (3 parts)",
+  "description": "Implement the class HashMap in the exercise base, following along the lines of the previous example. Unlike the example, implement the class so that it uses the ready-made Java class ArrayList in its internal implementation. There are no tests in the exercise base -- test its functionality with the examples in the material, and with your own experimentation. This exercise is worth three points.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Hashmap.java": "\nimport java.util.Scanner;\n\npublic class Hashmap {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Implement the class HashMap in the exercise base, following along the lines of the previous example. Unlike the example, implement the class so that it uses the ready-made Java class ArrayList in its internal implementation. There are no tests in the exercise base -- test its functionality with the examples in the material, and with your own experimentation. This exercise is worth three points."
+    ]
+  }
+}

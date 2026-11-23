@@ -1,0 +1,43 @@
+{
+  "id": "part08-13-vehicleregistry",
+  "part": 8,
+  "order": 13,
+  "title": "Vehicle Registry (3 parts)",
+  "description": "Equals and hashCode for the LicensePlate class",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Vehicleregistry.java": "\nimport java.util.Scanner;\n\npublic class Vehicleregistry {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Equals and hashCode for the LicensePlate class",
+      "European license plates have two parts: a two letter country code and a nationally unique license number. The license number is made up of numbers and characters. License plates are represented by the following class:",
+      "We want to be able to save the license plates in ArrayLists and to use them as keys in a HashMap. This, as explained above, means that the `equals` and `hashcode` methods need to be overwritten, or they won't work as intended. Implement the methods `equals` and `hashCode` for the LicensePlate class.",
+      "Example program:",
+      "Implement the methods `equals` and `hashCode`. When they are implemented correctly the example program above will print:",
+      "Pairing plates with owners",
+      "Implement the class `VehicleRegistry`, which has the following methods:",
+      "- `public boolean add(LicensePlate licensePlate, String owner)` assigns the owner it received as a parameter to a car that corresponds to the license plate received as a parameter. If the license plate doesn't have an owner, the method returns true. If the license already has an owner attached, the method returns false and does nothing.",
+      "- `public String get(LicensePlate licensePlate)` returns the owner of the car corresponding to the license plate received as a parameter. If the car isn't in the registry, the method returns null.",
+      "- `public boolean remove(LicensePlate licensePlate)` removes the license plate and attached data from the registry. The method returns true if removed successfully and false if the license plate wasn't in the registry.",
+      "Expanded vehicle registry",
+      "Add the following methods to the `VehicleRegistry`:",
+      "- `public void printLicensePlates()`prints the license plates in the registry.",
+      "- `public void printOwners()` prints the owners of the cars in the registry. Each name should only be printed once, even if a particular person owns more than one car.",
+      "Useful tip! In the printOwners method, you can create a list used for remembering the owners that were already printed. If an owner is not on the list, their name is printed and they are added to the list; conversely, if an owner is on the list, their name isn't printed."
+    ],
+    "codeSnippet": "public class LicensePlate {\n\n    // these instance variables have been defined as final, meaning\n    // that once set, their value can't be changed\n    private final String liNumber;\n    private final String country;\n\n    public LicensePlate(String country, String liNumber) {\n        this.liNumber = liNumber;\n        this.country = country;\n    }\n\n    @Override\n    public String toString() {\n        return country + \" \" + liNumber;\n    }",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Finnish: [FI ABC-123, FI UXE-465]",
+          "owners:",
+          "Arto",
+          "Jürgen"
+        ]
+      }
+    ]
+  }
+}

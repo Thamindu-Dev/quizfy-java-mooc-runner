@@ -566,5 +566,1525 @@
     "title": "Advanced Astrology",
     "fileCount": 1,
     "hasDataFiles": false
+  },
+  {
+    "id": "part03-01-thirdelement",
+    "part": 3,
+    "order": 1,
+    "title": "Third element",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-02-secondplusthird",
+    "part": 3,
+    "order": 2,
+    "title": "Second plus third",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-03-indexoutofboundsexception",
+    "part": 3,
+    "order": 3,
+    "title": "IndexOutOfBoundsException",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-04-listsize",
+    "part": 3,
+    "order": 4,
+    "title": "List size",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-05-lastinlist",
+    "part": 3,
+    "order": 5,
+    "title": "Last in list",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-06-firstandlast",
+    "part": 3,
+    "order": 6,
+    "title": "First and last",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-07-rememberthesenumbers",
+    "part": 3,
+    "order": 7,
+    "title": "Remember these numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-08-onlythesenumbers",
+    "part": 3,
+    "order": 8,
+    "title": "Only these numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-09-greatestinlist",
+    "part": 3,
+    "order": 9,
+    "title": "Greatest in list",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-10-indexof",
+    "part": 3,
+    "order": 10,
+    "title": "Index of",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-11-indexofsmallest",
+    "part": 3,
+    "order": 11,
+    "title": "Index of smallest",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-12-sumofalist",
+    "part": 3,
+    "order": 12,
+    "title": "Sum of a list",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-13-averageofalist",
+    "part": 3,
+    "order": 13,
+    "title": "Average of a list",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-14-onthelist",
+    "part": 3,
+    "order": 14,
+    "title": "On the list?",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-15-printinrange",
+    "part": 3,
+    "order": 15,
+    "title": "Print in range",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-16-sum",
+    "part": 3,
+    "order": 16,
+    "title": "Sum",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-17-removelast",
+    "part": 3,
+    "order": 17,
+    "title": "Remove last",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-18-swap",
+    "part": 3,
+    "order": 18,
+    "title": "Swap",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-19-indexwasnotfound",
+    "part": 3,
+    "order": 19,
+    "title": "Index was not found",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-20-sumofarray",
+    "part": 3,
+    "order": 20,
+    "title": "Sum of array",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-21-printneatly",
+    "part": 3,
+    "order": 21,
+    "title": "Print neatly",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-22-printinstars",
+    "part": 3,
+    "order": 22,
+    "title": "Print in stars",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-23-printthrice",
+    "part": 3,
+    "order": 23,
+    "title": "Print thrice",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-24-isittrue",
+    "part": 3,
+    "order": 24,
+    "title": "Is it true",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-25-login",
+    "part": 3,
+    "order": 25,
+    "title": "Login",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-26-linebyline",
+    "part": 3,
+    "order": 26,
+    "title": "Line by line",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-27-avclub",
+    "part": 3,
+    "order": 27,
+    "title": "AV Club",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-28-firstwords",
+    "part": 3,
+    "order": 28,
+    "title": "First words",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-29-lastwords",
+    "part": 3,
+    "order": 29,
+    "title": "LastWords",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-30-ageoftheoldest",
+    "part": 3,
+    "order": 30,
+    "title": "Age of the oldest",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-31-nameoftheoldest",
+    "part": 3,
+    "order": 31,
+    "title": "Name of the oldest",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part03-32-personaldetails",
+    "part": 3,
+    "order": 32,
+    "title": "Personal details",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-01-yourfirstaccount",
+    "part": 4,
+    "order": 1,
+    "title": "Your first account",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-02-yourfirstbanktransfer",
+    "part": 4,
+    "order": 2,
+    "title": "Your first bank transfer",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-03-dogattributes",
+    "part": 4,
+    "order": 3,
+    "title": "Dog attributes",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-04-room",
+    "part": 4,
+    "order": 4,
+    "title": "Room",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-05-whistle",
+    "part": 4,
+    "order": 5,
+    "title": "Whistle",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-06-door",
+    "part": 4,
+    "order": 6,
+    "title": "Door",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-07-product",
+    "part": 4,
+    "order": 7,
+    "title": "Product",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-08-decreasingcounter",
+    "part": 4,
+    "order": 8,
+    "title": "Decreasing counter (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-09-debt",
+    "part": 4,
+    "order": 9,
+    "title": "Debt",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-10-song",
+    "part": 4,
+    "order": 10,
+    "title": "Song",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-11-film",
+    "part": 4,
+    "order": 11,
+    "title": "Film",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-12-gauge",
+    "part": 4,
+    "order": 12,
+    "title": "Gauge",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-13-agent",
+    "part": 4,
+    "order": 13,
+    "title": "Agent",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-14-multiplier",
+    "part": 4,
+    "order": 14,
+    "title": "Multiplier",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-15-numberstatistics",
+    "part": 4,
+    "order": 15,
+    "title": "Statistics (4 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-16-paymentcard",
+    "part": 4,
+    "order": 16,
+    "title": "Payment Card (6 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-17-items",
+    "part": 4,
+    "order": 17,
+    "title": "Items",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-18-personalinformation",
+    "part": 4,
+    "order": 18,
+    "title": "Personal information",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-19-televisionprograms",
+    "part": 4,
+    "order": 19,
+    "title": "Television programs",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-20-books",
+    "part": 4,
+    "order": 20,
+    "title": "Books",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-21-numberofstrings",
+    "part": 4,
+    "order": 21,
+    "title": "Number of Strings",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-22-cubes",
+    "part": 4,
+    "order": 22,
+    "title": "Cubes",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-23-creatinganewfile",
+    "part": 4,
+    "order": 23,
+    "title": "Creating a New File",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-24-printingafile",
+    "part": 4,
+    "order": 24,
+    "title": "Printing a File",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-25-printingaspecifiedfile",
+    "part": 4,
+    "order": 25,
+    "title": "Printing a Specified File",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-26-guestlistfromafile",
+    "part": 4,
+    "order": 26,
+    "title": "Guest List From a File",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-27-isitinthefile",
+    "part": 4,
+    "order": 27,
+    "title": "Is it in the file?",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-28-numbersfromafile",
+    "part": 4,
+    "order": 28,
+    "title": "Numbers From a File",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-29-recordsfromafile",
+    "part": 4,
+    "order": 29,
+    "title": "Records From a File",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-30-storingrecords",
+    "part": 4,
+    "order": 30,
+    "title": "Storing Records",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part04-31-sportstatistics",
+    "part": 4,
+    "order": 31,
+    "title": "Sport Statistics",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-01-oneminute",
+    "part": 5,
+    "order": 1,
+    "title": "One Minute",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-02-book",
+    "part": 5,
+    "order": 2,
+    "title": "Book",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-03-cube",
+    "part": 5,
+    "order": 3,
+    "title": "Cube",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-04-fitbyte",
+    "part": 5,
+    "order": 4,
+    "title": "Fitbyte",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-05-constructoroverload",
+    "part": 5,
+    "order": 5,
+    "title": "Constructor Overload",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-06-overloadedcounter",
+    "part": 5,
+    "order": 6,
+    "title": "Overloaded Counter (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-07-nullpointerexception",
+    "part": 5,
+    "order": 7,
+    "title": "NullPointerException",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-08-biggestpetshop",
+    "part": 5,
+    "order": 8,
+    "title": "Biggest pet shop",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-09-healthstation",
+    "part": 5,
+    "order": 9,
+    "title": "Health station (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-10-cardpayments",
+    "part": 5,
+    "order": 10,
+    "title": "Card payments (4 sections)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-11-comparingapartments",
+    "part": 5,
+    "order": 11,
+    "title": "Comparing apartments (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-12-song",
+    "part": 5,
+    "order": 12,
+    "title": "Song",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-13-identicaltwins",
+    "part": 5,
+    "order": 13,
+    "title": "Identical twins",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-14-books",
+    "part": 5,
+    "order": 14,
+    "title": "Books",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-15-archive",
+    "part": 5,
+    "order": 15,
+    "title": "Archive (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-16-datingapp",
+    "part": 5,
+    "order": 16,
+    "title": "Dating app (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part05-17-money",
+    "part": 5,
+    "order": 17,
+    "title": "Money (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-01-menu",
+    "part": 6,
+    "order": 1,
+    "title": "Menu (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-02-stack",
+    "part": 6,
+    "order": 2,
+    "title": "Stack (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-03-messagingservice",
+    "part": 6,
+    "order": 3,
+    "title": "MessagingService",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-04-printingacollection",
+    "part": 6,
+    "order": 4,
+    "title": "Printing a Collection",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-05-santasworkshop",
+    "part": 6,
+    "order": 5,
+    "title": "Santa",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-06-longestincollection",
+    "part": 6,
+    "order": 6,
+    "title": "Longest in collection",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-07-heightorder",
+    "part": 6,
+    "order": 7,
+    "title": "Height Order (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-08-cargohold",
+    "part": 6,
+    "order": 8,
+    "title": "Cargo hold (7 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-09-simpledictionary",
+    "part": 6,
+    "order": 9,
+    "title": "Simple Dictionary (4 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-10-todolist",
+    "part": 6,
+    "order": 10,
+    "title": "To do list (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-11-averages",
+    "part": 6,
+    "order": 11,
+    "title": "Averages (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-12-jokemanager",
+    "part": 6,
+    "order": 12,
+    "title": "Joke Manager (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part06-13-exercises",
+    "part": 6,
+    "order": 13,
+    "title": "Exercises (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part07-01-liquidcontainers",
+    "part": 7,
+    "order": 1,
+    "title": "Liquid containers (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part07-02-liquidcontainers2",
+    "part": 7,
+    "order": 2,
+    "title": "Liquid Containers 2.0 (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part07-03-sorting",
+    "part": 7,
+    "order": 3,
+    "title": "Sorting (5 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part07-04-readymadesortingalgorithms",
+    "part": 7,
+    "order": 4,
+    "title": "Ready-made Sorting Algorithms",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part07-05-searching",
+    "part": 7,
+    "order": 5,
+    "title": "Searching",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part07-06-gradestatistics",
+    "part": 7,
+    "order": 6,
+    "title": "Grade statistics (4 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part07-07-recipesearch",
+    "part": 7,
+    "order": 7,
+    "title": "Recipe search (4 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part07-08-bigyear",
+    "part": 7,
+    "order": 8,
+    "title": "Big year (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-01-cubes",
+    "part": 8,
+    "order": 1,
+    "title": "Cubes",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-02-averageofpositivenumbers",
+    "part": 8,
+    "order": 2,
+    "title": "Average of positive numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-03-liquidcontainers",
+    "part": 8,
+    "order": 3,
+    "title": "Liquid containers (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-04-liquidcontainers2",
+    "part": 8,
+    "order": 4,
+    "title": "Liquid Containers 2.0 (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-05-todolist",
+    "part": 8,
+    "order": 5,
+    "title": "To do list (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-06-nicknames",
+    "part": 8,
+    "order": 6,
+    "title": "Nicknames",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-07-abbreviations",
+    "part": 8,
+    "order": 7,
+    "title": "Abbreviations",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-08-printmemyhashmap",
+    "part": 8,
+    "order": 8,
+    "title": "Print me my hash map",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-09-printmeanotherhashmap",
+    "part": 8,
+    "order": 9,
+    "title": "Print me another hash map",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-10-ioweyou",
+    "part": 8,
+    "order": 10,
+    "title": "I owe you",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-11-samedate",
+    "part": 8,
+    "order": 11,
+    "title": "Same date",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-12-hasheddate",
+    "part": 8,
+    "order": 12,
+    "title": "Hash for date",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-13-vehicleregistry",
+    "part": 8,
+    "order": 13,
+    "title": "Vehicle Registry (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part08-15-storagefacility",
+    "part": 8,
+    "order": 15,
+    "title": "Storage facility (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-01-abc",
+    "part": 9,
+    "order": 1,
+    "title": "ABC (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-02-personandsubclasses",
+    "part": 9,
+    "order": 2,
+    "title": "Person and subclasses (5 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-03-warehousing",
+    "part": 9,
+    "order": 3,
+    "title": "Warehousing (7 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-04-differentkindsofboxes",
+    "part": 9,
+    "order": 4,
+    "title": "DifferentKindsOfBoxes (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-05-tacoboxes",
+    "part": 9,
+    "order": 5,
+    "title": "TacoBoxes (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-06-interfaceinabox",
+    "part": 9,
+    "order": 6,
+    "title": "Interface In A Box (4 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-07-listasamethodparameter",
+    "part": 9,
+    "order": 7,
+    "title": "List as a method parameter",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-08-mapasamethodparameter",
+    "part": 9,
+    "order": 8,
+    "title": "Map as a method parameter",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-09-setasmethodparameter",
+    "part": 9,
+    "order": 9,
+    "title": "Set as  method parameter",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-10-onlineshop",
+    "part": 9,
+    "order": 10,
+    "title": "Online shop (8 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-11-herds",
+    "part": 9,
+    "order": 11,
+    "title": "Herds (2 points)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part09-12-animals",
+    "part": 9,
+    "order": 12,
+    "title": "Animals (4 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-01-averageofnumbers",
+    "part": 10,
+    "order": 1,
+    "title": "Average of Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-02-averageofselectednumbers",
+    "part": 10,
+    "order": 2,
+    "title": "Average of selected numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-03-positivenumbers",
+    "part": 10,
+    "order": 3,
+    "title": "Positive Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-04-divisible",
+    "part": 10,
+    "order": 4,
+    "title": "Divisible",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-05-luettujenarvojentulostaminen",
+    "part": 10,
+    "order": 5,
+    "title": "Luettujen arvojen tulostaminen",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-06-rajatutluvut",
+    "part": 10,
+    "order": 6,
+    "title": "Rajatut luvut",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-07-uniikitsukunimet",
+    "part": 10,
+    "order": 7,
+    "title": "Uniikit sukunimet",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-08-painonlaskemista",
+    "part": 10,
+    "order": 8,
+    "title": "Painon laskemista (2 osaa)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-09-tiedostonrivit",
+    "part": 10,
+    "order": 9,
+    "title": "Tiedoston rivit",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-10-kirjattiedostosta",
+    "part": 10,
+    "order": 10,
+    "title": "Kirjat tiedostosta",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-11-wageorder",
+    "part": 10,
+    "order": 11,
+    "title": "Wage order",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-12-studentsonalphabeticalorder",
+    "part": 10,
+    "order": 12,
+    "title": "Students on alphabetical order",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-13-literacycomparison",
+    "part": 10,
+    "order": 13,
+    "title": "Literacy comparison (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-14-literature",
+    "part": 10,
+    "order": 14,
+    "title": "Literature (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-15-regularexpressions",
+    "part": 10,
+    "order": 15,
+    "title": "Regular expressions (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-16-enumanditerator",
+    "part": 10,
+    "order": 16,
+    "title": "Enum and Iterator (4 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part10-17-sortthemcards",
+    "part": 10,
+    "order": 17,
+    "title": "Sort them cards! (6 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-01-customer",
+    "part": 11,
+    "order": 1,
+    "title": "Customer",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-02-abookandaplane",
+    "part": 11,
+    "order": 2,
+    "title": "Book and plane",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-03-showandticket",
+    "part": 11,
+    "order": 3,
+    "title": "Show and ticket",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-04-studentanduniversity",
+    "part": 11,
+    "order": 4,
+    "title": "StudentAndUniversity",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-05-theplayerandthebot",
+    "part": 11,
+    "order": 5,
+    "title": "The Player And the Bot",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-06-saveableperson",
+    "part": 11,
+    "order": 6,
+    "title": "Saveable person",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-07-biggerclassdiagram",
+    "part": 11,
+    "order": 7,
+    "title": "Bigger class diagram",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-08-firstpackages",
+    "part": 11,
+    "order": 8,
+    "title": "First packages (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-09-thethreepackages",
+    "part": 11,
+    "order": 9,
+    "title": "Three packages",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-10-flightcontrol",
+    "part": 11,
+    "order": 10,
+    "title": "FlightControl (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-11-validatingparameters",
+    "part": 11,
+    "order": 11,
+    "title": "Validating parameters (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-12-sensorsandtemperature",
+    "part": 11,
+    "order": 12,
+    "title": "Sensors and temperature (4 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part11-13-saveabledictionary",
+    "part": 11,
+    "order": 13,
+    "title": "Saveable Dictionary (4 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part12-01-hideout",
+    "part": 12,
+    "order": 1,
+    "title": "Hideout",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part12-02-pipe",
+    "part": 12,
+    "order": 2,
+    "title": "Pipe",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part12-03-sumtheseforme",
+    "part": 12,
+    "order": 3,
+    "title": "Sum these for me",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part12-04-list",
+    "part": 12,
+    "order": 4,
+    "title": "List (2 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part12-05-hashmap",
+    "part": 12,
+    "order": 5,
+    "title": "Hash map (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part12-06-numbers",
+    "part": 12,
+    "order": 6,
+    "title": "Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part12-07-die",
+    "part": 12,
+    "order": 7,
+    "title": "Die",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part12-08-lottery",
+    "part": 12,
+    "order": 8,
+    "title": "Lottery",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part12-09-arrayasastring",
+    "part": 12,
+    "order": 9,
+    "title": "Array as a string",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part12-10-magicsquare",
+    "part": 12,
+    "order": 10,
+    "title": "Magic square (4 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-01-myfirstapplication",
+    "part": 13,
+    "order": 1,
+    "title": "My first application",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-02-buttonandlabel",
+    "part": 13,
+    "order": 2,
+    "title": "Button and label",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-03-buttonandtextfield",
+    "part": 13,
+    "order": 3,
+    "title": "Button and TextField",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-04-borderpane",
+    "part": 13,
+    "order": 4,
+    "title": "BorderPane",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-05-textstatistics",
+    "part": 13,
+    "order": 5,
+    "title": "Text statistics",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-06-notifier",
+    "part": 13,
+    "order": 6,
+    "title": "Notifier",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-07-textstatisticspart2",
+    "part": 13,
+    "order": 7,
+    "title": "Text statistics, part II",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-08-usertitle",
+    "part": 13,
+    "order": 8,
+    "title": "User",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-09-multipleviews",
+    "part": 13,
+    "order": 9,
+    "title": "Multiple views",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-10-greeter",
+    "part": 13,
+    "order": 10,
+    "title": "Greeter",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-11-joke",
+    "part": 13,
+    "order": 11,
+    "title": "Joke",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-12-vocabularypractice",
+    "part": 13,
+    "order": 12,
+    "title": "Vocabulary practice",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part13-13-tictactoe",
+    "part": 13,
+    "order": 13,
+    "title": "Tic-tac-toe (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part14-01-shanghai",
+    "part": 14,
+    "order": 1,
+    "title": "Shanghai",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part14-02-finnishparties",
+    "part": 14,
+    "order": 2,
+    "title": "Finnish parties",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part14-03-savingscalculator",
+    "part": 14,
+    "order": 3,
+    "title": "Savings calculator (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part14-04-unfairadvertisement",
+    "part": 14,
+    "order": 4,
+    "title": "Unfair Advertisement",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part14-05-cyclingstatistics",
+    "part": 14,
+    "order": 5,
+    "title": "Cycling statistics",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part14-06-smiley",
+    "part": 14,
+    "order": 6,
+    "title": "Smiley",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part14-07-collage",
+    "part": 14,
+    "order": 7,
+    "title": "Collage (3 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part14-08-hurray",
+    "part": 14,
+    "order": 8,
+    "title": "Hurray",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part14-09-asteroids",
+    "part": 14,
+    "order": 9,
+    "title": "Asteroids (4 parts)",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part14-10-database",
+    "part": 14,
+    "order": 10,
+    "title": "Database",
+    "fileCount": 1,
+    "hasDataFiles": false
   }
 ]

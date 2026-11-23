@@ -1,0 +1,46 @@
+{
+  "id": "part03-30-ageoftheoldest",
+  "part": 3,
+  "order": 30,
+  "title": "Age of the oldest",
+  "description": "Write a program that reads names and ages from the user until an empty line is entered. The  name and age are separated by a comma.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Ageoftheoldest.java": "\nimport java.util.Scanner;\n\npublic class Ageoftheoldest {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads names and ages from the user until an empty line is entered. The  name and age are separated by a comma.",
+      "After reading all user input, the program prints the age of the oldest person. You can assume that the user enters at least one person, and that one of the users is older than the others."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "sebastian,2",
+            "isInput": true
+          },
+          {
+            "text": "lucas,2",
+            "isInput": true
+          },
+          {
+            "text": "lily,1",
+            "isInput": true
+          },
+          {
+            "text": "hanna,5",
+            "isInput": true
+          },
+          {
+            "text": "gabriel,10",
+            "isInput": true
+          },
+          "Age of the oldest: 10"
+        ]
+      }
+    ]
+  }
+}

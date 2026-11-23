@@ -1,0 +1,51 @@
+{
+  "id": "part12-06-numbers",
+  "part": 12,
+  "order": 6,
+  "title": "Numbers",
+  "description": "Write a program that prompts the user for how many random numbers should be generated and then prints the numbers. The printed numbers should be within the range `[0, 10]`. Below are some examples.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Numbers.java": "\nimport java.util.Scanner;\n\npublic class Numbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for how many random numbers should be generated and then prints the numbers. The printed numbers should be within the range `[0, 10]`. Below are some examples."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How many random numbers should be printed?",
+          {
+            "text": "4",
+            "isInput": true
+          },
+          "9",
+          "1",
+          "4",
+          "3"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How many random numbers should be printed?",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "9",
+          "6",
+          "0",
+          "9",
+          "10",
+          "7",
+          "3",
+          "3"
+        ]
+      }
+    ]
+  }
+}

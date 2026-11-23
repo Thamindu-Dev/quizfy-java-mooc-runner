@@ -1,0 +1,32 @@
+{
+  "id": "part03-22-printinstars",
+  "part": 3,
+  "order": 22,
+  "title": "Print in stars",
+  "description": "Complete the method `public static void printArrayInStars(int[] array)` in the class named 'Printer' to make it print a row of stars for each number in the array. The amount of stars on each row is defined by the corresponding number in the array.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Printinstars.java": "\nimport java.util.Scanner;\n\npublic class Printinstars {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Complete the method `public static void printArrayInStars(int[] array)` in the class named 'Printer' to make it print a row of stars for each number in the array. The amount of stars on each row is defined by the corresponding number in the array.",
+      "You can try out the printing with this example:",
+      "The 0th element of the array is 5, so the first line has 5 stars. The next one has 1 etc."
+    ],
+    "codeSnippet": "int[] array = {5, 1, 3, 4, 2};\nprintArrayInStars(array);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "*****",
+          "*",
+          "***",
+          "****",
+          "**"
+        ]
+      }
+    ]
+  }
+}

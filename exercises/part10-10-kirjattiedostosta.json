@@ -1,0 +1,20 @@
+{
+  "id": "part10-10-kirjattiedostosta",
+  "part": 10,
+  "order": 10,
+  "title": "Kirjat tiedostosta",
+  "description": "-->",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Kirjattiedostosta.java": "\nimport java.util.Scanner;\n\npublic class Kirjattiedostosta {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "-->",
+      "Add the method `public static List readBooks(String file)` for the class `BooksFromFile`. It should read the file given as the parameter and forms book data from it.",
+      "The exercise template contains the class `Book`, which is used for describing a book. You should presume that the book files are in the following format:",
+      "The name and the author of the book are processed as strings, and the publishing year and the page count are processed as integers.\nExample of contents of a book file:"
+    ]
+  }
+}

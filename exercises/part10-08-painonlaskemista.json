@@ -1,0 +1,18 @@
+{
+  "id": "part10-08-painonlaskemista",
+  "part": 10,
+  "order": 8,
+  "title": "Painon laskemista (2 osaa)",
+  "description": "-->",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Painonlaskemista.java": "\nimport java.util.Scanner;\n\npublic class Painonlaskemista {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "-->",
+      "The exercise template includes the probably familiar project \"Cargo hold\". However, in this exercise you need to make the for-loop using methods to use streams. The final product should not have any `while (...)` or `for (...)`-loops."
+    ]
+  }
+}

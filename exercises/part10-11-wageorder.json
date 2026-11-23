@@ -1,0 +1,17 @@
+{
+  "id": "part10-11-wageorder",
+  "part": 10,
+  "order": 11,
+  "title": "Wage order",
+  "description": "You are provided with the class Human. A human has a name and wage information. Implement the interface `Comparable` in a way, such that the overridden `compareTo` method sorts the humans according to wage from largest to smallest salary.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Wageorder.java": "\nimport java.util.Scanner;\n\npublic class Wageorder {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "You are provided with the class Human. A human has a name and wage information. Implement the interface `Comparable` in a way, such that the overridden `compareTo` method sorts the humans according to wage from largest to smallest salary."
+    ]
+  }
+}

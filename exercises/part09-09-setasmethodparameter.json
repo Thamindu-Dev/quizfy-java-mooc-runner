@@ -1,0 +1,28 @@
+{
+  "id": "part09-09-setasmethodparameter",
+  "part": 9,
+  "order": 9,
+  "title": "Set as  method parameter",
+  "description": "In the Main-class, implement the static method `returnSize`, which receives a Set object as a parameter and returns its size.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Setasmethodparameter.java": "\nimport java.util.Scanner;\n\npublic class Setasmethodparameter {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the Main-class, implement the static method `returnSize`, which receives a Set object as a parameter and returns its size.",
+      "The method should work e.g. like this:",
+      "Prints:"
+    ],
+    "codeSnippet": "Set<String> names = new HashSet<>();\nnames.add(\"first\");\nnames.add(\"first\");\nnames.add(\"second\");\nnames.add(\"second\");\nnames.add(\"second\");\n\nSystem.out.println(returnSize(names));",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "2"
+        ]
+      }
+    ]
+  }
+}

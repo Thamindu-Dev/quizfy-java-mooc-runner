@@ -1,0 +1,25 @@
+{
+  "id": "part14-10-database",
+  "part": 14,
+  "order": 10,
+  "title": "Database",
+  "description": "The exercise base contains an application that has the H2 database configured as a dependency. It also includes the following four classes:",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Database.java": "\nimport java.util.Scanner;\n\npublic class Database {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise base contains an application that has the H2 database configured as a dependency. It also includes the following four classes:",
+      "- `Todo`: a class that represents a task that is to be done. Each todo has a numerical identifier (id), a name, a description, and the information abot whether it has been done.",
+      "- `TodoDao`: a class that is used to store todos to the database. The word \"dao\" comes from the phrase \"data access object\". The class offers methods for listing, adding, setting as completed, and removing todos. Removing or setting as done is done on the basis of the id. The class constructor receives the location of the database.",
+      "- `UserInterface`: a class that is used to ask the user for instructions for what to do. The constructor receives a Scanner object and a TodoDao object as its parameters. Calling the `start` method starts the user interface, after which the user controls the program with their keyboard input.",
+      "- `Program`: a class that serves as a starting point for the program.",
+      "In this exercise it is your task to modify the user interface so that the user of the program can add new todos, or list, mark as done, or remove existing ones. Don't do changes in the classes `Todo`, `TodoDao`, or `Program`.",
+      "The finished program is expected to behave in the following manner:",
+      "The text user interface in this exercise does not differ in any essential way from the earlier text UIs we have created. The difference is that the data is being stored in a database: *the stored data will be available for the program when it is started the next time.*"
+    ],
+    "codeSnippet": "Enter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 1\nListing the database contents\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 2\nAdding a new todo\nEnter name\ncode\nEnter description\ncode a whole lot\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 2\nAdding a new todo\nEnter name\nprepare food\nEnter description\nrice porridge\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 1\nListing the database contents\nTodo{id=1, name=code, description=code a whole lot, done=false}\nTodo{id=2, name=prepare food, description=rice porridge, done=false}\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 3\n\nWhich todo should be marked as done (give the id)?\n2\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 1\nListing the database contents\nTodo{id=1, name=code, description=code a whole lot, done=false}\nTodo{id=2, name=prepare food, description=rice porridge, done=true}\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 4\n\nWhich todo should be removed (give the id)?\n2\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 1\nListing the database contents\nTodo{id=1, name=code, description=code a whole lot, done=false}\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 3\n\nWhich todo should be marked as done (give the id)?\n1\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 1\nListing the database contents\nTodo{id=1, name=code, description=code a whole lot, done=true}\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> x\nThank you!"
+  }
+}

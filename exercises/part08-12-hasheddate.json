@@ -1,0 +1,18 @@
+{
+  "id": "part08-12-hasheddate",
+  "part": 8,
+  "order": 12,
+  "title": "Hash for date",
+  "description": "Let's expand the `SimpleDate` class from the previous exercise to also have its own `hashCode` method.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Hasheddate.java": "\nimport java.util.Scanner;\n\npublic class Hasheddate {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Let's expand the `SimpleDate` class from the previous exercise to also have its own `hashCode` method.",
+      "Create a method `public int hashCode()` for the `SimpleDate` class, which calculates a hash for the the SimpleDate object. Implement the calculation of the hash in way that there are as few similar hashes as possible between the years 1900 and 2100."
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "part05-07-nullpointerexception",
+  "part": 5,
+  "order": 7,
+  "title": "NullPointerException",
+  "description": "Implement a program that causes the NullPointerException error. The error should occur directly after starting the program -- don't wait to read input from the user, for instance.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Nullpointerexception.java": "\nimport java.util.Scanner;\n\npublic class Nullpointerexception {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Implement a program that causes the NullPointerException error. The error should occur directly after starting the program -- don't wait to read input from the user, for instance."
+    ]
+  }
+}

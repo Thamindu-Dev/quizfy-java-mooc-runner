@@ -1,0 +1,17 @@
+{
+  "id": "part12-04-list",
+  "part": 12,
+  "order": 4,
+  "title": "List (2 parts)",
+  "description": "Following the example above, implement a class `List`. This exercise has no tests -- test your class using the examples in the material and your own tests.\nThis exercise is worth 2 points.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/List.java": "\nimport java.util.Scanner;\n\npublic class List {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Following the example above, implement a class `List`. This exercise has no tests -- test your class using the examples in the material and your own tests.\nThis exercise is worth 2 points."
+    ]
+  }
+}

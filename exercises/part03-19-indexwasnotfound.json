@@ -1,0 +1,52 @@
+{
+  "id": "part03-19-indexwasnotfound",
+  "part": 3,
+  "order": 19,
+  "title": "Index was not found",
+  "description": "The exercise template already has an array containing numbers. Complete the program so that it asks the user for a number to search in the array. If the array contains the given number, the program tells the index containing the number. If the array doesn't contain the given number, the program will advise that the number wasn't found.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Indexwasnotfound.java": "\nimport java.util.Scanner;\n\npublic class Indexwasnotfound {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template already has an array containing numbers. Complete the program so that it asks the user for a number to search in the array. If the array contains the given number, the program tells the index containing the number. If the array doesn't contain the given number, the program will advise that the number wasn't found."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Search for?",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "3 is at index 4."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Search for?",
+          {
+            "text": "7",
+            "isInput": true
+          },
+          "7 is at index 7."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Search for?",
+          {
+            "text": "22",
+            "isInput": true
+          },
+          "22 was not found."
+        ]
+      }
+    ]
+  }
+}

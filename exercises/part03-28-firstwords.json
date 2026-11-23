@@ -1,0 +1,34 @@
+{
+  "id": "part03-28-firstwords",
+  "part": 3,
+  "order": 28,
+  "title": "First words",
+  "description": "Write a program that reads user input until an empty line is entered. For each non-empty line the program splits the string by spaces ` `  and prints the first part of the string.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Firstwords.java": "\nimport java.util.Scanner;\n\npublic class Firstwords {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads user input until an empty line is entered. For each non-empty line the program splits the string by spaces ` `  and prints the first part of the string."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "one two three four",
+            "isInput": true
+          },
+          "one",
+          {
+            "text": "this is a very important message",
+            "isInput": true
+          },
+          "this"
+        ]
+      }
+    ]
+  }
+}

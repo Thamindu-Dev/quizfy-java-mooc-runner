@@ -1,0 +1,17 @@
+{
+  "id": "part11-04-studentanduniversity",
+  "part": 11,
+  "order": 4,
+  "title": "StudentAndUniversity",
+  "description": "Two classes, Student and University, are depicted below, as well as the connection between them. Implement these classes in the exercise base.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Studentanduniversity.java": "\nimport java.util.Scanner;\n\npublic class Studentanduniversity {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Two classes, Student and University, are depicted below, as well as the connection between them. Implement these classes in the exercise base."
+    ]
+  }
+}

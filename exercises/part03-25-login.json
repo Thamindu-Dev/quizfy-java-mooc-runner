@@ -1,0 +1,71 @@
+{
+  "id": "part03-25-login",
+  "part": 3,
+  "order": 25,
+  "title": "Login",
+  "description": "Write a program that recognizes the following users:",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Login.java": "\nimport java.util.Scanner;\n\npublic class Login {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that recognizes the following users:",
+      "| username | password |\n| -------- | -------- |\n| alex     | sunshine |\n| emma     | haskell  |",
+      "The program either shows a personal message or informs of an incorrect username or password.",
+      "**NB!** You can't compare strings with `==`!",
+      "**NB!** Logins should not be implemented like this in real life! You can become familiar with safer ways to implement logins on courses focusing on web programming."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Enter username:",
+          {
+            "text": "alex",
+            "isInput": true
+          },
+          "Enter password:",
+          {
+            "text": "sunshine",
+            "isInput": true
+          },
+          "You have successfully logged in!"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Enter username:",
+          {
+            "text": "emma",
+            "isInput": true
+          },
+          "Enter password:",
+          {
+            "text": "haskell",
+            "isInput": true
+          },
+          "You have successfully logged in!"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Enter username:",
+          {
+            "text": "alex",
+            "isInput": true
+          },
+          "Enter password:",
+          {
+            "text": "thunderstorm",
+            "isInput": true
+          },
+          "Incorrect username or password!"
+        ]
+      }
+    ]
+  }
+}

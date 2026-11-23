@@ -1,0 +1,18 @@
+{
+  "id": "part11-05-theplayerandthebot",
+  "part": 11,
+  "order": 5,
+  "title": "The Player And the Bot",
+  "description": "The classes Player and Bot and the connection between them are depicted in the class diagram below. Implement these classes in the exercise.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Theplayerandthebot.java": "\nimport java.util.Scanner;\n\npublic class Theplayerandthebot {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The classes Player and Bot and the connection between them are depicted in the class diagram below. Implement these classes in the exercise.",
+      "A model answer is not supplied for this exercise."
+    ]
+  }
+}

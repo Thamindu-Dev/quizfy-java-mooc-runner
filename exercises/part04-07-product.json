@@ -1,0 +1,28 @@
+{
+  "id": "part04-07-product",
+  "part": 4,
+  "order": 7,
+  "title": "Product",
+  "description": "Create a class `Product` that represents a store product. The product should have a price (double), a quantity (int) and a name (String).",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Product.java": "\nimport java.util.Scanner;\n\npublic class Product {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a class `Product` that represents a store product. The product should have a price (double), a quantity (int) and a name (String).",
+      "The class should have:",
+      "- the constructor `public Product (String initialName, double initialPrice, int initialQuantity)`\n- a method `public void printProduct()` that prints product information in the following format:",
+      "The output above is based on the product being assigned the name `banana`, with a price of `1.1`, and a quantity of `13` ."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Banana, price 1.1, 13 pcs"
+        ]
+      }
+    ]
+  }
+}

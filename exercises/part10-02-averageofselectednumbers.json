@@ -1,0 +1,77 @@
+{
+  "id": "part10-02-averageofselectednumbers",
+  "part": 10,
+  "order": 2,
+  "title": "Average of selected numbers",
+  "description": "Implement a program, which reads user input. If the user input is \"end\", program stops reading input. The rest of the input is numbers.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Averageofselectednumbers.java": "\nimport java.util.Scanner;\n\npublic class Averageofselectednumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Implement a program, which reads user input. If the user input is \"end\", program stops reading input. The rest of the input is numbers.",
+      "Then user is asked if the program should print the average of all the positive numbers, or the average of all the negative numbers (n or p). If the user selects \"n\", the average of all the negative numbers is printed. Otherwise the average of all the positive numbers is printed.",
+      "Use streams to calculate the average and filter the numbers!"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Input numbers, type \"end\" to stop.",
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "end",
+            "isInput": true
+          },
+          "Print the average of the negative numbers or the positive numbers? (n/p)",
+          {
+            "text": "n",
+            "isInput": true
+          },
+          "Average of the negative numbers: -1.0"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Input numbers, type \"end\" to stop.",
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "end",
+            "isInput": true
+          },
+          "Print the average of the negative numbers or the positive numbers? (n/p)",
+          {
+            "text": "p",
+            "isInput": true
+          },
+          "Average of the positive numbers: 1.5"
+        ]
+      }
+    ]
+  }
+}

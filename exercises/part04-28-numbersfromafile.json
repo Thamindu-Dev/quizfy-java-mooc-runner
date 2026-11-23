@@ -1,0 +1,67 @@
+{
+  "id": "part04-28-numbersfromafile",
+  "part": 4,
+  "order": 28,
+  "title": "Numbers From a File",
+  "description": "Write a program that prompts the user for a filename, as well as the upper and lower bounds for the accepted range of numbers. Then the program reads the numbers contained in the file (each number is on its own line) and only accounts for the numbers which are inside the given range. Finally, the program should print the number of numbers that were inside the given range.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Numbersfromafile.java": "\nimport java.util.Scanner;\n\npublic class Numbersfromafile {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for a filename, as well as the upper and lower bounds for the accepted range of numbers. Then the program reads the numbers contained in the file (each number is on its own line) and only accounts for the numbers which are inside the given range. Finally, the program should print the number of numbers that were inside the given range.",
+      "You can convert a string-type integer read from a file into a proper integer using the command `Integer.valueOf` (just as when handling input from a user).",
+      "**NB**! The exercise template comes with two files, `numbers-1.txt` and `numbers-2.txt` that have the following contents. Do not change the contents of these files.",
+      "numbers-1.txt:",
+      "300\n9\n20\n15",
+      "numbers-2.txt:",
+      "123\n-5\n12\n67\n-300\n1902"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "File?",
+          {
+            "text": "numbers-1.txt",
+            "isInput": true
+          },
+          "Lower bound?",
+          {
+            "text": "15",
+            "isInput": true
+          },
+          "Upper bound?",
+          {
+            "text": "20",
+            "isInput": true
+          },
+          "Numbers: 2"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "File?",
+          {
+            "text": "numbers-1.txt",
+            "isInput": true
+          },
+          "Lower bound?",
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Upper bound?",
+          {
+            "text": "300",
+            "isInput": true
+          },
+          "Numbers: 4"
+        ]
+      }
+    ]
+  }
+}

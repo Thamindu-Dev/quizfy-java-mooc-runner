@@ -1,0 +1,17 @@
+{
+  "id": "part13-02-buttonandlabel",
+  "part": 13,
+  "order": 2,
+  "title": "Button and label",
+  "description": "Following the example above create a user interface containing a Button and a Label to the class in the exercise template.\nThe Label must be either on top or on the left side of the Button.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Buttonandlabel.java": "\nimport java.util.Scanner;\n\npublic class Buttonandlabel {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Following the example above create a user interface containing a Button and a Label to the class in the exercise template.\nThe Label must be either on top or on the left side of the Button."
+    ]
+  }
+}

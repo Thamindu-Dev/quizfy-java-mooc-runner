@@ -1,0 +1,26 @@
+{
+  "id": "part05-12-song",
+  "part": 5,
+  "order": 12,
+  "title": "Song",
+  "description": "In the exercise base there is a class called `Song` that can be used to create new objects that represent songs. Add to that class the `equals` method so that the similarity of songs can be examined.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Song.java": "\nimport java.util.Scanner;\n\npublic class Song {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the exercise base there is a class called `Song` that can be used to create new objects that represent songs. Add to that class the `equals` method so that the similarity of songs can be examined."
+    ],
+    "codeSnippet": "Song jackSparrow = new Song(\"The Lonely Island\", \"Jack Sparrow\", 196);\nSong anotherSparrow = new Song(\"The Lonely Island\", \"Jack Sparrow\", 196);\n\nif (jackSparrow.equals(anotherSparrow)) {\n    System.out.println(\"Songs are equal.\");\n}\n\nif (jackSparrow.equals(\"Another object\")) {\n    System.out.println(\"Strange things are afoot.\");\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Songs are equal"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "part03-27-avclub",
+  "part": 3,
+  "order": 27,
+  "title": "AV Club",
+  "description": "Write a program that reads user input until an empty line. For each non-empty string, the program splits the string by spaces ` ` and then prints the pieces that contain `av`, each on a new line.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Avclub.java": "\nimport java.util.Scanner;\n\npublic class Avclub {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads user input until an empty line. For each non-empty string, the program splits the string by spaces ` ` and then prints the pieces that contain `av`, each on a new line.",
+      "Tip! Strings have a `contains`-method, which tells if a string contains another string. It works like this:"
+    ],
+    "codeSnippet": "String text = \"volcanologist\";\n\nif (text.contains(\"can\")) {\n    System.out.println(\"can was found\");\n}\n\nif (!text.contains(\"tin\")) {\n    System.out.println(\"tin wasn't found\");\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "java is a programming language",
+            "isInput": true
+          },
+          "java",
+          {
+            "text": "navy blue shirt",
+            "isInput": true
+          },
+          "navy"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "Do you have a favorite flavor",
+            "isInput": true
+          },
+          "have",
+          "favorite",
+          "flavor",
+          {
+            "text": "was it a cat?",
+            "isInput": true
+          }
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "can was found",
+          "tin wasn't found"
+        ]
+      }
+    ]
+  }
+}

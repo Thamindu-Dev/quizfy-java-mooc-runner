@@ -1,0 +1,74 @@
+{
+  "id": "part03-32-personaldetails",
+  "part": 3,
+  "order": 32,
+  "title": "Personal details",
+  "description": "Write a program that reads names and birth years from the user until an empty line is entered. The  name and birth year are separated by a comma.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Personaldetails.java": "\nimport java.util.Scanner;\n\npublic class Personaldetails {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads names and birth years from the user until an empty line is entered. The  name and birth year are separated by a comma.",
+      "After that the program prints the longest name and the average of the birth years. If multiple names are equally longest, you can print any of them. You can assume that the user enters at least one person."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "sebastian,2017",
+            "isInput": true
+          },
+          {
+            "text": "lucas,2017",
+            "isInput": true
+          },
+          {
+            "text": "lily,2017",
+            "isInput": true
+          },
+          {
+            "text": "hanna,2014",
+            "isInput": true
+          },
+          {
+            "text": "gabriel,2009",
+            "isInput": true
+          },
+          "Longest name: sebastian",
+          "Average of the birth years: 2014.8"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "sauli,1948",
+            "isInput": true
+          },
+          {
+            "text": "tarja,1943",
+            "isInput": true
+          },
+          {
+            "text": "martti,1936",
+            "isInput": true
+          },
+          {
+            "text": "mauno,1923",
+            "isInput": true
+          },
+          {
+            "text": "urho,1900",
+            "isInput": true
+          },
+          "Longest name: martti",
+          "Average of the birth years: 1930.0"
+        ]
+      }
+    ]
+  }
+}

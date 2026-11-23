@@ -1,0 +1,18 @@
+{
+  "id": "part10-09-tiedostonrivit",
+  "part": 10,
+  "order": 9,
+  "title": "Tiedoston rivit",
+  "description": "-->",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Tiedostonrivit.java": "\nimport java.util.Scanner;\n\npublic class Tiedostonrivit {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "-->",
+      "Implement the static method `public static List read(String file)`, which reads the file with the filename of the parameter and returns the lines as a string list."
+    ]
+  }
+}

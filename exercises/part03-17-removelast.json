@@ -1,0 +1,27 @@
+{
+  "id": "part03-17-removelast",
+  "part": 3,
+  "order": 17,
+  "title": "Remove last",
+  "description": "Create the method `public static void removeLast(ArrayList strings)` in the exercise template. The method should remove the last value in the list it receives as a parameter. If the list is empty, the method does nothing.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Removelast.java": "\nimport java.util.Scanner;\n\npublic class Removelast {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create the method `public static void removeLast(ArrayList strings)` in the exercise template. The method should remove the last value in the list it receives as a parameter. If the list is empty, the method does nothing."
+    ],
+    "codeSnippet": "ArrayList<String> strings = new ArrayList<>();\n\nstrings.add(\"First\");\nstrings.add(\"Second\");\nstrings.add(\"Third\");\n\nSystem.out.println(strings);\n\nremoveLast(strings);\nremoveLast(strings);\n\nSystem.out.println(strings);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "[First, Second, Third]",
+          "[First]"
+        ]
+      }
+    ]
+  }
+}

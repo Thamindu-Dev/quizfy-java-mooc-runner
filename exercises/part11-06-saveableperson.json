@@ -1,0 +1,18 @@
+{
+  "id": "part11-06-saveableperson",
+  "part": 11,
+  "order": 6,
+  "title": "Saveable person",
+  "description": "Below you'll see the interface Saveable and the class Person. Implement the contents of this class diagram in the exercise base.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Saveableperson.java": "\nimport java.util.Scanner;\n\npublic class Saveableperson {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Below you'll see the interface Saveable and the class Person. Implement the contents of this class diagram in the exercise base.",
+      "> Saveable ||+save():void;+delete():void;+load(address:String):void]^-.-[Person|-name:String;-address:String]\">"
+    ]
+  }
+}

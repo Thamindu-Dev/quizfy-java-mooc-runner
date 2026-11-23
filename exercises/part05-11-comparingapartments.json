@@ -1,0 +1,28 @@
+{
+  "id": "part05-11-comparingapartments",
+  "part": 5,
+  "order": 11,
+  "title": "Comparing apartments (3 parts)",
+  "description": "In the estate agent's information system, an apartment that is on sale is represented by an object that is instantiated from the following class:",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Comparingapartments.java": "\nimport java.util.Scanner;\n\npublic class Comparingapartments {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the estate agent's information system, an apartment that is on sale is represented by an object that is instantiated from the following class:",
+      "Your task is to create a few methods that can be used to compare apartments that are being sold.",
+      "Comparing sizes",
+      "Create a method `public boolean largerThan(Apartment compared)` that returns true if the apartment object whose method is called has a larger total area than the apartment object that is being compared.",
+      "An example of how the method should work:",
+      "Price difference",
+      "Create a method `public int priceDifference(Apartment compared)` that returns the price difference of the apartment object whose method was called and the apartment object received as the parameter. The price difference is the absolute value of the difference of the prices (price can be calculated by multiplying the price per square by the number of squares).",
+      "An example of how the method should work:",
+      "More expensive?",
+      "Write a method `public boolean moreExpensiveThan(Apartment compared)` that returns true if the apartment object whose method is called is more expensive than the apartment object being compared.",
+      "An example of how the method should work:"
+    ],
+    "codeSnippet": "public class Apartment {\n    private int rooms;\n    private int squares;\n    private int pricePerSquare;\n\n    public Apartment(int rooms, int squares, int pricePerSquare) {\n        this.rooms = rooms;\n        this.squares = squares;\n        this.pricePerSquare = pricePerSquare;\n    }\n}"
+  }
+}

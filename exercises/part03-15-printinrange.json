@@ -1,0 +1,34 @@
+{
+  "id": "part03-15-printinrange",
+  "part": 3,
+  "order": 15,
+  "title": "Print in range",
+  "description": "Create the method `public static void printNumbersInRange(ArrayList numbers, int lowerLimit, int upperLimit)` in the exercise template. The method prints the numbers in the given list whose values are in the range [lowerLimit, upperLimit]. A few examples of using the method are supplied below.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Printinrange.java": "\nimport java.util.Scanner;\n\npublic class Printinrange {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create the method `public static void printNumbersInRange(ArrayList numbers, int lowerLimit, int upperLimit)` in the exercise template. The method prints the numbers in the given list whose values are in the range [lowerLimit, upperLimit]. A few examples of using the method are supplied below."
+    ],
+    "codeSnippet": "ArrayList<Integer> numbers = new ArrayList<>();\nnumbers.add(3);\nnumbers.add(2);\nnumbers.add(6);\nnumbers.add(-1);\nnumbers.add(5);\nnumbers.add(1);\n\nSystem.out.println(\"The numbers in the range [0, 5]\");\nprintNumbersInRange(numbers, 0, 5);\n\nSystem.out.println(\"The numbers in the range [3, 10]\");\nprintNumbersInRange(numbers, 3, 10);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "The numbers in the range [0, 5]",
+          "3",
+          "2",
+          "5",
+          "1",
+          "The numbers in the range [3, 10]",
+          "3",
+          "6",
+          "5"
+        ]
+      }
+    ]
+  }
+}

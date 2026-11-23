@@ -1,0 +1,27 @@
+{
+  "id": "part06-06-longestincollection",
+  "part": 6,
+  "order": 6,
+  "title": "Longest in collection",
+  "description": "The exercise template comes with the class `SimpleCollection` that's familiar from previous exercises. Implement the method `public String longest()` for the class, which returns the longest string of the collection. If the collection is empty, the method should return a `null` reference.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Longestincollection.java": "\nimport java.util.Scanner;\n\npublic class Longestincollection {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template comes with the class `SimpleCollection` that's familiar from previous exercises. Implement the method `public String longest()` for the class, which returns the longest string of the collection. If the collection is empty, the method should return a `null` reference."
+    ],
+    "codeSnippet": "SimpleCollection j = new SimpleCollection(\"characters\");\nSystem.out.println(\"Longest: \" + j.longest());\n\nj.add(\"magneto\");\nj.add(\"mystique\");\nj.add(\"phoenix\");\n\nSystem.out.println(\"Longest: \" + j.longest());",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Longest: null",
+          "Longest: mystique"
+        ]
+      }
+    ]
+  }
+}

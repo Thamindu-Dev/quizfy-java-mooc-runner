@@ -1,0 +1,19 @@
+{
+  "id": "part13-10-greeter",
+  "part": 13,
+  "order": 10,
+  "title": "Greeter",
+  "description": "In the exercise template there is a class called GreeterApplication. Create in it an application with two views. The first view should have a text field that's used to ask for the user's name. The second view then shows the user a greeting text. The greeting should be of the form \"Welcome name!\" where the user's name is inserted in place of 'name'.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Greeter.java": "\nimport java.util.Scanner;\n\npublic class Greeter {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the exercise template there is a class called GreeterApplication. Create in it an application with two views. The first view should have a text field that's used to ask for the user's name. The second view then shows the user a greeting text. The greeting should be of the form \"Welcome name!\" where the user's name is inserted in place of 'name'.",
+      "An example of how the program should work:",
+      "!' appears\"/>"
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "part03-06-firstandlast",
+  "part": 3,
+  "order": 6,
+  "title": "First and last",
+  "description": "In the exercise template there is a program that reads inputs from the user and adds them to a list. Reading is stopped once the user enters an empty string.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Firstandlast.java": "\nimport java.util.Scanner;\n\npublic class Firstandlast {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the exercise template there is a program that reads inputs from the user and adds them to a list. Reading is stopped once the user enters an empty string.",
+      "Modify the program to print both the first and the last values after the reading ends. You may suppose that at least two values are read into the list."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "Tom",
+            "isInput": true
+          },
+          {
+            "text": "Emma",
+            "isInput": true
+          },
+          {
+            "text": "Alex",
+            "isInput": true
+          },
+          {
+            "text": "Mary",
+            "isInput": true
+          },
+          "Tom",
+          "Mary"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "Juno",
+            "isInput": true
+          },
+          {
+            "text": "Elizabeth",
+            "isInput": true
+          },
+          {
+            "text": "Mason",
+            "isInput": true
+          },
+          {
+            "text": "Irene",
+            "isInput": true
+          },
+          {
+            "text": "Olivia",
+            "isInput": true
+          },
+          {
+            "text": "Liam",
+            "isInput": true
+          },
+          {
+            "text": "Ida",
+            "isInput": true
+          },
+          {
+            "text": "Christopher",
+            "isInput": true
+          },
+          {
+            "text": "Mark",
+            "isInput": true
+          },
+          {
+            "text": "Sylvester",
+            "isInput": true
+          },
+          {
+            "text": "Oscar",
+            "isInput": true
+          },
+          "Juno",
+          "Oscar"
+        ]
+      }
+    ]
+  }
+}

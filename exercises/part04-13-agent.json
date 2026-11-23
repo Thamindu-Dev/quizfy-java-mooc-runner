@@ -1,0 +1,35 @@
+{
+  "id": "part04-13-agent",
+  "part": 4,
+  "order": 13,
+  "title": "Agent",
+  "description": "The exercise template defines an Agent class, having a first name and last name. A `print` method is defined for the class that creates the following string representation.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Agent.java": "\nimport java.util.Scanner;\n\npublic class Agent {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template defines an Agent class, having a first name and last name. A `print` method is defined for the class that creates the following string representation.",
+      "Remove the class' `print` method, and create a `public String toString()` method for it, which returns the string representation shown above.",
+      "The class should function as follows."
+    ],
+    "codeSnippet": "Agent bond = new Agent(\"James\", \"Bond\");\nbond.print();",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "My name is Bond, James Bond"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "My name is Bond, James Bond",
+          "My name is Bond, Ionic Bond"
+        ]
+      }
+    ]
+  }
+}

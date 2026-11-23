@@ -1,0 +1,36 @@
+{
+  "id": "part08-09-printmeanotherhashmap",
+  "part": 8,
+  "order": 9,
+  "title": "Print me another hash map",
+  "description": "The exercise template contains the already familiar classes `Book` and `Program`.\nIn the class `Program` implement the following class methods:",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Printmeanotherhashmap.java": "\nimport java.util.Scanner;\n\npublic class Printmeanotherhashmap {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template contains the already familiar classes `Book` and `Program`.\nIn the class `Program` implement the following class methods:",
+      "- `public static void printValues(HashMap hashmap)`, which prints all the values in the hashmap given as a parameter using\n the toString method of the Book objects.",
+      "- `public static void printValueIfNameContains(HashMap hashmap, String text)`, which prints only the Books in the given hashmap which name contains the given string. You can find out the name of a Book with the method `getName`.",
+      "An example of using the class methods:",
+      "NB! The order of the output may vary. The implementation of a hashmap does not guarantee the order of the objects in it."
+    ],
+    "codeSnippet": "HashMap<String, Book> hashmap = new HashMap<>();\nhashmap.put(\"sense\", new Book(\"Sense and Sensibility\", 1811, \"...\"));\nhashmap.put(\"prejudice\", new Book(\"Pride and prejudice\", 1813, \"....\"));\n\nprintValues(hashmap);\nSystem.out.println(\"---\");\nprintValueIfNameContains(hashmap, \"prejud\");",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Name: Pride and prejudice (1813)",
+          "Contents: ...",
+          "Name: Sense and Sensibility (1811)",
+          "Contents: ...",
+          "---",
+          "Name: Pride and prejudice (1813)",
+          "Contents: ..."
+        ]
+      }
+    ]
+  }
+}

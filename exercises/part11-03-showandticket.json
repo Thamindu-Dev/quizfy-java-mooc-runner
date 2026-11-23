@@ -1,0 +1,18 @@
+{
+  "id": "part11-03-showandticket",
+  "part": 11,
+  "order": 3,
+  "title": "Show and ticket",
+  "description": "In the class diagram below, the classes Show and Ticket and their connection are depicted. The star is at the Ticket end of the connection -- in this case the star gives some extra information of the connection; even though a show doesn't know about the tickets that have been sold to it, you can still sell many tickets to one show.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Showandticket.java": "\nimport java.util.Scanner;\n\npublic class Showandticket {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the class diagram below, the classes Show and Ticket and their connection are depicted. The star is at the Ticket end of the connection -- in this case the star gives some extra information of the connection; even though a show doesn't know about the tickets that have been sold to it, you can still sell many tickets to one show.",
+      "Implement the classes in the diagram in the exercise base."
+    ]
+  }
+}

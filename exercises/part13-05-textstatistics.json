@@ -1,0 +1,17 @@
+{
+  "id": "part13-05-textstatistics",
+  "part": 13,
+  "order": 5,
+  "title": "Text statistics",
+  "description": "Create an applicaton in the class provided in the exercise template. Use the BorderPane class for the layout. In the center there should be a text field created using the TextArea class, and along the bottom edge there should be three textComponents. Place the text components along the bottom edge into a HBox object.The first text component should have the text \"Letters: 0\", the second text component should have the text \"Words: 0\", and the third text component should have the text \"The longest word is:\".",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Textstatistics.java": "\nimport java.util.Scanner;\n\npublic class Textstatistics {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create an applicaton in the class provided in the exercise template. Use the BorderPane class for the layout. In the center there should be a text field created using the TextArea class, and along the bottom edge there should be three textComponents. Place the text components along the bottom edge into a HBox object.The first text component should have the text \"Letters: 0\", the second text component should have the text \"Words: 0\", and the third text component should have the text \"The longest word is:\"."
+    ]
+  }
+}

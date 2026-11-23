@@ -1,0 +1,17 @@
+{
+  "id": "part13-04-borderpane",
+  "part": 13,
+  "order": 4,
+  "title": "BorderPane",
+  "description": "Create a graphical user interface in the class provided in the exercise template. It should use the BorderPane class for laying out the components of the user interface. Add a textComponent at the top edge of the window containing the text \"NORTH\", a textComponent along the right edge containing the text \"EAST\", and a textComponent at the bottom edge containing the text \"SOUTH\".",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Borderpane.java": "\nimport java.util.Scanner;\n\npublic class Borderpane {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a graphical user interface in the class provided in the exercise template. It should use the BorderPane class for laying out the components of the user interface. Add a textComponent at the top edge of the window containing the text \"NORTH\", a textComponent along the right edge containing the text \"EAST\", and a textComponent at the bottom edge containing the text \"SOUTH\"."
+    ]
+  }
+}

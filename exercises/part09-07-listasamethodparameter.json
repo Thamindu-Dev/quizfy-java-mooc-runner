@@ -1,0 +1,27 @@
+{
+  "id": "part09-07-listasamethodparameter",
+  "part": 9,
+  "order": 7,
+  "title": "List as a method parameter",
+  "description": "In the mainProgram class, implement a class method `returnSize`, which is given a List-object as a parameter, and returns the size of the list as an integer.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Listasamethodparameter.java": "\nimport java.util.Scanner;\n\npublic class Listasamethodparameter {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the mainProgram class, implement a class method `returnSize`, which is given a List-object as a parameter, and returns the size of the list as an integer.",
+      "The method should work as follows:"
+    ],
+    "codeSnippet": "List<String> names = new ArrayList<>();\nnames.add(\"First\");\nnames.add(\"Second\");\nnames.add(\"Third\");\n\nSystem.out.println(returnSize(names));",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "3"
+        ]
+      }
+    ]
+  }
+}

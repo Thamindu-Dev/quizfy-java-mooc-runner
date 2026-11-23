@@ -1,0 +1,27 @@
+{
+  "id": "part03-20-sumofarray",
+  "part": 3,
+  "order": 20,
+  "title": "Sum of array",
+  "description": "The class SumOfArray has a method `public static int sumOfNumbersInArray(int[] array)`. Complete the method so that it computes and returns the sum of the numbers in the array it receives as parameter.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Sumofarray.java": "\nimport java.util.Scanner;\n\npublic class Sumofarray {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The class SumOfArray has a method `public static int sumOfNumbersInArray(int[] array)`. Complete the method so that it computes and returns the sum of the numbers in the array it receives as parameter.",
+      "You can try out the computation of the sum with this example:"
+    ],
+    "codeSnippet": "int[] numbers = {5, 1, 3, 4, 2};\nsumOfNumbersInArray(numbers);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "15"
+        ]
+      }
+    ]
+  }
+}

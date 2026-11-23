@@ -1,0 +1,46 @@
+{
+  "id": "part03-12-sumofalist",
+  "part": 3,
+  "order": 12,
+  "title": "Sum of a list",
+  "description": "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Sumofalist.java": "\nimport java.util.Scanner;\n\npublic class Sumofalist {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+      "Modify the program so that after reading the numbers it calculates and prints the sum of the numbers in the list."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "72",
+            "isInput": true
+          },
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "8",
+            "isInput": true
+          },
+          {
+            "text": "11",
+            "isInput": true
+          },
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "Sum: 93"
+        ]
+      }
+    ]
+  }
+}

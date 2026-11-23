@@ -1,0 +1,29 @@
+{
+  "id": "part04-05-whistle",
+  "part": 4,
+  "order": 5,
+  "title": "Whistle",
+  "description": "Create a class named `Whistle`. Add the variable `private String sound` to the class. After that, create the constructor `public Whistle(String whistleSound)`, which is used to create a new whistle that's given a sound.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Whistle.java": "\nimport java.util.Scanner;\n\npublic class Whistle {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a class named `Whistle`. Add the variable `private String sound` to the class. After that, create the constructor `public Whistle(String whistleSound)`, which is used to create a new whistle that's given a sound.",
+      "Then create the method `public void sound()` that prints the whistle's sound."
+    ],
+    "codeSnippet": "Whistle duckWhistle = new Whistle(\"Kvaak\");\nWhistle roosterWhistle = new Whistle(\"Peef\");\n\nduckWhistle.sound();\nroosterWhistle.sound();\nduckWhistle.sound();",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Kvaak",
+          "Peef",
+          "Kvaak"
+        ]
+      }
+    ]
+  }
+}

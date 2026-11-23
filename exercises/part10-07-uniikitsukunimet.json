@@ -1,0 +1,82 @@
+{
+  "id": "part10-07-uniikitsukunimet",
+  "part": 10,
+  "order": 7,
+  "title": "Uniikit sukunimet",
+  "description": "-->",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Uniikitsukunimet.java": "\nimport java.util.Scanner;\n\npublic class Uniikitsukunimet {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "-->",
+      "The exercise template contains a sketch of a program that reads user-provided information about people. Expand the program so that it will print all the unique last names of the user-provided people in alphabetical order."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Continue personal information input? \"quit\" ends:",
+          "Input first name:",
+          {
+            "text": "Ada",
+            "isInput": true
+          },
+          "Input last name:",
+          {
+            "text": "Lovelace",
+            "isInput": true
+          },
+          "Input the year of birth:",
+          {
+            "text": "1815",
+            "isInput": true
+          },
+          "Continue personal information input? \"quit\" ends:",
+          "Input first name:",
+          {
+            "text": "Grace",
+            "isInput": true
+          },
+          "Input last name:",
+          {
+            "text": "Hopper",
+            "isInput": true
+          },
+          "Input the year of birth:",
+          {
+            "text": "1906",
+            "isInput": true
+          },
+          "Continue personal information input? \"quit\" ends:",
+          "Input first name:",
+          {
+            "text": "Alan",
+            "isInput": true
+          },
+          "Input last name:",
+          {
+            "text": "Turing",
+            "isInput": true
+          },
+          "Input the year of birth:",
+          {
+            "text": "1912",
+            "isInput": true
+          },
+          "Continue personal information input? \"quit\" ends:",
+          {
+            "text": "quit",
+            "isInput": true
+          },
+          "Unique last names in alphabetical order:",
+          "Hopper",
+          "Lovelace",
+          "Turing"
+        ]
+      }
+    ]
+  }
+}

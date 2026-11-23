@@ -1,0 +1,18 @@
+{
+  "id": "part14-08-hurray",
+  "part": 14,
+  "order": 8,
+  "title": "Hurray",
+  "description": "In the root folder of the exercise base there is a file called `Applause-Yannick_Lemieux.wav`. The file contains a hurray sound. Your task is to create a program that contains a \"Hurray!\" button. When the user clicks the button, the program should play the audio file included in the project.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Hurray.java": "\nimport java.util.Scanner;\n\npublic class Hurray {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the root folder of the exercise base there is a file called `Applause-Yannick_Lemieux.wav`. The file contains a hurray sound. Your task is to create a program that contains a \"Hurray!\" button. When the user clicks the button, the program should play the audio file included in the project.",
+      "*The audio file is recorded by Yannick Lemieux. It is licensed with the Creative Commons attribution license [https://creativecommons.org/licenses/by/3.0/](https://creativecommons.org/licenses/by/3.0/).*"
+    ]
+  }
+}

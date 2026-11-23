@@ -1,0 +1,18 @@
+{
+  "id": "part13-08-usertitle",
+  "part": 13,
+  "order": 8,
+  "title": "User",
+  "description": "Write a program that asks for a title in a command line interface. When the user types the title and presses enter, the user is shown a graphical user interface with the given title.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Usertitle.java": "\nimport java.util.Scanner;\n\npublic class Usertitle {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks for a title in a command line interface. When the user types the title and presses enter, the user is shown a graphical user interface with the given title.",
+      "Notice, this exercise does not have automatic tests. Return the program once it works as described in the exercise."
+    ]
+  }
+}

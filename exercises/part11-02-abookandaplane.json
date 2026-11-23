@@ -1,0 +1,17 @@
+{
+  "id": "part11-02-abookandaplane",
+  "part": 11,
+  "order": 2,
+  "title": "Book and plane",
+  "description": "The class diagram below depicts the classes Book and Plane. Implement the classes in the exercise.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Abookandaplane.java": "\nimport java.util.Scanner;\n\npublic class Abookandaplane {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The class diagram below depicts the classes Book and Plane. Implement the classes in the exercise."
+    ]
+  }
+}

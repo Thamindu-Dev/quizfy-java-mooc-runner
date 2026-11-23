@@ -1,0 +1,42 @@
+{
+  "id": "part03-29-lastwords",
+  "part": 3,
+  "order": 29,
+  "title": "LastWords",
+  "description": "Write a program that reads user input until an empty line is entered. For each non-empty line the program splits the string by spaces ` `  and prints the last part of the string.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Lastwords.java": "\nimport java.util.Scanner;\n\npublic class Lastwords {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads user input until an empty line is entered. For each non-empty line the program splits the string by spaces ` `  and prints the last part of the string.",
+      "Tip! You can find out the length of the array like this:"
+    ],
+    "codeSnippet": "String[] parts = {\"one\", \"two\", \"three\"};\nSystem.out.println(\"Number of parts: \" + parts.length);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "one two three four",
+            "isInput": true
+          },
+          "four",
+          {
+            "text": "this is a very important message",
+            "isInput": true
+          },
+          "message"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Number of parts: 3"
+        ]
+      }
+    ]
+  }
+}

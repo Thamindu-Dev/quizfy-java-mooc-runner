@@ -1,0 +1,73 @@
+{
+  "id": "part04-19-televisionprograms",
+  "part": 4,
+  "order": 19,
+  "title": "Television programs",
+  "description": "In the exercise template there is a ready-made class TelevisionProgram, representing a television program. The class has object variables name and duration, a constructor, and a few methods.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Televisionprograms.java": "\nimport java.util.Scanner;\n\npublic class Televisionprograms {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the exercise template there is a ready-made class TelevisionProgram, representing a television program. The class has object variables name and duration, a constructor, and a few methods.",
+      "Implement a program that begins by reading television programs from the user. When the user inputs an empty string as the name of the program, the program stops reading programs.",
+      "After this the user is queried for a maximum duration. Once the maximum is given, the program proceeds to list all the programs whose duration is smaller or equal to the specified maximum duration."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Name:",
+          {
+            "text": "Rick and Morty",
+            "isInput": true
+          },
+          "Duration:",
+          {
+            "text": "25",
+            "isInput": true
+          },
+          "Name:",
+          {
+            "text": "Two and a Half Men",
+            "isInput": true
+          },
+          "Duration:",
+          {
+            "text": "30",
+            "isInput": true
+          },
+          "Name:",
+          {
+            "text": "Love it or list it",
+            "isInput": true
+          },
+          "Duration:",
+          {
+            "text": "60",
+            "isInput": true
+          },
+          "Name:",
+          {
+            "text": "House",
+            "isInput": true
+          },
+          "Duration:",
+          {
+            "text": "60",
+            "isInput": true
+          },
+          "Program's maximum duration?",
+          {
+            "text": "30",
+            "isInput": true
+          },
+          "Rick and Morty, 25 minutes",
+          "Two and a Half Men, 30 minutes"
+        ]
+      }
+    ]
+  }
+}

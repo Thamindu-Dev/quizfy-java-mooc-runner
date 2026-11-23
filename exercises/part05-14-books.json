@@ -1,0 +1,59 @@
+{
+  "id": "part05-14-books",
+  "part": 5,
+  "order": 14,
+  "title": "Books",
+  "description": "There is a program in the exercise base that asks for books from the user and adds them to a list.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Books.java": "\nimport java.util.Scanner;\n\npublic class Books {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "There is a program in the exercise base that asks for books from the user and adds them to a list.",
+      "Modify the program so that books that are already on the list are not added to it again. Two books should be considered the same if they have the same name and publication year.",
+      "Example print"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Name (empty will stop):",
+          {
+            "text": "Bossypants",
+            "isInput": true
+          },
+          "Publication year:",
+          {
+            "text": "2013",
+            "isInput": true
+          },
+          "Name (empty will stop):",
+          {
+            "text": "Seriously...I'm Kidding",
+            "isInput": true
+          },
+          "Publication year:",
+          {
+            "text": "2012",
+            "isInput": true
+          },
+          "Name (empty will stop):",
+          {
+            "text": "Seriously...I'm Kidding",
+            "isInput": true
+          },
+          "Publication year:",
+          {
+            "text": "2012",
+            "isInput": true
+          },
+          "The book is already on the list. Let's not add the same book again.",
+          "Name (empty will stop):",
+          "Thank you! Books added: 2"
+        ]
+      }
+    ]
+  }
+}
