@@ -1,0 +1,11 @@
+{
+  "id": "part02-01-squared",
+  "part": 2,
+  "order": 1,
+  "title": "Squared",
+  "description": "Complete the Java programming exercise: Squared.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Squared.java": "\nimport java.util.Scanner;\n\npublic class Squared {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

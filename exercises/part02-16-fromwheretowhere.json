@@ -1,0 +1,11 @@
+{
+  "id": "part02-16-fromwheretowhere",
+  "part": 2,
+  "order": 16,
+  "title": "From Where To Where",
+  "description": "Complete the Java programming exercise: From Where To Where.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/FromWhereToWhere.java": "\nimport java.util.Scanner;\n\npublic class FromWhereToWhere {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}\n"
+  }
+}

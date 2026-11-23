@@ -1,0 +1,10 @@
+{
+  "id": "part02-34-advancedastrology",
+  "part": 2,
+  "order": 34,
+  "title": "Advanced Astrology",
+  "testClasses": [
+    "AdvancedAstrologyTest"
+  ],
+  "dataFiles": []
+}

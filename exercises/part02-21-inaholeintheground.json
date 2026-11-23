@@ -1,0 +1,11 @@
+{
+  "id": "part02-21-inaholeintheground",
+  "part": 2,
+  "order": 21,
+  "title": "In A Hole In The Ground",
+  "description": "Complete the Java programming exercise: In A Hole In The Ground.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/InAHoleInTheGround.java": "public class InAHoleInTheGround {\n\n    public static void main(String[] args) {\n        printText();\n    }\n    \n    public static void printText() {\n        // Write some code in here\n    }\n}\n"
+  }
+}

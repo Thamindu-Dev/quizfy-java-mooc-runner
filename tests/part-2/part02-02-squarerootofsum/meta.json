@@ -1,0 +1,10 @@
+{
+  "id": "part02-02-squarerootofsum",
+  "part": 2,
+  "order": 2,
+  "title": "Square Root Of Sum",
+  "testClasses": [
+    "SquareRootOfSumTest"
+  ],
+  "dataFiles": []
+}

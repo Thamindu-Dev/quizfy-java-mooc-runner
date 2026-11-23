@@ -3,47 +3,9 @@
   "part": 1,
   "order": 7,
   "title": "Message Three Times",
-  "description": "Write a program that asks the user to write a string. When the user has given a string (that is, written some text and pressed enter), the program must print the user's string three times (you can use the System.out.println command multiple times).",
+  "description": "Complete the Java programming exercise: Message Three Times.",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/MessageThreeTimes.java": "\nimport java.util.Scanner;\n\npublic class MessageThreeTimes {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message:\");\n        // Write your program here\n    }\n}\n"
-  },
-  "prompt": {
-    "points": 1,
-    "paragraphs": [
-      "Write a program that asks the user to write a string. When the user has given a string (that is, written some text and pressed enter), the program must print the user's string three times (you can use the System.out.println command multiple times).",
-      "The exercise template already includes the code that creates the Scanner tool.",
-      "Example output for when the user writes the string \"Hi\".",
-      "Example output when the user writes \"Once upon a time...\"."
-    ],
-    "codeSnippet": "import java.util.Scanner;\n\npublic class MessageThreeTimes {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message: \");\n        // Write your program here\n    }\n}",
-    "sampleOutputs": [
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Write a message:",
-          {
-            "text": "Hi",
-            "isInput": true
-          },
-          "Hi",
-          "Hi",
-          "Hi"
-        ]
-      },
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Write a message:",
-          {
-            "text": "Once upon a time...",
-            "isInput": true
-          },
-          "Once upon a time...",
-          "Once upon a time...",
-          "Once upon a time..."
-        ]
-      }
-    ]
+    "src/main/java/MessageThreeTimes.java": "\nimport java.util.Scanner;\n\npublic class MessageThreeTimes {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message:\");\n        // Write your program here\n        String message = scanner.nextLine();\n        System.out.println(message);\n        System.out.println(message);\n        System.out.println(message);\n    }\n}\n"
   }
 }

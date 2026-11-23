@@ -3,38 +3,9 @@
   "part": 1,
   "order": 26,
   "title": "Orwell",
-  "description": "Write a program that prompts the user for an integer and prints the string \"Orwell\" if the number is exactly 1984.",
+  "description": "Complete the Java programming exercise: Orwell.",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/Orwell.java": "\nimport java.util.Scanner;\n\npublic class Orwell {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here\n    }\n}\n"
-  },
-  "prompt": {
-    "points": 1,
-    "paragraphs": [
-      "Write a program that prompts the user for an integer and prints the string \"Orwell\" if the number is exactly 1984."
-    ],
-    "sampleOutputs": [
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give a number:",
-          {
-            "text": "1983",
-            "isInput": true
-          }
-        ]
-      },
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give a number:",
-          {
-            "text": "1984",
-            "isInput": true
-          },
-          "Orwell"
-        ]
-      }
-    ]
+    "src/main/java/Orwell.java": "\nimport java.util.Scanner;\n\npublic class Orwell {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here\n        System.out.println(\"Give a number:\");\n        int number = scan.nextInt();\n        \n        if (number == 1984) {\n            System.out.println(\"Orwell\");\n        }\n    }\n}\n"
   }
 }

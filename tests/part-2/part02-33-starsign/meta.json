@@ -1,0 +1,10 @@
+{
+  "id": "part02-33-starsign",
+  "part": 2,
+  "order": 33,
+  "title": "Star Sign",
+  "testClasses": [
+    "StarSignTest"
+  ],
+  "dataFiles": []
+}

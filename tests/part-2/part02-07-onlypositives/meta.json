@@ -1,0 +1,10 @@
+{
+  "id": "part02-07-onlypositives",
+  "part": 2,
+  "order": 7,
+  "title": "Only Positives",
+  "testClasses": [
+    "OnlyPositivesTest"
+  ],
+  "dataFiles": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "part02-33-starsign",
+  "part": 2,
+  "order": 33,
+  "title": "Star Sign",
+  "description": "Complete the Java programming exercise: Star Sign.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/StarSign.java": "\npublic class StarSign {\n\n    public static void main(String[] args) {\n\n        \n        //The tests are not checking the main, so you can modify it freely.\n        //NB: If the tests don't seem to pass, you should try the methods here\n        //in the main to make sure they print the correct shapes!\n        \n        printStars(3);\n        System.out.println(\"\\n---\");  // printing --- between the shapes\n        printSquare(4);\n        System.out.println(\"\\n---\");\n        printRectangle(5, 6);\n        System.out.println(\"\\n---\");\n        printTriangle(3);\n        System.out.println(\"\\n---\");\n    }\n\n    public static void printStars(int number) {\n        // first part of the exercise\n    }\n\n    public static void printSquare(int size) {\n        // second part of the exercise\n    }\n\n    public static void printRectangle(int width, int height) {\n        // third part of the exercise\n    }\n\n    public static void printTriangle(int size) {\n        // fourth part of the exercise\n    }\n}\n"
+  }
+}

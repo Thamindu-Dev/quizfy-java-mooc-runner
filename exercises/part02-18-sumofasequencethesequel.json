@@ -1,0 +1,11 @@
+{
+  "id": "part02-18-sumofasequencethesequel",
+  "part": 2,
+  "order": 18,
+  "title": "Sum Of A Sequence The Sequel",
+  "description": "Complete the Java programming exercise: Sum Of A Sequence The Sequel.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/SumOfASequenceTheSequel.java": "\nimport java.util.Scanner;\n\npublic class SumOfASequenceTheSequel {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

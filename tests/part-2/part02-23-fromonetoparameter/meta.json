@@ -1,0 +1,10 @@
+{
+  "id": "part02-23-fromonetoparameter",
+  "part": 2,
+  "order": 23,
+  "title": "From One To Parameter",
+  "testClasses": [
+    "FromOneToParameterTest"
+  ],
+  "dataFiles": []
+}

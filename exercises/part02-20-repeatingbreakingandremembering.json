@@ -1,0 +1,11 @@
+{
+  "id": "part02-20-repeatingbreakingandremembering",
+  "part": 2,
+  "order": 20,
+  "title": "Repeating Breaking And Remembering",
+  "description": "Complete the Java programming exercise: Repeating Breaking And Remembering.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/RepeatingBreakingAndRemembering.java": "\nimport java.util.Scanner;\n\npublic class RepeatingBreakingAndRemembering {\n\n    public static void main(String[] args) {\n        \n        // This exercise is worth five exercise points, and it is \n        // gradually extended part by part.\n        \n        // If you want, you can send this exercise to the server\n        // when it's just partially done. In that case the server will complain about \n        // the parts you haven't done, but you'll get points for the finished parts.\n        \n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

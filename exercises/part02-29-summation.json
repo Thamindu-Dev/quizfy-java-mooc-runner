@@ -1,0 +1,11 @@
+{
+  "id": "part02-29-summation",
+  "part": 2,
+  "order": 29,
+  "title": "Summation",
+  "description": "Complete the Java programming exercise: Summation.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Summation.java": "public class Summation {\n\n    public static int sum(int num1, int num2, int num3, int num4) {\n        // write some code here\n        return -1;\n    }\n\n    public static void main(String[] args) {\n        int result = sum(4, 3, 6, 1);\n        System.out.println(\"Sum: \" + result);\n    }\n}\n"
+  }
+}

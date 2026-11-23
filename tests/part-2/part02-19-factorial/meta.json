@@ -1,0 +1,10 @@
+{
+  "id": "part02-19-factorial",
+  "part": 2,
+  "order": 19,
+  "title": "Factorial",
+  "testClasses": [
+    "FactorialTest"
+  ],
+  "dataFiles": []
+}

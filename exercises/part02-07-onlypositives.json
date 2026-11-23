@@ -1,0 +1,11 @@
+{
+  "id": "part02-07-onlypositives",
+  "part": 2,
+  "order": 7,
+  "title": "Only Positives",
+  "description": "Complete the Java programming exercise: Only Positives.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/OnlyPositives.java": "\nimport java.util.Scanner;\n\npublic class OnlyPositives {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

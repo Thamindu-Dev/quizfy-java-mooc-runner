@@ -1,0 +1,10 @@
+{
+  "id": "part02-09-numberofnegativenumbers",
+  "part": 2,
+  "order": 9,
+  "title": "Number Of Negative Numbers",
+  "testClasses": [
+    "NumberOfNegativeNumbersTest"
+  ],
+  "dataFiles": []
+}

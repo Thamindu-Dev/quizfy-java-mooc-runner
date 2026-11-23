@@ -1,0 +1,11 @@
+{
+  "id": "part02-28-word",
+  "part": 2,
+  "order": 28,
+  "title": "Word",
+  "description": "Complete the Java programming exercise: Word.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Word.java": "\nimport java.util.Scanner;\n\npublic class Word {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n\n}\n"
+  }
+}

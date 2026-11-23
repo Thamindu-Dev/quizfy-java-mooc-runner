@@ -1,0 +1,10 @@
+{
+  "id": "part02-04-comparingnumbers",
+  "part": 2,
+  "order": 4,
+  "title": "Comparing Numbers",
+  "testClasses": [
+    "ComparingNumbersTest"
+  ],
+  "dataFiles": []
+}

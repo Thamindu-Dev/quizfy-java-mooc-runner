@@ -1,0 +1,10 @@
+{
+  "id": "part02-28-word",
+  "part": 2,
+  "order": 28,
+  "title": "Word",
+  "testClasses": [
+    "WordTest"
+  ],
+  "dataFiles": []
+}

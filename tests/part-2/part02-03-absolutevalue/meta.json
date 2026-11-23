@@ -1,0 +1,10 @@
+{
+  "id": "part02-03-absolutevalue",
+  "part": 2,
+  "order": 3,
+  "title": "Absolute Value",
+  "testClasses": [
+    "AbsoluteValueTest"
+  ],
+  "dataFiles": []
+}

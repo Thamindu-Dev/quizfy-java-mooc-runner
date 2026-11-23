@@ -1,0 +1,10 @@
+{
+  "id": "part02-30-smallest",
+  "part": 2,
+  "order": 30,
+  "title": "Smallest",
+  "testClasses": [
+    "SmallestTest"
+  ],
+  "dataFiles": []
+}

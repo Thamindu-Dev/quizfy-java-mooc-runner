@@ -1,0 +1,10 @@
+{
+  "id": "part02-12-averageofnumbers",
+  "part": 2,
+  "order": 12,
+  "title": "Average Of Numbers",
+  "testClasses": [
+    "AverageOfNumbersTest"
+  ],
+  "dataFiles": []
+}

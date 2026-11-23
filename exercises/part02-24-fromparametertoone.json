@@ -1,0 +1,11 @@
+{
+  "id": "part02-24-fromparametertoone",
+  "part": 2,
+  "order": 24,
+  "title": "From Parameter To One",
+  "description": "Complete the Java programming exercise: From Parameter To One.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/FromParameterToOne.java": "\n\npublic class FromParameterToOne {\n\n    public static void main(String[] args) {\n\n\n    }\n\n}\n"
+  }
+}

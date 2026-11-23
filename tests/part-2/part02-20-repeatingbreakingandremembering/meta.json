@@ -1,0 +1,15 @@
+{
+  "id": "part02-20-repeatingbreakingandremembering",
+  "part": 2,
+  "order": 20,
+  "title": "Repeating Breaking And Remembering",
+  "testClasses": [
+    "Osa2Test",
+    "Part1Test",
+    "Part3Test",
+    "Part4Test",
+    "Part5bTest",
+    "Part5Test"
+  ],
+  "dataFiles": []
+}

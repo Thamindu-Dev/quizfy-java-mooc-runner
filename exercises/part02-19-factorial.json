@@ -1,0 +1,11 @@
+{
+  "id": "part02-19-factorial",
+  "part": 2,
+  "order": 19,
+  "title": "Factorial",
+  "description": "Complete the Java programming exercise: Factorial.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Factorial.java": "\nimport java.util.Scanner;\n\npublic class Factorial {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

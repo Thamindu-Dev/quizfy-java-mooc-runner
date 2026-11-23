@@ -1,0 +1,11 @@
+{
+  "id": "part02-10-sumofnumbers",
+  "part": 2,
+  "order": 10,
+  "title": "Sum Of Numbers",
+  "description": "Complete the Java programming exercise: Sum Of Numbers.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/SumOfNumbers.java": "\nimport java.util.Scanner;\n\npublic class SumOfNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

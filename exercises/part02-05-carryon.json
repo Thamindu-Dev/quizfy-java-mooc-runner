@@ -1,0 +1,11 @@
+{
+  "id": "part02-05-carryon",
+  "part": 2,
+  "order": 5,
+  "title": "Carry On",
+  "description": "Complete the Java programming exercise: Carry On.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/CarryOn.java": "\nimport java.util.Scanner;\n\npublic class CarryOn {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

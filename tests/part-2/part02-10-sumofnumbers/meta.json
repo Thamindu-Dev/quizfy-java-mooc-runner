@@ -1,0 +1,10 @@
+{
+  "id": "part02-10-sumofnumbers",
+  "part": 2,
+  "order": 10,
+  "title": "Sum Of Numbers",
+  "testClasses": [
+    "SumOfNumbersTest"
+  ],
+  "dataFiles": []
+}

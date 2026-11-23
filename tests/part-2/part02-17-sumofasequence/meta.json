@@ -1,0 +1,10 @@
+{
+  "id": "part02-17-sumofasequence",
+  "part": 2,
+  "order": 17,
+  "title": "Sum Of A Sequence",
+  "testClasses": [
+    "SumOfASequenceTest"
+  ],
+  "dataFiles": []
+}

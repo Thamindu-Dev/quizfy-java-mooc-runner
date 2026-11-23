@@ -1,0 +1,10 @@
+{
+  "id": "part02-22-reprint",
+  "part": 2,
+  "order": 22,
+  "title": "Reprint",
+  "testClasses": [
+    "ReprintTest"
+  ],
+  "dataFiles": []
+}

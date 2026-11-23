@@ -3,61 +3,9 @@
   "part": 1,
   "order": 31,
   "title": "Grades And Points",
-  "description": "The table below describes how the grade for a particular course is determined. Write a program that gives a course grade according to the provided table.",
+  "description": "Complete the Java programming exercise: Grades And Points.",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/GradesAndPoints.java": "\nimport java.util.Scanner;\n\npublic class GradesAndPoints {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n    }\n}\n"
-  },
-  "prompt": {
-    "points": 1,
-    "paragraphs": [
-      "The table below describes how the grade for a particular course is determined. Write a program that gives a course grade according to the provided table."
-    ],
-    "sampleOutputs": [
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give points [0-100]:",
-          {
-            "text": "37",
-            "isInput": true
-          },
-          "Grade: failed"
-        ]
-      },
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give points [0-100]:",
-          {
-            "text": "76",
-            "isInput": true
-          },
-          "Grade: 3"
-        ]
-      },
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give points [0-100]:",
-          {
-            "text": "95",
-            "isInput": true
-          },
-          "Grade: 5"
-        ]
-      },
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give points [0-100]:",
-          {
-            "text": "-3",
-            "isInput": true
-          },
-          "Grade: impossible!"
-        ]
-      }
-    ]
   }
 }

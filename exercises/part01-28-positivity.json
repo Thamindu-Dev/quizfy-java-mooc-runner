@@ -3,39 +3,9 @@
   "part": 1,
   "order": 28,
   "title": "Positivity",
-  "description": "Write a program that prompts the user for an integer and informs the user whether or not it is positive (greater than zero).",
+  "description": "Complete the Java programming exercise: Positivity.",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/Positivity.java": "\nimport java.util.Scanner;\n\npublic class Positivity {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here\n    }\n}\n"
-  },
-  "prompt": {
-    "points": 1,
-    "paragraphs": [
-      "Write a program that prompts the user for an integer and informs the user whether or not it is positive (greater than zero)."
-    ],
-    "sampleOutputs": [
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give a number:",
-          {
-            "text": "5",
-            "isInput": true
-          },
-          "The number is positive."
-        ]
-      },
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give a number:",
-          {
-            "text": "-2",
-            "isInput": true
-          },
-          "The number is not positive."
-        ]
-      }
-    ]
+    "src/main/java/Positivity.java": "\nimport java.util.Scanner;\n\npublic class Positivity {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here\n        System.out.println(\"Give a number:\");\n        int number = scan.nextInt();\n        \n        if (number > 0) {\n            System.out.println(\"The number is positive.\");\n        } else {\n            System.out.println(\"The number is not positive.\");\n        }\n    }\n}\n"
   }
 }

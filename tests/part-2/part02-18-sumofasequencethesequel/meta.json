@@ -1,0 +1,10 @@
+{
+  "id": "part02-18-sumofasequencethesequel",
+  "part": 2,
+  "order": 18,
+  "title": "Sum Of A Sequence The Sequel",
+  "testClasses": [
+    "SumOfASequenceTheSequelTest"
+  ],
+  "dataFiles": []
+}

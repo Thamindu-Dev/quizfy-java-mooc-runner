@@ -1,0 +1,10 @@
+{
+  "id": "part02-26-divisiblebythree",
+  "part": 2,
+  "order": 26,
+  "title": "Divisible By Three",
+  "testClasses": [
+    "DivisibleByThreeTest"
+  ],
+  "dataFiles": []
+}

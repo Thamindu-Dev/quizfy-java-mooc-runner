@@ -1,0 +1,11 @@
+{
+  "id": "part02-04-comparingnumbers",
+  "part": 2,
+  "order": 4,
+  "title": "Comparing Numbers",
+  "description": "Complete the Java programming exercise: Comparing Numbers.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/ComparingNumbers.java": "\nimport java.util.Scanner;\n\npublic class ComparingNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

@@ -3,33 +3,9 @@
   "part": 1,
   "order": 21,
   "title": "Average Of Two Numbers",
-  "description": "Write a program that asks the user for two integers and prints their average.",
+  "description": "Complete the Java programming exercise: Average Of Two Numbers.",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/AverageOfTwoNumbers.java": "\nimport java.util.Scanner;\n\npublic class AverageOfTwoNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
-  },
-  "prompt": {
-    "points": 1,
-    "paragraphs": [
-      "Write a program that asks the user for two integers and prints their average."
-    ],
-    "sampleOutputs": [
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give the first number:",
-          {
-            "text": "8",
-            "isInput": true
-          },
-          "Give the second number:",
-          {
-            "text": "2",
-            "isInput": true
-          },
-          "The average is 5.0"
-        ]
-      }
-    ]
+    "src/main/java/AverageOfTwoNumbers.java": "\nimport java.util.Scanner;\n\npublic class AverageOfTwoNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // write your program here\n        System.out.println(\"Give the first number:\");\n        double first = Integer.valueOf(scanner.nextLine());\n        \n        System.out.println(\"Give the second number:\");\n        double second = Integer.valueOf(scanner.nextLine());\n        \n        double avgOfNum = (first + second) / 2.0;\n        \n        System.out.println(\"The average is \" + avgOfNum);\n\n    }\n}\n"
   }
 }

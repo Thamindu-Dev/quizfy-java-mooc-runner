@@ -1,0 +1,10 @@
+{
+  "id": "part02-32-averaging",
+  "part": 2,
+  "order": 32,
+  "title": "Averaging",
+  "testClasses": [
+    "AveragingTest"
+  ],
+  "dataFiles": []
+}

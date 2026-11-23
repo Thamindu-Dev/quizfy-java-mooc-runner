@@ -110,12 +110,29 @@ export async function gradeSubmission(exerciseId, files) {
     }
   }
 
-  const testDir = path.join(TESTS_DIR, exerciseId);
+  // Resolve test directory from part-based subdirectories (tests/part-1/<id>, tests/part-2/<id>)
+  // or fall back to flat layout (tests/<id>) for backwards compatibility.
+  let testDir;
   let meta;
+  const partMatch = exerciseId.match(/^part(\d+)-/);
+  if (partMatch) {
+    const partSubdir = `part-${parseInt(partMatch[1], 10)}`;
+    testDir = path.join(TESTS_DIR, partSubdir, exerciseId);
+  }
+  if (!testDir) {
+    testDir = path.join(TESTS_DIR, exerciseId);
+  }
   try {
     meta = JSON.parse(await fs.readFile(path.join(testDir, "meta.json"), "utf8"));
   } catch {
-    return { status: "error", error: `Exercise '${exerciseId}' not found.` };
+    // Fall back to flat layout
+    const flatDir = path.join(TESTS_DIR, exerciseId);
+    try {
+      meta = JSON.parse(await fs.readFile(path.join(flatDir, "meta.json"), "utf8"));
+      testDir = flatDir;
+    } catch {
+      return { status: "error", error: `Exercise '${exerciseId}' not found.` };
+    }
   }
 
   const runId = crypto.randomUUID();

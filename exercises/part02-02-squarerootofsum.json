@@ -1,0 +1,11 @@
+{
+  "id": "part02-02-squarerootofsum",
+  "part": 2,
+  "order": 2,
+  "title": "Square Root Of Sum",
+  "description": "Complete the Java programming exercise: Square Root Of Sum.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/SquareRootOfSum.java": "\nimport java.util.Scanner;\n\npublic class SquareRootOfSum {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

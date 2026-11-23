@@ -1,0 +1,11 @@
+{
+  "id": "part02-22-reprint",
+  "part": 2,
+  "order": 22,
+  "title": "Reprint",
+  "description": "Complete the Java programming exercise: Reprint.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Reprint.java": "\nimport java.util.Scanner;\n\npublic class Reprint {\n\n    public static void main(String[] args) {\n        // ask the user for how many times should the text be printed\n        // then call the printText-method multiple times with a while-loop\n        \n        Scanner scanner = new Scanner(System.in);\n    }\n    \n    // Don't change the next line that defines the method!\n    // (We aren't giving a method a parameter yet)\n    public static void printText() {\n        // write some code here\n    }\n}\n"
+  }
+}

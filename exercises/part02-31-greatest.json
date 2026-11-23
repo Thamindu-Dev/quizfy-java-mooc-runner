@@ -1,0 +1,11 @@
+{
+  "id": "part02-31-greatest",
+  "part": 2,
+  "order": 31,
+  "title": "Greatest",
+  "description": "Complete the Java programming exercise: Greatest.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Greatest.java": "\npublic class Greatest {\n\n    public static int greatest(int number1, int number2, int number3) {\n        //write some code here\n\n        return -1;\n    }\n\n    public static void main(String[] args) {\n        int result = greatest(2, 7, 3);\n        System.out.println(\"Greatest: \" + result);\n    }\n}\n"
+  }
+}

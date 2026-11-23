@@ -1,0 +1,11 @@
+{
+  "id": "part02-03-absolutevalue",
+  "part": 2,
+  "order": 3,
+  "title": "Absolute Value",
+  "description": "Complete the Java programming exercise: Absolute Value.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/AbsoluteValue.java": "\nimport java.util.Scanner;\n\npublic class AbsoluteValue {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "part02-06-arewethereyet",
+  "part": 2,
+  "order": 6,
+  "title": "Are We There Yet",
+  "description": "Complete the Java programming exercise: Are We There Yet.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/AreWeThereYet.java": "\nimport java.util.Scanner;\n\npublic class AreWeThereYet {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

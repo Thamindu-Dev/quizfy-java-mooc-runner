@@ -1,0 +1,11 @@
+{
+  "id": "part02-30-smallest",
+  "part": 2,
+  "order": 30,
+  "title": "Smallest",
+  "description": "Complete the Java programming exercise: Smallest.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Smallest.java": "\npublic class Smallest {\n\n    public static int smallest(int number1, int number2) {\n        // Write some code here\n        // don't print anything inside this method\n        // there must be a return in the end of the method\n        return -1;\n    }\n\n    public static void main(String[] args) {\n        int result = smallest(2, 7);\n        System.out.println(\"Smallest: \" + result);\n    }\n}\n"
+  }
+}

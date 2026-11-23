@@ -1,0 +1,11 @@
+{
+  "id": "part02-32-averaging",
+  "part": 2,
+  "order": 32,
+  "title": "Averaging",
+  "description": "Complete the Java programming exercise: Averaging.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/Averaging.java": "\npublic class Averaging {\n\n    // implement the sum method here again\n    public static int sum(int number1, int number2, int number3, int number4) {\n        // write some code here\n        return 0;\n    }\n\n    public static double average(int number1, int number2, int number3, int number4) {\n        //write some code here\n        return -1;\n    }\n\n    public static void main(String[] args) {\n        double result = average(4, 3, 6, 1);\n        System.out.println(\"Average: \" + result);\n    }\n}\n"
+  }
+}

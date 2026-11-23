@@ -1,0 +1,11 @@
+{
+  "id": "part02-13-averageofpositivenumbers",
+  "part": 2,
+  "order": 13,
+  "title": "Average Of Positive Numbers",
+  "description": "Complete the Java programming exercise: Average Of Positive Numbers.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/AverageOfPositiveNumbers.java": "\nimport java.util.Scanner;\n\npublic class AverageOfPositiveNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

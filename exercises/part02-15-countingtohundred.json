@@ -1,0 +1,11 @@
+{
+  "id": "part02-15-countingtohundred",
+  "part": 2,
+  "order": 15,
+  "title": "Counting To Hundred",
+  "description": "Complete the Java programming exercise: Counting To Hundred.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/CountingToHundred.java": "\nimport java.util.Scanner;\n\npublic class CountingToHundred {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

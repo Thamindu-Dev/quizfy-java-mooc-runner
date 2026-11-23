@@ -1,0 +1,10 @@
+{
+  "id": "part02-06-arewethereyet",
+  "part": 2,
+  "order": 6,
+  "title": "Are We There Yet",
+  "testClasses": [
+    "AreWeThereYetTest"
+  ],
+  "dataFiles": []
+}

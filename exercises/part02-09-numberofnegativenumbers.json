@@ -1,0 +1,11 @@
+{
+  "id": "part02-09-numberofnegativenumbers",
+  "part": 2,
+  "order": 9,
+  "title": "Number Of Negative Numbers",
+  "description": "Complete the Java programming exercise: Number Of Negative Numbers.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/NumberOfNegativeNumbers.java": "\nimport java.util.Scanner;\n\npublic class NumberOfNegativeNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  }
+}

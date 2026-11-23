@@ -1,0 +1,11 @@
+{
+  "id": "part02-26-divisiblebythree",
+  "part": 2,
+  "order": 26,
+  "title": "Divisible By Three",
+  "description": "Complete the Java programming exercise: Divisible By Three.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/DivisibleByThree.java": "\nimport java.util.Scanner;\n\npublic class DivisibleByThree {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n\n}\n"
+  }
+}

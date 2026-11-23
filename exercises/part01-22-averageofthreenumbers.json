@@ -3,59 +3,9 @@
   "part": 1,
   "order": 22,
   "title": "Average Of Three Numbers",
-  "description": "Write a program that asks the user for three integers and prints their average.",
+  "description": "Complete the Java programming exercise: Average Of Three Numbers.",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/AverageOfThreeNumbers.java": "\nimport java.util.Scanner;\n\npublic class AverageOfThreeNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
-  },
-  "prompt": {
-    "points": 1,
-    "paragraphs": [
-      "Write a program that asks the user for three integers and prints their average."
-    ],
-    "sampleOutputs": [
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give the first number:",
-          {
-            "text": "8",
-            "isInput": true
-          },
-          "Give the second number:",
-          {
-            "text": "2",
-            "isInput": true
-          },
-          "Give the third number:",
-          {
-            "text": "3",
-            "isInput": true
-          },
-          "The average is 4.333333333333333"
-        ]
-      },
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give the first number:",
-          {
-            "text": "9",
-            "isInput": true
-          },
-          "Give the second number:",
-          {
-            "text": "5",
-            "isInput": true
-          },
-          "Give the third number:",
-          {
-            "text": "-1",
-            "isInput": true
-          },
-          "The average is 4.333333333333333"
-        ]
-      }
-    ]
+    "src/main/java/AverageOfThreeNumbers.java": "\nimport java.util.Scanner;\n\npublic class AverageOfThreeNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // write your program here\n        System.out.println(\"Give the first number:\");\n        double first = Integer.valueOf(scanner.nextLine());\n        \n        System.out.println(\"Give the second number:\");\n        double second = Integer.valueOf(scanner.nextLine());\n        \n        System.out.println(\"Give the third number:\");\n        double third = Integer.valueOf(scanner.nextLine());\n        \n        double avgOfNum = (first + second + third) / 3.0;\n        \n        System.out.println(\"The average is \" + avgOfNum);\n\n    }\n}\n"
   }
 }

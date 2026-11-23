@@ -132,7 +132,8 @@ async function main() {
       starterFiles[`src/main/java/${f.rel}`] = await fs.readFile(f.full, "utf8");
     }
 
-    const testDestBase = path.join(OUT_TESTS, id);
+    const partSubdir = `part-${part}`;
+    const testDestBase = path.join(OUT_TESTS, partSubdir, id);
     const testClasses = [];
 
     for (const f of testFilesList) {

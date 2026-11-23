@@ -1,0 +1,11 @@
+{
+  "id": "part02-34-advancedastrology",
+  "part": 2,
+  "order": 34,
+  "title": "Advanced Astrology",
+  "description": "Complete the Java programming exercise: Advanced Astrology.",
+  "dataFiles": [],
+  "starterFiles": {
+    "src/main/java/AdvancedAstrology.java": "\npublic class AdvancedAstrology {\n\n    public static void printStars(int number) {\n        // part 1 of the exercise\n    }\n\n    public static void printSpaces(int number) {\n        // part 1 of the exercise\n    }\n\n    public static void printTriangle(int size) {\n        // part 2 of the exercise\n    }\n\n    public static void christmasTree(int height) {\n        // part 3 of the exercise\n    }\n\n    public static void main(String[] args) {\n        // The tests are not checking the main, so you can modify it freely.\n\n        printTriangle(5);\n        System.out.println(\"---\");\n        christmasTree(4);\n        System.out.println(\"---\");\n        christmasTree(10);\n    }\n}\n"
+  }
+}

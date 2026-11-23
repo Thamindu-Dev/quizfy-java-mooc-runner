@@ -294,5 +294,277 @@
     "title": "Gift Tax",
     "fileCount": 1,
     "hasDataFiles": false
+  },
+  {
+    "id": "part02-01-squared",
+    "part": 2,
+    "order": 1,
+    "title": "Squared",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-02-squarerootofsum",
+    "part": 2,
+    "order": 2,
+    "title": "Square Root Of Sum",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-03-absolutevalue",
+    "part": 2,
+    "order": 3,
+    "title": "Absolute Value",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-04-comparingnumbers",
+    "part": 2,
+    "order": 4,
+    "title": "Comparing Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-05-carryon",
+    "part": 2,
+    "order": 5,
+    "title": "Carry On",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-06-arewethereyet",
+    "part": 2,
+    "order": 6,
+    "title": "Are We There Yet",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-07-onlypositives",
+    "part": 2,
+    "order": 7,
+    "title": "Only Positives",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-08-numberofnumbers",
+    "part": 2,
+    "order": 8,
+    "title": "Number Of Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-09-numberofnegativenumbers",
+    "part": 2,
+    "order": 9,
+    "title": "Number Of Negative Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-10-sumofnumbers",
+    "part": 2,
+    "order": 10,
+    "title": "Sum Of Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-11-numberandsumofnumbers",
+    "part": 2,
+    "order": 11,
+    "title": "Number And Sum Of Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-12-averageofnumbers",
+    "part": 2,
+    "order": 12,
+    "title": "Average Of Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-13-averageofpositivenumbers",
+    "part": 2,
+    "order": 13,
+    "title": "Average Of Positive Numbers",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-14-counting",
+    "part": 2,
+    "order": 14,
+    "title": "Counting",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-15-countingtohundred",
+    "part": 2,
+    "order": 15,
+    "title": "Counting To Hundred",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-16-fromwheretowhere",
+    "part": 2,
+    "order": 16,
+    "title": "From Where To Where",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-17-sumofasequence",
+    "part": 2,
+    "order": 17,
+    "title": "Sum Of A Sequence",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-18-sumofasequencethesequel",
+    "part": 2,
+    "order": 18,
+    "title": "Sum Of A Sequence The Sequel",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-19-factorial",
+    "part": 2,
+    "order": 19,
+    "title": "Factorial",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-20-repeatingbreakingandremembering",
+    "part": 2,
+    "order": 20,
+    "title": "Repeating Breaking And Remembering",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-21-inaholeintheground",
+    "part": 2,
+    "order": 21,
+    "title": "In A Hole In The Ground",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-22-reprint",
+    "part": 2,
+    "order": 22,
+    "title": "Reprint",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-23-fromonetoparameter",
+    "part": 2,
+    "order": 23,
+    "title": "From One To Parameter",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-24-fromparametertoone",
+    "part": 2,
+    "order": 24,
+    "title": "From Parameter To One",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-25-division",
+    "part": 2,
+    "order": 25,
+    "title": "Division",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-26-divisiblebythree",
+    "part": 2,
+    "order": 26,
+    "title": "Divisible By Three",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-27-numberuno",
+    "part": 2,
+    "order": 27,
+    "title": "Number Uno",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-28-word",
+    "part": 2,
+    "order": 28,
+    "title": "Word",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-29-summation",
+    "part": 2,
+    "order": 29,
+    "title": "Summation",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-30-smallest",
+    "part": 2,
+    "order": 30,
+    "title": "Smallest",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-31-greatest",
+    "part": 2,
+    "order": 31,
+    "title": "Greatest",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-32-averaging",
+    "part": 2,
+    "order": 32,
+    "title": "Averaging",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-33-starsign",
+    "part": 2,
+    "order": 33,
+    "title": "Star Sign",
+    "fileCount": 1,
+    "hasDataFiles": false
+  },
+  {
+    "id": "part02-34-advancedastrology",
+    "part": 2,
+    "order": 34,
+    "title": "Advanced Astrology",
+    "fileCount": 1,
+    "hasDataFiles": false
   }
 ]

@@ -3,38 +3,9 @@
   "part": 1,
   "order": 24,
   "title": "Speeding Ticket",
-  "description": "Write a program that asks the user for an integer and prints the string \"Speeding ticket!\" if the input is greater than 120.",
+  "description": "Complete the Java programming exercise: Speeding Ticket.",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/SpeedingTicket.java": "\nimport java.util.Scanner;\n\npublic class SpeedingTicket {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here. \n    }\n}\n"
-  },
-  "prompt": {
-    "points": 1,
-    "paragraphs": [
-      "Write a program that asks the user for an integer and prints the string \"Speeding ticket!\" if the input is greater than 120."
-    ],
-    "sampleOutputs": [
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give speed:",
-          {
-            "text": "15",
-            "isInput": true
-          }
-        ]
-      },
-      {
-        "caption": "Sample output",
-        "lines": [
-          "Give speed:",
-          {
-            "text": "135",
-            "isInput": true
-          },
-          "Speeding ticket!"
-        ]
-      }
-    ]
+    "src/main/java/SpeedingTicket.java": "\nimport java.util.Scanner;\n\npublic class SpeedingTicket {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here. \n        System.out.println(\"Give speed:\");\n        int speed = Integer.valueOf(scanner.nextLine());\n        \n        if(speed > 120) {\n            System.out.println(\"Speeding ticket!\");\n        }\n    }\n}\n"
   }
 }

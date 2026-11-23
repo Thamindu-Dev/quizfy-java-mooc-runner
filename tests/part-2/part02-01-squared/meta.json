@@ -1,0 +1,10 @@
+{
+  "id": "part02-01-squared",
+  "part": 2,
+  "order": 1,
+  "title": "Squared",
+  "testClasses": [
+    "SquaredTest"
+  ],
+  "dataFiles": []
+}
