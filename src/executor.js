@@ -110,14 +110,17 @@ export async function gradeSubmission(exerciseId, files) {
     }
   }
 
-  // Resolve test directory from part-based subdirectories (tests/part-1/<id>, tests/part-2/<id>)
-  // or fall back to flat layout (tests/<id>) for backwards compatibility.
+  // Resolve test directory:
+  // Primary layout: tests/<courseSubdir>/part-{N}/<id> (e.g. tests/java-programming-i/part-1/part01-01-sandbox)
+  // Fallbacks: tests/part-{N}/<id>, tests/<id>
   let testDir;
   let meta;
   const partMatch = exerciseId.match(/^part(\d+)-/);
   if (partMatch) {
-    const partSubdir = `part-${parseInt(partMatch[1], 10)}`;
-    testDir = path.join(TESTS_DIR, partSubdir, exerciseId);
+    const partNum = parseInt(partMatch[1], 10);
+    const courseSubdir = partNum <= 7 ? "java-programming-i" : "java-programming-ii";
+    const partSubdir = `part-${partNum}`;
+    testDir = path.join(TESTS_DIR, courseSubdir, partSubdir, exerciseId);
   }
   if (!testDir) {
     testDir = path.join(TESTS_DIR, exerciseId);
@@ -125,14 +128,26 @@ export async function gradeSubmission(exerciseId, files) {
   try {
     meta = JSON.parse(await fs.readFile(path.join(testDir, "meta.json"), "utf8"));
   } catch {
-    // Fall back to flat layout
-    const flatDir = path.join(TESTS_DIR, exerciseId);
-    try {
-      meta = JSON.parse(await fs.readFile(path.join(flatDir, "meta.json"), "utf8"));
-      testDir = flatDir;
-    } catch {
-      return { status: "error", error: `Exercise '${exerciseId}' not found.` };
+    // Fall back to tests/part-{N}/<id> or flat layout
+    let resolved = null;
+    if (partMatch) {
+      const partNum = parseInt(partMatch[1], 10);
+      const intermediateDir = path.join(TESTS_DIR, `part-${partNum}`, exerciseId);
+      try {
+        meta = JSON.parse(await fs.readFile(path.join(intermediateDir, "meta.json"), "utf8"));
+        resolved = intermediateDir;
+      } catch {}
     }
+    if (!resolved) {
+      const flatDir = path.join(TESTS_DIR, exerciseId);
+      try {
+        meta = JSON.parse(await fs.readFile(path.join(flatDir, "meta.json"), "utf8"));
+        resolved = flatDir;
+      } catch {
+        return { status: "error", error: `Exercise '${exerciseId}' not found.` };
+      }
+    }
+    testDir = resolved;
   }
 
   const runId = crypto.randomUUID();

@@ -132,8 +132,9 @@ async function main() {
       starterFiles[`src/main/java/${f.rel}`] = await fs.readFile(f.full, "utf8");
     }
 
+    const courseSubdir = part <= 7 ? "java-programming-i" : "java-programming-ii";
     const partSubdir = `part-${part}`;
-    const testDestBase = path.join(OUT_TESTS, partSubdir, id);
+    const testDestBase = path.join(OUT_TESTS, courseSubdir, partSubdir, id);
     const testClasses = [];
 
     for (const f of testFilesList) {

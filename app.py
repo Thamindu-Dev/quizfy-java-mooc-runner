@@ -224,24 +224,34 @@ def grade_submission(exercise_id: Any, files: Any) -> Dict[str, Any]:
         if not isinstance(content, str) or len(content.encode("utf-8")) > MAX_FILE_BYTES:
             return {"status": "error", "error": f"File too large or invalid: {rel_path}"}
 
-    # Resolve test directory from part-based subdirectories (tests/part-1/<id>, tests/part-2/<id>)
-    # or fall back to flat layout (tests/<id>) for backwards compatibility.
+    # Resolve test directory:
+    # Primary: tests/<courseSubdir>/part-{N}/<id> (e.g. tests/java-programming-i/part-1/part01-01-sandbox)
+    # Fallback: tests/part-{N}/<id> or flat tests/<id>
     part_match = re.match(r"^part(\d+)-", exercise_id)
+    test_dir = None
     if part_match:
-        test_dir = TESTS_DIR / f"part-{int(part_match.group(1))}" / exercise_id
-    else:
-        test_dir = TESTS_DIR / exercise_id
+        part_num = int(part_match.group(1))
+        course_subdir = "java-programming-i" if part_num <= 7 else "java-programming-ii"
+        candidate = TESTS_DIR / course_subdir / f"part-{part_num}" / exercise_id
+        if (candidate / "meta.json").exists():
+            test_dir = candidate
+        else:
+            cand2 = TESTS_DIR / f"part-{part_num}" / exercise_id
+            if (cand2 / "meta.json").exists():
+                test_dir = cand2
+
+    if test_dir is None:
+        flat_dir = TESTS_DIR / exercise_id
+        if (flat_dir / "meta.json").exists():
+            test_dir = flat_dir
+        else:
+            return {"status": "error", "error": f"Exercise '{exercise_id}' not found."}
+
     meta_path = test_dir / "meta.json"
     try:
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
     except Exception:
-        # Fall back to flat layout
-        flat_dir = TESTS_DIR / exercise_id
-        try:
-            meta = json.loads((flat_dir / "meta.json").read_text(encoding="utf-8"))
-            test_dir = flat_dir
-        except Exception:
-            return {"status": "error", "error": f"Exercise '{exercise_id}' not found."}
+        return {"status": "error", "error": f"Exercise '{exercise_id}' not found."}
 
     run_id = str(uuid.uuid4())
     work_dir = TMP_ROOT / f"quizfy-run-{run_id}"
@@ -486,15 +496,8 @@ def get_system_status() -> Dict[str, Any]:
     except Exception as exc:
         jdk_info = f"Unavailable ({exc})"
 
-    # Count exercises across part subdirectories (tests/part-1/*, tests/part-2/*, ...)
-    exercise_count = 0
-    if TESTS_DIR.exists():
-        for child in TESTS_DIR.iterdir():
-            if child.is_dir():
-                if (child / "meta.json").exists():
-                    exercise_count += 1  # flat layout
-                else:
-                    exercise_count += len([p for p in child.iterdir() if p.is_dir()])
+    # Count exercises across all course/part subdirectories
+    exercise_count = len(list(TESTS_DIR.rglob("meta.json"))) if TESTS_DIR.exists() else 0
     return {
         "ok": True,
         "jdk": jdk_info,
