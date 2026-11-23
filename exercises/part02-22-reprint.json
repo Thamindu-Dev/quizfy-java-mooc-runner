@@ -7,5 +7,32 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/Reprint.java": "\nimport java.util.Scanner;\n\npublic class Reprint {\n\n    public static void main(String[] args) {\n        // ask the user for how many times should the text be printed\n        // then call the printText-method multiple times with a while-loop\n        \n        Scanner scanner = new Scanner(System.in);\n    }\n    \n    // Don't change the next line that defines the method!\n    // (We aren't giving a method a parameter yet)\n    public static void printText() {\n        // write some code here\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Expand the previous program so that the main program asks the user for the number of times the phrase will be printed (i.e. how many times the method will be called).",
+      "**NB:** print the prompt `How many times?` on its own separate line!"
+    ],
+    "codeSnippet": "public static void main(String[] args) {\n    // ask the user for the number of times that the phrase will be printed\n    // use the while command to call the method a suitable number of times\n}\n\npublic static void printText() {\n    // write some code in here\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How many times?",
+          {
+            "text": "7",
+            "isInput": true
+          },
+          "In a hole in the ground there lived a method",
+          "In a hole in the ground there lived a method",
+          "In a hole in the ground there lived a method",
+          "In a hole in the ground there lived a method",
+          "In a hole in the ground there lived a method",
+          "In a hole in the ground there lived a method",
+          "In a hole in the ground there lived a method"
+        ]
+      }
+    ]
   }
 }

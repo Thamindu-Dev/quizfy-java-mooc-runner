@@ -7,5 +7,21 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/Smallest.java": "\npublic class Smallest {\n\n    public static int smallest(int number1, int number2) {\n        // Write some code here\n        // don't print anything inside this method\n        // there must be a return in the end of the method\n        return -1;\n    }\n\n    public static void main(String[] args) {\n        int result = smallest(2, 7);\n        System.out.println(\"Smallest: \" + result);\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Define a two-parameter method `smallest` that returns the smaller of the two numbers passed to it as parameters.",
+      "The output of the program:"
+    ],
+    "codeSnippet": "public static int smallest(int number1, int number2) {\n    // write your code here\n    // do not print anything inside the method\n\n    // there must be a return command at the end\n}\n\npublic static void main(String[] args) {\n    int answer =  smallest(2, 7);\n    System.out.println(\"Smallest: \" + answer);\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Smallest: 2"
+        ]
+      }
+    ]
   }
 }

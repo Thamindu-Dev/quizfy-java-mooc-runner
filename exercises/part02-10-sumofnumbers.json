@@ -7,5 +7,45 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/SumOfNumbers.java": "\nimport java.util.Scanner;\n\npublic class SumOfNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads numbers from the user until the user inputs a number 0. After this the program outputs the sum of the numbers. The number zero does not need to be added to the sum, even if it does not change the results.",
+      "Example output of the program:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "22",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "9",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "-2",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Sum of the numbers: 34"
+        ]
+      }
+    ]
   }
 }

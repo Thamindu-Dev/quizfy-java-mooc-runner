@@ -7,5 +7,47 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/OnlyPositives.java": "\nimport java.util.Scanner;\n\npublic class OnlyPositives {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for numbers. If the number is negative (smaller than zero), the program prints for user \"Unsuitable number\" and asks the user for a new number. If the number is zero, the program exits the loop. If the number is positive, the program prints the number to the power of two."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "25",
+          "Give a number:",
+          {
+            "text": "4",
+            "isInput": true
+          },
+          "16",
+          "Give a number:",
+          {
+            "text": "-3",
+            "isInput": true
+          },
+          "Unsuitable number",
+          "Give a number:",
+          {
+            "text": "1",
+            "isInput": true
+          },
+          "1",
+          "Give a number:",
+          {
+            "text": "0",
+            "isInput": true
+          }
+        ]
+      }
+    ]
   }
 }

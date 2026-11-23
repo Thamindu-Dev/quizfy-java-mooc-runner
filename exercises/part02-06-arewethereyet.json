@@ -7,5 +7,43 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/AreWeThereYet.java": "\nimport java.util.Scanner;\n\npublic class AreWeThereYet {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program, according to the preceding example, that asks the user to input values until they input the value 4."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "744",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "22",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "4",
+            "isInput": true
+          }
+        ]
+      }
+    ]
   }
 }

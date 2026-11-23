@@ -7,5 +7,37 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/SumOfASequence.java": "\nimport java.util.Scanner;\n\npublic class SumOfASequence {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Implement a program, which calculates the sum 1+2+3+...+n where n is given as user input.",
+      "The previous example calculated 1 + 2 + 3  = 6",
+      "And this one calculated 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Last number?",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "The sum is 6"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Last number?",
+          {
+            "text": "7",
+            "isInput": true
+          },
+          "The sum is 28"
+        ]
+      }
+    ]
   }
 }

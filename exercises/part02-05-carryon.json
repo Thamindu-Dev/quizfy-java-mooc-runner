@@ -7,5 +7,38 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/CarryOn.java": "\nimport java.util.Scanner;\n\npublic class CarryOn {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program by using the loop example that asks \"Shall we carry on?\" until the user inputs the string \"no\"."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Shall we carry on?",
+          {
+            "text": "yes",
+            "isInput": true
+          },
+          "Shall we carry on?",
+          {
+            "text": "ye",
+            "isInput": true
+          },
+          "Shall we carry on?",
+          {
+            "text": "y",
+            "isInput": true
+          },
+          "Shall we carry on?",
+          {
+            "text": "no",
+            "isInput": true
+          }
+        ]
+      }
+    ]
   }
 }

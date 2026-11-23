@@ -7,5 +7,48 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/SumOfASequenceTheSequel.java": "\nimport java.util.Scanner;\n\npublic class SumOfASequenceTheSequel {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Implement a program which calculates the sum of a closed interval, and prints it. Expect the user to write the smaller number first and then the larger number.",
+      "You can base your solution to this exercise to the solution of last exercise -- add the functionality for the user to enter the starting point as well.",
+      "The above example internally calculated  3 + 4 + 5 = 12",
+      "And now the internal calculation was 2 + 3 + 4 + 5 + 6 + 7 + 8 = 35"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "First number?",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "Last number?",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "The sum is 12"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "First number?",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "Last number?",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "The sum is: 35"
+        ]
+      }
+    ]
   }
 }

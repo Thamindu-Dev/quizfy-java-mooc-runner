@@ -7,5 +7,11 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/Word.java": "\nimport java.util.Scanner;\n\npublic class Word {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a method `public static String word()`. The method must return a string of your choice."
+    ]
   }
 }

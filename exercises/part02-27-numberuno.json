@@ -7,5 +7,11 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/NumberUno.java": "\nimport java.util.Scanner;\n\npublic class NumberUno {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a method `public static int numberUno()` that returns the value 1."
+    ]
   }
 }

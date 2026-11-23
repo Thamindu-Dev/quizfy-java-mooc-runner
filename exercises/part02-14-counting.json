@@ -7,5 +7,38 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/Counting.java": "\nimport java.util.Scanner;\n\npublic class Counting {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads an integer from the user. Next, the program prints numbers from 0 to the number given by the user. You can assume that the user always gives a positive number. Below are some examples of the expected functionality."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "4",
+            "isInput": true
+          },
+          "0",
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "1",
+            "isInput": true
+          },
+          "0",
+          "1"
+        ]
+      }
+    ]
   }
 }

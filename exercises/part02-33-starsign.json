@@ -7,5 +7,60 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/StarSign.java": "\npublic class StarSign {\n\n    public static void main(String[] args) {\n\n        \n        //The tests are not checking the main, so you can modify it freely.\n        //NB: If the tests don't seem to pass, you should try the methods here\n        //in the main to make sure they print the correct shapes!\n        \n        printStars(3);\n        System.out.println(\"\\n---\");  // printing --- between the shapes\n        printSquare(4);\n        System.out.println(\"\\n---\");\n        printRectangle(5, 6);\n        System.out.println(\"\\n---\");\n        printTriangle(3);\n        System.out.println(\"\\n---\");\n    }\n\n    public static void printStars(int number) {\n        // first part of the exercise\n    }\n\n    public static void printSquare(int size) {\n        // second part of the exercise\n    }\n\n    public static void printRectangle(int width, int height) {\n        // third part of the exercise\n    }\n\n    public static void printTriangle(int size) {\n        // fourth part of the exercise\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Printing stars",
+      "Define a method called `printStars` that prints the given number of stars and a line break.",
+      "Write the method in the following template:",
+      "The output of the program:",
+      "**N.B** multipart exercises can be uploaded to the server (click the button to the right of the testing button) even if some parts are unfinished. In this case the server will complain about the tests for the parts that haven't been completed, but it will mark down the finished parts.",
+      "Printing a square",
+      "Define a method called `printSquare(int size)` that prints a suitable square with the help of the `printStars` method. So the method call `printSquare(4)` results in the following output:",
+      "**N.B.:** producing the correct output is not enough; the rows of the square must be produced by calling the `printStars` method inside the `printSquare`method.",
+      "When creating the program, you can use the code in the main to test that the methods behave as required.",
+      "Printing a rectangle",
+      "Write a method called `printRectangle(int width, int height)` that prints the correct rectangle by using the `printStars` method. So the method call `printRectangle(17, 3)` should produce the following output:",
+      "Printing a triangle",
+      "Create a method called `printTriangle(int size)` that prints a triangle by using the `printStars` method. So the call `printTriangle(4)` should print the following:"
+    ],
+    "codeSnippet": "public static void printStars(int number) {\n    // you can print one star with the command\n    // System.out.print(\"*\");\n    // call the print command n times\n    // in the end print a line break with the comand\n    // System.out.println(\"\");\n}\n\npublic static void main(String[] args) {\n    printStars(5);\n    printStars(3);\n    printStars(9);\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "*****",
+          "***",
+          "*********"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "****",
+          "****",
+          "****",
+          "****"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "*****************",
+          "*****************",
+          "*****************"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "*",
+          "**",
+          "***",
+          "****"
+        ]
+      }
+    ]
   }
 }

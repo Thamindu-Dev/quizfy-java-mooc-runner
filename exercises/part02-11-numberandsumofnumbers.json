@@ -7,5 +7,47 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/NumberAndSumOfNumbers.java": "\nimport java.util.Scanner;\n\npublic class NumberAndSumOfNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for input until the user inputs 0. After this the program prints the amount of numbers inputted and the sum of the numbers. The number zero does not need to be added to the sum, but adding it does not change the results.",
+      "_You need two variables to keep track of the information. Use one for keeping track of the numbers inputted and other for keeping track of the sum_",
+      "Example output of the program:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "22",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "9",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "-2",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Number of numbers: 4",
+          "Sum of the numbers: 34"
+        ]
+      }
+    ]
   }
 }

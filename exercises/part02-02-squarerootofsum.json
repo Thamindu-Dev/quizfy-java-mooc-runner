@@ -7,5 +7,58 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/SquareRootOfSum.java": "\nimport java.util.Scanner;\n\npublic class SquareRootOfSum {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads two integers from the user and prints the square root of the sum of these integers. The program does not need to work with negative values.",
+      "You can calculate the square root of an integer with the command `Math.sqrt` like this:",
+      "Here are a few examples:"
+    ],
+    "codeSnippet": "int number = 42;\ndouble squareRoot = Math.sqrt(number);\nSystem.out.println(squareRoot);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "1"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "5",
+            "isInput": true
+          },
+          {
+            "text": "4",
+            "isInput": true
+          },
+          "3"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "35",
+            "isInput": true
+          },
+          "6"
+        ]
+      }
+    ]
   }
 }

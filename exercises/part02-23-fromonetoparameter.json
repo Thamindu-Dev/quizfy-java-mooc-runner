@@ -7,5 +7,31 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/FromOneToParameter.java": "\n\npublic class FromOneToParameter {\n\n    public static void main(String[] args) {\n\n    }\n\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create the following method in the exercise template: `public static void printUntilNumber(int number)`. It should print the numbers from one to the number passed as a parameter. Two examples of the method's usage are given below."
+    ],
+    "codeSnippet": "public static void main(String[] args) {\n    printUntilNumber(5);\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "1",
+          "2"
+        ]
+      }
+    ]
   }
 }

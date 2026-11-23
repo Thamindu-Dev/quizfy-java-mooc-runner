@@ -7,5 +7,21 @@
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/InAHoleInTheGround.java": "public class InAHoleInTheGround {\n\n    public static void main(String[] args) {\n        printText();\n    }\n    \n    public static void printText() {\n        // Write some code in here\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a method called `printText` which prints the phrase \"In a hole in the ground there lived a method\" and a newline.",
+      "The output of the program:"
+    ],
+    "codeSnippet": "public static void main(String[] args) {\n    printText();\n}\n\npublic static void printText() {\n    // Write some code in here\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "In a hole in the ground there lived a method"
+        ]
+      }
+    ]
   }
 }
