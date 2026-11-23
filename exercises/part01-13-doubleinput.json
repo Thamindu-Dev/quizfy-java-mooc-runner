@@ -3,9 +3,40 @@
   "part": 1,
   "order": 13,
   "title": "Double Input",
-  "description": "Complete the Java programming exercise: Double Input.",
+  "description": "Write a program that asks the user for a floating-point number using the variable type Double. The program then prints the user's input value.",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/DoubleInput.java": "\nimport java.util.Scanner;\n\npublic class DoubleInput {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // write your program here\n        System.out.println(\"Give a number:\");\n        double num = Double.valueOf(scanner.nextLine());\n        System.out.println(\"You gave the number \" + num);\n\n    }\n}\n"
+    "src/main/java/DoubleInput.java": "\nimport java.util.Scanner;\n\npublic class DoubleInput {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // write your program here\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for a floating-point number using the variable type Double. The program then prints the user's input value.",
+      "Example prints for the program can be seen below:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "3.14",
+            "isInput": true
+          },
+          "You gave the number 3.14"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "2.718",
+            "isInput": true
+          },
+          "You gave the number 2.718"
+        ]
+      }
+    ]
   }
 }

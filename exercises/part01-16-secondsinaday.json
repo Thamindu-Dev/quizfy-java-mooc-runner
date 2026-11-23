@@ -3,9 +3,53 @@
   "part": 1,
   "order": 16,
   "title": "Seconds In A Day",
-  "description": "Complete the Java programming exercise: Seconds In A Day.",
+  "description": "In the exercise template, implement a program that asks the user for the number of days. After that, the program prints the number of seconds in the given number of days.",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/SecondsInADay.java": "\nimport java.util.Scanner;\n\npublic class SecondsInADay {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n        System.out.println(\"How many days would you like to convert to seconds?\");\n        int days = Integer.valueOf(scanner.nextLine());\n        \n        int toSeconds = days * 24 * 60 * 60;\n        \n        System.out.println(toSeconds);\n\n    }\n}\n"
+    "src/main/java/SecondsInADay.java": "\nimport java.util.Scanner;\n\npublic class SecondsInADay {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the exercise template, implement a program that asks the user for the number of days. After that, the program prints the number of seconds in the given number of days.",
+      "Earlier we learned to read an integer in the following manner:",
+      "Examples of expected output:"
+    ],
+    "codeSnippet": "Scanner scanner = new Scanner(System.in);\n\nSystem.out.println(\"Give a number:\");\nint number = Integer.valueOf(scanner.nextLine());\nSystem.out.println(\"You gave \" + number);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How many days would you like to convert to seconds?",
+          {
+            "text": "1",
+            "isInput": true
+          },
+          "86400"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How many days would you like to convert to seconds?",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "259200"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How many days would you like to convert to seconds?",
+          {
+            "text": "7",
+            "isInput": true
+          },
+          "604800"
+        ]
+      }
+    ]
   }
 }

@@ -3,9 +3,65 @@
   "part": 1,
   "order": 30,
   "title": "Larger Than Or Equal To",
-  "description": "Complete the Java programming exercise: Larger Than Or Equal To.",
+  "description": "Write a program that prompts the user for two integers and prints the larger of the two. If the numbers are the same, then the program informs us about this as well.",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/LargerThanOrEqualTo.java": "\nimport java.util.Scanner;\n\npublic class LargerThanOrEqualTo {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        System.out.println(\"Give the first number:\");\n        int firstNum = scan.nextInt();\n\n        System.out.println(\"Give the second number:\");\n        int secondNum = scan.nextInt();\n\n        int maxNum = 0;\n\n        if (!(firstNum == secondNum)) {\n\n            if (firstNum > maxNum) {\n                maxNum = firstNum;\n\n            }\n            if (firstNum < secondNum) {\n                maxNum = secondNum;\n            }\n\n            System.out.println(\"Greater number is: \" + maxNum);\n\n        } else {\n            System.out.println(\"The numbers are equal!\");\n        }\n\n    }\n}\n"
+    "src/main/java/LargerThanOrEqualTo.java": "\nimport java.util.Scanner;\n\npublic class LargerThanOrEqualTo {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for two integers and prints the larger of the two. If the numbers are the same, then the program informs us about this as well."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "Greater number is: 5"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "Greater number is: 8"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "The numbers are equal!"
+        ]
+      }
+    ]
   }
 }

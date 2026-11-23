@@ -3,9 +3,60 @@
   "part": 1,
   "order": 18,
   "title": "Sum Of Three Numbers",
-  "description": "Complete the Java programming exercise: Sum Of Three Numbers.",
+  "description": "Write a program that asks the user for three numbers. After this the program prints the sum of the numbers given by the user.",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/SumOfThreeNumbers.java": "\nimport java.util.Scanner;\n\npublic class SumOfThreeNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n        System.out.println(\"Give the first number:\");\n        int first = Integer.valueOf(scanner.nextLine());\n        \n        System.out.println(\"Give the second number:\");\n        int second = Integer.valueOf(scanner.nextLine());\n        \n        System.out.println(\"Give the third number:\");\n        int third = Integer.valueOf(scanner.nextLine());\n        \n        int sumOfNum = first + second + third;\n        \n        System.out.println(\"The sum of the numbers is \" + sumOfNum);\n\n    }\n}\n"
+    "src/main/java/SumOfThreeNumbers.java": "\nimport java.util.Scanner;\n\npublic class SumOfThreeNumbers {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for three numbers. After this the program prints the sum of the numbers given by the user.",
+      "The program should work like this:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "Give the third number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "The sum of the numbers is 14"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "Give the third number:",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "The sum of the numbers is 4"
+        ]
+      }
+    ]
   }
 }

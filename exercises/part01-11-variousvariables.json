@@ -3,9 +3,46 @@
   "part": 1,
   "order": 11,
   "title": "Various Variables",
-  "description": "Complete the Java programming exercise: Various Variables.",
+  "description": "The exercise template contains a program that prints the following:",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/VariousVariables.java": "\npublic class VariousVariables {\n\n    public static void main(String[] args) {\n        // MODIFY THESE:\n\n        int numberOfChicken = 9000;\n        double baconWeight = 0.1;\n        String tractor = \"Zetor\";\n\n        // DON'T MODIFY THESE:\n        System.out.println(\"Chicken:\");\n        System.out.println(numberOfChicken);\n        System.out.println(\"Bacon (kg):\");\n        System.out.println(baconWeight);\n        System.out.println(\"Tractor:\");\n        System.out.println(tractor);\n        System.out.println(\"\");\n        System.out.println(\"And finally, a summary:\");\n        System.out.println(numberOfChicken);\n        System.out.println(baconWeight);\n        System.out.println(tractor);\n    }\n}\n"
+    "src/main/java/VariousVariables.java": "\npublic class VariousVariables {\n\n    public static void main(String[] args) {\n        // MODIFY THESE:\n\n        int numberOfChicken = 3;\n        double baconWeight = 0.5;\n        String tractor = \"None!\";\n\n        // DON'T MODIFY THESE:\n        System.out.println(\"Chicken:\");\n        System.out.println(numberOfChicken);\n        System.out.println(\"Bacon (kg):\");\n        System.out.println(baconWeight);\n        System.out.println(\"Tractor:\");\n        System.out.println(tractor);\n        System.out.println(\"\");\n        System.out.println(\"And finally, a summary:\");\n        System.out.println(numberOfChicken);\n        System.out.println(baconWeight);\n        System.out.println(tractor);\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template contains a program that prints the following:",
+      "Modify the program in the given places so that it outputs the following:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Chicken:",
+          "3",
+          "Bacon (kg):",
+          "5.5",
+          "Tractor:",
+          "None!And finally, a summary:",
+          "3",
+          "5.5",
+          "None!"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Chicken:",
+          "9000",
+          "Bacon (kg):",
+          "0.1",
+          "Tractor:",
+          "ZetorAnd finally, a summary:",
+          "9000",
+          "0.1",
+          "Zetor"
+        ]
+      }
+    ]
   }
 }

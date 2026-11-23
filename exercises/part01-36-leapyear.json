@@ -3,9 +3,72 @@
   "part": 1,
   "order": 36,
   "title": "Leap Year",
-  "description": "Complete the Java programming exercise: Leap Year.",
+  "description": "A year is a leap year if it is divisible by 4. However, if the year is divisible by 100, then it is a leap year only when it is also divisible by 400.",
   "dataFiles": [],
   "starterFiles": {
     "src/main/java/LeapYear.java": "\nimport java.util.Scanner;\n\npublic class LeapYear {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "A year is a leap year if it is divisible by 4. However, if the year is divisible by 100, then it is a leap year only when it is also divisible by 400.",
+      "Write a program that reads a year from the user, and checks whether or not it is a leap year.",
+      "Hint 1: The divisibility by a particular number can be checked using the modulo operator, aka %, in the following way.",
+      "Hint 2: Think of the problem as a chain of if, else if, else if, ... comparisons, and start building the program from a situation in which you can be certain that the year is not a leap year."
+    ],
+    "codeSnippet": "int number = 5;\n\nif (number % 5 == 0) {\n    System.out.println(\"The number is divisible by five!\");\n}\n\nif (number % 6 != 0) {\n    System.out.println(\"The number is not divisible by six!\")\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a year:",
+          {
+            "text": "2011",
+            "isInput": true
+          },
+          "The year is not a leap year."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a year:",
+          {
+            "text": "2012",
+            "isInput": true
+          },
+          "The year is a leap year."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a year:",
+          {
+            "text": "1800",
+            "isInput": true
+          },
+          "The year is not a leap year."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a year:",
+          {
+            "text": "2000",
+            "isInput": true
+          },
+          "The year is a leap year."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "The number is divisible by five!",
+          "The number is not divisible by six!"
+        ]
+      }
+    ]
   }
 }

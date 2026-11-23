@@ -3,9 +3,43 @@
   "part": 1,
   "order": 8,
   "title": "Greeting",
-  "description": "Complete the Java programming exercise: Greeting.",
+  "description": "Write a program that prompts the user for their name with the message \"What's your name?\". When the user has written their name, the program has to print \"Hi \" followed by the user's name.",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/Greeting.java": "\nimport java.util.Scanner;\n\npublic class Greeting {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n        \n        System.out.println(\"What's your name?\");\n        String name = scanner.nextLine();\n        System.out.println(\"Hi \" + name);\n\n    }\n}\n"
+    "src/main/java/Greeting.java": "\nimport java.util.Scanner;\n\npublic class Greeting {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for their name with the message \"What's your name?\". When the user has written their name, the program has to print \"Hi \" followed by the user's name.",
+      "The exercise template already includes the code that creates the Scanner tool.",
+      "Example output when user gives the name Ada.",
+      "Example output when user gives the name Lily."
+    ],
+    "codeSnippet": "import java.util.Scanner;\n\npublic class Greeting {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "What's your name?",
+          {
+            "text": "Ada",
+            "isInput": true
+          },
+          "Hi Ada"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "What's your name?",
+          {
+            "text": "Lily",
+            "isInput": true
+          },
+          "Hi Lily"
+        ]
+      }
+    ]
   }
 }

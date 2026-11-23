@@ -3,9 +3,38 @@
   "part": 1,
   "order": 27,
   "title": "Ancient",
-  "description": "Complete the Java programming exercise: Ancient.",
+  "description": "Write a program that prompts the user for a year. If the user inputs a number that is smaller than 2015, then the program prints the string \"Ancient history!\".",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/Ancient.java": "\nimport java.util.Scanner;\n\npublic class Ancient {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here\n        System.out.println(\"Give a year:\");\n        int year = scan.nextInt();\n        \n        if (year < 2015){\n            System.out.println(\"Ancient history!\");\n        }\n    }\n}\n"
+    "src/main/java/Ancient.java": "\nimport java.util.Scanner;\n\npublic class Ancient {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for a year. If the user inputs a number that is smaller than 2015, then the program prints the string \"Ancient history!\"."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a year:",
+          {
+            "text": "2017",
+            "isInput": true
+          }
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a year:",
+          {
+            "text": "2013",
+            "isInput": true
+          },
+          "Ancient history!"
+        ]
+      }
+    ]
   }
 }

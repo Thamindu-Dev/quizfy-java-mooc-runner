@@ -3,9 +3,39 @@
   "part": 1,
   "order": 29,
   "title": "Adulthood",
-  "description": "Complete the Java programming exercise: Adulthood.",
+  "description": "Write a program that prompts the user for their age and tells them whether or not they are an adult (18 years old or older).",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/Adulthood.java": "\nimport java.util.Scanner;\n\npublic class Adulthood {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here \n        System.out.println(\"How old are you?\");\n        int age = scan.nextInt();\n        \n        if (age >= 18){\n            System.out.println(\"You are an adult\");\n        } else if (age <= 17 && age > 0){\n            System.out.println(\"You are not an adult\");\n        } else if (age == 0){\n            System.out.println(\"You are not born\");\n        } else {\n            System.out.println(\"Invalid age\");\n        }\n    }\n}\n"
+    "src/main/java/Adulthood.java": "\nimport java.util.Scanner;\n\npublic class Adulthood {\n\n    public static void main(String[] args) {\n        Scanner scan = new Scanner(System.in);\n\n        // Write your program here \n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for their age and tells them whether or not they are an adult (18 years old or older)."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How old are you?",
+          {
+            "text": "12",
+            "isInput": true
+          },
+          "You are not an adult"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How old are you?",
+          {
+            "text": "32",
+            "isInput": true
+          },
+          "You are an adult"
+        ]
+      }
+    ]
   }
 }

@@ -3,9 +3,26 @@
   "part": 1,
   "order": 2,
   "title": "Ada Lovelace",
-  "description": "Complete the Java programming exercise: Ada Lovelace.",
+  "description": "The exercise template has the following boilerplate code:",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/AdaLovelace.java": "\npublic class AdaLovelace {\n\n    public static void main(String[] args) {\n        // Write your program here\n        System.out.print(\"Ada Lovelace\");\n    }\n}\n"
+    "src/main/java/AdaLovelace.java": "\npublic class AdaLovelace {\n\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template has the following boilerplate code:",
+      "The line \"// Write your program here\" is a line comment, and the computer will ignore it when executing the program. Add a new line below the line comment that prints the string \"Ada Lovelace\" and run the program. The output of the program should be:",
+      "Once you've finished the exercise and see that it prints the correct string, return the exercise to the TMC server. After that, you can read more about Ada Lovelace, who was one of the first programmers."
+    ],
+    "codeSnippet": "public class AdaLovelace {\n    public static void main(String[] args) {\n        // Write your program here\n\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Ada Lovelace"
+        ]
+      }
+    ]
   }
 }

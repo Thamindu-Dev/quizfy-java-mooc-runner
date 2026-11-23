@@ -3,9 +3,51 @@
   "part": 1,
   "order": 9,
   "title": "Conversation",
-  "description": "Complete the Java programming exercise: Conversation.",
+  "description": "Write a program that works as follows:",
   "dataFiles": [],
   "starterFiles": {
-    "src/main/java/Conversation.java": "\nimport java.util.Scanner;\n\npublic class Conversation {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n        System.out.println(\"Greetings! How are you doing?\");\n        String greetMessage = scanner.nextLine();\n        \n        System.out.println(\"Oh, how interesting. Tell me more!\");\n        String secondMessage = scanner.nextLine();\n        \n        System.out.println(\"Thanks for sharing!\");\n\n    }\n}\n"
+    "src/main/java/Conversation.java": "\nimport java.util.Scanner;\n\npublic class Conversation {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n\n    }\n}\n"
+  },
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that works as follows:",
+      "The exercise template already includes the code that creates the Scanner tool."
+    ],
+    "codeSnippet": "import java.util.Scanner;\n\npublic class Conversation {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        //Write your program here\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Greetings! How are you doing?",
+          {
+            "text": "Good thank you!",
+            "isInput": true
+          },
+          "Oh, how interesting. Tell me more!",
+          {
+            "text": "Well, there's really nothing to tell.",
+            "isInput": true
+          },
+          "Thanks for sharing!"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Greetings! How are you doing?",
+          {
+            "text": "Nice and dandy like cotton candy!",
+            "isInput": true
+          },
+          "Oh, how interesting. Tell me more!",
+          {
+            "text": "Just went shopping.",
+            "isInput": true
+          },
+          "Thanks for sharing!"
+        ]
+      }
+    ]
   }
 }
