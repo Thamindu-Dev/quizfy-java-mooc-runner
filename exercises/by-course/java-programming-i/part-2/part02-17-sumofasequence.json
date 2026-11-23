@@ -1,0 +1,37 @@
+{
+  "id": "part02-17-sumofasequence",
+  "tmcname": "part02-Part02_17.SumOfASequence",
+  "title": "Sum of a sequence",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Implement a program, which calculates the sum 1+2+3+...+n where n is given as user input.",
+      "The previous example calculated 1 + 2 + 3  = 6",
+      "And this one calculated 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Last number?",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "The sum is 6"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Last number?",
+          {
+            "text": "7",
+            "isInput": true
+          },
+          "The sum is 28"
+        ]
+      }
+    ]
+  }
+}

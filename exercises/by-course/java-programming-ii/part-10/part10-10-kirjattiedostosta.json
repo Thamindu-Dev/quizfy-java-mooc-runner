@@ -1,0 +1,14 @@
+{
+  "id": "part10-10-kirjattiedostosta",
+  "tmcname": "part10-Part10_10.KirjatTiedostosta",
+  "title": "Kirjat tiedostosta",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "-->",
+      "Add the method `public static List readBooks(String file)` for the class `BooksFromFile`. It should read the file given as the parameter and forms book data from it.",
+      "The exercise template contains the class `Book`, which is used for describing a book. You should presume that the book files are in the following format:",
+      "The name and the author of the book are processed as strings, and the publishing year and the page count are processed as integers.\nExample of contents of a book file:"
+    ]
+  }
+}

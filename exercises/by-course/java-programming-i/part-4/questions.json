@@ -1,0 +1,1354 @@
+{
+  "part04-01-yourfirstaccount": {
+    "id": "part04-01-yourfirstaccount",
+    "tmcname": "part04-Part04_01.YourFirstAccount",
+    "title": "Your first account",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template comes with a ready-made class named `Account`. The `Account` object represents a bank account that has balance (i.e. one that has some amount of money in it). The accounts are used as follows:",
+        "Write a program that creates an account with a balance of 100.0, deposits 20.0 in it, and finally prints the balance. **NB!** Perform all the operations in this exact order."
+      ],
+      "codeSnippet": "Account artosAccount = new Account(\"Arto's account\", 100.00);\nAccount artosSwissAccount = new Account(\"Arto's account in Switzerland\", 1000000.00);\n\nSystem.out.println(\"Initial state\");\nSystem.out.println(artosAccount);\nSystem.out.println(artosSwissAccount);\n\nartosAccount.withdraw(20);\nSystem.out.println(\"The balance of Arto's account is now: \" + artosAccount.balance());\nartosSwissAccount.deposit(200);\nSystem.out.println(\"The balance of Arto's other account is now: \" + artosSwissAccount.balance());\n\nSystem.out.println(\"End state\");\nSystem.out.println(artosAccount);\nSystem.out.println(artosSwissAccount);"
+    }
+  },
+  "part04-02-yourfirstbanktransfer": {
+    "id": "part04-02-yourfirstbanktransfer",
+    "tmcname": "part04-Part04_02.YourFirstBankTransfer",
+    "title": "Your first bank transfer",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The `Account` from the previous exercise class is also available in this exercise.",
+        "Write a program that:",
+        "1. Creates an account named `\"Matthews account\"` with the balance 1000\n2. Creates an account named `\"My account\"` with the balance 0\n3. Withdraws 100.0 from Matthew's account\n4. Deposits 100.0 to \"my account\"\n5. Prints both the accounts"
+      ]
+    }
+  },
+  "part04-03-dogattributes": {
+    "id": "part04-03-dogattributes",
+    "tmcname": "part04-Part04_03.DogAttributes",
+    "title": "Dog attributes",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise, you'll practice creating a class.",
+        "A new class can be added in NetBeans the following way: On the left side of the screen is the Projects list. Right-click on the project's name, which for this exercise is `Part04_03.DogAttributes`. From the drop-down menu, select _New_ and _Java Class_. NetBeans will then ask for the class name.",
+        "Name the class `Dog` in this exercise, and press the finish button.",
+        "You have now created a class called `Dog`. Add the variables `private String name`,`private String breed` and `private int age` to the class. As a class diagram, the class looks like this:",
+        "The class doesn't do much yet. However, practicing this step is valuable for what is to come."
+      ]
+    }
+  },
+  "part04-04-room": {
+    "id": "part04-04-room",
+    "tmcname": "part04-Part04_04.Room",
+    "title": "Room",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a class named `Room`. Add the variables `private String code` and `private int seats` to the class. Then create a constructor `public Room(String classCode, int numberOfSeats)` through which values are assigned to the instance variables.",
+        "This class doesn't do much either. However, in the following exercise the object instantiated from our class is already capable of printing text."
+      ]
+    }
+  },
+  "part04-05-whistle": {
+    "id": "part04-05-whistle",
+    "tmcname": "part04-Part04_05.Whistle",
+    "title": "Whistle",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a class named `Whistle`. Add the variable `private String sound` to the class. After that, create the constructor `public Whistle(String whistleSound)`, which is used to create a new whistle that's given a sound.",
+        "Then create the method `public void sound()` that prints the whistle's sound."
+      ],
+      "codeSnippet": "Whistle duckWhistle = new Whistle(\"Kvaak\");\nWhistle roosterWhistle = new Whistle(\"Peef\");\n\nduckWhistle.sound();\nroosterWhistle.sound();\nduckWhistle.sound();",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Kvaak",
+            "Peef",
+            "Kvaak"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-06-door": {
+    "id": "part04-06-door",
+    "tmcname": "part04-Part04_06.Door",
+    "title": "Door",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a class named `Door`. The door does not have any variables. Create for it a constructor with no parameters (or use the default constructor). After that, create a `public void knock()` method for the door that prints the message \"Who's there?\" when called.",
+        "The door should work as follows."
+      ],
+      "codeSnippet": "Door alexander = new Door();\n\nalexander.knock();\nalexander.knock();",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Who's there?",
+            "Who's there?"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-07-product": {
+    "id": "part04-07-product",
+    "tmcname": "part04-Part04_07.Product",
+    "title": "Product",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a class `Product` that represents a store product. The product should have a price (double), a quantity (int) and a name (String).",
+        "The class should have:",
+        "- the constructor `public Product (String initialName, double initialPrice, int initialQuantity)`\n- a method `public void printProduct()` that prints product information in the following format:",
+        "The output above is based on the product being assigned the name `banana`, with a price of `1.1`, and a quantity of `13` ."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Banana, price 1.1, 13 pcs"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-08-decreasingcounter": {
+    "id": "part04-08-decreasingcounter",
+    "tmcname": "part04-Part04_08.DecreasingCounter",
+    "title": "Decreasing counter (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "This exercise consists of multiple parts. Each part corresponds to one exercise point.",
+        "The exercise template comes with a partially executed class `decreasingCounter`:",
+        "The following is an example of how the main program uses the decreasing counter:",
+        "The program above should have the following print output.",
+        "Implementation of the decrement() method",
+        "Implement the `decrement()` method in the class body in such a way that it decrements the `value` variable of the object it's being called on by one. Once you're done with the `decrement()` method, the main program of the previous example should work to produce the example output.",
+        "The counter's value cannot be negative",
+        "Implement the `decrement()` in such a way that the counter's value never becomes negative. This means that if the value of the counter is 0, it cannot be decremented. A conditional statement is useful here.",
+        "Prints:",
+        "Resetting the counter value",
+        "Create the method `public void reset()` for the counter that resets the value of the counter to 0. For example:",
+        "Prints:"
+      ],
+      "codeSnippet": "public class DecreasingCounter {\n    private int value;   // a variable that remembers the value of the counter\n\n    public DecreasingCounter(int initialValue) {\n        this.value = initialValue;\n    }\n\n    public void printValue {\n        System.out.println(\"value: \" + this.value);\n    }\n\n    public void decrement() {\n        // write the method implementation here\n        // the aim is to decrement the value of the counter by one\n    }\n\n    // and the other methods go here\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "value: 10",
+            "value: 9",
+            "value: 8"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "value: 2",
+            "value: 1",
+            "value: 0",
+            "value: 0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "value: 100",
+            "value: 0",
+            "value: 0"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-09-debt": {
+    "id": "part04-09-debt",
+    "tmcname": "part04-Part04_09.Debt",
+    "title": "Debt",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create the class `Debt` that has double-typed instance variables of `balance` and `interestRate`. The balance and the interest rate are passed to the constructor as parameters `public Debt(double initialBalance, double initialInterestRate)`.",
+        "In addition, create the methods `public void printBalance()` and `public void waitOneYear()` for the class. The method printBalance prints the current balance, and the waitOneYear method grows the debt amount.",
+        "The debt is increased by multiplying the balance by the interest rate.",
+        "The class should do the following:",
+        "The example above illustrates the development of a mortgage with an interest rate of one percent.",
+        "Prints:",
+        "When you've managed to get the program to work, check the previous example with the early 1900s recession interest rates as well.",
+        "Once you get the program to work, try out the previous example with the interest rates of the early 1990s recession when the interest rates were as high as 15-20% - try swapping the interest rate in the example above with `1.20` and see what happens."
+      ],
+      "codeSnippet": "public class MainProgram {\n    public static void main(String[] args) {\n\n        Debt mortgage = new Debt(120000.0, 1.01);\n        mortgage.printBalance();\n\n        mortgage.waitOneYear();\n        mortgage.printBalance();\n\n        int years = 0;\n\n        while (years < 20) {\n            mortgage.waitOneYear();\n            years = years + 1;\n        }\n\n        mortgage.printBalance();\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "120000.0",
+            "121200.0",
+            "147887.0328416936"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-10-song": {
+    "id": "part04-10-song",
+    "tmcname": "part04-Part04_10.Song",
+    "title": "Song",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a class called `Song`. The song has the instance variables `name` (string) and `length` in seconds (integer). Both are set in the `public Song(String name, int length)` constructor. Also, add to the object the methods `public String name()`, which returns the name of the song, and `public int length()`, which returns the length of the song.",
+        "The class should work as follows."
+      ],
+      "codeSnippet": "Song garden = new Song(\"In The Garden\", 10910);\nSystem.out.println(\"The song \" + garden.name() + \" has a length of \" + garden.length() + \" seconds.\");",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The song In The Garden has a length of 10910 seconds."
+          ]
+        }
+      ]
+    }
+  },
+  "part04-11-film": {
+    "id": "part04-11-film",
+    "tmcname": "part04-Part04_11.Film",
+    "title": "Film",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a film class with the instance variables `name` (String) and `ageRating` (int). Write the constructor `public Film(String filmName, int filmAgeRating)` for the class, and also the methods `public String name()` and `public int ageRating()`. The first of these returns the film title and the second returns its rating.",
+        "Below is an example use case of the class."
+      ],
+      "codeSnippet": "Film chipmunks = new Film(\"Alvin and the Chipmunks: The Squeakquel\", 0);\n\nScanner reader = new Scanner(System.in);\n\nSystem.out.println(\"How old are you?\");\nint age = Integer.valueOf(reader.nextLine());\n\nSystem.out.println();\nif (age >= chipmunks.ageRating()) {\n    System.out.println(\"You may watch the film \" + chipmunks.name());\n} else {\n    System.out.println(\"You may not watch the film \" + chipmunks.name());\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "How old are you?",
+            {
+              "text": "7",
+              "isInput": true
+            },
+            "You may watch the film Alvin and the Chipmunks: The Squeakquel"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-12-gauge": {
+    "id": "part04-12-gauge",
+    "tmcname": "part04-Part04_12.Gauge",
+    "title": "Gauge",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create the class `Gauge`. The gauge has the instance variable `private int value`, a constructor without parameters (sets the initial value of the meter variable to 0), and also the following four methods:",
+        "- Method `public void increase()` grows the `value` instance variable's value by one. It does not grow the value beyond five.\n- Method `public void decrease()` decreases the `value` instance variable's value by one. It does not decrease the value to negative numbers.\n- Method `public int value()` returns the `value` variable's value.\n- Method `public boolean full()` returns `true` if the instance variable `value` has the value five. Otherwise, it returns false.",
+        "An example of the class in use."
+      ],
+      "codeSnippet": "Gauge g = new Gauge();\n\nwhile(!g.full()) {\n    System.out.println(\"Not full! Value: \" + g.value());\n    g.increase();\n}\n\nSystem.out.println(\"Full! Value: \" + g.value());\ng.decrease();\nSystem.out.println(\"Not full! Value: \" + g.value());",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Not full! Value: 0",
+            "Not full! Value: 1",
+            "Not full! Value: 2",
+            "Not full! Value: 3",
+            "Not full! Value: 4",
+            "Full! Value: 5",
+            "Not full! Value: 4"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-13-agent": {
+    "id": "part04-13-agent",
+    "tmcname": "part04-Part04_13.Agent",
+    "title": "Agent",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template defines an Agent class, having a first name and last name. A `print` method is defined for the class that creates the following string representation.",
+        "Remove the class' `print` method, and create a `public String toString()` method for it, which returns the string representation shown above.",
+        "The class should function as follows."
+      ],
+      "codeSnippet": "Agent bond = new Agent(\"James\", \"Bond\");\nbond.print();",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "My name is Bond, James Bond"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "My name is Bond, James Bond",
+            "My name is Bond, Ionic Bond"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-14-multiplier": {
+    "id": "part04-14-multiplier",
+    "tmcname": "part04-Part04_14.Multiplier",
+    "title": "Multiplier",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a class Multiplier that has a:",
+        "- Constructor `public Multiplier(int number)`.\n- Method `public int multiply(int number)` which returns the value `number` passed to it multiplied by the `number` provided to the constructor.",
+        "You also need to create an instance variable in this exercise.",
+        "An example of the class in use:",
+        "Output"
+      ],
+      "codeSnippet": "Multiplier multiplyByThree = new Multiplier(3);\n\nSystem.out.println(\"multiplyByThree.multiply(2): \" + multiplyByThree.multiply(2));\n\nMultiplier multiplyByFour = new Multiplier(4);\n\nSystem.out.println(\"multiplyByFour.multiply(2): \" + multiplyByFour.multiply(2));\nSystem.out.println(\"multiplyByThree.multiply(1): \" + multiplyByThree.multiply(1));\nSystem.out.println(\"multiplyByFour.multiply(1): \" + multiplyByFour.multiply(1));",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "multiplyByThree.multiply(2): 6",
+            "multiplyByFour.multiply(2): 8",
+            "multiplyByThree.multiply(1): 3",
+            "multiplyByFour.multiply(1): 4"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-15-numberstatistics": {
+    "id": "part04-15-numberstatistics",
+    "tmcname": "part04-Part04_15.NumberStatistics",
+    "title": "Statistics (4 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Count",
+        "Create a class `Statistics` that has the following functionality (the file for the class is provided in the exercise template):",
+        "- a method `addNumber` adds a new number to the statistics\n- a method `getCount` tells the number of added numbers",
+        "The class does not need to store the added numbers anywhere, it is enough for it to remember their count. At this stage, the `addNumber` method can even neglect the numbers being added to the statistics, since the only thing being stored is the count of numbers added.",
+        "The method's body is the following:",
+        "The following program introduces the class' use:",
+        "The program prints the following:",
+        "Sum and average",
+        "Expand the class with the following functionality:",
+        "- the `sum` method tells the sum of the numbers added (the sum of an empty number statistics object is 0)\n- the `average` method tells the average of the numbers added (the average of an empty number statistics object is 0",
+        "The class' template is the following:",
+        "The following program demonstrates the class' use:",
+        "The program prints the following:",
+        "Sum of user input",
+        "Write a program that asks the user for numbers until the user enters -1. The program will then provide the sum of the numbers.",
+        "The program should use a `Statistics` object to calculate the sum.",
+        "**NOTE:** Do not modify the Statistics class in this part. Instead, implement the program for calculating the sum by making use of it.",
+        "Multiple sums",
+        "Change the previous program so that it also calculates the sum of even and odd numbers.",
+        "**NOTE**: Define _three_ Statistics objects in the program. Use the first to calculate the sum of all numbers, the second to calculate the sum of even numbers, and the third to calculate the sum of odd numbers.",
+        "**For the test to work, the objects must be created in the main program in the order they were mentioned above (i.e., first the object that sums all the numbers, then the one that sums the even ones, and then finally the one that sums the odd numbers)!**",
+        "**NOTE:** Do not change the Statistics class in any way!",
+        "The program should work as follows:"
+      ],
+      "codeSnippet": "public class Statistics {\n    private int count;\n\n    public Statistics() {\n        // initialize the variable numberCount here\n    }\n\n    public void addNumber(int number) {\n        // write code here\n    }\n\n    public int getCount() {\n        // write code here\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Count: 4"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Count: 4",
+            "Sum: 11",
+            "Average: 2.75"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter numbers:",
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Sum: 15"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter numbers:",
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Sum: 13",
+            "Sum of even numbers: 8",
+            "Sum of odd numbers: 5"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-16-paymentcard": {
+    "id": "part04-16-paymentcard",
+    "tmcname": "part04-Part04_16.PaymentCard",
+    "title": "Payment Card (6 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "At the University of Helsinki student canteen, i.e. Unicafe, students pay for their lunch using a payment card. The final PaymentCard will look like the following as a class diagram:",
+        "In this exercise series, a class called `PaymentCard` is created which aims to mimic Unicafe's payment process",
+        "The class template",
+        "The project will include two code files:",
+        "The exercise template comes with a code file called `Main`, which contains the `main` method.",
+        "Add a new class to the project called `PaymentCard`. Here's how to add a new class: On the left side of the screen is the list of projects. Right-click on the project name. Select _New_ and _Java Class_ from the drop-down menu. Name the class as \"PaymentCard\".",
+        "First, create the `PaymentCard` object's constructor, which is passed the opening balance of the card, and which then stores that balance in the object's internal variable. Then, write the `toString` method, which will return the card's balance in the form \"The card has a balance of X euros\".",
+        "The following is the template of the `PaymentCard` class:",
+        "The following main program tests the class:",
+        "The program should print the following:",
+        "Making transactions",
+        "Complement the `PaymentCard` class with the following methods:",
+        "The method `eatAffordably` should reduce the card's balance by € 2.60, and the method `eatHeartily` should reduce the card's balance by € 4.60.",
+        "The following main program tests the class:",
+        "The program should print approximately the following:",
+        "Non-negative balance",
+        "What happens if the card runs out of money? It doesn't make sense in this case for the balance to turn negative. Change the methods `eatAffordably` and `eatHeartily` so that they don't reduce the balance should it turn negative.",
+        "The following main program tests the class:",
+        "The program should print the following:",
+        "The second call to the method `eatHeartily` above did not affect the balance, since the balance would have otherwise become negative.",
+        "Topping up the card",
+        "Add the following method to the `PaymentCard` class:",
+        "The purpose of the method is to increase the card's balance by the amount of money given as a parameter. However, the card's balance may not exceed 150 euros. As such, if the amount to be topped up exceeds this limit, the balance should, in any case, become exactly 150 euros.",
+        "The following main program tests the class:",
+        "The program should print the following:",
+        "Topping up the card with a negative value",
+        "Change the `addMoney` method further, so that if there is an attempt to top it up with a negative amount, the value on the card will not change.",
+        "The following main program tests the class:",
+        "The program should print the following:",
+        "Multiple cards",
+        "Write code in the `main` method of the `MainProgram` class that contains the following sequence of events:",
+        "- Create Paul's card. The opening balance of the card is 20 euros\n- Create Matt's card. The opening balance of the card is 30 euros\n- Paul eats heartily\n- Matt eats affordably\n- The cards' values ​​are printed (each on its own line, with the cardholder name at the beginning of it)\n- Paul tops up 20 euros\n- Matt eats heartily\n- The cards' values ​​are printed (each on its own line, with the cardholder name at the beginning of it)\n- Paul eats affordably\n- Paul eats affordably\n- Matt tops up 50 euros\n- The cards' values ​​are printed (each on its own line, with the cardholder name at the beginning of it)",
+        "The main program's template is as follows:",
+        "The program should produce the following print output:"
+      ],
+      "codeSnippet": "public class PaymentCard {\n    private double balance;\n\n    public PaymentCard(double openingBalance) {\n        // write code here\n    }\n\n    public String toString() {\n        // write code here\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The card has a balance of 50.0 euros"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The card has a balance of 50.0 euros",
+            "The card has a balance of 47.4 euros",
+            "The card has a balance of 40.199999999999996 euros"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The card has a balance 5.0 euros",
+            "The card has a balance 0.40000000000000036 euros",
+            "The card has a balance 0.40000000000000036 euros"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The card has a balance of 10.0 euros",
+            "The card has a balance of 25.0 euros",
+            "The card has a balance of 35.0 euros",
+            "The card has a balance of 150.0 euros"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Paul: The card has a balance of 10.0 euros",
+            "Paul: The card has a balance of 10.0 euros"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Paul: The card has a balance of 15.4 euros",
+            "Matt: The card has a balance of 27.4 euros",
+            "Paul: The card has a balance of 35.4 euros",
+            "Matt: The card has a balance of 22.799999999999997 euros",
+            "Paul: The card has a balance of 30.199999999999996 euros",
+            "Matt: The card has a balance of 72.8 euros"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-17-items": {
+    "id": "part04-17-items",
+    "tmcname": "part04-Part04_17.Items",
+    "title": "Items",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Implement the class `Items` described here. **NB!** Don't modify the class `Item`.",
+        "Write a program that reads names of items from the user. If the name is empty, the program stops reading. Otherwise, the given name is used to create a new item, which you will then add to the `items` list.",
+        "Having read all the names, print all the items by using the `toString` method of the  `Item` class. The implementation of the `Item` class keeps track of the time of creation, in addition to the name of the item.",
+        "An example of the working program is given below:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Name:",
+            {
+              "text": "Hammer",
+              "isInput": true
+            },
+            "Name:",
+            {
+              "text": "Collar",
+              "isInput": true
+            },
+            "Name:",
+            "Hammer (created at: 06.07.2018 12:34:56)",
+            "Collar (created at: 06.07.2018 12:34:57)"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-18-personalinformation": {
+    "id": "part04-18-personalinformation",
+    "tmcname": "part04-Part04_18.PersonalInformation",
+    "title": "Personal information",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The program described here should be implemented in the class `PersonalInformationCollection`. **NB!** Do not modify the class `PersonalInformation`.",
+        "After the user has entered the last set of details (they enter an empty first name), exit the repeat statement.",
+        "Then print the collected personal information so that each entered object is printed in the following format: first and last names separated by a space (you don't print the identification number). An example of the working program is given below:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First name:",
+            {
+              "text": "Jean",
+              "isInput": true
+            },
+            "Last name:",
+            {
+              "text": "Bartik",
+              "isInput": true
+            },
+            "Identification number:",
+            {
+              "text": "271224",
+              "isInput": true
+            },
+            "First name:",
+            {
+              "text": "Betty",
+              "isInput": true
+            },
+            "Last name:",
+            {
+              "text": "Holberton",
+              "isInput": true
+            },
+            "Identification number:",
+            {
+              "text": "070317",
+              "isInput": true
+            },
+            "First name:",
+            "Jean Bartik",
+            "Betty Holberton"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-19-televisionprograms": {
+    "id": "part04-19-televisionprograms",
+    "tmcname": "part04-Part04_19.TelevisionPrograms",
+    "title": "Television programs",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template there is a ready-made class TelevisionProgram, representing a television program. The class has object variables name and duration, a constructor, and a few methods.",
+        "Implement a program that begins by reading television programs from the user. When the user inputs an empty string as the name of the program, the program stops reading programs.",
+        "After this the user is queried for a maximum duration. Once the maximum is given, the program proceeds to list all the programs whose duration is smaller or equal to the specified maximum duration."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Name:",
+            {
+              "text": "Rick and Morty",
+              "isInput": true
+            },
+            "Duration:",
+            {
+              "text": "25",
+              "isInput": true
+            },
+            "Name:",
+            {
+              "text": "Two and a Half Men",
+              "isInput": true
+            },
+            "Duration:",
+            {
+              "text": "30",
+              "isInput": true
+            },
+            "Name:",
+            {
+              "text": "Love it or list it",
+              "isInput": true
+            },
+            "Duration:",
+            {
+              "text": "60",
+              "isInput": true
+            },
+            "Name:",
+            {
+              "text": "House",
+              "isInput": true
+            },
+            "Duration:",
+            {
+              "text": "60",
+              "isInput": true
+            },
+            "Program's maximum duration?",
+            {
+              "text": "30",
+              "isInput": true
+            },
+            "Rick and Morty, 25 minutes",
+            "Two and a Half Men, 30 minutes"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-20-books": {
+    "id": "part04-20-books",
+    "tmcname": "part04-Part04_20.Books",
+    "title": "Books",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that first reads book information from the user. The details to be asked for each book include the title, the number of pages and the publication year. Entering an empty string as the name of the book ends the reading process.",
+        "After this the user is asked for what is to be printed. If the user inputs \"everything\", all the details are printed: the book titles, the numbers of pages and the publication years. However, if the user enters the string \"name\", only the book titles are printed.",
+        "It is probably worthwhile to implement a class called `Book` to represent a book. There are two points in total available for this exercise."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Title:",
+            {
+              "text": "To Kill a Mockingbird",
+              "isInput": true
+            },
+            "Pages:",
+            {
+              "text": "281",
+              "isInput": true
+            },
+            "Publication year:",
+            {
+              "text": "1960",
+              "isInput": true
+            },
+            "Title:",
+            {
+              "text": "A Brief History of Time",
+              "isInput": true
+            },
+            "Pages:",
+            {
+              "text": "256",
+              "isInput": true
+            },
+            "Publication year:",
+            {
+              "text": "1988",
+              "isInput": true
+            },
+            "Title:",
+            {
+              "text": "Beautiful Code",
+              "isInput": true
+            },
+            "Pages:",
+            {
+              "text": "593",
+              "isInput": true
+            },
+            "Publication year:",
+            {
+              "text": "2007",
+              "isInput": true
+            },
+            "Title:",
+            {
+              "text": "The Name of the Wind",
+              "isInput": true
+            },
+            "Pages:",
+            {
+              "text": "662",
+              "isInput": true
+            },
+            "Publication year:",
+            {
+              "text": "2007",
+              "isInput": true
+            },
+            "Title:",
+            "What information will be printed?",
+            {
+              "text": "everything",
+              "isInput": true
+            },
+            "To Kill a Mockingbird, 281 pages, 1960",
+            "A Brief History of Time, 256 pages, 1988",
+            "Beautiful Code, 593 pages, 2007",
+            "The Name of the Wind, 662 pages, 2007"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Title:",
+            {
+              "text": "To Kill a Mockingbird",
+              "isInput": true
+            },
+            "Pages:",
+            {
+              "text": "281",
+              "isInput": true
+            },
+            "Publication year:",
+            {
+              "text": "1960",
+              "isInput": true
+            },
+            "Title:",
+            {
+              "text": "A Brief History of Time",
+              "isInput": true
+            },
+            "Pages:",
+            {
+              "text": "256",
+              "isInput": true
+            },
+            "Publication year:",
+            {
+              "text": "1988",
+              "isInput": true
+            },
+            "Title:",
+            {
+              "text": "Beautiful Code",
+              "isInput": true
+            },
+            "Pages:",
+            {
+              "text": "593",
+              "isInput": true
+            },
+            "Publication year:",
+            {
+              "text": "2007",
+              "isInput": true
+            },
+            "Title:",
+            {
+              "text": "The Name of the Wind",
+              "isInput": true
+            },
+            "Pages:",
+            {
+              "text": "662",
+              "isInput": true
+            },
+            "Publication year:",
+            {
+              "text": "2007",
+              "isInput": true
+            },
+            "Title:",
+            "What information will be printed?",
+            {
+              "text": "name",
+              "isInput": true
+            },
+            "To Kill a Mockingbird",
+            "A Brief History of Time",
+            "Beautiful Code",
+            "The Name of the Wind"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-21-numberofstrings": {
+    "id": "part04-21-numberofstrings",
+    "tmcname": "part04-Part04_21.NumberOfStrings",
+    "title": "Number of Strings",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads strings from the user until the user inputs the string \"end\". At that point, the program should print how many strings have been read. The string \"end\" should not be included in the number strings read. You can find some examples below of how the program works."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "I",
+              "isInput": true
+            },
+            {
+              "text": "have",
+              "isInput": true
+            },
+            {
+              "text": "a",
+              "isInput": true
+            },
+            {
+              "text": "feeling",
+              "isInput": true
+            },
+            {
+              "text": "that",
+              "isInput": true
+            },
+            {
+              "text": "I",
+              "isInput": true
+            },
+            {
+              "text": "have",
+              "isInput": true
+            },
+            {
+              "text": "written",
+              "isInput": true
+            },
+            {
+              "text": "this",
+              "isInput": true
+            },
+            {
+              "text": "wrong",
+              "isInput": true
+            },
+            {
+              "text": "before",
+              "isInput": true
+            },
+            {
+              "text": "end",
+              "isInput": true
+            },
+            "11"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "end",
+              "isInput": true
+            },
+            "0"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-22-cubes": {
+    "id": "part04-22-cubes",
+    "tmcname": "part04-Part04_22.Cubes",
+    "title": "Cubes",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads strings from the user until the user inputs the string \"end\". As long as the input is not \"end\", the program should handle the input as an integer and print the cube of the number provided (i.e., number _ number _ number). Below are some sample outputs"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "27",
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "-1",
+            {
+              "text": "11",
+              "isInput": true
+            },
+            "1331",
+            {
+              "text": "end",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "end",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part04-23-creatinganewfile": {
+    "id": "part04-23-creatinganewfile",
+    "tmcname": "part04-Part04_23.CreatingANewFile",
+    "title": "Creating a New File",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "**NB!** In this exercise, we won't be programming. Instead, you'll familiarize yourself with the `Files`-tab in NetBeans and how to create a new file.",
+        "Create a file called `file.txt` in the root folder (the folder containing the folder `src` and the file `pom.xml`) of the exercise template using the `Files`-tab in NetBeans. Edit the file and write the message `Hello, world!` on the first line of the file."
+      ]
+    }
+  },
+  "part04-24-printingafile": {
+    "id": "part04-24-printingafile",
+    "tmcname": "part04-Part04_24.PrintingAFile",
+    "title": "Printing a File",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prints the contents of a file called \"data.txt\", such that each line of the file is printed on its own line.",
+        "If the file content looks like so:",
+        "In a\nworld",
+        "Then the program should print the following:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "In a",
+            "world"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-25-printingaspecifiedfile": {
+    "id": "part04-25-printingaspecifiedfile",
+    "tmcname": "part04-Part04_25.PrintingASpecifiedFile",
+    "title": "Printing a Specified File",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for a string, and then prints the contents of a file with a name matching the string provided. You may assume that the user provides a file name that the program can find.",
+        "The exercise template contains the files \"data.txt\" and \"song.txt\", which you may use when testing the functionality of your program. The output of the program can be seen below for when a user has entered the string \"song.txt\". The content that is printed comes from the file \"song.txt\". Naturally, the program should also work with other filenames, assuming the file can be found."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Which file should have its contents printed?",
+            {
+              "text": "song.txt",
+              "isInput": true
+            },
+            "No option for duality",
+            "The old is where we come",
+            "Clockspeed is fast, but we'll survive",
+            "The new will overcome",
+            "We are challengers, not followers",
+            "We take the ball to build",
+            "Easy safe services",
+            "Are here to stay",
+            "Value for society",
+            "Value for life",
+            "For you and me",
+            "Tieto is here allright!"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-26-guestlistfromafile": {
+    "id": "part04-26-guestlistfromafile",
+    "tmcname": "part04-Part04_26.GuestListFromAFile",
+    "title": "Guest List From a File",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template comes ready with functionality for the guest list application. It checks whether names entered by the user are on the guest list.",
+        "However, the program is missing the functionality needed for reading the guest list. Modify the program so that the names on the guest list are read from the file.",
+        "**NB!** The exercise template comes with two files, `names.txt` and `other-names.txt`, which have the following contents. Do not change the contents of the files!",
+        "names.txt:",
+        "ada\narto\nleena\ntest",
+        "other-names.txt:",
+        "leo\njarmo\nalicia"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Name of the file:",
+            {
+              "text": "guestlist.txt",
+              "isInput": true
+            },
+            "Enter names, an empty line quits.",
+            {
+              "text": "Chuck Norris",
+              "isInput": true
+            },
+            "The name is not on the list.",
+            {
+              "text": "Jack Baluer",
+              "isInput": true
+            },
+            "The name is not on the list.",
+            {
+              "text": "Jack Bauer",
+              "isInput": true
+            },
+            "The name is on the list.",
+            {
+              "text": "Jack Bower",
+              "isInput": true
+            },
+            "The name is on the list.",
+            "Thank you!"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-27-isitinthefile": {
+    "id": "part04-27-isitinthefile",
+    "tmcname": "part04-Part04_27.IsItInTheFile",
+    "title": "Is it in the file?",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template comes with two files, `names.txt` and `other-names.txt`. Write a program that first asks the user for the name of the file to be read, after which the user is prompted for the string that they're looking for. The program then reads the file and searches for the desired string.",
+        "If the string is found, the program should print \"Found!\". If not, the program should print \"Not found.\". If reading the file fails (the reading ends in an error) the program should print the message \"Reading the file \" + file + \" failed.\"."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Name of the file:",
+            {
+              "text": "names.txt",
+              "isInput": true
+            },
+            "Search for:",
+            {
+              "text": "Antti",
+              "isInput": true
+            },
+            "Not found."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Name of the file:",
+            {
+              "text": "names.txt",
+              "isInput": true
+            },
+            "Search for:",
+            {
+              "text": "ada",
+              "isInput": true
+            },
+            "Found!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Name of the file:",
+            {
+              "text": "nonexistent.txt",
+              "isInput": true
+            },
+            "Search for:",
+            {
+              "text": "test",
+              "isInput": true
+            },
+            "Reading the file nonexistent.txt failed."
+          ]
+        }
+      ]
+    }
+  },
+  "part04-28-numbersfromafile": {
+    "id": "part04-28-numbersfromafile",
+    "tmcname": "part04-Part04_28.NumbersFromAFile",
+    "title": "Numbers From a File",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prompts the user for a filename, as well as the upper and lower bounds for the accepted range of numbers. Then the program reads the numbers contained in the file (each number is on its own line) and only accounts for the numbers which are inside the given range. Finally, the program should print the number of numbers that were inside the given range.",
+        "You can convert a string-type integer read from a file into a proper integer using the command `Integer.valueOf` (just as when handling input from a user).",
+        "**NB**! The exercise template comes with two files, `numbers-1.txt` and `numbers-2.txt` that have the following contents. Do not change the contents of these files.",
+        "numbers-1.txt:",
+        "300\n9\n20\n15",
+        "numbers-2.txt:",
+        "123\n-5\n12\n67\n-300\n1902"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "File?",
+            {
+              "text": "numbers-1.txt",
+              "isInput": true
+            },
+            "Lower bound?",
+            {
+              "text": "15",
+              "isInput": true
+            },
+            "Upper bound?",
+            {
+              "text": "20",
+              "isInput": true
+            },
+            "Numbers: 2"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "File?",
+            {
+              "text": "numbers-1.txt",
+              "isInput": true
+            },
+            "Lower bound?",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Upper bound?",
+            {
+              "text": "300",
+              "isInput": true
+            },
+            "Numbers: 4"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-29-recordsfromafile": {
+    "id": "part04-29-recordsfromafile",
+    "tmcname": "part04-Part04_29.RecordsFromAFile",
+    "title": "Records From a File",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise, we'll be working with files stored in CSV-format that contain names and ages separated by commas. The file format may look like this:",
+        "lily,3\nanton,5\nlevi,4\namy,1",
+        "Your task is to write a program that first prompts the user for the name of the file they want to read. The program then prints the content of the file in the following way (we're assuming below that the output is from the above-mentioned file):",
+        "**NB**! The word \"year\" should be formatted based on the age."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Name of the file:",
+            {
+              "text": "data.txt",
+              "isInput": true
+            },
+            "lily, age: 3 years",
+            "anton, age: 5 years",
+            "levi, age: 4 years",
+            "amy, age: 1 year"
+          ]
+        }
+      ]
+    }
+  },
+  "part04-30-storingrecords": {
+    "id": "part04-30-storingrecords",
+    "tmcname": "part04-Part04_30.StoringRecords",
+    "title": "Storing Records",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise, we'll be working with files stored in CSV format, which contain names and ages separated by commas. The file format may look like this:",
+        "lily,3\nanton,5\nlevi,4\namy,1",
+        "The exercise template already has a `Person` class, and the class `StoringRecords` has a body for the method `public static ArrayList readRecordsFromFile(String file)`. Implement the `readRecordsFromFile` method such that it reads the persons from the file passed as a parameter, and finally returns them in the list returned by the method.",
+        "The exercise template has a `main` method that you can use to test how your program works. In this exercise, only modify the method `readRecordsFromFile`."
+      ]
+    }
+  },
+  "part04-31-sportstatistics": {
+    "id": "part04-31-sportstatistics",
+    "tmcname": "part04-Part04_31.SportStatistics",
+    "title": "Sport Statistics",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise, we'll be working with files stored in CSV format. Each line of the file contains the home team, visiting team, home team points, and visiting team points, all separated by commas.",
+        "You can see an example below of the file's contents. The file shown below is also included in the exercise template with the name \"data.csv\".",
+        "ENCE,Vitality,9,16\nENCE,Vitality,16,12\nENCE,Vitality,9,16\nENCE,Heroic,10,16\nSJ,ENCE,0,16\nSJ,ENCE,3,16\nFURIA,NRG,7,16\nFURIA,Prospects,16,1",
+        "Write a program that prompts the user for a filename, after which it reads the match statistics from the file. The program then prompts the user for the name of a team, and prints the data specified in the following parts for that team.",
+        "Games Played",
+        "Implement the ability to output the number of games played by any given team. We're using the above-mentioned **data.csv** file.",
+        "Wins and Losses",
+        "Extend the program so that it has the ability to print the number of wins and losses of a given team. The winner of a game is the team that has gained more points from it.",
+        "You may assume that the games cannot be tied. Below, we're using the above-mentioned **data.csv** file."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "File:",
+            {
+              "text": "data.csv",
+              "isInput": true
+            },
+            "Team:",
+            {
+              "text": "FURIA",
+              "isInput": true
+            },
+            "Games: 2"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "File:",
+            {
+              "text": "data.csv",
+              "isInput": true
+            },
+            "Team:",
+            {
+              "text": "ENCE",
+              "isInput": true
+            },
+            "Games: 6"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "File:",
+            {
+              "text": "data.csv",
+              "isInput": true
+            },
+            "Team:",
+            {
+              "text": "FURIA",
+              "isInput": true
+            },
+            "Games: 2",
+            "Wins: 1",
+            "Losses: 1"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "File:",
+            {
+              "text": "data.csv",
+              "isInput": true
+            },
+            "Name:",
+            {
+              "text": "ENCE",
+              "isInput": true
+            },
+            "Games: 6",
+            "Wins: 3",
+            "Losses: 3"
+          ]
+        }
+      ]
+    }
+  }
+}

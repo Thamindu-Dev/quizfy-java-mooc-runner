@@ -1,0 +1,44 @@
+{
+  "id": "part02-15-countingtohundred",
+  "tmcname": "part02-Part02_15.CountingToHundred",
+  "title": "Counting to hundred",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program, which reads an integer from the user. Then the program prints numbers from that number to 100. You can assume that the user always gives a number less than 100. Below are some examples of the expected functionality."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "99",
+            "isInput": true
+          },
+          "99",
+          "100"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "-4",
+            "isInput": true
+          },
+          "-4",
+          "-3",
+          "-2",
+          "-1",
+          "0",
+          "1",
+          "2",
+          "... (many numbers in between) ...",
+          "98",
+          "99",
+          "100"
+        ]
+      }
+    ]
+  }
+}

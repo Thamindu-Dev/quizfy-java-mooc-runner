@@ -1,0 +1,45 @@
+{
+  "id": "part06-04-printingacollection",
+  "tmcname": "part06-Part06_04.PrintingACollection",
+  "title": "Printing a Collection",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template has a predefined `SimpleCollection` class, which is used to represent a group of values. The class is missing the `toString` method used for printing.",
+      "Implement a `toString` method for the class that will perform as demonstrated in the following examples."
+    ],
+    "codeSnippet": "SimpleCollection s = new SimpleCollection(\"alphabet\");\nSystem.out.println(s);\n\nSystem.out.println();\n\ns.add(\"a\");\nSystem.out.println(s);\n\nSystem.out.println();\n\ns.add(\"b\");\nSystem.out.println(s);\n\nSystem.out.println();\n\ns.add(\"c\");\nSystem.out.println(s);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "The collection alphabet is empty.",
+          "The collection alphabet has 1 element:",
+          "a",
+          "The collection alphabet has 2 elements:",
+          "a",
+          "b",
+          "The collection alphabet has 3 elements:",
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "The collection characters is empty.",
+          "The collection characters has 1 element:",
+          "magneto",
+          "The collection characters has 2 elements:",
+          "magneto",
+          "mystique",
+          "The collection characters has 3 elements:",
+          "magneto",
+          "mystique",
+          "phoenix"
+        ]
+      }
+    ]
+  }
+}

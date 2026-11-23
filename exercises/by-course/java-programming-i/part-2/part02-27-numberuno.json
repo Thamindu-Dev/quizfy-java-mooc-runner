@@ -1,0 +1,11 @@
+{
+  "id": "part02-27-numberuno",
+  "tmcname": "part02-Part02_27.NumberUno",
+  "title": "Number uno",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a method `public static int numberUno()` that returns the value 1."
+    ]
+  }
+}

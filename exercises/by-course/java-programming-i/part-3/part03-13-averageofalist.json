@@ -1,0 +1,40 @@
+{
+  "id": "part03-13-averageofalist",
+  "tmcname": "part03-Part03_13.AverageOfAList",
+  "title": "Average of a list",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+      "When reading ends, calculate the average of the numbers in it, and then print that value."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "72",
+            "isInput": true
+          },
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "8",
+            "isInput": true
+          },
+          {
+            "text": "11",
+            "isInput": true
+          },
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "Average: 23.25"
+        ]
+      }
+    ]
+  }
+}

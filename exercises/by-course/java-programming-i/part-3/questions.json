@@ -1,0 +1,1553 @@
+{
+  "part03-01-thirdelement": {
+    "id": "part03-01-thirdelement",
+    "tmcname": "part03-Part03_01.ThirdElement",
+    "title": "Third element",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise contains a base that asks the user for strings and adds them to a list. The program stops reading when the user enters an empty string. The program then prints the first element of the list.",
+        "Your assignment is to modify the program so that instead of the first value, the third value on the list is printed. Remember that programmers start counting from zero! The program is allowed to malfunction if there are fewer than three entries on the list, so you don't need to prepare for such an event at all."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "Tom",
+              "isInput": true
+            },
+            {
+              "text": "Emma",
+              "isInput": true
+            },
+            {
+              "text": "Alex",
+              "isInput": true
+            },
+            {
+              "text": "Mary",
+              "isInput": true
+            },
+            "Alex"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "Emma",
+              "isInput": true
+            },
+            {
+              "text": "Alex",
+              "isInput": true
+            },
+            {
+              "text": "Mary",
+              "isInput": true
+            },
+            "Mary"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-02-secondplusthird": {
+    "id": "part03-02-secondplusthird",
+    "tmcname": "part03-Part03_02.SecondPlusThird",
+    "title": "Second plus third",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template there is a program that reads integers from the user and adds them to a list. This ends when the user enters 0. The program then prints the first value on the list.",
+        "Modify the program so that instead of the first value, the program prints the sum of the second and third numbers. The program is allowed to malfunction if there are fewer than three entries on the list, so you don't need to prepare for such an event at all."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "3",
+              "isInput": true
+            },
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "7",
+              "isInput": true
+            },
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "8"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "3",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "7"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-03-indexoutofboundsexception": {
+    "id": "part03-03-indexoutofboundsexception",
+    "tmcname": "part03-Part03_03.IndexOutOfBoundsException",
+    "title": "IndexOutOfBoundsException",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "A list is extremely useful for storing the values of variables for later use. That said, making mistakes is also relatively easy with a list.",
+        "There is a program that uses a list in the exercise template. Modify it so that its execution always produces the error `IndexOutOfBounds`. The user should not have to give any inputs to the program (e.g. write something on the keyboard)",
+        "You can also see a means for going through the values of a list -- we will return to this topic a bit later."
+      ]
+    }
+  },
+  "part03-04-listsize": {
+    "id": "part03-04-listsize",
+    "tmcname": "part03-Part03_04.ListSize",
+    "title": "List size",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template is a program that reads input from the user. Modify its working so that when the program quits reading, the program prints the number of values on the list.",
+        "**NB!** Be sure to use the `size` method of the list."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "Tom",
+              "isInput": true
+            },
+            {
+              "text": "Emma",
+              "isInput": true
+            },
+            {
+              "text": "Alex",
+              "isInput": true
+            },
+            {
+              "text": "Mary",
+              "isInput": true
+            },
+            "In total: 4"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "Juno",
+              "isInput": true
+            },
+            {
+              "text": "Elizabeth",
+              "isInput": true
+            },
+            {
+              "text": "Mason",
+              "isInput": true
+            },
+            {
+              "text": "Irene",
+              "isInput": true
+            },
+            {
+              "text": "Olivia",
+              "isInput": true
+            },
+            {
+              "text": "Liam",
+              "isInput": true
+            },
+            {
+              "text": "Ida",
+              "isInput": true
+            },
+            {
+              "text": "Christopher",
+              "isInput": true
+            },
+            {
+              "text": "Mark",
+              "isInput": true
+            },
+            {
+              "text": "Sylvester",
+              "isInput": true
+            },
+            {
+              "text": "Oscar",
+              "isInput": true
+            },
+            "In total: 11"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-05-lastinlist": {
+    "id": "part03-05-lastinlist",
+    "tmcname": "part03-Part03_05.LastInList",
+    "title": "Last in list",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template there is a program that reads inputs from the user and adds them to a list. Reading is stopped once the user enters an empty string.",
+        "Your task is to modify the method to print the last read value after it stops reading. Print the value that was read last from the list. Use the method that tells the size of a list to help you."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "Tom",
+              "isInput": true
+            },
+            {
+              "text": "Emma",
+              "isInput": true
+            },
+            {
+              "text": "Alex",
+              "isInput": true
+            },
+            {
+              "text": "Mary",
+              "isInput": true
+            },
+            "Mary"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "Juno",
+              "isInput": true
+            },
+            {
+              "text": "Elizabeth",
+              "isInput": true
+            },
+            {
+              "text": "Mason",
+              "isInput": true
+            },
+            {
+              "text": "Irene",
+              "isInput": true
+            },
+            {
+              "text": "Olivia",
+              "isInput": true
+            },
+            {
+              "text": "Liam",
+              "isInput": true
+            },
+            {
+              "text": "Ida",
+              "isInput": true
+            },
+            {
+              "text": "Christopher",
+              "isInput": true
+            },
+            {
+              "text": "Mark",
+              "isInput": true
+            },
+            {
+              "text": "Sylvester",
+              "isInput": true
+            },
+            {
+              "text": "Oscar",
+              "isInput": true
+            },
+            "Oscar"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-06-firstandlast": {
+    "id": "part03-06-firstandlast",
+    "tmcname": "part03-Part03_06.FirstAndLast",
+    "title": "First and last",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template there is a program that reads inputs from the user and adds them to a list. Reading is stopped once the user enters an empty string.",
+        "Modify the program to print both the first and the last values after the reading ends. You may suppose that at least two values are read into the list."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "Tom",
+              "isInput": true
+            },
+            {
+              "text": "Emma",
+              "isInput": true
+            },
+            {
+              "text": "Alex",
+              "isInput": true
+            },
+            {
+              "text": "Mary",
+              "isInput": true
+            },
+            "Tom",
+            "Mary"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "Juno",
+              "isInput": true
+            },
+            {
+              "text": "Elizabeth",
+              "isInput": true
+            },
+            {
+              "text": "Mason",
+              "isInput": true
+            },
+            {
+              "text": "Irene",
+              "isInput": true
+            },
+            {
+              "text": "Olivia",
+              "isInput": true
+            },
+            {
+              "text": "Liam",
+              "isInput": true
+            },
+            {
+              "text": "Ida",
+              "isInput": true
+            },
+            {
+              "text": "Christopher",
+              "isInput": true
+            },
+            {
+              "text": "Mark",
+              "isInput": true
+            },
+            {
+              "text": "Sylvester",
+              "isInput": true
+            },
+            {
+              "text": "Oscar",
+              "isInput": true
+            },
+            "Juno",
+            "Oscar"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-07-rememberthesenumbers": {
+    "id": "part03-07-rememberthesenumbers",
+    "tmcname": "part03-Part03_07.RememberTheseNumbers",
+    "title": "Remember these numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+        "Expand the functionality of the program so that after reading the numbers, it prints all the numbers received from the user. The number used to indicate stopping should not be printed."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "11",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "72",
+            "2",
+            "8",
+            "11"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-08-onlythesenumbers": {
+    "id": "part03-08-onlythesenumbers",
+    "tmcname": "part03-Part03_08.OnlyTheseNumbers",
+    "title": "Only these numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+        "Expand the program to ask for a start and end indices once it has finished asking for numbers. After this the program shall prints all the numbers in the list that fall in the specified range (between the indices given by the user, inclusive). You may assume that the user gives indices that match some numbers in the list."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "11",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "From where?",
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "To where?",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "2",
+            "8"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "11",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "From where?",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "To where?",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "72",
+            "2",
+            "8"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-09-greatestinlist": {
+    "id": "part03-09-greatestinlist",
+    "tmcname": "part03-Part03_09.GreatestInList",
+    "title": "Greatest in list",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+        "Continue developing the program so that it finds the greatest number in the list and prints its value after reading all the numbers. The programming should work in the following manner.",
+        "You can use the source code below as an example. It is used to find the smallest number."
+      ],
+      "codeSnippet": "// assume we have a list that contains integers\n\nint smallest = list.get(0);\n\nfor(int i = 0; i < list.size(); i++) {\n    int number = list.get(i);\n    if (smallest > number) {\n        smallest = number;\n    }\n}\n\nSystem.out.println(\"The smallest number: \" + smallest);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "93",
+              "isInput": true
+            },
+            {
+              "text": "11",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "The greatest number: 93"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-10-indexof": {
+    "id": "part03-10-indexof",
+    "tmcname": "part03-Part03_10.IndexOf",
+    "title": "Index of",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+        "Expand the program by adding a functionality that asks the user for a number, and reports that number's index in the list. If the number is not found, the program should not print anything."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "11",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Search for?",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "2 is at index 1"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "11",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Search for?",
+            {
+              "text": "8",
+              "isInput": true
+            },
+            "8 is at index 2",
+            "8 is at index 3"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-11-indexofsmallest": {
+    "id": "part03-11-indexofsmallest",
+    "tmcname": "part03-Part03_11.IndexOfSmallest",
+    "title": "Index of smallest",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads numbers from the user. When number 9999 is entered, the reading process stops. After this the program will print the smallest number in the list, and also the indices where that number is found. Notice: the smallest number can appear multiple times in the list.",
+        "Hint: combine the programs you wrote for the exercises \"Greatest number in the list\" and \"Index of the requested number\". First find the smallest number, and then find the index of that number."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "11",
+              "isInput": true
+            },
+            {
+              "text": "9999",
+              "isInput": true
+            },
+            "Smallest number: 2",
+            "Found at index: 1"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "44",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "11",
+              "isInput": true
+            },
+            {
+              "text": "9999",
+              "isInput": true
+            },
+            "Smallest number: 8",
+            "Found at index: 2",
+            "Found at index: 3"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-12-sumofalist": {
+    "id": "part03-12-sumofalist",
+    "tmcname": "part03-Part03_12.SumOfAList",
+    "title": "Sum of a list",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+        "Modify the program so that after reading the numbers it calculates and prints the sum of the numbers in the list."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "11",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Sum: 93"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-13-averageofalist": {
+    "id": "part03-13-averageofalist",
+    "tmcname": "part03-Part03_13.AverageOfAList",
+    "title": "Average of a list",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+        "When reading ends, calculate the average of the numbers in it, and then print that value."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "11",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Average: 23.25"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-14-onthelist": {
+    "id": "part03-14-onthelist",
+    "tmcname": "part03-Part03_14.OnTheList",
+    "title": "On the list?",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template there is a program that reads inputs from the user until an empty string is entered. Add the following functionality to it: after reading the inputs one more string is requested from the user. The program then tell whether that string was found in the list or not."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "Tom",
+              "isInput": true
+            },
+            {
+              "text": "Emma",
+              "isInput": true
+            },
+            {
+              "text": "Alex",
+              "isInput": true
+            },
+            {
+              "text": "Mary",
+              "isInput": true
+            },
+            "Search for?",
+            {
+              "text": "Mary",
+              "isInput": true
+            },
+            "Mary was found!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "Tom",
+              "isInput": true
+            },
+            {
+              "text": "Emma",
+              "isInput": true
+            },
+            {
+              "text": "Alex",
+              "isInput": true
+            },
+            {
+              "text": "Mary",
+              "isInput": true
+            },
+            "Search for?",
+            {
+              "text": "Logan",
+              "isInput": true
+            },
+            "Logan was not found!"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-15-printinrange": {
+    "id": "part03-15-printinrange",
+    "tmcname": "part03-Part03_15.PrintInRange",
+    "title": "Print in range",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create the method `public static void printNumbersInRange(ArrayList numbers, int lowerLimit, int upperLimit)` in the exercise template. The method prints the numbers in the given list whose values are in the range [lowerLimit, upperLimit]. A few examples of using the method are supplied below."
+      ],
+      "codeSnippet": "ArrayList<Integer> numbers = new ArrayList<>();\nnumbers.add(3);\nnumbers.add(2);\nnumbers.add(6);\nnumbers.add(-1);\nnumbers.add(5);\nnumbers.add(1);\n\nSystem.out.println(\"The numbers in the range [0, 5]\");\nprintNumbersInRange(numbers, 0, 5);\n\nSystem.out.println(\"The numbers in the range [3, 10]\");\nprintNumbersInRange(numbers, 3, 10);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The numbers in the range [0, 5]",
+            "3",
+            "2",
+            "5",
+            "1",
+            "The numbers in the range [3, 10]",
+            "3",
+            "6",
+            "5"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-16-sum": {
+    "id": "part03-16-sum",
+    "tmcname": "part03-Part03_16.Sum",
+    "title": "Sum",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create the method `public static int sum(ArrayList numbers)` in the exercise template. The method is to return the sum of the numbers in the parameter list."
+      ],
+      "codeSnippet": "ArrayList<Integer> numbers = new ArrayList<>();\nnumbers.add(3);\nnumbers.add(2);\nnumbers.add(6);\nnumbers.add(-1);\nSystem.out.println(sum(numbers));\n\nnumbers.add(5);\nnumbers.add(1);\nSystem.out.println(sum(numbers));",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "10",
+            "16"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-17-removelast": {
+    "id": "part03-17-removelast",
+    "tmcname": "part03-Part03_17.RemoveLast",
+    "title": "Remove last",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create the method `public static void removeLast(ArrayList strings)` in the exercise template. The method should remove the last value in the list it receives as a parameter. If the list is empty, the method does nothing."
+      ],
+      "codeSnippet": "ArrayList<String> strings = new ArrayList<>();\n\nstrings.add(\"First\");\nstrings.add(\"Second\");\nstrings.add(\"Third\");\n\nSystem.out.println(strings);\n\nremoveLast(strings);\nremoveLast(strings);\n\nSystem.out.println(strings);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "[First, Second, Third]",
+            "[First]"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-18-swap": {
+    "id": "part03-18-swap",
+    "tmcname": "part03-Part03_18.Swap",
+    "title": "Swap",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template already contains a program, that creates an array and prints the values of the array twice. Modify the program to do following: After the first printing, the program should ask for two indices from the user. The values in these two indices should be swapped, and in the end the values of the array should be printed once again.",
+        "You can assume that the array contains the given indices.\nTip! You'll need an additional variable to store one of the values for a little while."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "1",
+            "3",
+            "5",
+            "7",
+            "9",
+            "Give two indices to swap:",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            "1",
+            "3",
+            "9",
+            "7",
+            "5"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "1",
+            "3",
+            "5",
+            "7",
+            "9",
+            "Give two indices to swap:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "3",
+            "1",
+            "5",
+            "7",
+            "9"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-19-indexwasnotfound": {
+    "id": "part03-19-indexwasnotfound",
+    "tmcname": "part03-Part03_19.IndexWasNotFound",
+    "title": "Index was not found",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template already has an array containing numbers. Complete the program so that it asks the user for a number to search in the array. If the array contains the given number, the program tells the index containing the number. If the array doesn't contain the given number, the program will advise that the number wasn't found."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Search for?",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "3 is at index 4."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Search for?",
+            {
+              "text": "7",
+              "isInput": true
+            },
+            "7 is at index 7."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Search for?",
+            {
+              "text": "22",
+              "isInput": true
+            },
+            "22 was not found."
+          ]
+        }
+      ]
+    }
+  },
+  "part03-20-sumofarray": {
+    "id": "part03-20-sumofarray",
+    "tmcname": "part03-Part03_20.SumOfArray",
+    "title": "Sum of array",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The class SumOfArray has a method `public static int sumOfNumbersInArray(int[] array)`. Complete the method so that it computes and returns the sum of the numbers in the array it receives as parameter.",
+        "You can try out the computation of the sum with this example:"
+      ],
+      "codeSnippet": "int[] numbers = {5, 1, 3, 4, 2};\nsumOfNumbersInArray(numbers);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "15"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-21-printneatly": {
+    "id": "part03-21-printneatly",
+    "tmcname": "part03-Part03_21.PrintNeatly",
+    "title": "Print neatly",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Complete the method `public static void printNeatly(int[] array)` in the class named 'ArrayPrinter' to make it print the numbers of the array it receives more neatly. There should be a whitespace and a comma between each number. don't put a comma after the last number.",
+        "Print the numbers on one line using `System.out.print`.",
+        "You can try out your printing with this example:"
+      ],
+      "codeSnippet": "int[] array = {5, 1, 3, 4, 2};\nprintNeatly(array);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "5, 1, 3, 4, 2"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-22-printinstars": {
+    "id": "part03-22-printinstars",
+    "tmcname": "part03-Part03_22.PrintInStars",
+    "title": "Print in stars",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Complete the method `public static void printArrayInStars(int[] array)` in the class named 'Printer' to make it print a row of stars for each number in the array. The amount of stars on each row is defined by the corresponding number in the array.",
+        "You can try out the printing with this example:",
+        "The 0th element of the array is 5, so the first line has 5 stars. The next one has 1 etc."
+      ],
+      "codeSnippet": "int[] array = {5, 1, 3, 4, 2};\nprintArrayInStars(array);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "*****",
+            "*",
+            "***",
+            "****",
+            "**"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-23-printthrice": {
+    "id": "part03-23-printthrice",
+    "tmcname": "part03-Part03_23.PrintThrice",
+    "title": "Print thrice",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program, that reads a string from the user and then prints it three times.",
+        "NB! The program should ask for only one string. Don't use a loop here."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a word:",
+            {
+              "text": "cake",
+              "isInput": true
+            },
+            "cakecakecake"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-24-isittrue": {
+    "id": "part03-24-isittrue",
+    "tmcname": "part03-Part03_24.IsItTrue",
+    "title": "Is it true",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for a string. If the user writes the string \"true\", the program prints \"You got it right!\", otherwise it prints \"Try again!\"."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a string:",
+            {
+              "text": "true",
+              "isInput": true
+            },
+            "You got it right!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a string:",
+            {
+              "text": "trueish",
+              "isInput": true
+            },
+            "Try again!"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-25-login": {
+    "id": "part03-25-login",
+    "tmcname": "part03-Part03_25.Login",
+    "title": "Login",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that recognizes the following users:",
+        "| username | password |\n| -------- | -------- |\n| alex     | sunshine |\n| emma     | haskell  |",
+        "The program either shows a personal message or informs of an incorrect username or password.",
+        "**NB!** You can't compare strings with `==`!",
+        "**NB!** Logins should not be implemented like this in real life! You can become familiar with safer ways to implement logins on courses focusing on web programming."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter username:",
+            {
+              "text": "alex",
+              "isInput": true
+            },
+            "Enter password:",
+            {
+              "text": "sunshine",
+              "isInput": true
+            },
+            "You have successfully logged in!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter username:",
+            {
+              "text": "emma",
+              "isInput": true
+            },
+            "Enter password:",
+            {
+              "text": "haskell",
+              "isInput": true
+            },
+            "You have successfully logged in!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter username:",
+            {
+              "text": "alex",
+              "isInput": true
+            },
+            "Enter password:",
+            {
+              "text": "thunderstorm",
+              "isInput": true
+            },
+            "Incorrect username or password!"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-26-linebyline": {
+    "id": "part03-26-linebyline",
+    "tmcname": "part03-Part03_26.LineByLine",
+    "title": "Line by line",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads strings from the user. If the input is empty, the program stops reading input and halts. For each non-empty input it splits the string input by whitespaces ` ` and prints each part of the string on a new line."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "once upon a time",
+              "isInput": true
+            },
+            "once",
+            "upon",
+            "a",
+            "time",
+            {
+              "text": "a little program",
+              "isInput": true
+            },
+            "a",
+            "little",
+            "program",
+            {
+              "text": "halted",
+              "isInput": true
+            },
+            "halted"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-27-avclub": {
+    "id": "part03-27-avclub",
+    "tmcname": "part03-Part03_27.AVClub",
+    "title": "AV Club",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads user input until an empty line. For each non-empty string, the program splits the string by spaces ` ` and then prints the pieces that contain `av`, each on a new line.",
+        "Tip! Strings have a `contains`-method, which tells if a string contains another string. It works like this:"
+      ],
+      "codeSnippet": "String text = \"volcanologist\";\n\nif (text.contains(\"can\")) {\n    System.out.println(\"can was found\");\n}\n\nif (!text.contains(\"tin\")) {\n    System.out.println(\"tin wasn't found\");\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "java is a programming language",
+              "isInput": true
+            },
+            "java",
+            {
+              "text": "navy blue shirt",
+              "isInput": true
+            },
+            "navy"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "Do you have a favorite flavor",
+              "isInput": true
+            },
+            "have",
+            "favorite",
+            "flavor",
+            {
+              "text": "was it a cat?",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "can was found",
+            "tin wasn't found"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-28-firstwords": {
+    "id": "part03-28-firstwords",
+    "tmcname": "part03-Part03_28.FirstWords",
+    "title": "First words",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads user input until an empty line is entered. For each non-empty line the program splits the string by spaces ` `  and prints the first part of the string."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "one two three four",
+              "isInput": true
+            },
+            "one",
+            {
+              "text": "this is a very important message",
+              "isInput": true
+            },
+            "this"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-29-lastwords": {
+    "id": "part03-29-lastwords",
+    "tmcname": "part03-Part03_29.LastWords",
+    "title": "LastWords",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads user input until an empty line is entered. For each non-empty line the program splits the string by spaces ` `  and prints the last part of the string.",
+        "Tip! You can find out the length of the array like this:"
+      ],
+      "codeSnippet": "String[] parts = {\"one\", \"two\", \"three\"};\nSystem.out.println(\"Number of parts: \" + parts.length);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "one two three four",
+              "isInput": true
+            },
+            "four",
+            {
+              "text": "this is a very important message",
+              "isInput": true
+            },
+            "message"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Number of parts: 3"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-30-ageoftheoldest": {
+    "id": "part03-30-ageoftheoldest",
+    "tmcname": "part03-Part03_30.AgeOfTheOldest",
+    "title": "Age of the oldest",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads names and ages from the user until an empty line is entered. The  name and age are separated by a comma.",
+        "After reading all user input, the program prints the age of the oldest person. You can assume that the user enters at least one person, and that one of the users is older than the others."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "sebastian,2",
+              "isInput": true
+            },
+            {
+              "text": "lucas,2",
+              "isInput": true
+            },
+            {
+              "text": "lily,1",
+              "isInput": true
+            },
+            {
+              "text": "hanna,5",
+              "isInput": true
+            },
+            {
+              "text": "gabriel,10",
+              "isInput": true
+            },
+            "Age of the oldest: 10"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-31-nameoftheoldest": {
+    "id": "part03-31-nameoftheoldest",
+    "tmcname": "part03-Part03_31.NameOfTheOldest",
+    "title": "Name of the oldest",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads names and ages from the user until an empty line is entered. The  name and age are separed by a comma.",
+        "After reading all user input, the program prints the name of the oldest person. You can assume that the user enters at least one person, and the that one of the users is older than the others."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "sebastian,2",
+              "isInput": true
+            },
+            {
+              "text": "lucas,2",
+              "isInput": true
+            },
+            {
+              "text": "lily,1",
+              "isInput": true
+            },
+            {
+              "text": "hanna,5",
+              "isInput": true
+            },
+            {
+              "text": "gabriel,10",
+              "isInput": true
+            },
+            "Name of the oldest: gabriel"
+          ]
+        }
+      ]
+    }
+  },
+  "part03-32-personaldetails": {
+    "id": "part03-32-personaldetails",
+    "tmcname": "part03-Part03_32.PersonalDetails",
+    "title": "Personal details",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads names and birth years from the user until an empty line is entered. The  name and birth year are separated by a comma.",
+        "After that the program prints the longest name and the average of the birth years. If multiple names are equally longest, you can print any of them. You can assume that the user enters at least one person."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "sebastian,2017",
+              "isInput": true
+            },
+            {
+              "text": "lucas,2017",
+              "isInput": true
+            },
+            {
+              "text": "lily,2017",
+              "isInput": true
+            },
+            {
+              "text": "hanna,2014",
+              "isInput": true
+            },
+            {
+              "text": "gabriel,2009",
+              "isInput": true
+            },
+            "Longest name: sebastian",
+            "Average of the birth years: 2014.8"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "sauli,1948",
+              "isInput": true
+            },
+            {
+              "text": "tarja,1943",
+              "isInput": true
+            },
+            {
+              "text": "martti,1936",
+              "isInput": true
+            },
+            {
+              "text": "mauno,1923",
+              "isInput": true
+            },
+            {
+              "text": "urho,1900",
+              "isInput": true
+            },
+            "Longest name: martti",
+            "Average of the birth years: 1930.0"
+          ]
+        }
+      ]
+    }
+  }
+}

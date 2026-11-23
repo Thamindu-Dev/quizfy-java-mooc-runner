@@ -1,0 +1,838 @@
+{
+  "part10-01-averageofnumbers": {
+    "id": "part10-01-averageofnumbers",
+    "tmcname": "part10-Part10_01.AverageOfNumbers",
+    "title": "Average of Numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Implement a program, which reads user input. If the user input is \"end\", the program stops reading input. The rest of the input is numbers. When the user input is \"end\", the program prints the average of all of the numbers.",
+        "Implement calculating the average using a stream!"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Input numbers, type \"end\" to stop.",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "6",
+              "isInput": true
+            },
+            {
+              "text": "end",
+              "isInput": true
+            },
+            "average of the numbers: 4.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Input numbers, type \"end\" to stop.",
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "end",
+              "isInput": true
+            },
+            "average of the numbers: 0.6666666666666666"
+          ]
+        }
+      ]
+    }
+  },
+  "part10-02-averageofselectednumbers": {
+    "id": "part10-02-averageofselectednumbers",
+    "tmcname": "part10-Part10_02.AverageOfSelectedNumbers",
+    "title": "Average of selected numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Implement a program, which reads user input. If the user input is \"end\", program stops reading input. The rest of the input is numbers.",
+        "Then user is asked if the program should print the average of all the positive numbers, or the average of all the negative numbers (n or p). If the user selects \"n\", the average of all the negative numbers is printed. Otherwise the average of all the positive numbers is printed.",
+        "Use streams to calculate the average and filter the numbers!"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Input numbers, type \"end\" to stop.",
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "end",
+              "isInput": true
+            },
+            "Print the average of the negative numbers or the positive numbers? (n/p)",
+            {
+              "text": "n",
+              "isInput": true
+            },
+            "Average of the negative numbers: -1.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Input numbers, type \"end\" to stop.",
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "end",
+              "isInput": true
+            },
+            "Print the average of the negative numbers or the positive numbers? (n/p)",
+            {
+              "text": "p",
+              "isInput": true
+            },
+            "Average of the positive numbers: 1.5"
+          ]
+        }
+      ]
+    }
+  },
+  "part10-03-positivenumbers": {
+    "id": "part10-03-positivenumbers",
+    "tmcname": "part10-Part10_03.PositiveNumbers",
+    "title": "Positive Numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template, implement the class method `public static List positive(List numbers)`, which receives an ArrayList of integers, and returns the positive integers from the list.",
+        "Implement the method using stream! For collecting the numbers try the command `Collectors.toList()` in addition to the `Collectors.toCollection(ArrayList::new)` command."
+      ]
+    }
+  },
+  "part10-04-divisible": {
+    "id": "part10-04-divisible",
+    "tmcname": "part10-Part10_04.Divisible",
+    "title": "Divisible",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template includes a template for the method `public static ArrayList divisible(ArrayList numbers)`. Implement a functionality there that gathers numbers divisible by two, three or five from the list it receives as a parameter, and returns them as a new list. The list received as a parameter must not be altered."
+      ],
+      "codeSnippet": "public static void main(String[] args) {\n        ArrayList<Integer> numbers = new ArrayList<>();\n        numbers.add(3);\n        numbers.add(2);\n        numbers.add(-17);\n        numbers.add(-5);\n        numbers.add(7);\n\n        ArrayList<Integer> divisible = divisible(numbers);\n\n        divisible.stream()\n                .forEach(num -> System.out.println(num));\n    }",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "3",
+            "2",
+            "-5"
+          ]
+        }
+      ]
+    }
+  },
+  "part10-05-luettujenarvojentulostaminen": {
+    "id": "part10-05-luettujenarvojentulostaminen",
+    "tmcname": "part10-Part10_05.LuettujenArvojenTulostaminen",
+    "title": "Luettujen arvojen tulostaminen",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "-->",
+        "Write a program that reads the user's input as strings. When the user inputs an empty string (only presses enter), the input reading will be stopped and the program will print all the user inputs."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "first",
+              "isInput": true
+            },
+            {
+              "text": "second",
+              "isInput": true
+            },
+            {
+              "text": "war is peace: 1984",
+              "isInput": true
+            },
+            "first",
+            "second",
+            "war is peace: 1984"
+          ]
+        }
+      ]
+    }
+  },
+  "part10-06-rajatutluvut": {
+    "id": "part10-06-rajatutluvut",
+    "tmcname": "part10-Part10_06.RajatutLuvut",
+    "title": "Rajatut luvut",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "-->",
+        "Write a program that reads user input. When the user gives a negative number as an input, the input reading will be stopped. After this, print all the numbers the user has given as input that are between 1 and 5."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "7",
+              "isInput": true
+            },
+            {
+              "text": "14",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "4",
+            "5",
+            "4"
+          ]
+        }
+      ]
+    }
+  },
+  "part10-07-uniikitsukunimet": {
+    "id": "part10-07-uniikitsukunimet",
+    "tmcname": "part10-Part10_07.UniikitSukunimet",
+    "title": "Uniikit sukunimet",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "-->",
+        "The exercise template contains a sketch of a program that reads user-provided information about people. Expand the program so that it will print all the unique last names of the user-provided people in alphabetical order."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Continue personal information input? \"quit\" ends:",
+            "Input first name:",
+            {
+              "text": "Ada",
+              "isInput": true
+            },
+            "Input last name:",
+            {
+              "text": "Lovelace",
+              "isInput": true
+            },
+            "Input the year of birth:",
+            {
+              "text": "1815",
+              "isInput": true
+            },
+            "Continue personal information input? \"quit\" ends:",
+            "Input first name:",
+            {
+              "text": "Grace",
+              "isInput": true
+            },
+            "Input last name:",
+            {
+              "text": "Hopper",
+              "isInput": true
+            },
+            "Input the year of birth:",
+            {
+              "text": "1906",
+              "isInput": true
+            },
+            "Continue personal information input? \"quit\" ends:",
+            "Input first name:",
+            {
+              "text": "Alan",
+              "isInput": true
+            },
+            "Input last name:",
+            {
+              "text": "Turing",
+              "isInput": true
+            },
+            "Input the year of birth:",
+            {
+              "text": "1912",
+              "isInput": true
+            },
+            "Continue personal information input? \"quit\" ends:",
+            {
+              "text": "quit",
+              "isInput": true
+            },
+            "Unique last names in alphabetical order:",
+            "Hopper",
+            "Lovelace",
+            "Turing"
+          ]
+        }
+      ]
+    }
+  },
+  "part10-08-painonlaskemista": {
+    "id": "part10-08-painonlaskemista",
+    "tmcname": "part10-Part10_08.PainonLaskemista",
+    "title": "Painon laskemista (2 osaa)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "-->",
+        "The exercise template includes the probably familiar project \"Cargo hold\". However, in this exercise you need to make the for-loop using methods to use streams. The final product should not have any `while (...)` or `for (...)`-loops."
+      ]
+    }
+  },
+  "part10-09-tiedostonrivit": {
+    "id": "part10-09-tiedostonrivit",
+    "tmcname": "part10-Part10_09.TiedostonRivit",
+    "title": "Tiedoston rivit",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "-->",
+        "Implement the static method `public static List read(String file)`, which reads the file with the filename of the parameter and returns the lines as a string list."
+      ]
+    }
+  },
+  "part10-10-kirjattiedostosta": {
+    "id": "part10-10-kirjattiedostosta",
+    "tmcname": "part10-Part10_10.KirjatTiedostosta",
+    "title": "Kirjat tiedostosta",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "-->",
+        "Add the method `public static List readBooks(String file)` for the class `BooksFromFile`. It should read the file given as the parameter and forms book data from it.",
+        "The exercise template contains the class `Book`, which is used for describing a book. You should presume that the book files are in the following format:",
+        "The name and the author of the book are processed as strings, and the publishing year and the page count are processed as integers.\nExample of contents of a book file:"
+      ]
+    }
+  },
+  "part10-11-wageorder": {
+    "id": "part10-11-wageorder",
+    "tmcname": "part10-Part10_11.WageOrder",
+    "title": "Wage order",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "You are provided with the class Human. A human has a name and wage information. Implement the interface `Comparable` in a way, such that the overridden `compareTo` method sorts the humans according to wage from largest to smallest salary."
+      ]
+    }
+  },
+  "part10-12-studentsonalphabeticalorder": {
+    "id": "part10-12-studentsonalphabeticalorder",
+    "tmcname": "part10-Part10_12.StudentsOnAlphabeticalOrder",
+    "title": "Students on alphabetical order",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template includes the class `Student`, which has a name. Implement the `Comparable` interface in the Student class in a way, such that the `compareTo` method sorts the students in alphabetical order based on their names.",
+        "The name of the `Student` is a String, which implements `Comparable` itself. You may use its `compareTo` method when implementing the method for the `Student` class. Note that `String.compareTo()` also treats letters according to their size, while the `compareToIgnoreCase` method of the same class ignores the capitalization completely. You may use either of these methods in the exercise."
+      ]
+    }
+  },
+  "part10-13-literacycomparison": {
+    "id": "part10-13-literacycomparison",
+    "tmcname": "part10-Part10_13.LiteracyComparison",
+    "title": "Literacy comparison (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "This exercise uses open data about literacy levels, provided by UNESCO. The data includes statistics of estimated or reported levels of literacy for various countries for the past two years.\nFile `literacy.csv`, included with the exercise template, includes the literacy estimates for women and men over 15 years of age. Each line in the file `literacy.csv` is as follows:\n\"theme, age group, gender, country, year, literacy percent. Below are the first five lines as an example.",
+        "Create a program that first reads the file `literacy.csv` and then prints the contents from the lowest to the highest ranked on the literacy rate. The output must be exactly as in the following example. The example shows the first five  of the expected rows.",
+        "This exercise is worth two points.",
+        "Tip! Here's how to split a string into an array by each comma."
+      ],
+      "codeSnippet": "String string = \"Adult literacy rate, population 15+ years, female (%),Zimbabwe,2015,85.28513\";\nString[] pieces = string.split(\",\");\n// now pieces[0] equals \"Adult literacy rate\"\n// pieces[1] equals \" population 15+ years\"\n// etc.\n\n// to remove whitespace, use the trim() method:\npieces[1] = pieces[1].trim();",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Niger (2015), female, 11.01572",
+            "Mali (2015), female, 22.19578",
+            "Guinea (2015), female, 22.87104",
+            "Afghanistan (2015), female, 23.87385",
+            "Central African Republic (2015), female, 24.35549"
+          ]
+        }
+      ]
+    }
+  },
+  "part10-14-literature": {
+    "id": "part10-14-literature",
+    "tmcname": "part10-Part10_14.Literature",
+    "title": "Literature (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads user input for books and their age recommendations.",
+        "The program asks for new books until the user gives an empty String (only presses enter). After this, the program will print the number of books, their names, and their recommended ages.",
+        "Reading and printing the books",
+        "Implement the reading and printing the books first, the ordering of them doesn't matter yet.",
+        "Ordering books based on their age recommendation",
+        "Expand your program so, that the books are sorted based on their age recommendations when they are printed. If two (or more) books share the same age recommendations the order between them does not matter.",
+        "Ordering books based on their age recommendation and name",
+        "Expand your program, so that it sorts the books with the same age recommendation based on their name alphabetically."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Input the name of the book, empty stops:",
+            {
+              "text": "The Ringing Lullaby Book",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            {
+              "text": "The Exiting Transpotation Vehicles",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            {
+              "text": "The Snowy Forest Calls",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "12",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            {
+              "text": "Litmanen 10",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "10",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            "4 books in total.",
+            "Books:",
+            "The Ringing Lullaby Book (recommended for 0 year-olds or older)",
+            "The Exiting Transpotation Vehicles (recommended for 0 year-olds or older)",
+            "The Snowy Forest Calls (recommended for 12 year-olds or older)",
+            "Litmanen 10 (recommended for 10 year-olds or older)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Input the name of the book, empty stops:",
+            {
+              "text": "The Ringing Lullaby Book",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            {
+              "text": "The Exiting Transpotation Vehicles",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            {
+              "text": "The Snowy Forest Calls",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "12",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            {
+              "text": "Litmanen 10",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "10",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            "4 books in total.",
+            "Books:",
+            "The Ringing Lullaby Book (recommended for 0 year-olds or older)",
+            "The Exiting Transpotation Vehicles (recommended for 0 year-olds or older)",
+            "Litmanen 10 (recommended for 10 year-olds or older)",
+            "The Snowy Forest Calls (recommended for 12 year-olds or older)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Input the name of the book, empty stops:",
+            {
+              "text": "The Ringing Lullaby Book",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            {
+              "text": "The Exiting Transpotation Vehicles",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            {
+              "text": "The Snowy Forest Calls",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "12",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            {
+              "text": "Litmanen 10",
+              "isInput": true
+            },
+            "Input the age recommendation:",
+            {
+              "text": "10",
+              "isInput": true
+            },
+            "Input the name of the book, empty stops:",
+            "4 books in total.",
+            "Books:",
+            "The Exiting Transpotation Vehicles (recommended for 0 year-olds or older)",
+            "The Ringing Lullaby Book (recommended for 0 year-olds or older)",
+            "Litmanen 10 (recommended for 10 year-olds or older)",
+            "The Snowy Forest Calls (recommended for 12 year-olds or older)"
+          ]
+        }
+      ]
+    }
+  },
+  "part10-15-regularexpressions": {
+    "id": "part10-15-regularexpressions",
+    "tmcname": "part10-Part10_15.RegularExpressions",
+    "title": "Regular expressions (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Let's practice using regular expressions a little. The methods in this exercise should be created in the class `Checker`.",
+        "Day of week",
+        "Use regular expressions to create the method `public boolean isDayOfWeek(String string)`, which returns `true` if the parameter string is an abbreviation of a day of the week (mon, tue, wed, thu, fri, sat, sun)",
+        "Example outputs of a program that uses the method:",
+        "Vowel check",
+        "**NB**. For simplicity's sake, in this exercises **the letters that are considered vowels are: a, e, i, o, and u**.",
+        "Create the method `public boolean allVowels(String string)` that uses a regular expression to check whether all the characters in the parameter string are vowels.",
+        "Example outputs of a program that uses the method:",
+        "Time of day",
+        "Regular expressions come in handy in certain situations. In some cases the expressions become too complex, and the \"correctness\" of the string is best checked with some other style. Or it could be beneficial to use regular expressions for only some part of the check.",
+        "Create the method `public boolean timeOfDay(String string)`. It should use a regular expression to check whether the parameter string expresses a time of day in the form `hh:mm:ss` (hours, minutes, and seconds each always take up two spaces).",
+        "**NB. In this exercise we use the 24-hour clock**. So the acceptable values are between 00:00:00 and 23:59:59.",
+        "Example outputs of a program that uses the method:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter a string:",
+            {
+              "text": "tue",
+              "isInput": true
+            },
+            "The form is correct."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter a string:",
+            {
+              "text": "abc",
+              "isInput": true
+            },
+            "The form is incorrect."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter a string:",
+            {
+              "text": "oi",
+              "isInput": true
+            },
+            "The form is correct."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter a string:",
+            {
+              "text": "queue",
+              "isInput": true
+            },
+            "The form is incorrect."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter a string:",
+            {
+              "text": "17:23:05",
+              "isInput": true
+            },
+            "The form is correct."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter a string:",
+            {
+              "text": "abc",
+              "isInput": true
+            },
+            "The form is incorrect."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter a string:",
+            {
+              "text": "33:33:33",
+              "isInput": true
+            },
+            "The form is incorrect."
+          ]
+        }
+      ]
+    }
+  },
+  "part10-16-enumanditerator": {
+    "id": "part10-16-enumanditerator",
+    "tmcname": "part10-Part10_16.EnumAndIterator",
+    "title": "Enum and Iterator (4 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Let's implement a program for managing employee data of a small company.",
+        "Education",
+        "Make an enumerated type (enum) `Education`. It should have the enumerators `PHD` (Doctoral degree), `MA` (Masters degree), `BA` (Bachelors degree) and `HS` (High School diploma).",
+        "Person",
+        "Make a class `Person`. The Person constructor takes a name and the education as parameters. A Person has a method `public Education getEducation()`, which returns the education of the person. A Person also has a `toString` -method which works as follows:",
+        "Employees",
+        "Make a class `Employees`. Employees -object contains a list of Person -objects. The class has a constructor which takes no parameters, and the following methods:",
+        "- `public void add(Person personToAdd)` adds the given person to the employees list",
+        "- `public void add(List peopleToAdd)` adds the given list of people to the employees list",
+        "- `public void print()` prints all employees",
+        "- `public void print(Education education)` prints the employees whose education matches the education given as a parameter.",
+        "**NB:** The `print` method of the `Employees` class must be implemented using an iterator!",
+        "Firing an employee",
+        "Make a method `public void fire(Education education)` for the `Employees` class. The method  removes all employees whose education matches the education given as parameter from the employees list.",
+        "**NB**: Implement the method using an iterator!",
+        "See an example of using the class below:",
+        "Prints:"
+      ],
+      "codeSnippet": "Person anna = new Person(\"Anna\", Education.PHD);\nSystem.out.println(anna);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Anna, PHD"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Petrus, PHD",
+            "Arto, HS",
+            "Elina, PHD",
+            "==",
+            "Petrus, PHD",
+            "Elina, PHD"
+          ]
+        }
+      ]
+    }
+  },
+  "part10-17-sortthemcards": {
+    "id": "part10-17-sortthemcards",
+    "tmcname": "part10-Part10_17.SortThemCards",
+    "title": "Sort them cards! (6 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template has a class that represents a playing card. Each card has a value and a suit. A card's value is represented as a number *2, 3, ..., 14* and its suit as *Club, Diamond, Heart* or *Spade*. Ace's value is 14. The value is represented with an integer, and the suit as an enum. Cards also have a method toString, which can be used to print the value and the suit in a readable form.",
+        "New cards can be created like this:",
+        "The output:",
+        "Comparable Card class",
+        "Change the Card class to be `Comparable`. Implement the `compareTo` method so that using it sorts the cards in ascending order based on their value. If the cards being compared have the same value, they are sorted by *club first, diamond second, heart third, and spade last.*",
+        "Reading Ordinal method of Enum will help you out in sorting the cards by their suit.",
+        "So, for this sorting, the least valuable card is two of clubs and most valuable card is the ace of spades.",
+        "Hand",
+        "Create a class `Hand` to represent the cards in a player's hand. Add the following methods to the class:",
+        "- `public void add(Card card)` adds a card to the hand\n- `public void print()` prints the cards in hand as shown in the example below",
+        "Outputs:",
+        "Use an ArrayList to store the cards.",
+        "Sorting the hand",
+        "Add a method `public void sort()` to the Hand class, which sorts the cards in the hand. After sorting, the cards are printed in order:",
+        "Output:",
+        "Comparing hands",
+        "In a card game, hands are ranked based on the sum of values of its cards. Modify the `Hand` class to be comparable based on this criteria, i.e. change the class so that interface `Comparable` applies to it.",
+        "Here's an example of a program that compares the hands:",
+        "Output",
+        "Sorting cards with different criteria",
+        "What if we want to sort the cards in different ways, e.g. sorting all the cards of the same suit in a row. A class can only have one `compareTo` method, so we'll need something else to sort the cards in to a different order.",
+        "Alternative sorting systems are possible through different sorting classes. Such a class must have the `Comparator` interface. An object of the sorting class will then compare two cards give as parameters. The class only has one method, compare(Card c1, Card c2), which returns a negative value if the card c1 should be sorted before card c2, a positive value if card c2 comes before card c1, and zero if they are equal.",
+        "The idea is to create a different sorting class for each different way of sorting the cards, e.g. cards of the same suit in a row.:",
+        "When sorting the cards by suit, use the same order as with the `compareTo` method: *clubs first, diamonds second, hearts third, spades last.*",
+        "Sorting still works with the sort method of Collections class. As its other parameter, the method now receives the object that has the sorting logic.",
+        "Output:",
+        "The sorting object can also be created directly when sort method is called.",
+        "It can even be done with a lambda function, without ever creating the sorting class.",
+        "You can learn more about creating sorting classes here.",
+        "Now, create a class `BySuitInValueOrder` class that has the Comparator interface, which sorts the cards in the same order as in the above example, except that now the cards are sorted by value inside their suit.",
+        "Sorting the hand by suit",
+        "Add a method `public void sortBySuit()` to class `Hand`. When the method is called, it sorts the cards in the hand with the same logic as in the previous part. After being sorted, the cards are printed in the following order:",
+        "Output:"
+      ],
+      "codeSnippet": "Card first = new Card(2, Suit.DIAMOND);\nCard second = new Card(14, Suit.SPADE);\nCard third = new Card(12, Suit.HEART);\n\nSystem.out.println(first);\nSystem.out.println(second);\nSystem.out.println(third);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "DIAMOND 2",
+            "SPADE A",
+            "HEART Q"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "DIAMOND 2",
+            "SPADE A",
+            "HEART Q",
+            "SPADE 2"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "DIAMOND 2",
+            "SPADE 2",
+            "HEART Q",
+            "SPADE A"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "better hand is",
+            "DIAMOND J",
+            "SPADE J",
+            "HEART J"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "DIAMOND 2",
+            "HEART Q",
+            "SPADE 3",
+            "SPADE A",
+            "SPADE 2"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "DIAMOND 2",
+            "HEART 7",
+            "HEART Q",
+            "SPADE 2",
+            "SPADE 4",
+            "SPADE A"
+          ]
+        }
+      ]
+    }
+  }
+}

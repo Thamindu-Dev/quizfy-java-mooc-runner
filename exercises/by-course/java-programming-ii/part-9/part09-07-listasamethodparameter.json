@@ -1,0 +1,21 @@
+{
+  "id": "part09-07-listasamethodparameter",
+  "tmcname": "part09-Part09_07.ListAsAMethodParameter",
+  "title": "List as a method parameter",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the mainProgram class, implement a class method `returnSize`, which is given a List-object as a parameter, and returns the size of the list as an integer.",
+      "The method should work as follows:"
+    ],
+    "codeSnippet": "List<String> names = new ArrayList<>();\nnames.add(\"First\");\nnames.add(\"Second\");\nnames.add(\"Third\");\n\nSystem.out.println(returnSize(names));",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "3"
+        ]
+      }
+    ]
+  }
+}

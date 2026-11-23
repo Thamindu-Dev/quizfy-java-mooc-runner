@@ -1,0 +1,11 @@
+{
+  "id": "part13-02-buttonandlabel",
+  "tmcname": "part13-Part13_02.ButtonAndLabel",
+  "title": "Button and label",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Following the example above create a user interface containing a Button and a Label to the class in the exercise template.\nThe Label must be either on top or on the left side of the Button."
+    ]
+  }
+}

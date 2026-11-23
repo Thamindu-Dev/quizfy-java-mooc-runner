@@ -1,0 +1,86 @@
+{
+  "id": "part03-04-listsize",
+  "tmcname": "part03-Part03_04.ListSize",
+  "title": "List size",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the exercise template is a program that reads input from the user. Modify its working so that when the program quits reading, the program prints the number of values on the list.",
+      "**NB!** Be sure to use the `size` method of the list."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "Tom",
+            "isInput": true
+          },
+          {
+            "text": "Emma",
+            "isInput": true
+          },
+          {
+            "text": "Alex",
+            "isInput": true
+          },
+          {
+            "text": "Mary",
+            "isInput": true
+          },
+          "In total: 4"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "Juno",
+            "isInput": true
+          },
+          {
+            "text": "Elizabeth",
+            "isInput": true
+          },
+          {
+            "text": "Mason",
+            "isInput": true
+          },
+          {
+            "text": "Irene",
+            "isInput": true
+          },
+          {
+            "text": "Olivia",
+            "isInput": true
+          },
+          {
+            "text": "Liam",
+            "isInput": true
+          },
+          {
+            "text": "Ida",
+            "isInput": true
+          },
+          {
+            "text": "Christopher",
+            "isInput": true
+          },
+          {
+            "text": "Mark",
+            "isInput": true
+          },
+          {
+            "text": "Sylvester",
+            "isInput": true
+          },
+          {
+            "text": "Oscar",
+            "isInput": true
+          },
+          "In total: 11"
+        ]
+      }
+    ]
+  }
+}

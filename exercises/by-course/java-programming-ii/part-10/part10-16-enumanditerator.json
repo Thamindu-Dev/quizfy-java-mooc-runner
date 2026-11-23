@@ -1,0 +1,47 @@
+{
+  "id": "part10-16-enumanditerator",
+  "tmcname": "part10-Part10_16.EnumAndIterator",
+  "title": "Enum and Iterator (4 parts)",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Let's implement a program for managing employee data of a small company.",
+      "Education",
+      "Make an enumerated type (enum) `Education`. It should have the enumerators `PHD` (Doctoral degree), `MA` (Masters degree), `BA` (Bachelors degree) and `HS` (High School diploma).",
+      "Person",
+      "Make a class `Person`. The Person constructor takes a name and the education as parameters. A Person has a method `public Education getEducation()`, which returns the education of the person. A Person also has a `toString` -method which works as follows:",
+      "Employees",
+      "Make a class `Employees`. Employees -object contains a list of Person -objects. The class has a constructor which takes no parameters, and the following methods:",
+      "- `public void add(Person personToAdd)` adds the given person to the employees list",
+      "- `public void add(List peopleToAdd)` adds the given list of people to the employees list",
+      "- `public void print()` prints all employees",
+      "- `public void print(Education education)` prints the employees whose education matches the education given as a parameter.",
+      "**NB:** The `print` method of the `Employees` class must be implemented using an iterator!",
+      "Firing an employee",
+      "Make a method `public void fire(Education education)` for the `Employees` class. The method  removes all employees whose education matches the education given as parameter from the employees list.",
+      "**NB**: Implement the method using an iterator!",
+      "See an example of using the class below:",
+      "Prints:"
+    ],
+    "codeSnippet": "Person anna = new Person(\"Anna\", Education.PHD);\nSystem.out.println(anna);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Anna, PHD"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Petrus, PHD",
+          "Arto, HS",
+          "Elina, PHD",
+          "==",
+          "Petrus, PHD",
+          "Elina, PHD"
+        ]
+      }
+    ]
+  }
+}

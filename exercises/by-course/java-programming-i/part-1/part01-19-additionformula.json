@@ -1,0 +1,46 @@
+{
+  "id": "part01-19-additionformula",
+  "tmcname": "part01-Part01_19.AdditionFormula",
+  "title": "Addition formula",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a program that can be used to add two integers together. In the beginning, the user is asked to give two integers that are to be summed. The program then prints the formula that describes the addition of the numbers.",
+      "Example output:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "4",
+            "isInput": true
+          },
+          "5 + 4 = 9"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "73457",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "12888",
+            "isInput": true
+          },
+          "73457 + 12888 = 86345"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "part05-07-nullpointerexception",
+  "tmcname": "part05-Part05_07.NullPointerException",
+  "title": "NullPointerException",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Implement a program that causes the NullPointerException error. The error should occur directly after starting the program -- don't wait to read input from the user, for instance."
+    ]
+  }
+}

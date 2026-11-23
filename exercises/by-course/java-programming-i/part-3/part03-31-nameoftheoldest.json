@@ -1,0 +1,40 @@
+{
+  "id": "part03-31-nameoftheoldest",
+  "tmcname": "part03-Part03_31.NameOfTheOldest",
+  "title": "Name of the oldest",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads names and ages from the user until an empty line is entered. The  name and age are separed by a comma.",
+      "After reading all user input, the program prints the name of the oldest person. You can assume that the user enters at least one person, and the that one of the users is older than the others."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "sebastian,2",
+            "isInput": true
+          },
+          {
+            "text": "lucas,2",
+            "isInput": true
+          },
+          {
+            "text": "lily,1",
+            "isInput": true
+          },
+          {
+            "text": "hanna,5",
+            "isInput": true
+          },
+          {
+            "text": "gabriel,10",
+            "isInput": true
+          },
+          "Name of the oldest: gabriel"
+        ]
+      }
+    ]
+  }
+}

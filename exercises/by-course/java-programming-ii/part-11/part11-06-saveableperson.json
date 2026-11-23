@@ -1,0 +1,12 @@
+{
+  "id": "part11-06-saveableperson",
+  "tmcname": "part11-Part11_06.SaveablePerson",
+  "title": "Saveable person",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Below you'll see the interface Saveable and the class Person. Implement the contents of this class diagram in the exercise base.",
+      "> Saveable ||+save():void;+delete():void;+load(address:String):void]^-.-[Person|-name:String;-address:String]\">"
+    ]
+  }
+}

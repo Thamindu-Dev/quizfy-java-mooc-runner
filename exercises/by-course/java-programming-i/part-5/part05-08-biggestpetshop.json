@@ -1,0 +1,20 @@
+{
+  "id": "part05-08-biggestpetshop",
+  "tmcname": "part05-Part05_08.BiggestPetShop",
+  "title": "Biggest pet shop",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Two classes, `Person` and `Pet`, are included in the exercise template. Each person has one pet. Modify the `public String toString` method of the `Person` class so that the string it returns tells the pet's name and breed in addition to the person's own name."
+    ],
+    "codeSnippet": "Pet lucy = new Pet(\"Lucy\", \"golden retriever\");\nPerson leo = new Person(\"Leo\", lucy);\n\nSystem.out.println(leo);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Leo, has a friend called Lucy (golden retriever)"
+        ]
+      }
+    ]
+  }
+}

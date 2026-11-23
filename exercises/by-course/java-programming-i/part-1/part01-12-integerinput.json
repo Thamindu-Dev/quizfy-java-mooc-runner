@@ -1,0 +1,36 @@
+{
+  "id": "part01-12-integerinput",
+  "tmcname": "part01-Part01_12.IntegerInput",
+  "title": "Integer Input",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for a value. The program should then print the value provided by the user.",
+      "Here's a couple of examples:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "You gave the number 3"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "42",
+            "isInput": true
+          },
+          "You gave the number 42"
+        ]
+      }
+    ]
+  }
+}

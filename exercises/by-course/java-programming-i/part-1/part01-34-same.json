@@ -1,0 +1,45 @@
+{
+  "id": "part01-34-same",
+  "tmcname": "part01-Part01_34.Same",
+  "title": "Same",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for two strings. If the strings are the same, then the program prints \"Same\". Otherwise, it prints \"Different\"."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Enter the first string:",
+          {
+            "text": "hello",
+            "isInput": true
+          },
+          "Enter the second string:",
+          {
+            "text": "hello",
+            "isInput": true
+          },
+          "Same"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Enter the first string:",
+          {
+            "text": "hello",
+            "isInput": true
+          },
+          "Enter the second string:",
+          {
+            "text": "world",
+            "isInput": true
+          },
+          "Different"
+        ]
+      }
+    ]
+  }
+}

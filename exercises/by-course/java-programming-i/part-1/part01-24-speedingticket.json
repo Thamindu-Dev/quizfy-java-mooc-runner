@@ -1,0 +1,34 @@
+{
+  "id": "part01-24-speedingticket",
+  "tmcname": "part01-Part01_24.SpeedingTicket",
+  "title": "Speeding Ticket",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for an integer and prints the string \"Speeding ticket!\" if the input is greater than 120."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give speed:",
+          {
+            "text": "15",
+            "isInput": true
+          }
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give speed:",
+          {
+            "text": "135",
+            "isInput": true
+          },
+          "Speeding ticket!"
+        ]
+      }
+    ]
+  }
+}

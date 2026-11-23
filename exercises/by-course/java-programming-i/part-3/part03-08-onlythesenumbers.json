@@ -1,0 +1,89 @@
+{
+  "id": "part03-08-onlythesenumbers",
+  "tmcname": "part03-Part03_08.OnlyTheseNumbers",
+  "title": "Only these numbers",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+      "Expand the program to ask for a start and end indices once it has finished asking for numbers. After this the program shall prints all the numbers in the list that fall in the specified range (between the indices given by the user, inclusive). You may assume that the user gives indices that match some numbers in the list."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "72",
+            "isInput": true
+          },
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "8",
+            "isInput": true
+          },
+          {
+            "text": "11",
+            "isInput": true
+          },
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "From where?",
+          {
+            "text": "1",
+            "isInput": true
+          },
+          "To where?",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "2",
+          "8"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "72",
+            "isInput": true
+          },
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "8",
+            "isInput": true
+          },
+          {
+            "text": "11",
+            "isInput": true
+          },
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "From where?",
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "To where?",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "72",
+          "2",
+          "8"
+        ]
+      }
+    ]
+  }
+}

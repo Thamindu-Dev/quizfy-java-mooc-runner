@@ -1,0 +1,11 @@
+{
+  "id": "part02-28-word",
+  "tmcname": "part02-Part02_28.Word",
+  "title": "Word",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a method `public static String word()`. The method must return a string of your choice."
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "part01-28-positivity",
+  "tmcname": "part01-Part01_28.Positivity",
+  "title": "Positivity",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for an integer and informs the user whether or not it is positive (greater than zero)."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "The number is positive."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "-2",
+            "isInput": true
+          },
+          "The number is not positive."
+        ]
+      }
+    ]
+  }
+}

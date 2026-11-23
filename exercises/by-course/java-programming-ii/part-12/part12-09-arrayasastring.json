@@ -1,0 +1,30 @@
+{
+  "id": "part12-09-arrayasastring",
+  "tmcname": "part12-Part12_09.ArrayAsAString",
+  "title": "Array as a string",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create in the exercise base a method called `public static String arrayAsString(int[][] array)`. It should create a string representation of the array it receives as the parameter and return it.",
+      "Brush up on using StringBuilder in part 10.3 before taking on this exercise. Below there are a few examples of how the method is expected to  work."
+    ],
+    "codeSnippet": "int rows = 2;\nint columns = 3;\nint[][] matrix = new int[rows][columns];\nmatrix[0][1] = 5;\nmatrix[1][0] = 3;\nmatrix[1][2] = 7;\nSystem.out.println(arrayAsString(matrix));",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "050",
+          "307"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "3276",
+          "2410",
+          "3210"
+        ]
+      }
+    ]
+  }
+}

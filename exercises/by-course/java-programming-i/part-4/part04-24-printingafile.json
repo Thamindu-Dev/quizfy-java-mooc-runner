@@ -1,0 +1,23 @@
+{
+  "id": "part04-24-printingafile",
+  "tmcname": "part04-Part04_24.PrintingAFile",
+  "title": "Printing a File",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prints the contents of a file called \"data.txt\", such that each line of the file is printed on its own line.",
+      "If the file content looks like so:",
+      "In a\nworld",
+      "Then the program should print the following:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "In a",
+          "world"
+        ]
+      }
+    ]
+  }
+}

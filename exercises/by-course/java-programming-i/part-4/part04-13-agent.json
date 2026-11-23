@@ -1,0 +1,29 @@
+{
+  "id": "part04-13-agent",
+  "tmcname": "part04-Part04_13.Agent",
+  "title": "Agent",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template defines an Agent class, having a first name and last name. A `print` method is defined for the class that creates the following string representation.",
+      "Remove the class' `print` method, and create a `public String toString()` method for it, which returns the string representation shown above.",
+      "The class should function as follows."
+    ],
+    "codeSnippet": "Agent bond = new Agent(\"James\", \"Bond\");\nbond.print();",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "My name is Bond, James Bond"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "My name is Bond, James Bond",
+          "My name is Bond, Ionic Bond"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "part02-04-comparingnumbers",
+  "tmcname": "part02-Part02_04.ComparingNumbers",
+  "title": "Comparing Numbers",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads two integers from the user. If the first number is greater than the second, the program prints \"(first) is greater than (second).\" If the first number is less than the second, the program prints \"(first) is smaller than (second).\" Otherwise, the program prints \"(first) is equal to (second).\" The (first) and (second) should always be replaced with the actual numbers that were provided by the user.",
+      "A few examples of the expected behaviour:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "8",
+            "isInput": true
+          },
+          {
+            "text": "4",
+            "isInput": true
+          },
+          "8 is greater than 4."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "-3",
+            "isInput": true
+          },
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "-3 is smaller than 5."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "1",
+            "isInput": true
+          },
+          "1 is equal to 1."
+        ]
+      }
+    ]
+  }
+}

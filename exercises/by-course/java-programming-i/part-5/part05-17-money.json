@@ -1,0 +1,23 @@
+{
+  "id": "part05-17-money",
+  "tmcname": "part05-Part05_17.Money",
+  "title": "Money (3 parts)",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the Payment card exercise we used a double-type object variable to store the amount of money. In real applications this is not the approach you want to take, since as we have seen, calculating with doubles is not exact. A more reasonable way to handle amounts of money is create an own class for that purpose. Here is a layout for the class:",
+      "The word `final` used in the definition of object variables catches attention. The result of this word is that the values of these object variables cannot be modified after they have been set in the constructor. The objects of Money class are unchangeable so **immutable** -- if we want to e.g. increase the amount of money, we must create a new object to represent that new amount of money.",
+      "Next we'll create a few operations for processing money.",
+      "Plus",
+      "First create the method `public Money plus(Money addition)` that returns a new money object that is worth the total amount of the object whose method was called and the object that is received as the parameter.",
+      "The basis for the method is the following:",
+      "Here are some examples of how the method works.",
+      "Less",
+      "Create the method `public boolean lessThan(Money compared)` that returns true if the money-object on which the method is called on has a lesser value than the money object given as a parameter.",
+      "Minus",
+      "Write the method `public Money minus(Money decreaser)` that returns a new money object worth the difference of the object whose method was called and the object received as the parameter. If the difference would be negative, the worth of the created money object is set to 0.",
+      "Here are examples of how the method works."
+    ],
+    "codeSnippet": "public class Money {\n\n    private final int euros;\n    private final int cents;\n\n    public Money(int euros, int cents) {\n        this.euros = euros;\n        this.cents = cents;\n    }\n\n    public int euros() {\n        return euros;\n    }\n\n    public int cents() {\n        return cents;\n    }\n\n    public String toString() {\n        String zero = \"\";\n        if (cents <= 10) {\n            zero = \"0\";\n        }\n\n        return euros + \".\" + zero + cents + \"e\";\n    }\n}"
+  }
+}

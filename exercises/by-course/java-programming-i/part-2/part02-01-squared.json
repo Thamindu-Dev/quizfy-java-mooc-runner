@@ -1,0 +1,43 @@
+{
+  "id": "part02-01-squared",
+  "tmcname": "part02-Part02_01.Squared",
+  "title": "Squared",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads an integer from the user and prints the square of the given integer, i.e. the integer multiplied by itself."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "4",
+            "isInput": true
+          },
+          "16"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "-3",
+            "isInput": true
+          },
+          "9"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "25"
+        ]
+      }
+    ]
+  }
+}

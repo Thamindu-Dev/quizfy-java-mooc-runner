@@ -1,0 +1,170 @@
+{
+  "part13-01-myfirstapplication": {
+    "id": "part13-01-myfirstapplication",
+    "tmcname": "part13-Part13_01.MyFirstApplication",
+    "title": "My first application",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a GUI app with the title \"My first application\". The app should start when the main method is executed."
+      ]
+    }
+  },
+  "part13-02-buttonandlabel": {
+    "id": "part13-02-buttonandlabel",
+    "tmcname": "part13-Part13_02.ButtonAndLabel",
+    "title": "Button and label",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Following the example above create a user interface containing a Button and a Label to the class in the exercise template.\nThe Label must be either on top or on the left side of the Button."
+      ]
+    }
+  },
+  "part13-03-buttonandtextfield": {
+    "id": "part13-03-buttonandtextfield",
+    "tmcname": "part13-Part13_03.ButtonAndTextField",
+    "title": "Button and TextField",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a graphical user interface to the class in the exercise template. The interface must contain a button and a text field. The text field can be implemented using the [TextField](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextField.html) class. The Button must be on the left or on the top of the text field.",
+        "Create a graphical user interface in the class that is supplied with the exercise base. It should contain a button and a text field. You can implement the text field with the help of the [TextField](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TextField.html) class. The button should be placed above or to the left of the text field."
+      ]
+    }
+  },
+  "part13-04-borderpane": {
+    "id": "part13-04-borderpane",
+    "tmcname": "part13-Part13_04.BorderPane",
+    "title": "BorderPane",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a graphical user interface in the class provided in the exercise template. It should use the BorderPane class for laying out the components of the user interface. Add a textComponent at the top edge of the window containing the text \"NORTH\", a textComponent along the right edge containing the text \"EAST\", and a textComponent at the bottom edge containing the text \"SOUTH\"."
+      ]
+    }
+  },
+  "part13-05-textstatistics": {
+    "id": "part13-05-textstatistics",
+    "tmcname": "part13-Part13_05.TextStatistics",
+    "title": "Text statistics",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create an applicaton in the class provided in the exercise template. Use the BorderPane class for the layout. In the center there should be a text field created using the TextArea class, and along the bottom edge there should be three textComponents. Place the text components along the bottom edge into a HBox object.The first text component should have the text \"Letters: 0\", the second text component should have the text \"Words: 0\", and the third text component should have the text \"The longest word is:\"."
+      ]
+    }
+  },
+  "part13-06-notifier": {
+    "id": "part13-06-notifier",
+    "tmcname": "part13-Part13_06.Notifier",
+    "title": "Notifier",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a user interface in the class included in the exercise template. It should contain three user interface components. The topmost is a text field (TextField), the middle one is a button (Button), and component on the bottom is a text component (Label). Lay out the components using the VBox class. The user interface should look kind of like the following.",
+        "Then add functionality to the application, where pressing the button leads to the text in the text field being copied as the value of the text component. In the example below we have written the message \"hello world!\" into the text field, after which we have pressed the button."
+      ]
+    }
+  },
+  "part13-07-textstatisticspart2": {
+    "id": "part13-07-textstatisticspart2",
+    "tmcname": "part13-Part13_07.TextStatisticsPart2",
+    "title": "Text statistics, part II",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Copy the work you did in the Text statistics exercise into the class included in the exercise template and add to it the functionality from the example above for calculating the statistics. The end result should an application that calculates statistics based on text that is input, which are updated automatically and displayed in the application."
+      ]
+    }
+  },
+  "part13-08-usertitle": {
+    "id": "part13-08-usertitle",
+    "tmcname": "part13-Part13_08.UserTitle",
+    "title": "User",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks for a title in a command line interface. When the user types the title and presses enter, the user is shown a graphical user interface with the given title.",
+        "Notice, this exercise does not have automatic tests. Return the program once it works as described in the exercise."
+      ]
+    }
+  },
+  "part13-09-multipleviews": {
+    "id": "part13-09-multipleviews",
+    "tmcname": "part13-Part13_09.MultipleViews",
+    "title": "Multiple views",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "There is a class called MultipleViews in the exercise template. Create in it an application that contains three separate views. The views are as follows:",
+        "- The layout of the first view is done with the help of the BorderPane class. At the top there is the text \"First view!\". The center of the view contains a button with the text \"To the second view!\". By pressing that button the application swithces to the second view.",
+        "- The layout of the second view is done with the help of the VBox class. The first element in the layout is a button with the text \"To the third view!\" in it -- by pressing the button the application switches to the third view. The button is followed by the text \"Second view!\".",
+        "- The third view uses the GridPane class for its layout. At the coordinates (0, 0) there is a text that reads \"Third view!\". At coordinates (1, 1) there is a button with the text \"To the first view!\". Pressing this button brings back the first view.",
+        "When first started, the program should display the first view."
+      ]
+    }
+  },
+  "part13-10-greeter": {
+    "id": "part13-10-greeter",
+    "tmcname": "part13-Part13_10.Greeter",
+    "title": "Greeter",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template there is a class called GreeterApplication. Create in it an application with two views. The first view should have a text field that's used to ask for the user's name. The second view then shows the user a greeting text. The greeting should be of the form \"Welcome name!\" where the user's name is inserted in place of 'name'.",
+        "An example of how the program should work:",
+        "!' appears\"/>"
+      ]
+    }
+  },
+  "part13-11-joke": {
+    "id": "part13-11-joke",
+    "tmcname": "part13-Part13_11.Joke",
+    "title": "Joke",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Use the class JokeApplication that is provided with the exercise template to create a program that explains a joke. The application offers a menu consisting of three buttons, and the contents that can be changed by clicking on these buttons. The first button (containing the text \"Joke\") shows a question that is related to a joke. The second button (text \"Answer\") show the related answer. The third and the final button (\"Explanation\") brings up the explanation for the joke.",
+        "By default (when it starts) the program should show a joke-related question. Use the following string as the question: \"What do you call a bear with no teeth?\". The answer should be \"A gummy bear.\" You can come up with a suitable explanation by yourself."
+      ]
+    }
+  },
+  "part13-12-vocabularypractice": {
+    "id": "part13-12-vocabularypractice",
+    "tmcname": "part13-Part13_12.VocabularyPractice",
+    "title": "Vocabulary practice",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise you are going to create the previously described application to practise new vocabulary. The application should start when the main method of the VocabularyPracticeApplication is executed.",
+        "Follow the previous example and create an application for practising translations. The application should offer two views. In the first view the user can enter words and their translations into the program. In the second view the user is asked to translate different words. The words to be translated should be randomly selected from among all the words that have been entered into the program.",
+        "Let's discuss the user interface in more detail. The button that shows the input view should contain the text \"Enter new words\". The button that shows the practice view should contain the text \"Practice\". In the input view, the first text field should have the word in the original language, and the second text field should contain the translation of that word. The button that adds this word and the translation should read \"Add the word pair\". In the practice view the user is presented with a word in the original language, and their task is to write down the translation. If the answer is correct, the user interface displays the text \"Correct!\". If the answer is incorrect, the text that is displayed is \"Incorrect!\". In this case the correct translation is also shown.",
+        "There are no automatic tests in this project -- return your solution when the program works in the way described above. The model solution contains an initial sketch of a possible solution to create statistics. This is not essential for the purposes of this exercise, so there is no need to find these elements in your answer."
+      ]
+    }
+  },
+  "part13-13-tictactoe": {
+    "id": "part13-13-tictactoe",
+    "tmcname": "part13-Part13_13.TicTacToe",
+    "title": "Tic-tac-toe (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise you will create a tic-tac-toe game of size 3x3. The assignment has been divided into three parts: first we create the parts of the user interface, then the funcionality of the buttons, and finally the option to play the game to conclusion.",
+        "NB! You can make the characters in the buttons to be equally large with a suitable font selection. The font that the buttons in the screenshot use has been set in the following manner:",
+        "User interface",
+        "Modify the TicTacToeApplication class so that it starts the graphical user interface. First, use the BorderPane class to create the layout of the UI components. The top of the BorderPane should contain a text component that includes information about the turn, and at the end of the game a message to show that the game has ended. In the middle of the BorderPane create a GridPane that contains 9 buttons. The GridPane should have 3 rows and 3 columns, so that the buttons form a 3x3 grid.",
+        "Taking turns and fair play",
+        "The players of the game are X and O. X always takes the first turn. Add the following functionality to the buttons: when a button is pressed, the game updates so that symbol of the current player (X if it was X's turn when the button was pressed) is stored in the button. After this the other player gets their turn.",
+        "The text component at the top of the game must always show whose turn it is. The text begins as \"Turn: X\". Once X finishes their turn by pressing a button, the text should change to \"Turn: O\". After player O has finished their turn, the text should turn into \"Turn: X\" again.",
+        "NB! If a player has already placed their symbol in a position, the other player cannot choose the same position. Make sure that the turn doesn't change if a player tries to choose a position that already contains a symbol.",
+        "NB!! You might encounter the following error: \"local variables referenced from a lambda expression must be final or effectively final\". This is because objects instanced of interfaces cannot use variables that are defined outside of the method. You can avoid the error by creating new variables that you set the problematic values to just before using them in the method.",
+        "Finishing the game",
+        "Add the possibility to finish the game to the program. The game ends if one player positions three of their symbols in a line (horizontally, vertically, or diagonally). The end of the game should be indicated by the text \"The end!\" at the top of the program. It should be no longer possible to continue the game after this.",
+        "The tests of this exercise are not the most detailed ones. Try to create the program without relying on the tests too much."
+      ],
+      "codeSnippet": "Button btn = new Button(\" \");\nbtn.setFont(Font.font(\"Monospaced\", 40));"
+    }
+  }
+}

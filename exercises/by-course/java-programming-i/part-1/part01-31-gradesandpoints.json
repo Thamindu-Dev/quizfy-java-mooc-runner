@@ -1,0 +1,58 @@
+{
+  "id": "part01-31-gradesandpoints",
+  "tmcname": "part01-Part01_31.GradesAndPoints",
+  "title": "Grades and Points",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The table below describes how the grade for a particular course is determined. Write a program that gives a course grade according to the provided table.",
+      "| points | grade       |\n| ------ | ----------- |\n|  100  | incredible! |"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give points [0-100]:",
+          {
+            "text": "37",
+            "isInput": true
+          },
+          "Grade: failed"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give points [0-100]:",
+          {
+            "text": "76",
+            "isInput": true
+          },
+          "Grade: 3"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give points [0-100]:",
+          {
+            "text": "95",
+            "isInput": true
+          },
+          "Grade: 5"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give points [0-100]:",
+          {
+            "text": "-3",
+            "isInput": true
+          },
+          "Grade: impossible!"
+        ]
+      }
+    ]
+  }
+}

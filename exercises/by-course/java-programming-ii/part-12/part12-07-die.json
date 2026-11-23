@@ -1,0 +1,32 @@
+{
+  "id": "part12-07-die",
+  "tmcname": "part12-Part12_07.Die",
+  "title": "Die",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template contains a class `Die`, which has the following body:",
+      "Modify the class, such that the constructor `Die(int numberOfFaces)` creates a new die-object with the given number of faces (i.e. the number of \"sides\" with a number). Also, modify the method `throwDie` so it returns the result of a random throw of the die, which should be a value withing the range `1 ... number of faces`.",
+      "The following is a main program for testing the die:",
+      "The output could be as follows:"
+    ],
+    "codeSnippet": "import java.util.Random;\n\npublic class Die {\n    private Random random;\n    private int numberOfFaces;\n\n    public Die(int numberOfFaces) {\n        this.random = new Random();\n        // Initialize the value of numberOfFaces here\n    }\n\n    public int throwDie() {\n        // generate a random number which may be any number\n        // between one and the number of faces, and then return it\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "1",
+          "6",
+          "3",
+          "5",
+          "3",
+          "3",
+          "2",
+          "2",
+          "6",
+          "1"
+        ]
+      }
+    ]
+  }
+}

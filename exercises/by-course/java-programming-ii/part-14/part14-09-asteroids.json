@@ -1,0 +1,26 @@
+{
+  "id": "part14-09-asteroids",
+  "tmcname": "part14-Part14_09.Asteroids",
+  "title": "Asteroids (4 parts)",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template contains an empty program template. Create the Asteroids game by following the preceding example of a large application.",
+      "While you are creating the game, remember to update the method `partsCompleted` in the `AsteroidsApplication` class such that it returns the number of the part you have completed. You may submit the exercise even if you don't complete all of the parts, in which case you will receive points for the parts you have completed.",
+      "When you have completed the exercise you may keep going if you like. E.g. you could add sounds and different characters -- how would, for example, aliens work in the game? Would they try to shoot the ship of the player?",
+      "Part 1",
+      "Implement the steps presented at the start of the material (1) creating the game window, (2) creating the ship, and (3) turning the ship.",
+      "When you have these parts working, set the return value of the `partsCompleted` method of the `AsteroidsApplication` class to `1`.",
+      "Part 2",
+      "Add functionality for moving the ship to the Asteroids game as presented in the material.",
+      "When you have these, and the previous parts working, set the return value of the `partsCompleted` method of the `AsteroidsApplication` class to `2`.",
+      "Part 3",
+      "Extend the Asteroids game with (1) creating an asteroid, (2) the collision between ship and asteroid, and (3) adding multiple asteroids.",
+      "When you have these, and the previous parts working, set the return value of the `partsCompleted` method of the `AsteroidsApplication` class to `3`.",
+      "Part 4",
+      "Extend the Asteroids game by adding the rest of the game functionality, i.e. (1) staying within the window, (2) projectiles, (3) adding points, and (4) adding new asteroids.",
+      "When you have these, and the previous parts working, set the return value of the `partsCompleted` method of the `AsteroidsApplication` class to `4`.",
+      "*The exercise does not have a model solution. The exercise is meant to be done by following the example in the material step by step.*"
+    ]
+  }
+}

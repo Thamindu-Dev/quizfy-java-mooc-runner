@@ -1,0 +1,12 @@
+{
+  "id": "part11-05-theplayerandthebot",
+  "tmcname": "part11-Part11_05.ThePlayerAndTheBot",
+  "title": "The Player And the Bot",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The classes Player and Bot and the connection between them are depicted in the class diagram below. Implement these classes in the exercise.",
+      "A model answer is not supplied for this exercise."
+    ]
+  }
+}

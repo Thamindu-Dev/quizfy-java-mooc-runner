@@ -1,0 +1,25 @@
+{
+  "id": "part03-23-printthrice",
+  "tmcname": "part03-Part03_23.PrintThrice",
+  "title": "Print thrice",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program, that reads a string from the user and then prints it three times.",
+      "NB! The program should ask for only one string. Don't use a loop here."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a word:",
+          {
+            "text": "cake",
+            "isInput": true
+          },
+          "cakecakecake"
+        ]
+      }
+    ]
+  }
+}

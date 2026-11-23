@@ -1,0 +1,34 @@
+{
+  "id": "part01-27-ancient",
+  "tmcname": "part01-Part01_27.Ancient",
+  "title": "Ancient",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for a year. If the user inputs a number that is smaller than 2015, then the program prints the string \"Ancient history!\"."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a year:",
+          {
+            "text": "2017",
+            "isInput": true
+          }
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a year:",
+          {
+            "text": "2013",
+            "isInput": true
+          },
+          "Ancient history!"
+        ]
+      }
+    ]
+  }
+}

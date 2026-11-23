@@ -1,0 +1,35 @@
+{
+  "id": "part01-29-adulthood",
+  "tmcname": "part01-Part01_29.Adulthood",
+  "title": "Adulthood",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for their age and tells them whether or not they are an adult (18 years old or older)."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How old are you?",
+          {
+            "text": "12",
+            "isInput": true
+          },
+          "You are not an adult"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How old are you?",
+          {
+            "text": "32",
+            "isInput": true
+          },
+          "You are an adult"
+        ]
+      }
+    ]
+  }
+}

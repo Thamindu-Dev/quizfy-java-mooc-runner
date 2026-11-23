@@ -1,0 +1,67 @@
+{
+  "id": "part03-14-onthelist",
+  "tmcname": "part03-Part03_14.OnTheList",
+  "title": "On the list?",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the exercise template there is a program that reads inputs from the user until an empty string is entered. Add the following functionality to it: after reading the inputs one more string is requested from the user. The program then tell whether that string was found in the list or not."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "Tom",
+            "isInput": true
+          },
+          {
+            "text": "Emma",
+            "isInput": true
+          },
+          {
+            "text": "Alex",
+            "isInput": true
+          },
+          {
+            "text": "Mary",
+            "isInput": true
+          },
+          "Search for?",
+          {
+            "text": "Mary",
+            "isInput": true
+          },
+          "Mary was found!"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "Tom",
+            "isInput": true
+          },
+          {
+            "text": "Emma",
+            "isInput": true
+          },
+          {
+            "text": "Alex",
+            "isInput": true
+          },
+          {
+            "text": "Mary",
+            "isInput": true
+          },
+          "Search for?",
+          {
+            "text": "Logan",
+            "isInput": true
+          },
+          "Logan was not found!"
+        ]
+      }
+    ]
+  }
+}

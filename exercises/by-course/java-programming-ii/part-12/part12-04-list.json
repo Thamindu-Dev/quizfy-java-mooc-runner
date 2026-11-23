@@ -1,0 +1,11 @@
+{
+  "id": "part12-04-list",
+  "tmcname": "part12-Part12_04.List",
+  "title": "List (2 parts)",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Following the example above, implement a class `List`. This exercise has no tests -- test your class using the examples in the material and your own tests.\nThis exercise is worth 2 points."
+    ]
+  }
+}

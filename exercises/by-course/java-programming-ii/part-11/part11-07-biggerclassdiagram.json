@@ -1,0 +1,12 @@
+{
+  "id": "part11-07-biggerclassdiagram",
+  "tmcname": "part11-Part11_07.BiggerClassDiagram",
+  "title": "Bigger class diagram",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Below you'll see a somewhat larger class diagram. In it are the classes A, B, C, D, and E, as well as the interfaces IA, IB, and IC. Create these classes and interfaces in the exercise.",
+      ">;IA][>;IB][>;IC][A]-.-^[>;IA][B]-.-^[>;IB][C]-.-^[>;IC][D]->[>;IA][E]*-*[C][C]-^[B][B]-^[A]\">"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "part01-14-booleaninput",
+  "tmcname": "part01-Part01_14.BooleanInput",
+  "title": "Boolean Input",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for a boolean value. The program should then print the value provided by the user.",
+      "Example prints for the program can be seen below."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Write something:",
+          {
+            "text": "santa does not exist",
+            "isInput": true
+          },
+          "True or false? false"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Write something:",
+          {
+            "text": "TRUE",
+            "isInput": true
+          },
+          "True or false? true"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "part02-26-divisiblebythree",
+  "tmcname": "part02-Part02_26.DivisibleByThree",
+  "title": "Divisible by three",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a method `public static void divisibleByThreeInRange(int beginning, int end)` that prints all the numbers divisible by three in the given range. The numbers are to be printed in order from the smallest to the greatest."
+    ],
+    "codeSnippet": "public static void main(String[] args) {\n    divisibleByThreeInRange(3, 6);\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "3",
+          "6"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "3",
+          "6",
+          "9"
+        ]
+      }
+    ]
+  }
+}

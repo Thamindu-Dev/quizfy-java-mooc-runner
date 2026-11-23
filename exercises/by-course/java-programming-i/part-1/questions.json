@@ -1,0 +1,1534 @@
+{
+  "part01-01-sandbox": {
+    "id": "part01-01-sandbox",
+    "tmcname": "part01-Part01_01.Sandbox",
+    "title": "Sandbox",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template already contains the following template of code:",
+        "The line \"// Write your program here\" is a _line comment_, and the computer will ignore it when executing the program.",
+        "First, submit the exercise template to be checked on the server without changing anything. In this way, you practice submitting an exercise. You can submit an exercise by selecting the TMC menu within TMC, and then \"Submit\".",
+        "Once you have submitted the exercise, try following the video above to add a print command to the program and to execute the program (by pressing the play - button). When you've been able to get your program to print some text (this text can be anything), submit the exercise to the server once more.",
+        "You should use this sandbox exercise to try out different things later on. When you encounter something new in the material, try it out in the sandbox first, and then solve the exercises on the topic."
+      ],
+      "codeSnippet": "public class Sandbox {\n    public static void main(String[] args) {\n        // Write your program here\n\n    }\n}"
+    }
+  },
+  "part01-02-adalovelace": {
+    "id": "part01-02-adalovelace",
+    "tmcname": "part01-Part01_02.AdaLovelace",
+    "title": "Ada Lovelace",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template has the following boilerplate code:",
+        "The line \"// Write your program here\" is a _line comment_, and the computer will ignore it when executing the program. Add a new line below the line comment that prints the string \"Ada Lovelace\" and run the program. The output of the program should be:",
+        "Once you've finished the exercise and see that it prints the correct string, return the exercise to the TMC server. After that, you can read more about [Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace), who was one of the first programmers."
+      ],
+      "codeSnippet": "public class AdaLovelace {\n    public static void main(String[] args) {\n        // Write your program here\n\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Ada Lovelace"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-03-onceuponatime": {
+    "id": "part01-03-onceuponatime",
+    "tmcname": "part01-Part01_03.OnceUponATime",
+    "title": "Once Upon a Time",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template comes with the following template:",
+        "Modify the program so that it will print the following text. Use three `System.out.println`-commands for printing."
+      ],
+      "codeSnippet": "public class OnceUponATime {\n    public static void main(String[] args) {\n        // Write your program here\n\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Once upon a time",
+            "there was",
+            "a program"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-04-dinosaur": {
+    "id": "part01-04-dinosaur",
+    "tmcname": "part01-Part01_04.Dinosaur",
+    "title": "Dinosaur",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise comes ready with the following template:",
+        "Edit the program so that it will print the following text. Use the \"sout\"-shorthand for writing the print commands."
+      ],
+      "codeSnippet": "public class Dinosaur {\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Once upon a time",
+            "there was",
+            "a dinosaur"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-05-message": {
+    "id": "part01-05-message",
+    "tmcname": "part01-Part01_05.Message",
+    "title": "Message",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user to write a string. When the user has provided a string (i.e., written some text and pressed the enter key), the program should print the string that was provided by the user.",
+        "The exercise template comes with a program template that includes the creation of a Scanner tool.",
+        "Example output for when the user writes \"Bye\".",
+        "Example output for when the user writes \"Once upon a time...\"."
+      ],
+      "codeSnippet": "import java.util.Scanner;\n\npublic class Message {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message: \");\n        // Write your program here\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Write a message:",
+            {
+              "text": "Bye",
+              "isInput": true
+            },
+            "Bye"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Write a message:",
+            {
+              "text": "Once upon a time...",
+              "isInput": true
+            },
+            "Once upon a time..."
+          ]
+        }
+      ]
+    }
+  },
+  "part01-06-hiadalovelace": {
+    "id": "part01-06-hiadalovelace",
+    "tmcname": "part01-Part01_06.HiAdaLovelace",
+    "title": "Hi Ada Lovelace!",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains the following program.",
+        "Modify the program so that it prints the contents of the variable `name`, and the printed text is the following in its full form:",
+        "NB! When using the `System.out.println` command, do not pass in the string \"Ada Lovelace\" as a parameter. Instead, use the existing variable `name`: `System.out.println(\"Hi \" + ...)`"
+      ],
+      "codeSnippet": "public class HiAdaLovelace {\n\n    public static void main(String[] args) {\n        String name = \"Ada Lovelace\";\n\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Hi Ada Lovelace!"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-07-messagethreetimes": {
+    "id": "part01-07-messagethreetimes",
+    "tmcname": "part01-Part01_07.MessageThreeTimes",
+    "title": "Message Three Times",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user to write a string. When the user has given a string (that is, written some text and pressed enter), the program must print the user's string three times (you can use the `System.out.println` command multiple times).",
+        "The exercise template already includes the code that creates the `Scanner` tool.",
+        "Example output for when the user writes the string \"Hi\".",
+        "Example output when the user writes \"Once upon a time...\"."
+      ],
+      "codeSnippet": "import java.util.Scanner;\n\npublic class MessageThreeTimes {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        System.out.println(\"Write a message: \");\n        // Write your program here\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Write a message:",
+            {
+              "text": "Hi",
+              "isInput": true
+            },
+            "Hi",
+            "Hi",
+            "Hi"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Write a message:",
+            {
+              "text": "Once upon a time...",
+              "isInput": true
+            },
+            "Once upon a time...",
+            "Once upon a time...",
+            "Once upon a time..."
+          ]
+        }
+      ]
+    }
+  },
+  "part01-08-greeting": {
+    "id": "part01-08-greeting",
+    "tmcname": "part01-Part01_08.Greeting",
+    "title": "Greeting",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prompts the user for their name with the message \"What's your name?\". When the user has written their name, the program has to print \"Hi \" followed by the user's name.",
+        "The exercise template already includes the code that creates the `Scanner` tool.",
+        "Example output when user gives the name Ada.",
+        "Example output when user gives the name Lily."
+      ],
+      "codeSnippet": "import java.util.Scanner;\n\npublic class Greeting {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "What's your name?",
+            {
+              "text": "Ada",
+              "isInput": true
+            },
+            "Hi Ada"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "What's your name?",
+            {
+              "text": "Lily",
+              "isInput": true
+            },
+            "Hi Lily"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-09-conversation": {
+    "id": "part01-09-conversation",
+    "tmcname": "part01-Part01_09.Conversation",
+    "title": "Conversation",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that works as follows:",
+        "The exercise template already includes the code that creates the `Scanner` tool."
+      ],
+      "codeSnippet": "import java.util.Scanner;\n\npublic class Conversation {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        //Write your program here\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Greetings! How are you doing?",
+            {
+              "text": "Good thank you!",
+              "isInput": true
+            },
+            "Oh, how interesting. Tell me more!",
+            {
+              "text": "Well, there's really nothing to tell.",
+              "isInput": true
+            },
+            "Thanks for sharing!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Greetings! How are you doing?",
+            {
+              "text": "Nice and dandy like cotton candy!",
+              "isInput": true
+            },
+            "Oh, how interesting. Tell me more!",
+            {
+              "text": "Just went shopping.",
+              "isInput": true
+            },
+            "Thanks for sharing!"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-10-story": {
+    "id": "part01-10-story",
+    "tmcname": "part01-Part01_10.Story",
+    "title": "Story",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "**NB!** The example output might align wrong on narrow displays. If you're using only a limited portion of the browser window, or your display is otherwise very narrow, try to stretch the display horizontally to see if the text aligns differently. The exercise expects the text to align as it does on wider displays.",
+        "Write a program that asks the user for a character's name and their job. The program then prints a short story.",
+        "The output must be as shown below -- note, the name and job depend on the user's input.",
+        "The exercise template already includes the code that creates the `Scanner` tool.",
+        "Here's another example output:"
+      ],
+      "codeSnippet": "import java.util.Scanner;\n\npublic class Story {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        // Write your program here\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "I will tell you a story, but I need some information first.",
+            "What is the main character called?",
+            {
+              "text": "Bob",
+              "isInput": true
+            },
+            "What is their job?",
+            {
+              "text": "a builder",
+              "isInput": true
+            },
+            "Here is the story:",
+            "Once upon a time there was Bob, who was a builder.",
+            "On the way to work, Bob reflected on life.",
+            "Perhaps Bob will not be a builder forever."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "I will tell you a story, but I need some information first.",
+            "What is the main character called?",
+            {
+              "text": "Ada",
+              "isInput": true
+            },
+            "What is their job?",
+            {
+              "text": "a Data scientist",
+              "isInput": true
+            },
+            "Here is the story:",
+            "Once upon a time there was Ada, who was a Data scientist.",
+            "On the way to work, Ada reflected on life.",
+            "Perhaps Ada will not be a Data scientist forever."
+          ]
+        }
+      ]
+    }
+  },
+  "part01-11-variousvariables": {
+    "id": "part01-11-variousvariables",
+    "tmcname": "part01-Part01_11.VariousVariables",
+    "title": "Various Variables",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains a program that prints the following:",
+        "Modify the program in the given places so that it outputs the following:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Chicken:",
+            "3",
+            "Bacon (kg):",
+            "5.5",
+            "Tractor:",
+            "None!",
+            "And finally, a summary:",
+            "3",
+            "5.5",
+            "None!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Chicken:",
+            "9000",
+            "Bacon (kg):",
+            "0.1",
+            "Tractor:",
+            "Zetor",
+            "And finally, a summary:",
+            "9000",
+            "0.1",
+            "Zetor"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-12-integerinput": {
+    "id": "part01-12-integerinput",
+    "tmcname": "part01-Part01_12.IntegerInput",
+    "title": "Integer Input",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for a value. The program should then print the value provided by the user.",
+        "Here's a couple of examples:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "You gave the number 3"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "42",
+              "isInput": true
+            },
+            "You gave the number 42"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-13-doubleinput": {
+    "id": "part01-13-doubleinput",
+    "tmcname": "part01-Part01_13.DoubleInput",
+    "title": "Double Input",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for a floating-point number using the variable type Double. The program then prints the user's input value.",
+        "Example prints for the program can be seen below:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "3.14",
+              "isInput": true
+            },
+            "You gave the number 3.14"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "2.718",
+              "isInput": true
+            },
+            "You gave the number 2.718"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-14-booleaninput": {
+    "id": "part01-14-booleaninput",
+    "tmcname": "part01-Part01_14.BooleanInput",
+    "title": "Boolean Input",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for a boolean value. The program should then print the value provided by the user.",
+        "Example prints for the program can be seen below."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Write something:",
+            {
+              "text": "santa does not exist",
+              "isInput": true
+            },
+            "True or false? false"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Write something:",
+            {
+              "text": "TRUE",
+              "isInput": true
+            },
+            "True or false? true"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-15-differenttypesofinput": {
+    "id": "part01-15-differenttypesofinput",
+    "tmcname": "part01-Part01_15.DifferentTypesOfInput",
+    "title": "Different Types of Input",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for a string, an integer, a floating-point number, and a boolean. The program should then print the values given by the user.",
+        "Example prints for the program can be seen below."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a string:",
+            {
+              "text": "bye-bye",
+              "isInput": true
+            },
+            "Give an integer:",
+            {
+              "text": "11",
+              "isInput": true
+            },
+            "Give a double:",
+            {
+              "text": "4.2",
+              "isInput": true
+            },
+            "Give a boolean:",
+            {
+              "text": "true",
+              "isInput": true
+            },
+            "You gave the string bye-bye",
+            "You gave the integer 11",
+            "You gave the double 4.2",
+            "You gave the boolean true"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a string:",
+            {
+              "text": "Oops!",
+              "isInput": true
+            },
+            "Give an integer:",
+            {
+              "text": "-4",
+              "isInput": true
+            },
+            "Give a double:",
+            {
+              "text": "3200.1",
+              "isInput": true
+            },
+            "Give a boolean:",
+            {
+              "text": "false",
+              "isInput": true
+            },
+            "You gave the string Oops!",
+            "You gave the integer -4",
+            "You gave the double 3200.1",
+            "You gave the boolean false"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-16-secondsinaday": {
+    "id": "part01-16-secondsinaday",
+    "tmcname": "part01-Part01_16.SecondsInADay",
+    "title": "Seconds in a day",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template, implement a program that asks the user for the number of days. After that, the program prints the number of seconds in the given number of days.",
+        "Earlier we learned to read an integer in the following manner:",
+        "Examples of expected output:"
+      ],
+      "codeSnippet": "Scanner scanner = new Scanner(System.in);\n\nSystem.out.println(\"Give a number:\");\nint number = Integer.valueOf(scanner.nextLine());\nSystem.out.println(\"You gave \" + number);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "How many days would you like to convert to seconds?",
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "86400"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "How many days would you like to convert to seconds?",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "259200"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "How many days would you like to convert to seconds?",
+            {
+              "text": "7",
+              "isInput": true
+            },
+            "604800"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-17-sumoftwonumbers": {
+    "id": "part01-17-sumoftwonumbers",
+    "tmcname": "part01-Part01_17.SumOfTwoNumbers",
+    "title": "Sum of two numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for two numbers. After this, the program prints the sum of the numbers given by the user.",
+        "When you ask for multiple numbers, create a separate variable for each:",
+        "Here's how the program is expected to work:"
+      ],
+      "codeSnippet": "Scanner scanner = new Scanner(System.in);\n\nSystem.out.println(\"Give the first number:\");\nint first = Integer.valueOf(scanner.nextLine());\nSystem.out.println(\"Give the second number:\");\nint second = Integer.valueOf(scanner.nextLine());\n\n// do something with the numbers",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "8",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "The sum of the numbers is 11"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "The sum of the numbers is 2"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-18-sumofthreenumbers": {
+    "id": "part01-18-sumofthreenumbers",
+    "tmcname": "part01-Part01_18.SumOfThreeNumbers",
+    "title": "Sum of three numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for three numbers. After this the program prints the sum of the numbers given by the user.",
+        "The program should work like this:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "8",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "Give the third number:",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "The sum of the numbers is 14"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Give the third number:",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "The sum of the numbers is 4"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-19-additionformula": {
+    "id": "part01-19-additionformula",
+    "tmcname": "part01-Part01_19.AdditionFormula",
+    "title": "Addition formula",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a program that can be used to add two integers together. In the beginning, the user is asked to give two integers that are to be summed. The program then prints the formula that describes the addition of the numbers.",
+        "Example output:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "4",
+              "isInput": true
+            },
+            "5 + 4 = 9"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "73457",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "12888",
+              "isInput": true
+            },
+            "73457 + 12888 = 86345"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-20-multiplicationformula": {
+    "id": "part01-20-multiplicationformula",
+    "tmcname": "part01-Part01_20.MultiplicationFormula",
+    "title": "Multiplication formula",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Similar to the previous exercise, create a program that multiplies the values stored in two integer variables.",
+        "For instance, if the entered numbers are 2 and 8, the program should print the following:",
+        "Likewise, if the entered numbers are 277 and 111, the print should be the following:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "8",
+              "isInput": true
+            },
+            "2 * 8 = 16"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "277",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "111",
+              "isInput": true
+            },
+            "277 * 111 = 30747"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-21-averageoftwonumbers": {
+    "id": "part01-21-averageoftwonumbers",
+    "tmcname": "part01-Part01_21.AverageOfTwoNumbers",
+    "title": "Average of two numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for two integers and prints their average."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "8",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "The average is 5.0"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-22-averageofthreenumbers": {
+    "id": "part01-22-averageofthreenumbers",
+    "tmcname": "part01-Part01_22.AverageOfThreeNumbers",
+    "title": "Average of three numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for three integers and prints their average."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "8",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "Give the third number:",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "The average is 4.333333333333333"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "9",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "Give the third number:",
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "The average is 4.333333333333333"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-23-simplecalculator": {
+    "id": "part01-23-simplecalculator",
+    "tmcname": "part01-Part01_23.SimpleCalculator",
+    "title": "Simple calculator",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for two numbers and prints their sum, difference, product, and quotient. Two examples of the execution of the program are given below."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "8",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "8 + 2 = 10",
+            "8 - 2 = 6",
+            "8 * 2 = 16",
+            "8 / 2 = 4.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "9",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "9 + 2 = 11",
+            "9 - 2 = 7",
+            "9 * 2 = 18",
+            "9 / 2 = 4.5"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-24-speedingticket": {
+    "id": "part01-24-speedingticket",
+    "tmcname": "part01-Part01_24.SpeedingTicket",
+    "title": "Speeding Ticket",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for an integer and prints the string \"Speeding ticket!\" if the input is greater than 120."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give speed:",
+            {
+              "text": "15",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give speed:",
+            {
+              "text": "135",
+              "isInput": true
+            },
+            "Speeding ticket!"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-25-checkyourindentation": {
+    "id": "part01-25-checkyourindentation",
+    "tmcname": "part01-Part01_25.CheckYourIndentation",
+    "title": "Check Your Indentation",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains a program demonstrating the use of conditional statements. It is, however, incorrectly indented.",
+        "Try to run the tests before doing anything. TMC shows the indentation errors differently compared to errors in program logic.",
+        "When you notice how indentation errors are shown, correct them. Now would be a good time to give the automatic code formatting a try."
+      ]
+    }
+  },
+  "part01-26-orwell": {
+    "id": "part01-26-orwell",
+    "tmcname": "part01-Part01_26.Orwell",
+    "title": "Orwell",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prompts the user for an integer and prints the string \"Orwell\" if the number is exactly 1984."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "1983",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "1984",
+              "isInput": true
+            },
+            "Orwell"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-27-ancient": {
+    "id": "part01-27-ancient",
+    "tmcname": "part01-Part01_27.Ancient",
+    "title": "Ancient",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prompts the user for a year. If the user inputs a number that is smaller than 2015, then the program prints the string \"Ancient history!\"."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a year:",
+            {
+              "text": "2017",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a year:",
+            {
+              "text": "2013",
+              "isInput": true
+            },
+            "Ancient history!"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-28-positivity": {
+    "id": "part01-28-positivity",
+    "tmcname": "part01-Part01_28.Positivity",
+    "title": "Positivity",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prompts the user for an integer and informs the user whether or not it is positive (greater than zero)."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "The number is positive."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "-2",
+              "isInput": true
+            },
+            "The number is not positive."
+          ]
+        }
+      ]
+    }
+  },
+  "part01-29-adulthood": {
+    "id": "part01-29-adulthood",
+    "tmcname": "part01-Part01_29.Adulthood",
+    "title": "Adulthood",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prompts the user for their age and tells them whether or not they are an adult (18 years old or older)."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "How old are you?",
+            {
+              "text": "12",
+              "isInput": true
+            },
+            "You are not an adult"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "How old are you?",
+            {
+              "text": "32",
+              "isInput": true
+            },
+            "You are an adult"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-30-largerthanorequalto": {
+    "id": "part01-30-largerthanorequalto",
+    "tmcname": "part01-Part01_30.LargerThanOrEqualTo",
+    "title": "Larger Than or Equal To",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prompts the user for two integers and prints the larger of the two. If the numbers are the same, then the program informs us about this as well."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "Greater number is: 5"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "8",
+              "isInput": true
+            },
+            "Greater number is: 8"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give the first number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "Give the second number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "The numbers are equal!"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-31-gradesandpoints": {
+    "id": "part01-31-gradesandpoints",
+    "tmcname": "part01-Part01_31.GradesAndPoints",
+    "title": "Grades and Points",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The table below describes how the grade for a particular course is determined. Write a program that gives a course grade according to the provided table.",
+        "| points | grade       |\n| ------ | ----------- |\n|  100  | incredible! |"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give points [0-100]:",
+            {
+              "text": "37",
+              "isInput": true
+            },
+            "Grade: failed"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give points [0-100]:",
+            {
+              "text": "76",
+              "isInput": true
+            },
+            "Grade: 3"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give points [0-100]:",
+            {
+              "text": "95",
+              "isInput": true
+            },
+            "Grade: 5"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give points [0-100]:",
+            {
+              "text": "-3",
+              "isInput": true
+            },
+            "Grade: impossible!"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-32-oddoreven": {
+    "id": "part01-32-oddoreven",
+    "tmcname": "part01-Part01_32.OddOrEven",
+    "title": "Odd or even",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prompts the user for a number and informs us whether it is even or odd.",
+        "Hint: The remainder when dividing by 2 tells us whether the number is even or not. We get the remainder using the `%`-operator. The exercise template contains additional instructions on how to do the checking using the remainder."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "Number 2 is even."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "7",
+              "isInput": true
+            },
+            "Number 7 is odd."
+          ]
+        }
+      ]
+    }
+  },
+  "part01-33-password": {
+    "id": "part01-33-password",
+    "tmcname": "part01-Part01_33.Password",
+    "title": "Password",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prompts the user for a password. If the password is \"Caput Draconis\" the program prints \"Welcome!\". Otherwise, the program prints \"Off with you!\""
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Password?",
+            {
+              "text": "Wattlebird",
+              "isInput": true
+            },
+            "Off with you!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Password?",
+            {
+              "text": "Caput Draconis",
+              "isInput": true
+            },
+            "Welcome!"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-34-same": {
+    "id": "part01-34-same",
+    "tmcname": "part01-Part01_34.Same",
+    "title": "Same",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prompts the user for two strings. If the strings are the same, then the program prints \"Same\". Otherwise, it prints \"Different\"."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter the first string:",
+            {
+              "text": "hello",
+              "isInput": true
+            },
+            "Enter the second string:",
+            {
+              "text": "hello",
+              "isInput": true
+            },
+            "Same"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter the first string:",
+            {
+              "text": "hello",
+              "isInput": true
+            },
+            "Enter the second string:",
+            {
+              "text": "world",
+              "isInput": true
+            },
+            "Different"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-35-checkingtheage": {
+    "id": "part01-35-checkingtheage",
+    "tmcname": "part01-Part01_35.CheckingTheAge",
+    "title": "Checking the age",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that prompts the user to input their age and checks whether or not it is possible (at least 0 and at most 120). Only use a single `if`-command in your program."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "How old are you?",
+            {
+              "text": "10",
+              "isInput": true
+            },
+            "OK"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "How old are you?",
+            {
+              "text": "55",
+              "isInput": true
+            },
+            "OK"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "How old are you?",
+            {
+              "text": "-3",
+              "isInput": true
+            },
+            "Impossible!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "How old are you?",
+            {
+              "text": "150",
+              "isInput": true
+            },
+            "Impossible!"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-36-leapyear": {
+    "id": "part01-36-leapyear",
+    "tmcname": "part01-Part01_36.LeapYear",
+    "title": "Leap year",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "A year is a leap year if it is divisible by 4. However, if the year is divisible by 100, then it is a leap year only when it is also divisible by 400.",
+        "Write a program that reads a year from the user, and checks whether or not it is a leap year.",
+        "Hint 1: The divisibility by a particular number can be checked using the modulo operator, aka `%`, in the following way.",
+        "Hint 2: Think of the problem as a chain of if, else if, else if, ... comparisons, and start building the program from a situation in which you can be certain that the year is not a leap year."
+      ],
+      "codeSnippet": "int number = 5;\n\nif (number % 5 == 0) {\n    System.out.println(\"The number is divisible by five!\");\n}\n\nif (number % 6 != 0) {\n    System.out.println(\"The number is not divisible by six!\")\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a year:",
+            {
+              "text": "2011",
+              "isInput": true
+            },
+            "The year is not a leap year."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a year:",
+            {
+              "text": "2012",
+              "isInput": true
+            },
+            "The year is a leap year."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a year:",
+            {
+              "text": "1800",
+              "isInput": true
+            },
+            "The year is not a leap year."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a year:",
+            {
+              "text": "2000",
+              "isInput": true
+            },
+            "The year is a leap year."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The number is divisible by five!",
+            "The number is not divisible by six!"
+          ]
+        }
+      ]
+    }
+  },
+  "part01-37-gifttax": {
+    "id": "part01-37-gifttax",
+    "tmcname": "part01-Part01_37.GiftTax",
+    "title": "Gift tax",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "[https://www.vero.fi/en/individuals/property/gifts/](https://www.vero.fi/en/individuals/property/gifts/): _A gift is a transfer of property to another person against no compensation or payment. If the total value of the gifts you receive from the same donor in the course of 3 years is €5,000 or more, you must pay gift tax._",
+        "When a gift is given by a close relative or a family member, the amount of gift tax is determined by the following table (source [vero.fi](https://www.vero.fi/en/individuals/property/gifts/gift-tax-calculator/#gifttaxtables)):",
+        "| Value of gift        | Tax at the lower limit    | Tax rate(%) for exceeding part  |\n| -------------------- | ----------------------    | ------------------------------  |\n| 5 000 -- 25 000      | 100                       | 8                               |\n| 25 000 -- 55 000     | 1 700                     | 10                              |\n| 55 000 -- 200 000    | 4 700                     | 12                              |\n| 200 000 -- 1 000 000 | 22 100                    | 15                              |\n| 1 000 000 --         | 142 100                   | 17                              |",
+        "For example 6000€ gift implies 180€ of gift tax (100 + (6000-5000) * 0.08), and 75000€ gift implies 7100€ of gift tax (4700 + (75000-55000) * 0.12).",
+        "Write a program that calculates the gift tax for a gift from a close relative or a family member.\nThis is how the program should work:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Value of the gift?",
+            {
+              "text": "3500",
+              "isInput": true
+            },
+            "No tax!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Value of the gift?",
+            {
+              "text": "5000",
+              "isInput": true
+            },
+            "Tax: 100.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Value of the gift?",
+            {
+              "text": "27500",
+              "isInput": true
+            },
+            "Tax: 1950.0"
+          ]
+        }
+      ]
+    }
+  }
+}

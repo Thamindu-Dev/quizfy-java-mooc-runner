@@ -1,0 +1,46 @@
+{
+  "id": "part03-09-greatestinlist",
+  "tmcname": "part03-Part03_09.GreatestInList",
+  "title": "Greatest in list",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+      "Continue developing the program so that it finds the greatest number in the list and prints its value after reading all the numbers. The programming should work in the following manner.",
+      "You can use the source code below as an example. It is used to find the smallest number."
+    ],
+    "codeSnippet": "// assume we have a list that contains integers\n\nint smallest = list.get(0);\n\nfor(int i = 0; i < list.size(); i++) {\n    int number = list.get(i);\n    if (smallest > number) {\n        smallest = number;\n    }\n}\n\nSystem.out.println(\"The smallest number: \" + smallest);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "72",
+            "isInput": true
+          },
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "8",
+            "isInput": true
+          },
+          {
+            "text": "93",
+            "isInput": true
+          },
+          {
+            "text": "11",
+            "isInput": true
+          },
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "The greatest number: 93"
+        ]
+      }
+    ]
+  }
+}

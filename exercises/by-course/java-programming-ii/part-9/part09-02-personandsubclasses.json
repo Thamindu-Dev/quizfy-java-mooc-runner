@@ -1,0 +1,79 @@
+{
+  "id": "part09-02-personandsubclasses",
+  "tmcname": "part09-Part09_02.PersonAndSubclasses",
+  "title": "Person and subclasses (5 parts)",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Person",
+      "Create a class `Person`. The class must work as follows:",
+      "Student",
+      "Create a class `Student`, which inherits the class `Person`.",
+      "At creation, a student has 0 study credits. Every time a student studies, the amount of study credits goes up. The class must act as follows:",
+      "Student's toString",
+      "In the previous task, `Student`inherits the toString method from the class `Person`. However, you can also overwrite an inherited method, replacing it with your own version. Write a version of toString method specifically for the `Student` class. The method must act as follows:",
+      "Teacher",
+      "Create a class `Teacher`, which inherits the class `Person`.",
+      "The class must act as follows:",
+      "List all Persons",
+      "Write a method `public static void printPersons(ArrayList persons)` in the Main class. The method prints all the persons on the list given as the parameter. Method must act as follows when invoked from the `main` method:"
+    ],
+    "codeSnippet": "Person ada = new Person(\"Ada Lovelace\", \"24 Maddox St. London W1S 2QN\");\nPerson esko = new Person(\"Esko Ukkonen\", \"Mannerheimintie 15 00100 Helsinki\");\nSystem.out.println(ada);\nSystem.out.println(esko);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Ada Lovelace",
+          "24 Maddox St. London W1S 2QN",
+          "Esko Ukkonen",
+          "Mannerheimintie 15 00100 Helsinki"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Ollie",
+          "6381 Hollywood Blvd. Los Angeles 90028",
+          "Study credits 0",
+          "Study credits 1"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Ollie",
+          "6381 Hollywood Blvd. Los Angeles 90028",
+          "Study credits 0",
+          "Ollie",
+          "6381 Hollywood Blvd. Los Angeles 90028",
+          "Study credits 1"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Ada Lovelace",
+          "24 Maddox St. London W1S 2QN",
+          "salary 1200 euro/month",
+          "Esko Ukkonen",
+          "Mannerheimintie 15 00100 Helsinki",
+          "salary 5400 euro/month",
+          "Ollie",
+          "6381 Hollywood Blvd. Los Angeles 90028",
+          "Study credits 25"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Ada Lovelace",
+          "24 Maddox St. London W1S 2QN",
+          "salary 1200 euro/month",
+          "Ollie",
+          "6381 Hollywood Blvd. Los Angeles 90028",
+          "Study credits 0"
+        ]
+      }
+    ]
+  }
+}

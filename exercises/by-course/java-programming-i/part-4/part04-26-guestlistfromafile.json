@@ -1,0 +1,51 @@
+{
+  "id": "part04-26-guestlistfromafile",
+  "tmcname": "part04-Part04_26.GuestListFromAFile",
+  "title": "Guest List From a File",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template comes ready with functionality for the guest list application. It checks whether names entered by the user are on the guest list.",
+      "However, the program is missing the functionality needed for reading the guest list. Modify the program so that the names on the guest list are read from the file.",
+      "**NB!** The exercise template comes with two files, `names.txt` and `other-names.txt`, which have the following contents. Do not change the contents of the files!",
+      "names.txt:",
+      "ada\narto\nleena\ntest",
+      "other-names.txt:",
+      "leo\njarmo\nalicia"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Name of the file:",
+          {
+            "text": "guestlist.txt",
+            "isInput": true
+          },
+          "Enter names, an empty line quits.",
+          {
+            "text": "Chuck Norris",
+            "isInput": true
+          },
+          "The name is not on the list.",
+          {
+            "text": "Jack Baluer",
+            "isInput": true
+          },
+          "The name is not on the list.",
+          {
+            "text": "Jack Bauer",
+            "isInput": true
+          },
+          "The name is on the list.",
+          {
+            "text": "Jack Bower",
+            "isInput": true
+          },
+          "The name is on the list.",
+          "Thank you!"
+        ]
+      }
+    ]
+  }
+}

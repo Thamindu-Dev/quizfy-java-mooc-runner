@@ -1,0 +1,184 @@
+{
+  "part14-01-shanghai": {
+    "id": "part14-01-shanghai",
+    "tmcname": "part14-Part14_01.Shanghai",
+    "title": "Shanghai",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Universities are compared yearly. One internationally respected comparer is the Shanghai Ranking Consultancy, which published a yearly comparison list of internationally famous universities. The list also includes the rank for each university. The University of Helsinki has obtained the following ranks in the years 2007-2017:",
+        "You will find the class `ShangaiApplication` in the exercise base. Create in it a program that shows how the University of Helsinki's ranking has varied during these years. NB! Don't use any layout in the application -- give the line chart object directly as the Scene object's constructor parameter. Also take notice that the Scene also needs the width and height of the displayed area as parameters.",
+        "The result drawn by the application could like the following example:"
+      ]
+    }
+  },
+  "part14-02-finnishparties": {
+    "id": "part14-02-finnishparties",
+    "tmcname": "part14-Part14_02.FinnishParties",
+    "title": "Finnish parties",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise base contains the class PartiesApplication. Create in it an application that displays the relative support of the major Finnish parties during the years 1968-2008. The project contains the raw data that has been used in the previous examples, and it can be found in the file \"partiesdata.tsv\".",
+        "The relative support must be displayed for each party so that a separate line represents each of them in the line chart. Always set the name of the XYChart.Series object to be the party name that can be found in the data (with the help of the setName method).",
+        "When creating the x axis that the line chart uses, take notice that the first year that the statistics cover is the year of 1968.",
+        "Tab-separated string can be split into parts in the following manner:",
+        "To create a floating point number of a string that contains a floating point number, you can use the valueOf method of the Double class. So for instance `Double.valueOf(\"16.1\");`",
+        "The visualization created by the application should look something like this:",
+        "*Data for similar charts can be found in the [PX-Web databases](https://pxnet2.stat.fi/PXWeb/pxweb/fi/StatFin/) of Statistics Finland*"
+      ],
+      "codeSnippet": "String string = \"KOK    16.1    18.1    20.9\";\nString[] pieces = string.split(\"\\t\");\nSystem.out.println(pieces[0]);\nSystem.out.println(pieces[1]);\nSystem.out.println(pieces[2]);\nSystem.out.println(pieces[3]);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "KOK",
+            "16.1",
+            "18.1",
+            "20.9"
+          ]
+        }
+      ]
+    }
+  },
+  "part14-03-savingscalculator": {
+    "id": "part14-03-savingscalculator",
+    "tmcname": "part14-Part14_03.SavingsCalculator",
+    "title": "Savings calculator (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise you will implement a program for calculating and displaying the sum in a savings account. User can give the calculator a sum to save each month and the yearly interest rate, and the calculator will display how the savings will increase over 30 years.",
+        "User interface",
+        "First implement the user interface of the program. The components of the application can be managed using a BorderPane.\nIn the middle of the BorderPane add a line chart (LineChart), which has two numerical axis (NumberAxis). On the top of the BorderPane add a VBox component which contains two BorderPanes. The first BorderPane (on top) contains the text \"Monthly savings\" on the left, a slider in the middle and a text describing the slider on the right.\nThe second BorderPane (below the first one) has the text \"Yearly interest rate\" on the left, a slider in the middle and a text describing the slider on the right.",
+        "You can find tips for using the Slider -class by googling \"javafx slider\".",
+        "Define the Sliders so, that the minimum monthly savings is 25 and the maximum is 250.\nThe minimum yearly interest rate is 0 and the maximum is 10.\nThe x-axis of the line chart displays years from 0-30. The y-axis must adapt to the values being shown.",
+        "In this phase the application should look like so:",
+        "Displaying the savings",
+        "After the user interface is complete, start implementing the functionality of the program.",
+        "Modify the user interface so, that when user changes the sum to save each month (by moving the uppermost slider), the line chart updates to display the savings amount of the new monthly sum. For example when the monthly savings amount is 50, the line chart should have a line showing the values [(0,0), (1,600), (2,1200),(3,1800),...].",
+        "In this phase the application should look like so (when the monthly sum to save is 50):",
+        "Displaying the savings and the interest rate",
+        "Modify the user interface so, that it shows the interest rate as well. The line chart should have two lines, one for showing just the monthly savings, and one for showing the monthly savings and the interest rate.",
+        "Calculate the interest rate yearly according to the expected  savings at the end of the year. For example when the monthly savings sum is 50 and the yearly interest rate is 5%, the line chart should have a line showing the values [(0,0), (1, 630), (2, 1291.5), (3, 1986,075), ...].",
+        "In this phase the application should look like so (when the monthly sum to save is 50 and the yearly interest rate is 10%):",
+        "In the chart we see the compound interest of our savings, although with a very optimistic interest rate. When you have completed the application and returned it, you can for example calculate how saving 25 euros a month with 4% yearly interest rate grows over 50 years."
+      ]
+    }
+  },
+  "part14-04-unfairadvertisement": {
+    "id": "part14-04-unfairadvertisement",
+    "tmcname": "part14-Part14_04.UnfairAdvertisement",
+    "title": "Unfair Advertisement",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "According to the old saying \"There are three kinds of lies: lies, damned lies and statistics.\", nothing lies like a statistic. The saying might not be completely wrong, as some statistics are purposefully made difficult to read.",
+        "The application in the exercise template opens a visualization used for marketing for an imaginary company. The visualization displays the speed of their internet, and shows a remarkable difference to their competitors.",
+        "The comparison however is not really fair, and gives the wrong impression on the situation. Modify the program so, that the comparison is fairer.",
+        "This exercise has no automatic tests or model answer, so you can define the comparison with some freedom."
+      ]
+    }
+  },
+  "part14-05-cyclingstatistics": {
+    "id": "part14-05-cyclingstatistics",
+    "tmcname": "part14-Part14_05.CyclingStatistics",
+    "title": "Cycling statistics",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise base there is a ready application that illustrates cycling statistics as a line chart. Modify the program so that it uses a bar chart instead of the line chart. All the references to line charts must be removed in the course of the editing."
+      ]
+    }
+  },
+  "part14-06-smiley": {
+    "id": "part14-06-smiley",
+    "tmcname": "part14-Part14_06.Smiley",
+    "title": "Smiley",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a graphical user interface into the class that is supplied with the exercise base. Add a BorderPane into the GUI to be responsible for the application's layout. Add a Canvas object in the middle of the BorderPane. After doing this, use the GraphicsContext object of the Canvas object to draw a smiley. Use white (Color.WHITE) as the background color, and black (Color.BLACK) as the color of the smiley.",
+        "The tests in this exercise only check that you draw into the window. Before returning, make sure that drawing the smiley works correctly. Notice that the purpose here is NOT to manually draw the smiley with the mouse -- use the methods of the GraphicsContext object so that the picture is already drawn when the program is first started."
+      ]
+    }
+  },
+  "part14-07-collage": {
+    "id": "part14-07-collage",
+    "tmcname": "part14-Part14_07.Collage",
+    "title": "Collage (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Andy Warhol was famous for his photo collages where one or more pictures are repeated multiple times with different colors, for instance.",
+        "In this exercise we are going to imitate his style and create an Andy Warhol-ish interpretation of the famous Mona Lisa. The finished program will show Mona Lisa looking like this:",
+        "Let's begin.",
+        "Top left corner",
+        "In the exercise base there is a program that loads and displays the Mona Lisa. In this section your goal is to create a situation where the Mona Lisa is displayed as a smaller image in the top left corner. The size of the smaller image should be one fourth of the original image.",
+        "So in practice the point (0, 0) should contain the value at the coordinates (0, 0). The coordinates at (0, 1) should contain the value at coordinates (0, 2). Similarly, the point (0, 2) should contain the value at the point (0, 4), the point (0, 3) the value at (0, 6), etc. The same holds true with the y-axis, so point (1, 1) should have the value of (2, 2), the point (1, 2) the value of (2, 4), etc.",
+        "Grid",
+        "Then modify the program so that the small image at the top left corner is repeated four times in the whole collage. The top-left corner of the first image should be at the coordinates (0, 0). The top-left corner of the second image should be at the point (width of image / 2, 0). The top-left corner of the third image should be at (0, height of image / 2), and the top-left corner of the fourth image should be at (width of image / 2, height of image / 2).",
+        "Negative",
+        "You've come this far, and now you can display a grid of four small images. Next, modify the image so that the negative of the original is displayed. You can create a negative by assigning to each pixel, the following color values: the subtraction of the original color from 1. So for the red color this would be `red = 1.0 - red`.",
+        "*The Mona Lisa image included in the exercise base has been downloaded from the Wikimedia path [https://commons.wikimedia.org/wiki/Category:Mona_Lisa](https://commons.wikimedia.org/wiki/Category:Mona_Lisa). It can be used freely.*"
+      ]
+    }
+  },
+  "part14-08-hurray": {
+    "id": "part14-08-hurray",
+    "tmcname": "part14-Part14_08.Hurray",
+    "title": "Hurray",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the root folder of the exercise base there is a file called `Applause-Yannick_Lemieux.wav`. The file contains a hurray sound. Your task is to create a program that contains a \"Hurray!\" button. When the user clicks the button, the program should play the audio file included in the project.",
+        "*The audio file is recorded by Yannick Lemieux. It is licensed with the Creative Commons attribution license [https://creativecommons.org/licenses/by/3.0/](https://creativecommons.org/licenses/by/3.0/).*"
+      ]
+    }
+  },
+  "part14-09-asteroids": {
+    "id": "part14-09-asteroids",
+    "tmcname": "part14-Part14_09.Asteroids",
+    "title": "Asteroids (4 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains an empty program template. Create the Asteroids game by following the preceding example of a large application.",
+        "While you are creating the game, remember to update the method `partsCompleted` in the `AsteroidsApplication` class such that it returns the number of the part you have completed. You may submit the exercise even if you don't complete all of the parts, in which case you will receive points for the parts you have completed.",
+        "When you have completed the exercise you may keep going if you like. E.g. you could add sounds and different characters -- how would, for example, aliens work in the game? Would they try to shoot the ship of the player?",
+        "Part 1",
+        "Implement the steps presented at the start of the material (1) creating the game window, (2) creating the ship, and (3) turning the ship.",
+        "When you have these parts working, set the return value of the `partsCompleted` method of the `AsteroidsApplication` class to `1`.",
+        "Part 2",
+        "Add functionality for moving the ship to the Asteroids game as presented in the material.",
+        "When you have these, and the previous parts working, set the return value of the `partsCompleted` method of the `AsteroidsApplication` class to `2`.",
+        "Part 3",
+        "Extend the Asteroids game with (1) creating an asteroid, (2) the collision between ship and asteroid, and (3) adding multiple asteroids.",
+        "When you have these, and the previous parts working, set the return value of the `partsCompleted` method of the `AsteroidsApplication` class to `3`.",
+        "Part 4",
+        "Extend the Asteroids game by adding the rest of the game functionality, i.e. (1) staying within the window, (2) projectiles, (3) adding points, and (4) adding new asteroids.",
+        "When you have these, and the previous parts working, set the return value of the `partsCompleted` method of the `AsteroidsApplication` class to `4`.",
+        "*The exercise does not have a model solution. The exercise is meant to be done by following the example in the material step by step.*"
+      ]
+    }
+  },
+  "part14-10-database": {
+    "id": "part14-10-database",
+    "tmcname": "part14-Part14_10.Database",
+    "title": "Database",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise base contains an application that has the H2 database configured as a dependency. It also includes the following four classes:",
+        "- `Todo`: a class that represents a task that is to be done. Each todo has a numerical identifier (id), a name, a description, and the information abot whether it has been done.",
+        "- `TodoDao`: a class that is used to store todos to the database. The word \"dao\" comes from the phrase \"data access object\". The class offers methods for listing, adding, setting as completed, and removing todos. Removing or setting as done is done on the basis of the id. The class constructor receives the location of the database.",
+        "- `UserInterface`: a class that is used to ask the user for instructions for what to do. The constructor receives a Scanner object and a TodoDao object as its parameters. Calling the `start` method starts the user interface, after which the user controls the program with their keyboard input.",
+        "- `Program`: a class that serves as a starting point for the program.",
+        "In this exercise it is your task to modify the user interface so that the user of the program can add new todos, or list, mark as done, or remove existing ones. Don't do changes in the classes `Todo`, `TodoDao`, or `Program`.",
+        "The finished program is expected to behave in the following manner:",
+        "The text user interface in this exercise does not differ in any essential way from the earlier text UIs we have created. The difference is that the data is being stored in a database: *the stored data will be available for the program when it is started the next time.*"
+      ],
+      "codeSnippet": "Enter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 1\nListing the database contents\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 2\nAdding a new todo\nEnter name\ncode\nEnter description\ncode a whole lot\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 2\nAdding a new todo\nEnter name\nprepare food\nEnter description\nrice porridge\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 1\nListing the database contents\nTodo{id=1, name=code, description=code a whole lot, done=false}\nTodo{id=2, name=prepare food, description=rice porridge, done=false}\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 3\n\nWhich todo should be marked as done (give the id)?\n2\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 1\nListing the database contents\nTodo{id=1, name=code, description=code a whole lot, done=false}\nTodo{id=2, name=prepare food, description=rice porridge, done=true}\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 4\n\nWhich todo should be removed (give the id)?\n2\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 1\nListing the database contents\nTodo{id=1, name=code, description=code a whole lot, done=false}\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 3\n\nWhich todo should be marked as done (give the id)?\n1\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> 1\nListing the database contents\nTodo{id=1, name=code, description=code a whole lot, done=true}\n\nEnter command:\n1) list\n2) add\n3) mark as done\n4) remove\nx) quit\n> x\nThank you!"
+    }
+  }
+}

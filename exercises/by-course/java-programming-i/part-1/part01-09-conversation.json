@@ -1,0 +1,47 @@
+{
+  "id": "part01-09-conversation",
+  "tmcname": "part01-Part01_09.Conversation",
+  "title": "Conversation",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that works as follows:",
+      "The exercise template already includes the code that creates the `Scanner` tool."
+    ],
+    "codeSnippet": "import java.util.Scanner;\n\npublic class Conversation {\n\n    public static void main(String[] args) {\n        Scanner scanner = new Scanner(System.in);\n\n        //Write your program here\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Greetings! How are you doing?",
+          {
+            "text": "Good thank you!",
+            "isInput": true
+          },
+          "Oh, how interesting. Tell me more!",
+          {
+            "text": "Well, there's really nothing to tell.",
+            "isInput": true
+          },
+          "Thanks for sharing!"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Greetings! How are you doing?",
+          {
+            "text": "Nice and dandy like cotton candy!",
+            "isInput": true
+          },
+          "Oh, how interesting. Tell me more!",
+          {
+            "text": "Just went shopping.",
+            "isInput": true
+          },
+          "Thanks for sharing!"
+        ]
+      }
+    ]
+  }
+}

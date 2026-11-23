@@ -1,0 +1,27 @@
+{
+  "id": "part04-14-multiplier",
+  "tmcname": "part04-Part04_14.Multiplier",
+  "title": "Multiplier",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a class Multiplier that has a:",
+      "- Constructor `public Multiplier(int number)`.\n- Method `public int multiply(int number)` which returns the value `number` passed to it multiplied by the `number` provided to the constructor.",
+      "You also need to create an instance variable in this exercise.",
+      "An example of the class in use:",
+      "Output"
+    ],
+    "codeSnippet": "Multiplier multiplyByThree = new Multiplier(3);\n\nSystem.out.println(\"multiplyByThree.multiply(2): \" + multiplyByThree.multiply(2));\n\nMultiplier multiplyByFour = new Multiplier(4);\n\nSystem.out.println(\"multiplyByFour.multiply(2): \" + multiplyByFour.multiply(2));\nSystem.out.println(\"multiplyByThree.multiply(1): \" + multiplyByThree.multiply(1));\nSystem.out.println(\"multiplyByFour.multiply(1): \" + multiplyByFour.multiply(1));",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "multiplyByThree.multiply(2): 6",
+          "multiplyByFour.multiply(2): 8",
+          "multiplyByThree.multiply(1): 3",
+          "multiplyByFour.multiply(1): 4"
+        ]
+      }
+    ]
+  }
+}

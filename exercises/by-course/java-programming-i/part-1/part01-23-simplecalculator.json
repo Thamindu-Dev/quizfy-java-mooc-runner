@@ -1,0 +1,51 @@
+{
+  "id": "part01-23-simplecalculator",
+  "tmcname": "part01-Part01_23.SimpleCalculator",
+  "title": "Simple calculator",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for two numbers and prints their sum, difference, product, and quotient. Two examples of the execution of the program are given below."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "8 + 2 = 10",
+          "8 - 2 = 6",
+          "8 * 2 = 16",
+          "8 / 2 = 4.0"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "9",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "9 + 2 = 11",
+          "9 - 2 = 7",
+          "9 * 2 = 18",
+          "9 / 2 = 4.5"
+        ]
+      }
+    ]
+  }
+}

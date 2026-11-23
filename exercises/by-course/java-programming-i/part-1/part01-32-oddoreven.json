@@ -1,0 +1,36 @@
+{
+  "id": "part01-32-oddoreven",
+  "tmcname": "part01-Part01_32.OddOrEven",
+  "title": "Odd or even",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for a number and informs us whether it is even or odd.",
+      "Hint: The remainder when dividing by 2 tells us whether the number is even or not. We get the remainder using the `%`-operator. The exercise template contains additional instructions on how to do the checking using the remainder."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "Number 2 is even."
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "7",
+            "isInput": true
+          },
+          "Number 7 is odd."
+        ]
+      }
+    ]
+  }
+}

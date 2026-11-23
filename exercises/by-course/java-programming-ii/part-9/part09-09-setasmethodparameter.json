@@ -1,0 +1,22 @@
+{
+  "id": "part09-09-setasmethodparameter",
+  "tmcname": "part09-Part09_09.SetAsMethodParameter",
+  "title": "Set as  method parameter",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the Main-class, implement the static method `returnSize`, which receives a Set object as a parameter and returns its size.",
+      "The method should work e.g. like this:",
+      "Prints:"
+    ],
+    "codeSnippet": "Set<String> names = new HashSet<>();\nnames.add(\"first\");\nnames.add(\"first\");\nnames.add(\"second\");\nnames.add(\"second\");\nnames.add(\"second\");\n\nSystem.out.println(returnSize(names));",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "2"
+        ]
+      }
+    ]
+  }
+}

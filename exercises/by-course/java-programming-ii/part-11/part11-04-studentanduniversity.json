@@ -1,0 +1,11 @@
+{
+  "id": "part11-04-studentanduniversity",
+  "tmcname": "part11-Part11_04.StudentAndUniversity",
+  "title": "StudentAndUniversity",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Two classes, Student and University, are depicted below, as well as the connection between them. Implement these classes in the exercise base."
+    ]
+  }
+}

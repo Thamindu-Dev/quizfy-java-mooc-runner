@@ -1,0 +1,11 @@
+{
+  "id": "part11-09-thethreepackages",
+  "tmcname": "part11-Part11_09.TheThreePackages",
+  "title": "Three packages",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Within the exercise base, create three packages: `a`, `b`, and `c`. Create class `A` inside the package `a`, class `B` inside the package `b`, and class `C` inside the package `c`. The classes don't need object variables, constructors, or methods."
+    ]
+  }
+}

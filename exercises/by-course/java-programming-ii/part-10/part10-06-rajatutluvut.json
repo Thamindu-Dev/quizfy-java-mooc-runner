@@ -1,0 +1,46 @@
+{
+  "id": "part10-06-rajatutluvut",
+  "tmcname": "part10-Part10_06.RajatutLuvut",
+  "title": "Rajatut luvut",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "-->",
+      "Write a program that reads user input. When the user gives a negative number as an input, the input reading will be stopped. After this, print all the numbers the user has given as input that are between 1 and 5."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "7",
+            "isInput": true
+          },
+          {
+            "text": "14",
+            "isInput": true
+          },
+          {
+            "text": "4",
+            "isInput": true
+          },
+          {
+            "text": "5",
+            "isInput": true
+          },
+          {
+            "text": "4",
+            "isInput": true
+          },
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "4",
+          "5",
+          "4"
+        ]
+      }
+    ]
+  }
+}

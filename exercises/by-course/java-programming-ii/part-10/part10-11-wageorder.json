@@ -1,0 +1,11 @@
+{
+  "id": "part10-11-wageorder",
+  "tmcname": "part10-Part10_11.WageOrder",
+  "title": "Wage order",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "You are provided with the class Human. A human has a name and wage information. Implement the interface `Comparable` in a way, such that the overridden `compareTo` method sorts the humans according to wage from largest to smallest salary."
+    ]
+  }
+}

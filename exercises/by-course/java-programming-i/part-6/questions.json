@@ -1,0 +1,1043 @@
+{
+  "part06-01-menu": {
+    "id": "part06-01-menu",
+    "tmcname": "part06-Part06_01.Menu",
+    "title": "Menu (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The gourmet restaurant 'Unicafe' on the Kumpula campus of the University of Helsinki needs a new menu. The chef knows about programming and wants a computer system to manage the menu. In this assignment, we'll implement the heart of the system, the Menu class.",
+        "The exercise template comes with a `Main` class that you can use to test the menu. For the implementation of the menu, you'll have the following boilerplate code:",
+        "The menu object has an ArrayList as an instance variable to store the names of the dishes on the menu. The menu should provide the following methods:",
+        "- `public void addMeal(String meal)` adds a meal to the menu. If the meal is already on the list, it should not be added again.",
+        "- `public void printMeals()` prints the meals.",
+        "- `public void clearMenu()` clears the menu.",
+        "Once the menu is done, you can use it as follows.",
+        "Adding a Meal",
+        "Implement the `public void addMeal(String meal)` method, which adds a new meal to the `meals` list. If the meal you want to add is already on the list, you shouldn't add it again. The list method `contains` is handy for checking an items existence on it.",
+        "Printing the Meals",
+        "Implement the `public void printMeals()` method, which prints the meals. You can test out the program using the following example code.",
+        "Clearing the Food List",
+        "Implement the `public void clearMenu()` method, which clears the menu. The `ArrayList` class has a method which is useful here. NetBeans can hint at the available methods when you type the object name an a dot. Try to write `meals.` inside the method frame and see what happens.",
+        "Once the menu is ready, try it with the following example code."
+      ],
+      "codeSnippet": "import java.util.ArrayList;\n\npublic class Menu {\n\n    private ArrayList<String> meals;\n\n    public Menu() {\n        this.meals = new ArrayList<>();\n    }\n\n    // implement the required methods here\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Tofu ratatouille",
+            "Chilli coconut chicken",
+            "Meatballs with mustard sauce",
+            "Tomato and mozzarella salad"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Tofu ratatouille",
+            "Chilli Coconut Chicken",
+            "Meatballs with mustard sauce"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Tofu ratatouille",
+            "Chilli Coconut Chicken",
+            "Meatballs with mustard sauce",
+            "Tomato and mozzarella salad"
+          ]
+        }
+      ]
+    }
+  },
+  "part06-02-stack": {
+    "id": "part06-02-stack",
+    "tmcname": "part06-Part06_02.Stack",
+    "title": "Stack (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "A stack is a data structure that you can add to and take from. Always to the top of it or from the top.",
+        "Adding to the Stack and Checking Emptiness",
+        "Create a `Stack` class that has a list of strings as an instance variable. Add the following methods to the class:",
+        "- `public boolean isEmpty()` - returns a `boolean`-type value (true or false) that tells whether or not the stack is empty.",
+        "- `public void add(String value)` - Adds the value given as a parameter to the top of the stack.",
+        "- `public ArrayList values()` - returns the values ​​contained in the stack as a list.",
+        "You can test your class with the following code:",
+        "Taking from the Stack",
+        "Add to the `Stack` class a `public String take()` method, which returns the topmost value (i.e., the last value added to the deque) and removes it from the stack.",
+        "Tip! When a value is added to an ArrayList, it goes to the end of the list. As such, the most recently added value is in the last index of the list - the `size()` method provided by the list is useful for finding the last index. You can remove an element from a particular index using the `remove` method provided by the list."
+      ],
+      "codeSnippet": "Stack s = new Stack();\nSystem.out.println(s.isEmpty());\nSystem.out.println(s.values());\ns.add(\"Value\");\nSystem.out.println(s.isEmpty());\nSystem.out.println(s.values());",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "true",
+            "[]",
+            "false",
+            "[Value]"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "true",
+            "[]",
+            "false",
+            "[Value]",
+            "true",
+            "[]",
+            "Value"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"
+          ]
+        }
+      ]
+    }
+  },
+  "part06-03-messagingservice": {
+    "id": "part06-03-messagingservice",
+    "tmcname": "part06-Part06_03.MessagingService",
+    "title": "MessagingService",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template comes with a pre-defined `Message` class that can be used to create objects representing messages. Each message has a sender and some content.",
+        "Implement the `MessagingService` class. The class must have a parameterless constructor and contain a list of `Message` objects. After that, add the following two methods to the class:",
+        "- `public void add(Message message)` - adds a message passed as a parameter to the messaging service as long as the message content is at most 280 characters long.",
+        "- `public ArrayList getMessages()` - returns the messages added to the messaging service.",
+        "Tip! You can find out the length of the string using the `length()` method associated with the string."
+      ]
+    }
+  },
+  "part06-04-printingacollection": {
+    "id": "part06-04-printingacollection",
+    "tmcname": "part06-Part06_04.PrintingACollection",
+    "title": "Printing a Collection",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template has a predefined `SimpleCollection` class, which is used to represent a group of values. The class is missing the `toString` method used for printing.",
+        "Implement a `toString` method for the class that will perform as demonstrated in the following examples."
+      ],
+      "codeSnippet": "SimpleCollection s = new SimpleCollection(\"alphabet\");\nSystem.out.println(s);\n\nSystem.out.println();\n\ns.add(\"a\");\nSystem.out.println(s);\n\nSystem.out.println();\n\ns.add(\"b\");\nSystem.out.println(s);\n\nSystem.out.println();\n\ns.add(\"c\");\nSystem.out.println(s);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The collection alphabet is empty.",
+            "The collection alphabet has 1 element:",
+            "a",
+            "The collection alphabet has 2 elements:",
+            "a",
+            "b",
+            "The collection alphabet has 3 elements:",
+            "a",
+            "b",
+            "c"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The collection characters is empty.",
+            "The collection characters has 1 element:",
+            "magneto",
+            "The collection characters has 2 elements:",
+            "magneto",
+            "mystique",
+            "The collection characters has 3 elements:",
+            "magneto",
+            "mystique",
+            "phoenix"
+          ]
+        }
+      ]
+    }
+  },
+  "part06-05-santasworkshop": {
+    "id": "part06-05-santasworkshop",
+    "tmcname": "part06-Part06_05.SantasWorkshop",
+    "title": "Santa",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "We'll practise wrapping gifts in this exercise. Let's create the classes `Gift` and `Package`. The gift has a name and weight, and the package contains gifts.",
+        "Gift-class",
+        "Create a `Gift` class, where the objects instantiated from it represent different kinds of gifts. The information that's recorded is the name and weight of the item (kg).",
+        "Add the following methods to the class:",
+        "- Constructor for which the name and weight of the gift are given as parameters",
+        "- Method `public String getName()`, which returns the name of the gift",
+        "- Method `public int getWeight()`, which returns the weight of the gift",
+        "- Method `public String toString()`, which returns a string in the form \"name (weight kg)\"",
+        "The following is an example of the class in use:",
+        "The program's print output should be as follows:",
+        "Package-class",
+        "Create a `Package` class to which gifts can be added, and that keeps track of the total weight of the gifts in the package. The class should contain:",
+        "- A parameterless constructor",
+        "- Method `public void addGift(Gift gift)`, which adds the gift passed as a parameter to the package. The method returns no value.",
+        "- Method `public int totalWeight()`, which returns the total weight of the package's gifts.",
+        "It's recommended to store the items in an `ArrayList` object.",
+        "An example use case of the class is as follows:",
+        "The program's output should be the following:"
+      ],
+      "codeSnippet": "public class Main {\n    public static void main(String[] args) {\n        Gift book = new Gift(\"Harry Potter and the Philosopher's Stone\", 2);\n\n        System.out.println(\"Gift's name: \" + book.getName());\n        System.out.println(\"Gift's weight: \" + book.getWeight());\n\n        System.out.println(\"Gift: \" + book);\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Gift's name: Harry Potter and the Philosopher's Stone",
+            "Gift's weight: 2",
+            "Gift: Harry Potter and the Philosopher's Stone (2 kg)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "2"
+          ]
+        }
+      ]
+    }
+  },
+  "part06-06-longestincollection": {
+    "id": "part06-06-longestincollection",
+    "tmcname": "part06-Part06_06.LongestInCollection",
+    "title": "Longest in collection",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template comes with the class `SimpleCollection` that's familiar from previous exercises. Implement the method `public String longest()` for the class, which returns the longest string of the collection. If the collection is empty, the method should return a `null` reference."
+      ],
+      "codeSnippet": "SimpleCollection j = new SimpleCollection(\"characters\");\nSystem.out.println(\"Longest: \" + j.longest());\n\nj.add(\"magneto\");\nj.add(\"mystique\");\nj.add(\"phoenix\");\n\nSystem.out.println(\"Longest: \" + j.longest());",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Longest: null",
+            "Longest: mystique"
+          ]
+        }
+      ]
+    }
+  },
+  "part06-07-heightorder": {
+    "id": "part06-07-heightorder",
+    "tmcname": "part06-Part06_07.HeightOrder",
+    "title": "Height Order (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "A `Person` class is included in the exercise template. A person has a name and a height. In this exercise, we'll implement a `Room` class, which can be used to add people and order them according to their height -- taking a person out of the room always returns the shortest person.",
+        "The class should eventually work in the following way.",
+        "Room",
+        "Create `Room` class. The class should contain a list of persons as an instance variable, and it should have a parameterless constructor. In addition, add the following methods to the class:",
+        "- `public void add(Person person)` - add the person passed as a paramter to the list.",
+        "- `public boolean isEmpty()` - returns a `boolean`-type value `true` or `false`, that tells whether the room is empty or not.",
+        "- `public ArrayList getPersons()` - returns a list of the persons in the room.",
+        "Shortest person",
+        "Add a `public Person shortest()` method to the `Room` class, which returns the shortest person added to the room. If the room is empty, a null reference is returned. The method should not remove a person from the room.",
+        "Taking from a room",
+        "Add a `public Person take()` method to the `Room` class, which takes the shortest person in the room. When a room is empty, it returns a `null` reference.",
+        "It's now possible to print the persons in height order."
+      ],
+      "codeSnippet": "Room room = new Room();\nSystem.out.println(\"Empty room? \" + room.isEmpty());\nroom.add(new Person(\"Lea\", 183));\nroom.add(new Person(\"Kenya\", 182));\nroom.add(new Person(\"Auli\", 186));\nroom.add(new Person(\"Nina\", 172));\nroom.add(new Person(\"Terhi\", 185));\nSystem.out.println(\"Empty room? \" + room.isEmpty());\n\nSystem.out.println(\"\");\nfor (Person person : room.getPersons()) {\n    System.out.println(person);\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Empty room? true",
+            "Empty room? false",
+            "Lea (183 cm)",
+            "Kenya (182 cm)",
+            "Auli (186 cm)",
+            "Nina (172 cm)",
+            "Terhi (185 cm)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Shortest: null",
+            "Empty room? true",
+            "Empty room? false",
+            "Lea (183 cm)",
+            "Kenya (182 cm)",
+            "Auli (186 cm)",
+            "Nina (172 cm)",
+            "Terhi (185 cm)",
+            "Shortest: Nina (172 cm)",
+            "Lea (183 cm)",
+            "Kenya (182 cm)",
+            "Auli (186 cm)",
+            "Nina (172 cm)",
+            "Terhi (185 cm)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Lea (183 cm)",
+            "Kenya (182 cm)",
+            "Auli (186 cm)",
+            "Nina (172 cm)",
+            "Terhi (185 cm)",
+            "Shortest: Nina (172 cm)",
+            "Lea (183 cm)",
+            "Kenya (182 cm)",
+            "Auli (186 cm)",
+            "Terhi (185 cm)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Nina (172 cm)",
+            "Kenya (182 cm)",
+            "Lea (183 cm)",
+            "Terhi (185 cm)",
+            "Auli (186 cm)"
+          ]
+        }
+      ]
+    }
+  },
+  "part06-08-cargohold": {
+    "id": "part06-08-cargohold",
+    "tmcname": "part06-Part06_08.CargoHold",
+    "title": "Cargo hold (7 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise, we create the classes `Item`, `Suitcase` and `Hold` to practise the use of objects containing other objects.",
+        "Item-class",
+        "Create an `Item` class from which objects can be instantiated to represent different items. The information to store is the name and weight of the item (kg).",
+        "Add the following methods to the class:",
+        "- Constructor that takes the name and the weight of the item as parameters",
+        "- Method `public String getName()`, which returns the item's name",
+        "- Method `public int getWeight()`, which returns the item's weight",
+        "- Method `public String toString()`, which returns the string \"name (weight kg)\"",
+        "The following is an example of the class in use:",
+        "The program's print output should be the following:",
+        "Suitcase-class",
+        "Create a `Suitcase` class. The suitcase has items and a maximum weight that determines the maximum total weight of the items.",
+        "Add the following methods to the class:",
+        "- Constructor, to which the maximum weight is provided",
+        "- The method `public void addItem(Item item)`, which adds the item passed as a parameter to the suitcase. The method does not return a value.",
+        "- The method `public String toString()`, which returns the string \"x items (y kg)\"",
+        "It's advisable to store the items in an `ArrayList` object:",
+        "The class `Suitcase` should ensure that the total weight of the items within it does not exceed the maximum weight limit. If that limit would be exceeded as a result of the item to be added, the method `addItem` should not add the new item to the suitcase.",
+        "The following is an example use case of the class:",
+        "The program's output should be the following:",
+        "Language Formatting",
+        "The statement \"1 items\" is not exactly proper English -- a better form would be \"1 item\". The lack of items could also be expressed as \"no items\". Implement this change to the toString method of the `Suitcase` class.",
+        "The output of the previous program should now look as follows:",
+        "All items",
+        "Add the following methods to the `Suitcase` class:",
+        "- a `printItems` method, which prints all the items in the suitcase",
+        "- a `totalWeight` method, which returns the total weight of the items",
+        "The following is an example use case of the class:",
+        "The program's output should be the following:",
+        "Make a further modification to your class so that you only use two instance variables. One holds the maximum weight, the other is the list of items in the suitcase.",
+        "Heaviest item",
+        "Add to the `Suitcase` class a `heaviestItem` method, which returns the largest item based on weight. If several items share the heaviest weight, the method can return any one of them. The method should return an object reference. If the suitcase is empty, return the value *null*.",
+        "The following is an example of the class in use:",
+        "The program should print the following:",
+        "Hold-class",
+        "Make a `Hold` class with the following methods:",
+        "- a constructor, to which the maximum weight is given",
+        "- method `public void addSuitcase(Suitcase suitcase)` that adds the specified luggage to the hold",
+        "- method `public String toString()` that returns the string \"x suitcases (y kg)\"",
+        "Store your suitcases in a suitable `ArrayList` structure.",
+        "The class `Hold` has to ensure that the total weight of the suitcases it contains does not exceed the maximum weight. Should the maximum weight be exceeded due to the addition of new luggage, the `addSuitcase` method should not add the new suitcase.",
+        "The following is an example of the class in use:",
+        "The program's output should be the following:",
+        "The Hold's Contents",
+        "Add to the `Hold` class the method `public void printItems()` that prints all the items contained in the hold's suitcases.",
+        "The following is an example of the class in use:",
+        "The program's output should be as follows:"
+      ],
+      "codeSnippet": "public class Main {\n    public static void main(String[] args) {\n        Item book = new Item(\"The lord of the rings\", 2);\n        Item phone = new Item(\"Nokia 3210\", 1);\n\n        System.out.println(\"The book's name: \" + book.getName());\n        System.out.println(\"The book's weight: \" + book.getWeight());\n\n        System.out.println(\"Book: \" + book);\n        System.out.println(\"Phone: \" + phone);\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The book's name: Lord of the rings",
+            "The book's weight: 2",
+            "Book: Lord of the rings (2 kg)",
+            "Phone: Nokia 3210 (1 kg)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "0 items (0 kg)",
+            "1 items (2 kg)",
+            "2 items (3 kg)",
+            "2 items (3 kg)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "no items (0 kg)",
+            "1 item (2 kg)",
+            "2 items (3 kg)",
+            "2 items (3 kg)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The suitcase contains the following items:",
+            "Lord of the rings (2 kg)",
+            "Nokia 3210 (1 kg)",
+            "Brick (4 kg)",
+            "Total Weight: 7 kg"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Heaviest item: Brick (4 kg)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "2 suitcases (7 kg)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "The suitcases in the hold contain the following items:",
+            "Lord of the rings (2 kg)",
+            "Nokia 3210 (1 kg)",
+            "brick (4 kg)"
+          ]
+        }
+      ]
+    }
+  },
+  "part06-09-simpledictionary": {
+    "id": "part06-09-simpledictionary",
+    "tmcname": "part06-Part06_09.SimpleDictionary",
+    "title": "Simple Dictionary (4 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise base contains a class `SimpleDictionary` that allows for storing words and their translations. The internal implementation of the class contains some techniques not (yet) covered on the course. Nevertheless, it's fairly simple to use it:",
+        "In this exercise you will implement a text user interface that takes use of the `SimpleDictionary` class. And maybe pick up a few Finnish words while doing it!",
+        "Starting and stopping the UI",
+        "Implement the class `TextUI` that receives as constructor parameters a `Scanner` and `SimpleDictionary` objects. Then give the class a method called `public void start()`. The method should work as follows:",
+        "1. The method asks the user for a command",
+        "2. If the command is `end`, the UI prints the string \"Bye bye!\" and the execution of the `start` method ends.",
+        "3. Otherwise the text UI prints the message `Unknown command` and asks for a new command, so it loops back to step 1.",
+        "Adding a translation",
+        "Modify the method `public void start()` so that it works in the following way:",
+        "1. The method asks the user for a command.",
+        "2. If the command is `end`, the UI prints the string \"Bye bye!\" and the execution of the `start` method ends.",
+        "3. If the command is `add`, the text UI asks the user for a word and a translation, each on its own line. After this the words are stored in the dictionary, and the method continues by asking for a new command (loops back to stage 1).",
+        "4. Otherwise the text UI prints the message `Unknown command` and asks for a new command, so it loops back to step 1.",
+        "In the example above, we added the word \"pike\" and its translation \"hauki\" to the SimpleDictionary object. After exiting the text user interface the dictionary could be used in the following manner:",
+        "Translating a word",
+        "Modify the method `public void start()` so that it works in the following:",
+        "1. The method asks the user for a command.",
+        "2. If the command is `end`, the UI prints the string \"Bye bye!\" and the execution of the `start` method ends.",
+        "3. If the command is `add`, the text UI asks the user for a word and a translation, each on its own line. After this the words are stored in the dictionary, and the method continues by asking for a new command (loops back to stage 1).",
+        "4. If the command is `search`, the text UI asks the user for the word to be translated. After this it prints the translation of the word, and the method continues by asking for a new command (loops back to stage 1).",
+        "5. Otherwise the text UI prints the message `Unknown command` and asks for a new command, so it loops back to step 1.",
+        "Cleaning up the translation",
+        "Modify the searching functionality of the UI so that if the word isn't found (i.e. the dictionary returns `null`), the UI prints the message \"Word (searched word) was not found\"."
+      ],
+      "codeSnippet": "SimpleDictionary book = new SimpleDictionary();\nbook.add(\"one\", \"yksi\");\nbook.add(\"two\", \"kaksi\");\n\nSystem.out.println(book.translate(\"one\"));\nSystem.out.println(book.translate(\"two\"));\nSystem.out.println(book.translate(\"three\"));",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "yksi",
+            "kaksi",
+            "null"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Command:",
+            {
+              "text": "something",
+              "isInput": true
+            },
+            "Unknown command",
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "Unknown command",
+            "Command:",
+            {
+              "text": "end",
+              "isInput": true
+            },
+            "Bye bye!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Command:",
+            {
+              "text": "something",
+              "isInput": true
+            },
+            "Unknown command",
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "Word:",
+            {
+              "text": "pike",
+              "isInput": true
+            },
+            "Translation:",
+            {
+              "text": "hauki",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "change",
+              "isInput": true
+            },
+            "Unknown command",
+            "Command:",
+            {
+              "text": "end",
+              "isInput": true
+            },
+            "Bye bye!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Command:",
+            {
+              "text": "something",
+              "isInput": true
+            },
+            "Unknown command",
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "Word:",
+            {
+              "text": "pike",
+              "isInput": true
+            },
+            "Translation:",
+            {
+              "text": "hauki",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "change",
+              "isInput": true
+            },
+            "Unknown command",
+            "Command:",
+            {
+              "text": "search",
+              "isInput": true
+            },
+            "To be translated:",
+            {
+              "text": "pike",
+              "isInput": true
+            },
+            "Translation: hauki",
+            "Command:",
+            {
+              "text": "search",
+              "isInput": true
+            },
+            "To be translated:",
+            {
+              "text": "carrot",
+              "isInput": true
+            },
+            "Translation: null",
+            "Command:",
+            {
+              "text": "end",
+              "isInput": true
+            },
+            "Bye bye!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Command:",
+            {
+              "text": "something",
+              "isInput": true
+            },
+            "Unknown command",
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "Word:",
+            {
+              "text": "pike",
+              "isInput": true
+            },
+            "Translation:",
+            {
+              "text": "hauki",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "change",
+              "isInput": true
+            },
+            "Unknown command",
+            "Command:",
+            {
+              "text": "search",
+              "isInput": true
+            },
+            "To be translated:",
+            {
+              "text": "pike",
+              "isInput": true
+            },
+            "Translation: hauki",
+            "Command:",
+            {
+              "text": "search",
+              "isInput": true
+            },
+            "To be translated:",
+            {
+              "text": "carrot",
+              "isInput": true
+            },
+            "Word carrot was not found",
+            "Command:",
+            {
+              "text": "end",
+              "isInput": true
+            },
+            "Bye bye!"
+          ]
+        }
+      ]
+    }
+  },
+  "part06-10-todolist": {
+    "id": "part06-10-todolist",
+    "tmcname": "part06-Part06_10.TodoList",
+    "title": "To do list (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise we are going to create a program that can be used to create and modify a to-do list. The final product will work in the following manner.",
+        "We will build the program in parts.",
+        "TodoList",
+        "Create a class called `TodoList`. It should have a constructor without parameters and the following methods:",
+        "- `public void add(String task)` - add the task passed as a parameter to the todo list.\n- `public void print()` - prints the exercises. Each task has a number associated with it on the print statement -- use the task's index here (+1).\n- `public void remove(int number)` - removes the task associated with the given number; the number is the one seen associated with the task in the print.",
+        "**NB!** You may assume that the `remove` method is given a number that corresponds to a real task. The method only has to correctly work once after each print call.",
+        "Another example:",
+        "User interface",
+        "Next, implement a class called `UserInterface`. It should have a constructor with two parameters. The first parameter is an instance of the class `TodoList`, and the second is an instance of the class `Scanner`. In addition to the constructor, the class should have the method `public void start()` that is used to start the text user interface. The text UI works with an eternal looping statement (`while-true`), and it must offer the following commands to the user:",
+        "- The command `stop` stops the execution of the loop, after which the execution of the program advances out of the `start` method.",
+        "- The command `add` asks the user for the next task to be added. Once the user enters this task, it should be added to the to-do list.",
+        "- The commmand `list` prints all the tasks on the to-do list.",
+        "- The command `remove` asks the user to enter the id of the task to be removed. When this has been entered, the specified task should be removed from the list of tasks.",
+        "Below is an example of how the program should work.",
+        "NB! The user interface is to use the TodoList and Scanner that are passed as parameters to the constructor."
+      ],
+      "codeSnippet": "TodoList list = new TodoList();\nlist.add(\"read the course material\");\nlist.add(\"watch the latest fool us\");\nlist.add(\"take it easy\");\n\nlist.print();\nlist.remove(2);\n\nSystem.out.println();\nlist.print();",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "Task:",
+            {
+              "text": "go to the store",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "Task:",
+            {
+              "text": "vacuum clean",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: go to the store",
+            "2: vacuum clean",
+            "Command:",
+            {
+              "text": "completed",
+              "isInput": true
+            },
+            "Which task was completed?",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "Task go to the store tehty",
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: go to the store",
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "Task:",
+            {
+              "text": "program",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: go to the store",
+            "2: program",
+            "Command:",
+            {
+              "text": "stop",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "1: read the course material",
+            "2: watch the latest fool us",
+            "3: take it easy",
+            "1: read the course material",
+            "2: take it easy"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "1: read the course material",
+            "2: watch the latest fool us",
+            "3: take it easy",
+            "1: read the course material",
+            "2: take it easy",
+            "1: read the course material",
+            "2: take it easy",
+            "3: buy raisins",
+            "1: buy raisins"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "To add:",
+            {
+              "text": "write an essay",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "To add:",
+            {
+              "text": "read a book",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: write an essay",
+            "2: read a book",
+            "Command:",
+            {
+              "text": "remove",
+              "isInput": true
+            },
+            "Which one is removed?",
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: read a book",
+            "Command:",
+            {
+              "text": "remove",
+              "isInput": true
+            },
+            "Which one is removed?",
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "To add:",
+            {
+              "text": "stop",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: stop",
+            "Command:",
+            {
+              "text": "stop",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part06-11-averages": {
+    "id": "part06-11-averages",
+    "tmcname": "part06-Part06_11.Averages",
+    "title": "Averages (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise base includes the previously constructed program to store grades. In this exercise you will further develop the class `GradeRegister` so that it can calculate the average of grades and exam results.",
+        "Average grade",
+        "Create the method `public double averageOfGrades()` for the class `GradeRegister`. It should return the average of the grades. If the register contains no grades, the method should return `-1`. Use the `grades` list to calculate the average.",
+        "Example:",
+        "Average points",
+        "Give the class `GradeRegister` a new object variable: a list where you will store the exam points every time that the method `addGradeBasedOnPoints` is called. After this addition, create a method `public double averageOfPoints()` that calculates and returns the average of the exam points. If there are no points added to the register, the method should return the number `-1`.",
+        "Example:",
+        "Prints in the user interface",
+        "As a final step, add the methods implemented above as parts of the user interface. When the program prints the grade distribution, it should also print the averages of the points and the grades."
+      ],
+      "codeSnippet": "GradeRegister register = new GradeRegister();\nregister.addGradeBasedOnPoints(93);\nregister.addGradeBasedOnPoints(91);\nregister.addGradeBasedOnPoints(92);\nregister.addGradeBasedOnPoints(88);\n\nSystem.out.println(register.averageOfGrades());",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "4.75"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "92.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Points:",
+            {
+              "text": "82",
+              "isInput": true
+            },
+            "Points:",
+            {
+              "text": "83",
+              "isInput": true
+            },
+            "Points:",
+            {
+              "text": "96",
+              "isInput": true
+            },
+            "Points:",
+            {
+              "text": "51",
+              "isInput": true
+            },
+            "Points:",
+            {
+              "text": "48",
+              "isInput": true
+            },
+            "Points:",
+            {
+              "text": "56",
+              "isInput": true
+            },
+            "Points:",
+            {
+              "text": "61",
+              "isInput": true
+            },
+            "Points:",
+            "5: \\*",
+            "4: \\*\\*",
+            "3:",
+            "2: \\*",
+            "1: \\*\\*",
+            "0: \\*",
+            "The average of points: 68.14285714285714",
+            "The average of grades: 2.4285714285714284"
+          ]
+        }
+      ]
+    }
+  },
+  "part06-12-jokemanager": {
+    "id": "part06-12-jokemanager",
+    "tmcname": "part06-Part06_12.JokeManager",
+    "title": "Joke Manager (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise base contains the following program that has been written \"in the main\".",
+        "The application is in practice a storage for jokes. You can add jokes, get a randomized joke, and the stored jokes can be printed. In this exercise the program is divided into parts in a guided manner.",
+        "Joke manager",
+        "Create a class called `JokeManager` and move the functionality to manage jokes in it. The class must have a parameter-free constructor, and the following methods:",
+        "- `public void addJoke(String joke)` - adds a joke to the manager.\n- `public String drawJoke()` - chooses one joke at random and returns it. It there are no jokes stored in the joke manager, the method should return the string \"Jokes are in short supply.\".\n- `public void printJokes()` - prints all the jokes stored in the joke manager.",
+        "An example of how to use the class:",
+        "Below is a possible output of the program. Notice that the jokes will probably not be drawn as in this example.",
+        "User interface",
+        "Create a class called `UserInterface` and move the UI functionality of the program there. The class must have a constructor with two parameters. The first parameter is an instance of the JokeManager class, and the second parameter is an instance of the Scanner class. In addition, the class should have the method `public void start()` that can be used to start the user interface.",
+        "The user interface should provide the user with the following commands:",
+        "- `X` - ending: exits the method `start`.\n- `1` - adding: asks the user for the joke to be added to the joke manager, and then adds it.\n- `2` - drawing: chooses a random joke from the joke manager and prints it. If there are no jokes in the manager, thi string \"Jokes are in short supply.\" will be printed.\n- `3` - printing: prints all the jokes stored in the joke manager.",
+        "An example of how to use the UI:"
+      ],
+      "codeSnippet": "Scanner scanner = new Scanner(System.in);\nArrayList<String> jokes = new ArrayList<>();\nSystem.out.println(\"What a joke!\");\n\nwhile (true) {\n    System.out.println(\"Commands:\");\n    System.out.println(\" 1 - add a joke\");\n    System.out.println(\" 2 - draw a joke\");\n    System.out.println(\" 3 - list jokes\");\n    System.out.println(\" X - stop\");\n\n    String command = scanner.nextLine();\n\n    if (command.equals(\"X\")) {\n        break;\n    }\n\n    if (command.equals(\"1\")) {\n        System.out.println(\"Write the joke to be added:\");\n        String joke = scanner.nextLine();\n        jokes.add(joke);\n    } else if (command.equals(\"2\")) {\n        System.out.println(\"Drawing a joke.\");\n\n        if (jokes.isEmpty()) {\n            System.out.println(\"Jokes are in short supply.\");\n        } else {\n            Random draw = new Random();\n            int index = draw.nextInt(jokes.size());\n            System.out.println(jokes.get(index));\n        }\n\n    } else if (command.equals(\"3\")) {\n        System.out.println(\"Printing the jokes.\");\n        for (String joke : jokes) {\n            System.out.println(joke);\n        }\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Drawing jokes:",
+            "What is blue and smells of red paint? - Blue paint.",
+            "What is red and smells of blue paint? - Red paint.",
+            "What is blue and smells of red paint? - Blue paint.",
+            "What is blue and smells of red paint? - Blue paint.",
+            "What is blue and smells of red paint? - Blue paint.",
+            "Printing jokes:",
+            "What is red and smells of blue paint? - Red paint.",
+            "What is blue and smells of red paint? - Blue paint."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Commands:",
+            "1 - add a joke",
+            "2 - draw a joke",
+            "3 - list jokes",
+            "X - stop",
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "Write the joke to be added:",
+            {
+              "text": "Did you hear about the claustrophobic astronaut? -- He just needed a little space.",
+              "isInput": true
+            },
+            "Commands:",
+            "1 - add a joke",
+            "2 - draw a joke",
+            "3 - list jokes",
+            "X - stop",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "Printing the jokes.",
+            "Did you hear about the claustrophobic astronaut? -- He just needed a little space.",
+            "Commands:",
+            "1 - add a joke",
+            "2 - draw a joke",
+            "3 - list jokes",
+            "X - stop",
+            {
+              "text": "X",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part06-13-exercises": {
+    "id": "part06-13-exercises",
+    "tmcname": "part06-Part06_13.Exercises",
+    "title": "Exercises (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise base contains the initial state of the previous example -- it already includes the JUnit unit testing library. Follow the steps of the example, and use the principles of test-driven software development to give the wanted functionality for the exercise management program.",
+        "The exercise is in two parts:",
+        "1. Follow the steps of the example up until it's time to refactor the program and to create the class 'Exercise'. Create the classes `ExerciseManagementTest` and `ExerciseManagement`, and complete them with what the example instructs.",
+        "2. Follow the example all the way to the end. In other words, refactor the program as instructed.",
+        "Update the `partsCompleted` class method of the MainProgram to return the highest part that you have completed. You can return the exercise even if you don't complete the second part, in which case you will receive the point for the first one. Returning 2 means you have completed both.",
+        "If you desire to develop the program further (not awarded with points), you can try using test-driven development to first write a test (or a few) for removing exercises, and then implement that feature in your program. This is purely for your own amusement and is not reflected in the points in any manner!"
+      ]
+    }
+  }
+}

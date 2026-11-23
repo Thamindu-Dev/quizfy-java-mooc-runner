@@ -1,0 +1,47 @@
+{
+  "id": "part01-20-multiplicationformula",
+  "tmcname": "part01-Part01_20.MultiplicationFormula",
+  "title": "Multiplication formula",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Similar to the previous exercise, create a program that multiplies the values stored in two integer variables.",
+      "For instance, if the entered numbers are 2 and 8, the program should print the following:",
+      "Likewise, if the entered numbers are 277 and 111, the print should be the following:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "2 * 8 = 16"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "277",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "111",
+            "isInput": true
+          },
+          "277 * 111 = 30747"
+        ]
+      }
+    ]
+  }
+}

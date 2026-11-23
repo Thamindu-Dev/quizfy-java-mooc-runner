@@ -1,0 +1,87 @@
+{
+  "id": "part02-13-averageofpositivenumbers",
+  "tmcname": "part02-Part02_13.AverageOfPositiveNumbers",
+  "title": "Average of positive numbers",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for input until the user inputs 0.\nAfter this, the program prints the average of the positive numbers (numbers that are greater than zero).",
+      "If no positive number is inputted, the program prints \"Cannot calculate the average\"",
+      "Below a few examples of the programs output"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "3",
+            "isInput": true
+          },
+          {
+            "text": "5",
+            "isInput": true
+          },
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "-3",
+            "isInput": true
+          },
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "3.0"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Cannot calculate the average"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "-3",
+            "isInput": true
+          },
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "1.0"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "1",
+            "isInput": true
+          },
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "1.0"
+        ]
+      }
+    ]
+  }
+}

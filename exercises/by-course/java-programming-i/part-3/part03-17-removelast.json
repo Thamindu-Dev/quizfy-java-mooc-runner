@@ -1,0 +1,21 @@
+{
+  "id": "part03-17-removelast",
+  "tmcname": "part03-Part03_17.RemoveLast",
+  "title": "Remove last",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create the method `public static void removeLast(ArrayList strings)` in the exercise template. The method should remove the last value in the list it receives as a parameter. If the list is empty, the method does nothing."
+    ],
+    "codeSnippet": "ArrayList<String> strings = new ArrayList<>();\n\nstrings.add(\"First\");\nstrings.add(\"Second\");\nstrings.add(\"Third\");\n\nSystem.out.println(strings);\n\nremoveLast(strings);\nremoveLast(strings);\n\nSystem.out.println(strings);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "[First, Second, Third]",
+          "[First]"
+        ]
+      }
+    ]
+  }
+}

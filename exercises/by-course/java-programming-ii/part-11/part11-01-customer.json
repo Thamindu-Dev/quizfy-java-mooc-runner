@@ -1,0 +1,11 @@
+{
+  "id": "part11-01-customer",
+  "tmcname": "part11-Part11_01.Customer",
+  "title": "Customer",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The class diagram below shows the class Customer. Implement the class in the exercise."
+    ]
+  }
+}

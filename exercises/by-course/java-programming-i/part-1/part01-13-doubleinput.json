@@ -1,0 +1,36 @@
+{
+  "id": "part01-13-doubleinput",
+  "tmcname": "part01-Part01_13.DoubleInput",
+  "title": "Double Input",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for a floating-point number using the variable type Double. The program then prints the user's input value.",
+      "Example prints for the program can be seen below:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "3.14",
+            "isInput": true
+          },
+          "You gave the number 3.14"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "2.718",
+            "isInput": true
+          },
+          "You gave the number 2.718"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "part10-05-luettujenarvojentulostaminen",
+  "tmcname": "part10-Part10_05.LuettujenArvojenTulostaminen",
+  "title": "Luettujen arvojen tulostaminen",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "-->",
+      "Write a program that reads the user's input as strings. When the user inputs an empty string (only presses enter), the input reading will be stopped and the program will print all the user inputs."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "first",
+            "isInput": true
+          },
+          {
+            "text": "second",
+            "isInput": true
+          },
+          {
+            "text": "war is peace: 1984",
+            "isInput": true
+          },
+          "first",
+          "second",
+          "war is peace: 1984"
+        ]
+      }
+    ]
+  }
+}

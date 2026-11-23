@@ -1,0 +1,21 @@
+{
+  "id": "part06-06-longestincollection",
+  "tmcname": "part06-Part06_06.LongestInCollection",
+  "title": "Longest in collection",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template comes with the class `SimpleCollection` that's familiar from previous exercises. Implement the method `public String longest()` for the class, which returns the longest string of the collection. If the collection is empty, the method should return a `null` reference."
+    ],
+    "codeSnippet": "SimpleCollection j = new SimpleCollection(\"characters\");\nSystem.out.println(\"Longest: \" + j.longest());\n\nj.add(\"magneto\");\nj.add(\"mystique\");\nj.add(\"phoenix\");\n\nSystem.out.println(\"Longest: \" + j.longest());",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Longest: null",
+          "Longest: mystique"
+        ]
+      }
+    ]
+  }
+}

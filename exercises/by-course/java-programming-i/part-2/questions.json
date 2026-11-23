@@ -1,0 +1,1478 @@
+{
+  "part02-01-squared": {
+    "id": "part02-01-squared",
+    "tmcname": "part02-Part02_01.Squared",
+    "title": "Squared",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads an integer from the user and prints the square of the given integer, i.e. the integer multiplied by itself."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "4",
+              "isInput": true
+            },
+            "16"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "-3",
+              "isInput": true
+            },
+            "9"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "25"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-02-squarerootofsum": {
+    "id": "part02-02-squarerootofsum",
+    "tmcname": "part02-Part02_02.SquareRootOfSum",
+    "title": "Square root of sum",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads two integers from the user and prints the square root of the sum of these integers. The program does not need to work with negative values.",
+        "You can calculate the square root of an integer with the command `Math.sqrt` like this:",
+        "Here are a few examples:"
+      ],
+      "codeSnippet": "int number = 42;\ndouble squareRoot = Math.sqrt(number);\nSystem.out.println(squareRoot);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "1"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            "3"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "35",
+              "isInput": true
+            },
+            "6"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-03-absolutevalue": {
+    "id": "part02-03-absolutevalue",
+    "tmcname": "part02-Part02_03.AbsoluteValue",
+    "title": "Absolute Value",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads an integer from the user. If the number is less than 0, the program prints the given integer multiplied by -1. In all other cases, the program prints the number itself. A few examples of how the program's expected to function are shown below:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "-3",
+              "isInput": true
+            },
+            "3"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "2"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "-5",
+              "isInput": true
+            },
+            "5"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-04-comparingnumbers": {
+    "id": "part02-04-comparingnumbers",
+    "tmcname": "part02-Part02_04.ComparingNumbers",
+    "title": "Comparing Numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads two integers from the user. If the first number is greater than the second, the program prints \"(first) is greater than (second).\" If the first number is less than the second, the program prints \"(first) is smaller than (second).\" Otherwise, the program prints \"(first) is equal to (second).\" The (first) and (second) should always be replaced with the actual numbers that were provided by the user.",
+        "A few examples of the expected behaviour:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "8",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            "8 is greater than 4."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "-3",
+              "isInput": true
+            },
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "-3 is smaller than 5."
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "1 is equal to 1."
+          ]
+        }
+      ]
+    }
+  },
+  "part02-05-carryon": {
+    "id": "part02-05-carryon",
+    "tmcname": "part02-Part02_05.CarryOn",
+    "title": "Carry on?",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program by using the loop example that asks \"Shall we carry on?\" until the user inputs the string \"no\"."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Shall we carry on?",
+            {
+              "text": "yes",
+              "isInput": true
+            },
+            "Shall we carry on?",
+            {
+              "text": "ye",
+              "isInput": true
+            },
+            "Shall we carry on?",
+            {
+              "text": "y",
+              "isInput": true
+            },
+            "Shall we carry on?",
+            {
+              "text": "no",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part02-06-arewethereyet": {
+    "id": "part02-06-arewethereyet",
+    "tmcname": "part02-Part02_06.AreWeThereYet",
+    "title": "Are we there yet?",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program, according to the preceding example, that asks the user to input values until they input the value 4."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "744",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "22",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "4",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part02-07-onlypositives": {
+    "id": "part02-07-onlypositives",
+    "tmcname": "part02-Part02_07.OnlyPositives",
+    "title": "Only positives",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for numbers. If the number is negative (smaller than zero), the program prints for user \"Unsuitable number\" and asks the user for a new number. If the number is zero, the program exits the loop. If the number is positive, the program prints the number to the power of two."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "25",
+            "Give a number:",
+            {
+              "text": "4",
+              "isInput": true
+            },
+            "16",
+            "Give a number:",
+            {
+              "text": "-3",
+              "isInput": true
+            },
+            "Unsuitable number",
+            "Give a number:",
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "1",
+            "Give a number:",
+            {
+              "text": "0",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part02-08-numberofnumbers": {
+    "id": "part02-08-numberofnumbers",
+    "tmcname": "part02-Part02_08.NumberOfNumbers",
+    "title": "Number of Numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads values from the user until they input a 0. After this, the program prints the total number of inputted values. The zero that's used to exit the loop should not be included in the total number count.",
+        "Example output of the program:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "22",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "9",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "-2",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Number of numbers: 4"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-09-numberofnegativenumbers": {
+    "id": "part02-09-numberofnegativenumbers",
+    "tmcname": "part02-Part02_09.NumberOfNegativeNumbers",
+    "title": "Number of negative numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads values from the user until they input a 0. After this, the program prints the total number of inputted values that are negative. The zero that's used to exit the loop should not be included in the total number count.",
+        "Example output of the program:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "22",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "9",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "-2",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Number of negative numbers: 1"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-10-sumofnumbers": {
+    "id": "part02-10-sumofnumbers",
+    "tmcname": "part02-Part02_10.SumOfNumbers",
+    "title": "Sum of Numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads numbers from the user until the user inputs a number 0. After this the program outputs the sum of the numbers. The number zero does not need to be added to the sum, even if it does not change the results.",
+        "Example output of the program:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "22",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "9",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "-2",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Sum of the numbers: 34"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-11-numberandsumofnumbers": {
+    "id": "part02-11-numberandsumofnumbers",
+    "tmcname": "part02-Part02_11.NumberAndSumOfNumbers",
+    "title": "Number and sum of numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for input until the user inputs 0. After this the program prints the amount of numbers inputted and the sum of the numbers. The number zero does not need to be added to the sum, but adding it does not change the results.",
+        "_You need two variables to keep track of the information. Use one for keeping track of the numbers inputted and other for keeping track of the sum_",
+        "Example output of the program:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "22",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "9",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "-2",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Number of numbers: 4",
+            "Sum of the numbers: 34"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-12-averageofnumbers": {
+    "id": "part02-12-averageofnumbers",
+    "tmcname": "part02-Part02_12.AverageOfNumbers",
+    "title": "Average of numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for input until the user inputs 0. After this, the program prints the average of the numbers. The number zero does not need to be counted to the average. You may assume that the user inputs at least one number.",
+        "_The average of the numbers can be calculated by dividing the sum of numbers with the amount of the numbers_",
+        "Example output of the program:"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "22",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "9",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "-2",
+              "isInput": true
+            },
+            "Give a number:",
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Average of the numbers: 8.5"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-13-averageofpositivenumbers": {
+    "id": "part02-13-averageofpositivenumbers",
+    "tmcname": "part02-Part02_13.AverageOfPositiveNumbers",
+    "title": "Average of positive numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks the user for input until the user inputs 0.\nAfter this, the program prints the average of the positive numbers (numbers that are greater than zero).",
+        "If no positive number is inputted, the program prints \"Cannot calculate the average\"",
+        "Below a few examples of the programs output"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "3",
+              "isInput": true
+            },
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "-3",
+              "isInput": true
+            },
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "3.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Cannot calculate the average"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "-3",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "1.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "1.0"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-14-counting": {
+    "id": "part02-14-counting",
+    "tmcname": "part02-Part02_14.Counting",
+    "title": "Counting",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads an integer from the user. Next, the program prints numbers from 0 to the number given by the user. You can assume that the user always gives a positive number. Below are some examples of the expected functionality."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "4",
+              "isInput": true
+            },
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "0",
+            "1"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-15-countingtohundred": {
+    "id": "part02-15-countingtohundred",
+    "tmcname": "part02-Part02_15.CountingToHundred",
+    "title": "Counting to hundred",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program, which reads an integer from the user. Then the program prints numbers from that number to 100. You can assume that the user always gives a number less than 100. Below are some examples of the expected functionality."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "99",
+              "isInput": true
+            },
+            "99",
+            "100"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "-4",
+              "isInput": true
+            },
+            "-4",
+            "-3",
+            "-2",
+            "-1",
+            "0",
+            "1",
+            "2",
+            "... (many numbers in between) ...",
+            "98",
+            "99",
+            "100"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-16-fromwheretowhere": {
+    "id": "part02-16-fromwheretowhere",
+    "tmcname": "part02-Part02_16.FromWhereToWhere",
+    "title": "From where to where? (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "This exercise is the first two-part exercise. When you complete both parts, you will get two exercise points. You can also submit the exercise after completing only the first part.",
+        "Where to",
+        "Write a program which prints the integers from 1 to a number given by the user.",
+        "**hint** the number read from the user is now the upper limit of the condition. Remember that in Java `a <= b` means _a is smaller or equal to b_.",
+        "Where from",
+        "Ask the user for the starting point as well.",
+        "If the upper limit is smaller than the starting point, nothing is printed:",
+        "**NB** remember that the lower and upper limits can be negative!"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Where to?",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Where to?",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Where to?",
+            {
+              "text": "8",
+              "isInput": true
+            },
+            "Where from?",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Where to?",
+            {
+              "text": "12",
+              "isInput": true
+            },
+            "Where from?",
+            {
+              "text": "16",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part02-17-sumofasequence": {
+    "id": "part02-17-sumofasequence",
+    "tmcname": "part02-Part02_17.SumOfASequence",
+    "title": "Sum of a sequence",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Implement a program, which calculates the sum 1+2+3+...+n where n is given as user input.",
+        "The previous example calculated 1 + 2 + 3  = 6",
+        "And this one calculated 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Last number?",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "The sum is 6"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Last number?",
+            {
+              "text": "7",
+              "isInput": true
+            },
+            "The sum is 28"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-18-sumofasequencethesequel": {
+    "id": "part02-18-sumofasequencethesequel",
+    "tmcname": "part02-Part02_18.SumOfASequenceTheSequel",
+    "title": "Sum of a sequence - the sequel",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Implement a program which calculates the sum of a closed interval, and prints it. Expect the user to write the smaller number first and then the larger number.",
+        "You can base your solution to this exercise to the solution of last exercise -- add the functionality for the user to enter the starting point as well.",
+        "The above example internally calculated  3 + 4 + 5 = 12",
+        "And now the internal calculation was 2 + 3 + 4 + 5 + 6 + 7 + 8 = 35"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First number?",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "Last number?",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            "The sum is 12"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First number?",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "Last number?",
+            {
+              "text": "8",
+              "isInput": true
+            },
+            "The sum is: 35"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-19-factorial": {
+    "id": "part02-19-factorial",
+    "tmcname": "part02-Part02_19.Factorial",
+    "title": "Factorial",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Implement a program which calculates the factorial of a number given by the user.",
+        "Factorial of n, denoted `n!`, is calculated as 1 * 2 * 3 * ... * n. For example, the factorial of 4 is 24 or 4! = 1 * 2 * 3 * 4 = 24. Additionally, it has been specified that the factorial of 0 is 1, so 0! = 1.",
+        "The internal calculation here was 1 * 2 * 3 = 6",
+        "And now the internal calculation was 1 * 2 * 3 * ... * 8 * 9 * 10 = 3628800",
+        "_Additional info_: Factorials are used especially in probability calculus when examining different possible orders of a set. For example, a group of five people can form 5! different lines, and a pack of 52 cards can be in 52! different orders. Factorial can also be used to calculate combinations; For example it is possible to deal 52! / (5! * (52-5)!) different hands from a 52 card pack, and you can form 40! / (7! * (40 - 7)!) different 7 number lottery lines from 40 numbers."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "Factorial: 6"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give a number:",
+            {
+              "text": "10",
+              "isInput": true
+            },
+            "Factorial: 3628800"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-20-repeatingbreakingandremembering": {
+    "id": "part02-20-repeatingbreakingandremembering",
+    "tmcname": "part02-Part02_20.RepeatingBreakingAndRemembering",
+    "title": "Repeating, breaking and remembering (5 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Next, we'll implement a program one piece at a time. This is always strongly recommended when coding.",
+        "The series of exercises form a larger program whose functionality is implemented in small pieces. If you do not finish the whole series, you can still submit the parts you've completed to be checked. This can be done by clicking the \"submit\" button (the arrow pointing up) to the right of the \"test\" button. Although the submission system complains about the tests of unfinished parts, you get points for the parts you have finished.",
+        "NB: Remember that each sub-part of the series is equivalent to one individual exercise. As such, the series is equivalent to five individual exercises.",
+        "**Note:** the tests might fail a correct solution. This is a known bug that will be fixed in the future. In the meantime, you can avoid the error by printing \"Give numbers:\" without **any** spaces after ':'",
+        "Reading",
+        "Implement a program that asks the user for numbers (the program first prints \"Write numbers: \") until the user gives the number -1. When the user writes -1, the program prints \"Thx! Bye!\" and ends.",
+        "Sum of numbers",
+        "Extend the program so that it prints the sum of the numbers (not including the -1) the user has written.",
+        "Sum and the number of numbers",
+        "Extend the program so that it also prints the number of numbers (not including the -1) the user has written.",
+        "Average of numbers",
+        "Extend the program so that it prints the mean of the numbers (not including the -1) the user has written.",
+        "Even and odd numbers",
+        "Extend the program so that it prints the number of even and odd numbers (excluding the -1)."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give numbers:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Thx! Bye!"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give numbers:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Thx! Bye!",
+            "Sum: 11"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give numbers:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Thx! Bye!",
+            "Sum: 11",
+            "Numbers: 3"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give numbers:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Thx! Bye!",
+            "Sum: 11",
+            "Numbers: 3",
+            "Average: 3.666666666666"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Give numbers:",
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "2",
+              "isInput": true
+            },
+            {
+              "text": "4",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Thx! Bye!",
+            "Sum: 11",
+            "Numbers: 3",
+            "Average: 3.666666666666",
+            "Even: 2",
+            "Odd: 1"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-21-inaholeintheground": {
+    "id": "part02-21-inaholeintheground",
+    "tmcname": "part02-Part02_21.InAHoleInTheGround",
+    "title": "In a hole in the ground",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a method called `printText` which prints the phrase \"In a hole in the ground there lived a method\" and a newline.",
+        "The output of the program:"
+      ],
+      "codeSnippet": "public static void main(String[] args) {\n    printText();\n}\n\npublic static void printText() {\n    // Write some code in here\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "In a hole in the ground there lived a method"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-22-reprint": {
+    "id": "part02-22-reprint",
+    "tmcname": "part02-Part02_22.Reprint",
+    "title": "Reprint",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Expand the previous program so that the main program asks the user for the number of times the phrase will be printed (i.e. how many times the method will be called).",
+        "**NB:** print the prompt `How many times?` on its own separate line!"
+      ],
+      "codeSnippet": "public static void main(String[] args) {\n    // ask the user for the number of times that the phrase will be printed\n    // use the while command to call the method a suitable number of times\n}\n\npublic static void printText() {\n    // write some code in here\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "How many times?",
+            {
+              "text": "7",
+              "isInput": true
+            },
+            "In a hole in the ground there lived a method",
+            "In a hole in the ground there lived a method",
+            "In a hole in the ground there lived a method",
+            "In a hole in the ground there lived a method",
+            "In a hole in the ground there lived a method",
+            "In a hole in the ground there lived a method",
+            "In a hole in the ground there lived a method"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-23-fromonetoparameter": {
+    "id": "part02-23-fromonetoparameter",
+    "tmcname": "part02-Part02_23.FromOneToParameter",
+    "title": "From one to parameter",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create the following method in the exercise template: `public static void printUntilNumber(int number)`. It should print the numbers from one to the number passed as a parameter. Two examples of the method's usage are given below."
+      ],
+      "codeSnippet": "public static void main(String[] args) {\n    printUntilNumber(5);\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "1",
+            "2"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-24-fromparametertoone": {
+    "id": "part02-24-fromparametertoone",
+    "tmcname": "part02-Part02_24.FromParameterToOne",
+    "title": "From parameter to one",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create the following method in the exercise template: `public static void printFromNumberToOne(int number)`. It should print the numbers from the number passed as a parameter down to one. Two examples of the method's usage are given below."
+      ],
+      "codeSnippet": "public static void main(String[] args) {\n    printFromNumberToOne(5);\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "5",
+            "4",
+            "3",
+            "2",
+            "1"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "2",
+            "1"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-25-division": {
+    "id": "part02-25-division",
+    "tmcname": "part02-Part02_25.Division",
+    "title": "Division",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a method `public static void division(int numerator, int denominator)` that prints the result of the division of the numerator by the denominator. Keep in mind that the result of the division of the integers is an integer -- in this case we want the result to be a floating point number."
+      ],
+      "codeSnippet": "public static void main(String[] args) {\n    division(3, 5);\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "0.6"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-26-divisiblebythree": {
+    "id": "part02-26-divisiblebythree",
+    "tmcname": "part02-Part02_26.DivisibleByThree",
+    "title": "Divisible by three",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a method `public static void divisibleByThreeInRange(int beginning, int end)` that prints all the numbers divisible by three in the given range. The numbers are to be printed in order from the smallest to the greatest."
+      ],
+      "codeSnippet": "public static void main(String[] args) {\n    divisibleByThreeInRange(3, 6);\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "3",
+            "6"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "3",
+            "6",
+            "9"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-27-numberuno": {
+    "id": "part02-27-numberuno",
+    "tmcname": "part02-Part02_27.NumberUno",
+    "title": "Number uno",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a method `public static int numberUno()` that returns the value 1."
+      ]
+    }
+  },
+  "part02-28-word": {
+    "id": "part02-28-word",
+    "tmcname": "part02-Part02_28.Word",
+    "title": "Word",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a method `public static String word()`. The method must return a string of your choice."
+      ]
+    }
+  },
+  "part02-29-summation": {
+    "id": "part02-29-summation",
+    "tmcname": "part02-Part02_29.Summation",
+    "title": "Summation",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Expand the method `sum` in the exercise template so that it calculates and returns the sum of the numbers that are given as the parameters.",
+        "Create the method using the following structure:",
+        "The output of the program:",
+        "**NB:** when an exercise describes a method that should _return_ something, this means that the type of the return value must be declared in the method definition, and that the method contains a `return` command that returns the wanted data. The method itself will print nothing (i.e. will not use the command `System.out.println`) - that task is left to the method caller, which in this case is the main program."
+      ],
+      "codeSnippet": "public static int sum(int number1, int number2, int number3, int number4) {\n    // write your code here\n    // remember to include return (at the end)!\n}\n\npublic static void main(String[] args) {\n    int answer = sum(4, 3, 6, 1);\n    System.out.println(\"Sum: \" + answer);\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Sum: 14"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-30-smallest": {
+    "id": "part02-30-smallest",
+    "tmcname": "part02-Part02_30.Smallest",
+    "title": "Smallest",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Define a two-parameter method `smallest` that returns the smaller of the two numbers passed to it as parameters.",
+        "The output of the program:"
+      ],
+      "codeSnippet": "public static int smallest(int number1, int number2) {\n    // write your code here\n    // do not print anything inside the method\n\n    // there must be a return command at the end\n}\n\npublic static void main(String[] args) {\n    int answer =  smallest(2, 7);\n    System.out.println(\"Smallest: \" + answer);\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Smallest: 2"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-31-greatest": {
+    "id": "part02-31-greatest",
+    "tmcname": "part02-Part02_31.Greatest",
+    "title": "Greatest",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Define a method called `greatest` that takes three numbers and returns the greatest of them. If there are multiple greatest values, returning one of them is enough. Printing will take place in the main program.",
+        "The output of the program:"
+      ],
+      "codeSnippet": "public static int greatest(int number1, int number2, int number3) {\n  // write some code here\n}\n\npublic static void main(String[] args) {\n  int answer =  greatest(2, 7, 3);\n  System.out.println(\"Greatest: \" + answer);\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Greatest: 7"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-32-averaging": {
+    "id": "part02-32-averaging",
+    "tmcname": "part02-Part02_32.Averaging",
+    "title": "Averaging",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a method called `average` that calculates the average of the numbers passed as parameters. The previously created method `sum` must be used inside this method!",
+        "Define the method in the following template:",
+        "The output of the program:",
+        "Make sure to remember how to convert an integer (`int`) into a decimal number (`double`)!"
+      ],
+      "codeSnippet": "public static int sum(int number1, int number2, int number3, int number4) {\n    // you can copy your implementation of the method sum here\n}\n\npublic static double average(int number1, int number2, int number3, int number4) {\n    // write your code here\n    // calculate the sum of the elements by calling the method sum\n}\n\npublic static void main(String[] args) {\n    double result = average(4, 3, 6, 1);\n    System.out.println(\"Average: \" + result);\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Average: 3.5"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-33-starsign": {
+    "id": "part02-33-starsign",
+    "tmcname": "part02-Part02_33.StarSign",
+    "title": "Star sign (4 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Printing stars",
+        "Define a method called `printStars` that prints the given number of stars and a line break.",
+        "Write the method in the following template:",
+        "The output of the program:",
+        "**N.B** multipart exercises can be uploaded to the server (click the button to the right of the testing button) even if some parts are unfinished. In this case the server will complain about the tests for the parts that haven't been completed, but it will mark down the finished parts.",
+        "Printing a square",
+        "Define a method called `printSquare(int size)` that prints a suitable square with the help of the `printStars` method. So the method call `printSquare(4)` results in the following output:",
+        "**N.B.:** producing the correct output is not enough; the rows of the square must be produced by calling the `printStars` method inside the `printSquare`method.",
+        "When creating the program, you can use the code in the main to test that the methods behave as required.",
+        "Printing a rectangle",
+        "Write a method called `printRectangle(int width, int height)` that prints the correct rectangle by using the `printStars` method. So the method call `printRectangle(17, 3)` should produce the following output:",
+        "Printing a triangle",
+        "Create a method called `printTriangle(int size)` that prints a triangle by using the `printStars` method. So the call `printTriangle(4)` should print the following:"
+      ],
+      "codeSnippet": "public static void printStars(int number) {\n    // you can print one star with the command\n    // System.out.print(\"*\");\n    // call the print command n times\n    // in the end print a line break with the comand\n    // System.out.println(\"\");\n}\n\npublic static void main(String[] args) {\n    printStars(5);\n    printStars(3);\n    printStars(9);\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "*****",
+            "***",
+            "*********"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "****",
+            "****",
+            "****",
+            "****"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "*****************",
+            "*****************",
+            "*****************"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "*",
+            "**",
+            "***",
+            "****"
+          ]
+        }
+      ]
+    }
+  },
+  "part02-34-advancedastrology": {
+    "id": "part02-34-advancedastrology",
+    "tmcname": "part02-Part02_34.AdvancedAstrology",
+    "title": "Advanced astrology (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Printing stars and spaces",
+        "Define a method called `printSpaces(int number)` that produces the number of spaces specified by `number`. The method does not print the line break.",
+        "You will also have to either copy the `printStars` method from your previous exercise or reimplement it in this exercise template.",
+        "Printing a right-leaning triangle",
+        "Create a method called `printTriangle(int size)` that uses `printSpaces` and `printStars` to print the correct triangle. So the method call `printTriangle(4)` should print the following:",
+        "Printing a Christmas tree",
+        "Define a method called `christmasTree(int height)` that prints the correct Christmas tree. The Christmas tree consists of a triangle with the specified height as well as the base. The base is two stars high and three stars wide, and is placed at the center of the triangle's bottom. The tree is to be constructed by using the methods `printSpaces` and `printStars`.",
+        "For example, the call `christmasTree(4)` should print the following:",
+        "The call `christmasTree(10)` should print:",
+        "**NB:** heights shorter than 3 don't have to work correctly!"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "*",
+            "**",
+            "***",
+            "****"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "*",
+            "***",
+            "*****",
+            "*******",
+            "***",
+            "***"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "*",
+            "***",
+            "*****",
+            "*******",
+            "*********",
+            "***********",
+            "*************",
+            "***************",
+            "*****************",
+            "*******************",
+            "***",
+            "***"
+          ]
+        }
+      ]
+    }
+  }
+}

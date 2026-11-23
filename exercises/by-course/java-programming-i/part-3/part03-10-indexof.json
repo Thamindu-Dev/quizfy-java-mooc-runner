@@ -1,0 +1,85 @@
+{
+  "id": "part03-10-indexof",
+  "tmcname": "part03-Part03_10.IndexOf",
+  "title": "Index of",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template contains a base that reads numbers from the user and adds them to a list. Reading is stopped once the user enters the number -1.",
+      "Expand the program by adding a functionality that asks the user for a number, and reports that number's index in the list. If the number is not found, the program should not print anything."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "72",
+            "isInput": true
+          },
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "8",
+            "isInput": true
+          },
+          {
+            "text": "8",
+            "isInput": true
+          },
+          {
+            "text": "11",
+            "isInput": true
+          },
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "Search for?",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "2 is at index 1"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "72",
+            "isInput": true
+          },
+          {
+            "text": "2",
+            "isInput": true
+          },
+          {
+            "text": "8",
+            "isInput": true
+          },
+          {
+            "text": "8",
+            "isInput": true
+          },
+          {
+            "text": "11",
+            "isInput": true
+          },
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "Search for?",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "8 is at index 2",
+          "8 is at index 3"
+        ]
+      }
+    ]
+  }
+}

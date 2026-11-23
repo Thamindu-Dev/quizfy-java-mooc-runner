@@ -1,0 +1,22 @@
+{
+  "id": "part01-06-hiadalovelace",
+  "tmcname": "part01-Part01_06.HiAdaLovelace",
+  "title": "Hi Ada Lovelace!",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template contains the following program.",
+      "Modify the program so that it prints the contents of the variable `name`, and the printed text is the following in its full form:",
+      "NB! When using the `System.out.println` command, do not pass in the string \"Ada Lovelace\" as a parameter. Instead, use the existing variable `name`: `System.out.println(\"Hi \" + ...)`"
+    ],
+    "codeSnippet": "public class HiAdaLovelace {\n\n    public static void main(String[] args) {\n        String name = \"Ada Lovelace\";\n\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Hi Ada Lovelace!"
+        ]
+      }
+    ]
+  }
+}

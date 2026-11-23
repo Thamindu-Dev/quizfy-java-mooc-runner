@@ -1,0 +1,21 @@
+{
+  "id": "part02-31-greatest",
+  "tmcname": "part02-Part02_31.Greatest",
+  "title": "Greatest",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Define a method called `greatest` that takes three numbers and returns the greatest of them. If there are multiple greatest values, returning one of them is enough. Printing will take place in the main program.",
+      "The output of the program:"
+    ],
+    "codeSnippet": "public static int greatest(int number1, int number2, int number3) {\n  // write some code here\n}\n\npublic static void main(String[] args) {\n  int answer =  greatest(2, 7, 3);\n  System.out.println(\"Greatest: \" + answer);\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Greatest: 7"
+        ]
+      }
+    ]
+  }
+}

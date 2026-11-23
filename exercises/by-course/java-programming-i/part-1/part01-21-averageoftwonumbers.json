@@ -1,0 +1,29 @@
+{
+  "id": "part01-21-averageoftwonumbers",
+  "tmcname": "part01-Part01_21.AverageOfTwoNumbers",
+  "title": "Average of two numbers",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for two integers and prints their average."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "The average is 5.0"
+        ]
+      }
+    ]
+  }
+}

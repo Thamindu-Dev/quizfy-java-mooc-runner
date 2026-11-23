@@ -1,0 +1,28 @@
+{
+  "id": "part03-28-firstwords",
+  "tmcname": "part03-Part03_28.FirstWords",
+  "title": "First words",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads user input until an empty line is entered. For each non-empty line the program splits the string by spaces ` `  and prints the first part of the string."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "one two three four",
+            "isInput": true
+          },
+          "one",
+          {
+            "text": "this is a very important message",
+            "isInput": true
+          },
+          "this"
+        ]
+      }
+    ]
+  }
+}

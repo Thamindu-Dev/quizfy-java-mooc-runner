@@ -1,0 +1,1014 @@
+{
+  "part07-01-liquidcontainers": {
+    "id": "part07-01-liquidcontainers",
+    "tmcname": "part07-Part07_01.LiquidContainers",
+    "title": "Liquid containers (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Let's create an interactive program to control two liquid containers. The containers are named \"first\" and \"second\". Each are capable of containing 100 liters of liquid at a time.",
+        "The program offers the functionality to add, move and remove liquid. Using the \"add\" command will add liquid to the first container, \"move\" will move liquid from the first container to the second container and \"remove\" will remove liquid from the second container.",
+        "The commands must be defined as following:",
+        "- `add amount` adds the amount of liquid specified by the parameter to the first container. The inserted amount must be specified as an integer. The container can't hold more than a hundred liters and everything added past that will go to waste.",
+        "- `move amount` moves the amount of liquid specified by the parameter from the first container to the second container. The given amount must be specified as an integer. If the program is requested to move more liquid than than the first container currently holds, move all the remaining liquid. The second container can't hold more than one hundred liters of liquid and everything past that will go to waste.",
+        "- `remove amount` removes the amount of liquid specified by the parameter from the second container. If the program is requested to remove more liquid than the container currently holds, remove all the remaining liquid.",
+        "After every command the program will print the contents of both containers. You don't have to take negative values into consideration.",
+        "All the functionality must be added to the method `main` in the class `LiquidContainers` (do not create new methods). The template already contains a loop which exits the program with the command \"quit\".",
+        "A reminder of how to split a string below.",
+        "Adding",
+        "Implement the functionality to add liquid to the first container. The user interface should work as follows:",
+        "Moving",
+        "Implement the functionality to move liquid from the first container to the second. The user interface should work as follows:",
+        "Second example:",
+        "Removing",
+        "Implement the functionality to remove liquid from the second container. The user interface should work as follows:"
+      ],
+      "codeSnippet": "String input = scan.nextLine();\nString[] parts = input.split(\" \");\n\nString command = parts[0];\nint amount = Integer.valueOf(parts[1]);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "add 5",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 0/100",
+            {
+              "text": "add 25",
+              "isInput": true
+            },
+            "First: 30/100",
+            "Second: 0/100",
+            {
+              "text": "add 60",
+              "isInput": true
+            },
+            "First: 90/100",
+            "Second: 0/100",
+            {
+              "text": "add 1000",
+              "isInput": true
+            },
+            "First: 100/100",
+            "Second: 0/100",
+            {
+              "text": "add -5",
+              "isInput": true
+            },
+            "First: 100/100",
+            "Second: 0/100",
+            {
+              "text": "quit",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "add 1000",
+              "isInput": true
+            },
+            "First: 100/100",
+            "Second: 0/100",
+            {
+              "text": "move 50",
+              "isInput": true
+            },
+            "First: 50/100",
+            "Second: 50/100",
+            {
+              "text": "add 100",
+              "isInput": true
+            },
+            "First: 100/100",
+            "Second: 50/100",
+            {
+              "text": "move 100",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 100/100",
+            {
+              "text": "quit",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "move 30",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "add 10",
+              "isInput": true
+            },
+            "First: 10/100",
+            "Second: 0/100",
+            {
+              "text": "move -5",
+              "isInput": true
+            },
+            "First: 10/100",
+            "Second: 0/100",
+            {
+              "text": "move 20",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 10/100",
+            {
+              "text": "move 10",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 10/100",
+            {
+              "text": "quit",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "remove 10",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "add 20",
+              "isInput": true
+            },
+            "First: 20/100",
+            "Second: 0/100",
+            {
+              "text": "remove 5",
+              "isInput": true
+            },
+            "First: 20/100",
+            "Second: 0/100",
+            {
+              "text": "move 15",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 15/100",
+            {
+              "text": "remove 5",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 10/100",
+            {
+              "text": "remove 20",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 0/100",
+            {
+              "text": "quit",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part07-02-liquidcontainers2": {
+    "id": "part07-02-liquidcontainers2",
+    "tmcname": "part07-Part07_02.LiquidContainers2",
+    "title": "Liquid Containers 2.0 (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Let's redo the previous program for handling two liquid containers. This time we'll create a class \"Container\", which is responsible for managing the contents of a container.",
+        "Container",
+        "Make a class called Container. The class must have a constructor which does not take any parameters, and the following methods:",
+        "-  `public int contains()` which returns the amount of liquid in a container as an integer.",
+        "-  `public void add(int amount)` which adds the amount of liquid given as a parameter to the container. If the amount is negative, no liquid is added. A container can hold a maximum of 100 units of liquid.",
+        "-  `public void remove(int amount)` which removes the amount of liquid given as a parameter from the container. If the amount is negative, no liquid is removed. A container can never hold less than 0 units of liquid.",
+        "-  `public String toString()` which returns the container as a string formatted \"amount of liquid/100, for example \"32/100\".",
+        "The class should work as follows:",
+        "Functionality",
+        "Copy the user interface you implemented for the previous example, and modify it to use the new Container class.\nThe main method in the class `LiquidContainers2` must start the program.",
+        "Below is some sample output. The user interface should work as follows:"
+      ],
+      "codeSnippet": "Container container = new Container();\nSystem.out.println(container);\n\ncontainer.add(50);\nSystem.out.println(container);\nSystem.out.println(container.contains());\n\ncontainer.remove(60);\nSystem.out.println(container);\n\ncontainer.add(200);\nSystem.out.println(container);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "0/100",
+            "50/100",
+            "50",
+            "0/100",
+            "100/100"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "remove 10",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "add 20",
+              "isInput": true
+            },
+            "First: 20/100",
+            "Second: 0/100",
+            {
+              "text": "remove 5",
+              "isInput": true
+            },
+            "First: 20/100",
+            "Second: 0/100",
+            {
+              "text": "move 15",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 15/100",
+            {
+              "text": "remove 5",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 10/100",
+            {
+              "text": "remove 20",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 0/100",
+            {
+              "text": "quit",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part07-03-sorting": {
+    "id": "part07-03-sorting",
+    "tmcname": "part07-Part07_03.Sorting",
+    "title": "Sorting (5 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Finding the smallest value",
+        "Create in the class `MainProgram` a class method `smallest` that takes an integer array as a parameter. It should return the smallest value in the array.",
+        "Here is the structure of the method:",
+        "The next example illustrates how the method works:",
+        "Index of the smallest value",
+        "Create a method called `indexOfSmallest` in the class MainProgram. It should return the index of the smallest number in the array that it receives as a parameter.",
+        "Here is the structure of the method:",
+        "The following code illustrates how to use the method:",
+        "The smallest number in the array is 5, and its position in the array (i.e. index) is 1. Be sure to remember that indexing an array begins at 0.",
+        "Index of the smallest value after a certain value",
+        "Create in the class MainProgram a class method called `indexOfSmallestFrom`. It works similarly to the method in the previous section, but only considers the table values from a certain index forwards. In addition to the table, it receives this start index as a parameter.",
+        "The structure of the method is the following:",
+        "The following code illustrates how the method words:",
+        "In this example the first method call searches for the index of the smallest number, starting from index 0. Starting from index 0, the smallest number is -1 and its index is 0. The second method call searches for the index of the smallest value starting from index 1. In this case the smallest number is 6 and its index is 1. The third calls searches for the index of the smallest value starting at index 2. Then the smallest number is 8 and its index is 3.",
+        "Swapping numbers",
+        "Create a class method `swap` in the class MainProgram. It receives as its parameters an array and two indices inside it. The method swaps the numbers in these indices with each other.",
+        "The basic structure of the method is:",
+        "The following illustrates how to use the method. To print an array we take use of the `toString` class method of the class `Arrays`. It formats an array into an easily readable string.",
+        "Sorting",
+        "We have now assembled a set of useful methods. With their help, we can implement a sorting algorithm known by the name of selection sort.",
+        "The idea of selection sort is:",
+        "- Move the smallest number in the array to index 0.",
+        "- Move the second smallest number to index 1.",
+        "- Move the third smalles number in the array to index 2.",
+        "- Etc.",
+        "In other words:",
+        "- Examine the array starting from index 0. Swap the following two numbers with each other: the number at index 0, and the smallest number in the array starting from index 0.\n- Examine the array starting from index 1. Swap the following two numbers with each other: the number at index 1, and the smallest number in the array starting from index 1.\n- Examine the array starting from index 2. Swap the following two numbers with each other: the number at index 2, and the smallest number in the array starting from index 2.\n- Etc.",
+        "Implement a class method called `sort` based on the idea above in the class MainProgram. It should include a loop that goes through the indices of the array. Certainly the method `indexOfSmallestFrom` and `swap` will come in handy. Additionally, print the contents of the array before sorting and after every iteration of the loop to ensure that the algorithm works as you expect it to.",
+        "The definition of the method looks like this:",
+        "Use at least the following example to test how the method functions:",
+        "The output of the program should look like the print below. Observe that you must print the contents of the array after each swap!",
+        "Mark how the array becomes sorted little by little starting from the beginning and advancing towards the end of the array."
+      ],
+      "codeSnippet": "public static int smallest(int[] array){\n    // write your code here\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Smallest: 5"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Index of the smallest number: 1"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "0",
+            "1",
+            "3"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "[3, 2, 5, 4, 8]",
+            "[2, 3, 5, 4, 8]",
+            "[4, 3, 5, 2, 8]"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "[8, 3, 7, 9, 1, 2, 4]",
+            "[1, 3, 7, 9, 8, 2, 4]",
+            "[1, 2, 7, 9, 8, 3, 4]",
+            "[1, 2, 3, 9, 8, 7, 4]",
+            "[1, 2, 3, 4, 8, 7, 9]",
+            "[1, 2, 3, 4, 7, 8, 9]",
+            "[1, 2, 3, 4, 7, 8, 9]"
+          ]
+        }
+      ]
+    }
+  },
+  "part07-04-readymadesortingalgorithms": {
+    "id": "part07-04-readymadesortingalgorithms",
+    "tmcname": "part07-Part07_04.ReadymadeSortingAlgorithms",
+    "title": "Ready-made Sorting Algorithms",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Add the following methods to the Main class:",
+        "- `public static void sort(int[] array)` that sorts an array of integers.",
+        "- `public static void sort(String[] array)` that sorts an array of strings.",
+        "- `public static void sortIntegers(ArrayList integers)` that sorts a list of integers.",
+        "- `public static void sortStrings(ArrayList strings)` that sorts a list of strings.",
+        "Be sure to use the ready-made Java libraries in your implementation."
+      ]
+    }
+  },
+  "part07-05-searching": {
+    "id": "part07-05-searching",
+    "tmcname": "part07-Part07_05.Searching",
+    "title": "Searching",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template you'll find the class `Book`, ready for use. The class describes objects with a numeric id `id` and a name `name`.",
+        "In this exercise you will implement linear search and binary search algorithms for searching for books by their numeric id. In the exercise template you'll find the names of the methods to be implemented ready for you -- at the moment these method always return -1 -- you'll also find the Main method ready to be used for testing your methods.",
+        "Linear search",
+        "The linear search algorithm works by checking every value in a list or an array one at a time, starting from index 0.",
+        "In the `Main`-class, implement a method `public static int linearSearch(ArrayList books, int searchedId)`, which searches the list it received as a parameter, for a book with an `id` variable that matches the value of `searchedId` variable it received as a parameter. If that book is found, the method, should return the index it's located at in the list it received as a parameter. If the book isn't found, the method should return the value `-1`.",
+        "Binary search",
+        "In the `Main`-class, implement a method `public static int binarySearch(ArrayList books, int searchedId)`, which searches the list it received as a parameter, for a book with an `id` variable that matches the value of `searchedId` variable it received as a parameter. If that book is found the method, should return the index it's located at, in the list it received as a parameter. If the book isn't found, the method should return the value `-1`.",
+        "The method must be implemented as a binary search, which assumes the list is ordered. You should also assume, that the `id`s towards the beginning of the list, are always smaller than the `id`s towards the end of the list.",
+        "To help you, you have the idea of the binary search shown in the slideshow above, as well as the *pseudocode* for binary search. Pseudocode is a description of a programs/methods function written in a programming-language like way.",
+        "In the slideshow above, the idea of a binary search was described as follows:",
+        "- The array or list searched must be sorted",
+        "- The search begins in the middle of the array or list\n- If the value in the middle-point being examined isn't the searched value, eliminate half of the searched area, and move on to examine the middle-point of the remaining half.\n- If the value in the middle-point being examined is the searched value, return the index of the middle-point being examined.\n- If there is nowhere left to search (the entire area has been eliminated), return the value -1, indicating that the searched value was not found (i.e, it wasn't in the list or array searched).",
+        "The pseudocode for binary search looks like this:",
+        "Note that in the case of books, you are examining the values of the books' `id`-variable.  Meaning that in this exercise, instead of examining the value at an index, you should examine the value of the `id`-variable of the value found at the index."
+      ]
+    }
+  },
+  "part07-06-gradestatistics": {
+    "id": "part07-06-gradestatistics",
+    "tmcname": "part07-Part07_06.GradeStatistics",
+    "title": "Grade statistics (4 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise we create a program for printing statistics for points in course. The program receives points (integers from zero to one hundred) as input, based on which it prints statistics about grades. Reading of input stops when the user enters the number -1. Numbers that are not within the interval [0-100] should not be taken into account when calculating the statistics.",
+        "A string read from the user can be converted to an integer using the `Integer` class' method `valueOf`. It works as follows:",
+        "Point averages",
+        "Write a program that reads integers representing course point totals from the user. Numbers between [0-100] are acceptable and the number -1 ends the reading of input. Other numbers are erroneous input, which should be ignored. When the user enters the number -1, the program should print the average of the point totals that were input.",
+        "Point average for points giving a passing grade",
+        "Extend the program, such that it in addition to giving the point average of all totals also provides the point average for points giving a passing grade.",
+        "A passing grade is achieved by getting a minimum of 50 course points. You may assume that the user always provides at least one integer between [0-100]. If there are no numbers giving a passing grade, the program should print a line \"-\" where the average would be.",
+        "Pass percentage",
+        "Extend the program from the previous part, such that it also print the pass percentage. The pass percentage is calculated using the formula 100 * passing / participants.",
+        "Grade distribution",
+        "Extend the program, such that it also prints the grade distribution. The grade distribution is as follows:",
+        "points\n    grade\n  \n  \n    \n    failed, i.e. 0\n  \n  \n    \n    1\n  \n  \n    \n    2\n  \n  \n    \n    3\n  \n  \n    \n    4\n  \n  \n    >= 90\n    5",
+        "Each point total is converted to a grade based on the above table. If a point total isn't within [0-100], it should be ignored.",
+        "The grade distribution is printed out as stars. E.g. if there is one point total giving the grade 5, then it should print the row 5: *. If there are no point totals giving a particular grade, then no stars should be printed for it. In the sample below this is true for e.g. the grade 4."
+      ],
+      "codeSnippet": "String numberAsString = \"3\";\nint number = Integer.valueOf(numberAsString);\n\nSystem.out.println(numberAsString + 7);\nSystem.out.println(number + 7);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "37",
+            "10"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter point totals, -1 stops:",
+            {
+              "text": "-42",
+              "isInput": true
+            },
+            {
+              "text": "24",
+              "isInput": true
+            },
+            {
+              "text": "42",
+              "isInput": true
+            },
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "80",
+              "isInput": true
+            },
+            {
+              "text": "52",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Point average (all): 54.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter point totals, -1 stops:",
+            {
+              "text": "50",
+              "isInput": true
+            },
+            {
+              "text": "51",
+              "isInput": true
+            },
+            {
+              "text": "52",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Point average (all): 51.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter point totals, -1 stops:",
+            {
+              "text": "-42",
+              "isInput": true
+            },
+            {
+              "text": "24",
+              "isInput": true
+            },
+            {
+              "text": "42",
+              "isInput": true
+            },
+            {
+              "text": "72",
+              "isInput": true
+            },
+            {
+              "text": "80",
+              "isInput": true
+            },
+            {
+              "text": "52",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Point average (all): 54.0",
+            "Point average (passing): 68.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter point totals, -1 stops:",
+            {
+              "text": "49",
+              "isInput": true
+            },
+            {
+              "text": "48",
+              "isInput": true
+            },
+            {
+              "text": "47",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Point average (all): 48.0",
+            "Point average (passing): -"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter point totals, -1 stops:",
+            {
+              "text": "49",
+              "isInput": true
+            },
+            {
+              "text": "48",
+              "isInput": true
+            },
+            {
+              "text": "47",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Point average (all): 48.0",
+            "Point average (passing): -",
+            "Pass percentage: 0.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter point totals, -1 stops:",
+            {
+              "text": "102",
+              "isInput": true
+            },
+            {
+              "text": "-4",
+              "isInput": true
+            },
+            {
+              "text": "33",
+              "isInput": true
+            },
+            {
+              "text": "77",
+              "isInput": true
+            },
+            {
+              "text": "99",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Point average (all): 52.5",
+            "Point average (passing): 88.0",
+            "Pass percentage: 50.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Enter point totals, -1 stops:",
+            {
+              "text": "102",
+              "isInput": true
+            },
+            {
+              "text": "-2",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "33",
+              "isInput": true
+            },
+            {
+              "text": "77",
+              "isInput": true
+            },
+            {
+              "text": "99",
+              "isInput": true
+            },
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "Point average (all): 52.5",
+            "Point average (passing): 88.0",
+            "Pass percentage: 50.0",
+            "Grade distribution:",
+            "5: *",
+            "4:",
+            "3: *",
+            "2:",
+            "1:",
+            "0: **"
+          ]
+        }
+      ]
+    }
+  },
+  "part07-07-recipesearch": {
+    "id": "part07-07-recipesearch",
+    "tmcname": "part07-Part07_07.RecipeSearch",
+    "title": "Recipe search (4 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise we are going to create a program that allows for searching for recipes based on their name, cooking time, or the name of an ingredient. The program should read the recipes from a file that the user provides. *It might be a good idea to brush up on reading information from files (part 4) before beginning*",
+        "Each recipe consists of three or more rows in a recipe file. The first row is for the name of the recipe, the second the cooking time (an integer), and the third and possibly following rows list the ingredients used in the recipe. An empty row follows the last ingredient row. There can be many recipes in a single file. Below, an example file containing recipes is described.",
+        "The program will be implemented in parts. First we'll create the possibility to read and list recipes. After that we'll add the functionality to search for recipes based on their name, cooking time, or the name of an ingredient.",
+        "There is a file called `recipes.txt` supplied with the exercise base. You can use it for testing purposes. Notice that the program should not list the ingredients of the recipes, but they will be used in the search functionality.",
+        "Reading and listing recipes",
+        "First create the functionality to read and list recipes. The user interface of the program is described below. You may assume that the user only enters files that exist. Below we assume that the example recipes given earlier in the exercise description are stored in the file `recipes.txt`.",
+        "Finding recipes by name",
+        "Make it possible to find recipes by their names. Finding by name is done with the command `find name`, after which the user is asked for the name that is used to search. The search should print all the recipes whose names contain the string given by the user.",
+        "Searching for recipes by cooking time",
+        "Next, implement the possibility to find recipes based on their cooking time. This is done with the command `find cooking time`, after which the user is asked for the longest acceptable cooking time. The program should react by printing all the recipes whose cooking times don't exceed the cooking time given by the user (so equal or less time).",
+        "Finding recipes based on their ingredients",
+        "Finally, add the functionality to search for recipes based on their ingredients. This is done by choosing the command `find ingredient`, after which the user is asked for a string. The program should then print all the recipes that contain the specified string. Notice that with this option the given string must match exactly the ingredient that is searched for (e.g. \"ugar\" will return different results than \"sugar\").",
+        "<!--"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Pancake dough",
+            "60",
+            "milk",
+            "egg",
+            "flour",
+            "salt",
+            "butter",
+            "Meatballs",
+            "20",
+            "ground meat",
+            "egg",
+            "breadcrumbs",
+            "Tofu rolls",
+            "30",
+            "tofu",
+            "rice",
+            "water",
+            "carrot",
+            "cucumber",
+            "avocado",
+            "wasabi"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "File to read:",
+            {
+              "text": "recipes.txt",
+              "isInput": true
+            },
+            "Commands:",
+            "list - lists the recipes",
+            "stop - stops the program",
+            "Enter command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "Recipes:",
+            "Pancake dough, cooking time: 60",
+            "Meatballs, cooking time: 20",
+            "Tofu rolls, cooking time: 30",
+            "Enter command:",
+            {
+              "text": "stop",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "File to read:",
+            {
+              "text": "recipes.txt",
+              "isInput": true
+            },
+            "Commands:",
+            "list - lists the recipes",
+            "stop - stops the program",
+            "find name - searches recipes by name",
+            "Enter command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "Recipes:",
+            "Pancake dough, cooking time: 60",
+            "Meatballs, cooking time: 20",
+            "Tofu rolls, cooking time: 30",
+            "Enter command:",
+            {
+              "text": "find name",
+              "isInput": true
+            },
+            "Searched word:",
+            {
+              "text": "roll",
+              "isInput": true
+            },
+            "Recipes:",
+            "Tofu rolls, cooking time: 30",
+            "Enter command:",
+            {
+              "text": "stop",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "File to read:",
+            {
+              "text": "recipes.txt",
+              "isInput": true
+            },
+            "Commands:",
+            "list - lists the recipes",
+            "stop - stops the program",
+            "find name - searches recipes by name",
+            "find cooking time - searches recipes by cooking time",
+            "Enter command:",
+            {
+              "text": "find cooking time",
+              "isInput": true
+            },
+            "Max cooking time:",
+            {
+              "text": "30",
+              "isInput": true
+            },
+            "Recipes:",
+            "Meatballs, cooking time: 20",
+            "Tofu rolls, cooking time: 30",
+            "Enter command:",
+            {
+              "text": "find cooking time",
+              "isInput": true
+            },
+            "Max cooking time:",
+            {
+              "text": "15",
+              "isInput": true
+            },
+            "Recipes:",
+            "Enter command:",
+            {
+              "text": "find name",
+              "isInput": true
+            },
+            "Searched word:",
+            {
+              "text": "roll",
+              "isInput": true
+            },
+            "Recipes:",
+            "Tofu rolls, cooking time: 30",
+            "Enter command:",
+            {
+              "text": "stop",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Mistä luetaan?",
+            {
+              "text": "reseptit.txt",
+              "isInput": true
+            },
+            "Komennot:",
+            "listaa - listaa reseptit",
+            "lopeta - lopettaa ohjelman",
+            "hae nimi - hakee reseptiä nimen perusteella",
+            "hae keittoaika - hakee reseptiä keittoajan perusteella",
+            "hae aine - hakee reseptiä raaka-aineen perusteella",
+            "Syötä komento:",
+            {
+              "text": "hae keittoaika",
+              "isInput": true
+            },
+            "Keittoaika korkeintaan:",
+            {
+              "text": "30",
+              "isInput": true
+            },
+            "Reseptit:",
+            "Lihapullat, keittoaika: 20",
+            "Tofurullat, keittoaika: 30",
+            "Syötä komento:",
+            {
+              "text": "hae aine",
+              "isInput": true
+            },
+            "Mitä raaka-ainetta haetaan:",
+            {
+              "text": "sokeri",
+              "isInput": true
+            },
+            "Reseptit:",
+            "Lettutaikina, keittoaika: 60",
+            "Syötä komento:",
+            {
+              "text": "hae aine",
+              "isInput": true
+            },
+            "Mitä raaka-ainetta haetaan:",
+            {
+              "text": "muna",
+              "isInput": true
+            },
+            "Reseptit:",
+            "Lettutaikina, keittoaika: 60",
+            "Lihapullat, keittoaika: 20",
+            "Syötä komento:",
+            {
+              "text": "hae aine",
+              "isInput": true
+            },
+            "Mitä raaka-ainetta haetaan:",
+            {
+              "text": "una",
+              "isInput": true
+            },
+            "Reseptit:",
+            "Syötä komento:",
+            {
+              "text": "lopeta",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part07-08-bigyear": {
+    "id": "part07-08-bigyear",
+    "tmcname": "part07-Part07_08.BigYear",
+    "title": "Big year (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "**This exercise is worth three one-part exercises**",
+        "In this exercise you will design and implement a database for bird-watchers. The database contains birds, each of which has a name (string) and a name in Latin (string). The database also counts the observations of each bird.",
+        "The program must implement the following commands:",
+        "-  `Add` - adds a bird",
+        "-  `Observation` - adds an observation",
+        "-  `All` - prints all birds",
+        "-  `One` - prints one bird",
+        "- `Quit` - ends the program",
+        "Incorrect input must also be handled.\nThe following is an example of the program functionality:",
+        "**NB** You're free to structure your program the way you want. We only test that the `main` method of the `mainProgram` class works as shown above. You will most likely find it useful to use classes that are descriptive of the problem domain."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "?",
+            {
+              "text": "Add",
+              "isInput": true
+            },
+            "Name:",
+            {
+              "text": "Crow",
+              "isInput": true
+            },
+            "Name in Latin:",
+            {
+              "text": "Corvus Corvus",
+              "isInput": true
+            },
+            "?",
+            {
+              "text": "Add",
+              "isInput": true
+            },
+            "Name:",
+            {
+              "text": "Hawk",
+              "isInput": true
+            },
+            "Name in Latin:",
+            {
+              "text": "Dorkus Dorkus",
+              "isInput": true
+            },
+            "?",
+            {
+              "text": "Observation",
+              "isInput": true
+            },
+            "Bird?",
+            {
+              "text": "Hawk",
+              "isInput": true
+            },
+            "?",
+            {
+              "text": "Observation",
+              "isInput": true
+            },
+            "Bird?",
+            {
+              "text": "Lion",
+              "isInput": true
+            },
+            "Not a bird!",
+            "?",
+            {
+              "text": "Observation",
+              "isInput": true
+            },
+            "Bird?",
+            {
+              "text": "Hawk",
+              "isInput": true
+            },
+            "?",
+            {
+              "text": "All",
+              "isInput": true
+            },
+            "Hawk (Dorkus Dorkus): 2 observations",
+            "Crow (Corvus Corvus): 0 observations",
+            "?",
+            {
+              "text": "One",
+              "isInput": true
+            },
+            "Bird?",
+            {
+              "text": "Hawk",
+              "isInput": true
+            },
+            "Hawk (Dorkus Dorkus): 2 observations",
+            "?",
+            {
+              "text": "Quit",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

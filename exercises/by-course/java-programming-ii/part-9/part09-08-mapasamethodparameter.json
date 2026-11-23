@@ -1,0 +1,21 @@
+{
+  "id": "part09-08-mapasamethodparameter",
+  "tmcname": "part09-Part09_08.MapAsAMethodParameter",
+  "title": "Map as a method parameter",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In the class MainProgram implement a class method `returnSize` which gets a Map-object as a parameter, and returns its size as an integer.",
+      "The method should work as follows:"
+    ],
+    "codeSnippet": "Map<String, String> names = new HashMap<>();\nnames.put(\"1\", \"first\");\nnames.put(\"2\", \"second\");\n\nSystem.out.println(returnSize(names));",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "2"
+        ]
+      }
+    ]
+  }
+}

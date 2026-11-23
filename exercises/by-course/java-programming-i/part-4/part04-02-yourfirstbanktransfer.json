@@ -1,0 +1,13 @@
+{
+  "id": "part04-02-yourfirstbanktransfer",
+  "tmcname": "part04-Part04_02.YourFirstBankTransfer",
+  "title": "Your first bank transfer",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The `Account` from the previous exercise class is also available in this exercise.",
+      "Write a program that:",
+      "1. Creates an account named `\"Matthews account\"` with the balance 1000\n2. Creates an account named `\"My account\"` with the balance 0\n3. Withdraws 100.0 from Matthew's account\n4. Deposits 100.0 to \"my account\"\n5. Prints both the accounts"
+    ]
+  }
+}

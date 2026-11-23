@@ -1,0 +1,176 @@
+{
+  "id": "part10-14-literature",
+  "tmcname": "part10-Part10_14.Literature",
+  "title": "Literature (3 parts)",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads user input for books and their age recommendations.",
+      "The program asks for new books until the user gives an empty String (only presses enter). After this, the program will print the number of books, their names, and their recommended ages.",
+      "Reading and printing the books",
+      "Implement the reading and printing the books first, the ordering of them doesn't matter yet.",
+      "Ordering books based on their age recommendation",
+      "Expand your program so, that the books are sorted based on their age recommendations when they are printed. If two (or more) books share the same age recommendations the order between them does not matter.",
+      "Ordering books based on their age recommendation and name",
+      "Expand your program, so that it sorts the books with the same age recommendation based on their name alphabetically."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Input the name of the book, empty stops:",
+          {
+            "text": "The Ringing Lullaby Book",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          {
+            "text": "The Exiting Transpotation Vehicles",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          {
+            "text": "The Snowy Forest Calls",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "12",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          {
+            "text": "Litmanen 10",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "10",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          "4 books in total.",
+          "Books:",
+          "The Ringing Lullaby Book (recommended for 0 year-olds or older)",
+          "The Exiting Transpotation Vehicles (recommended for 0 year-olds or older)",
+          "The Snowy Forest Calls (recommended for 12 year-olds or older)",
+          "Litmanen 10 (recommended for 10 year-olds or older)"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Input the name of the book, empty stops:",
+          {
+            "text": "The Ringing Lullaby Book",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          {
+            "text": "The Exiting Transpotation Vehicles",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          {
+            "text": "The Snowy Forest Calls",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "12",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          {
+            "text": "Litmanen 10",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "10",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          "4 books in total.",
+          "Books:",
+          "The Ringing Lullaby Book (recommended for 0 year-olds or older)",
+          "The Exiting Transpotation Vehicles (recommended for 0 year-olds or older)",
+          "Litmanen 10 (recommended for 10 year-olds or older)",
+          "The Snowy Forest Calls (recommended for 12 year-olds or older)"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Input the name of the book, empty stops:",
+          {
+            "text": "The Ringing Lullaby Book",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          {
+            "text": "The Exiting Transpotation Vehicles",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          {
+            "text": "The Snowy Forest Calls",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "12",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          {
+            "text": "Litmanen 10",
+            "isInput": true
+          },
+          "Input the age recommendation:",
+          {
+            "text": "10",
+            "isInput": true
+          },
+          "Input the name of the book, empty stops:",
+          "4 books in total.",
+          "Books:",
+          "The Exiting Transpotation Vehicles (recommended for 0 year-olds or older)",
+          "The Ringing Lullaby Book (recommended for 0 year-olds or older)",
+          "Litmanen 10 (recommended for 10 year-olds or older)",
+          "The Snowy Forest Calls (recommended for 12 year-olds or older)"
+        ]
+      }
+    ]
+  }
+}

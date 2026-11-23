@@ -1,0 +1,30 @@
+{
+  "id": "part08-08-printmemyhashmap",
+  "tmcname": "part08-Part08_08.PrintMeMyHashmap",
+  "title": "Print me my hash map",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Exercise template contains a class `Program`. Implement the following class methods in the class:",
+      "-  `public static void printKeys(HashMap hashmap)`, prints all the keys in the hashmap given as a parameter.\n -  `public static void printKeysWhere(HashMap hashmap, String text)` prints the keys in the hashmap given as a parameter, which contain the string given as a parameter.\n - `public static void printValuesOfKeysWhere(HashMap hashmap, String text)`, prints the values in the given hashmap whichs keys contain the given string.",
+      "Example of using the class methods:",
+      "NB! The order of the output can vary, because the implementation of hashmaps does not guarantee the order of the objects in it."
+    ],
+    "codeSnippet": "HashMap<String, String> hashmap = new HashMap<>();\nhashmap.put(\"f.e\", \"for example\");\nhashmap.put(\"etc.\", \"and so on\");\nhashmap.put(\"i.e\", \"more precisely\");\n\nprintKeys(hashmap);\nSystem.out.println(\"---\");\nprintKeysWhere(hashmap, \"i\");\nSystem.out.println(\"---\");\nprintValuesOfKeysWhere(hashmap, \".e\");",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "f.e",
+          "etc.",
+          "i.e",
+          "---",
+          "i.e",
+          "---",
+          "for example",
+          "more precisely"
+        ]
+      }
+    ]
+  }
+}

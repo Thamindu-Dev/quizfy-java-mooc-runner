@@ -1,0 +1,21 @@
+{
+  "id": "part03-20-sumofarray",
+  "tmcname": "part03-Part03_20.SumOfArray",
+  "title": "Sum of array",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The class SumOfArray has a method `public static int sumOfNumbersInArray(int[] array)`. Complete the method so that it computes and returns the sum of the numbers in the array it receives as parameter.",
+      "You can try out the computation of the sum with this example:"
+    ],
+    "codeSnippet": "int[] numbers = {5, 1, 3, 4, 2};\nsumOfNumbersInArray(numbers);",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "15"
+        ]
+      }
+    ]
+  }
+}

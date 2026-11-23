@@ -1,0 +1,13 @@
+{
+  "id": "part04-01-yourfirstaccount",
+  "tmcname": "part04-Part04_01.YourFirstAccount",
+  "title": "Your first account",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template comes with a ready-made class named `Account`. The `Account` object represents a bank account that has balance (i.e. one that has some amount of money in it). The accounts are used as follows:",
+      "Write a program that creates an account with a balance of 100.0, deposits 20.0 in it, and finally prints the balance. **NB!** Perform all the operations in this exact order."
+    ],
+    "codeSnippet": "Account artosAccount = new Account(\"Arto's account\", 100.00);\nAccount artosSwissAccount = new Account(\"Arto's account in Switzerland\", 1000000.00);\n\nSystem.out.println(\"Initial state\");\nSystem.out.println(artosAccount);\nSystem.out.println(artosSwissAccount);\n\nartosAccount.withdraw(20);\nSystem.out.println(\"The balance of Arto's account is now: \" + artosAccount.balance());\nartosSwissAccount.deposit(200);\nSystem.out.println(\"The balance of Arto's other account is now: \" + artosSwissAccount.balance());\n\nSystem.out.println(\"End state\");\nSystem.out.println(artosAccount);\nSystem.out.println(artosSwissAccount);"
+  }
+}

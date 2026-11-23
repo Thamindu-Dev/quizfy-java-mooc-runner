@@ -1,0 +1,55 @@
+{
+  "id": "part01-22-averageofthreenumbers",
+  "tmcname": "part01-Part01_22.AverageOfThreeNumbers",
+  "title": "Average of three numbers",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for three integers and prints their average."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "Give the third number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "The average is 4.333333333333333"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "9",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give the third number:",
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "The average is 4.333333333333333"
+        ]
+      }
+    ]
+  }
+}

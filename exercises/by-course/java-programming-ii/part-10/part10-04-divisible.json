@@ -1,0 +1,22 @@
+{
+  "id": "part10-04-divisible",
+  "tmcname": "part10-Part10_04.Divisible",
+  "title": "Divisible",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise template includes a template for the method `public static ArrayList divisible(ArrayList numbers)`. Implement a functionality there that gathers numbers divisible by two, three or five from the list it receives as a parameter, and returns them as a new list. The list received as a parameter must not be altered."
+    ],
+    "codeSnippet": "public static void main(String[] args) {\n        ArrayList<Integer> numbers = new ArrayList<>();\n        numbers.add(3);\n        numbers.add(2);\n        numbers.add(-17);\n        numbers.add(-5);\n        numbers.add(7);\n\n        ArrayList<Integer> divisible = divisible(numbers);\n\n        divisible.stream()\n                .forEach(num -> System.out.println(num));\n    }",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "3",
+          "2",
+          "-5"
+        ]
+      }
+    ]
+  }
+}

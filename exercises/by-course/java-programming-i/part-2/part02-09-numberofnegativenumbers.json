@@ -1,0 +1,45 @@
+{
+  "id": "part02-09-numberofnegativenumbers",
+  "tmcname": "part02-Part02_09.NumberOfNegativeNumbers",
+  "title": "Number of negative numbers",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that reads values from the user until they input a 0. After this, the program prints the total number of inputted values that are negative. The zero that's used to exit the loop should not be included in the total number count.",
+      "Example output of the program:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "22",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "9",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "-2",
+            "isInput": true
+          },
+          "Give a number:",
+          {
+            "text": "0",
+            "isInput": true
+          },
+          "Number of negative numbers: 1"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "id": "part07-07-recipesearch",
+  "tmcname": "part07-Part07_07.RecipeSearch",
+  "title": "Recipe search (4 parts)",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "In this exercise we are going to create a program that allows for searching for recipes based on their name, cooking time, or the name of an ingredient. The program should read the recipes from a file that the user provides. *It might be a good idea to brush up on reading information from files (part 4) before beginning*",
+      "Each recipe consists of three or more rows in a recipe file. The first row is for the name of the recipe, the second the cooking time (an integer), and the third and possibly following rows list the ingredients used in the recipe. An empty row follows the last ingredient row. There can be many recipes in a single file. Below, an example file containing recipes is described.",
+      "The program will be implemented in parts. First we'll create the possibility to read and list recipes. After that we'll add the functionality to search for recipes based on their name, cooking time, or the name of an ingredient.",
+      "There is a file called `recipes.txt` supplied with the exercise base. You can use it for testing purposes. Notice that the program should not list the ingredients of the recipes, but they will be used in the search functionality.",
+      "Reading and listing recipes",
+      "First create the functionality to read and list recipes. The user interface of the program is described below. You may assume that the user only enters files that exist. Below we assume that the example recipes given earlier in the exercise description are stored in the file `recipes.txt`.",
+      "Finding recipes by name",
+      "Make it possible to find recipes by their names. Finding by name is done with the command `find name`, after which the user is asked for the name that is used to search. The search should print all the recipes whose names contain the string given by the user.",
+      "Searching for recipes by cooking time",
+      "Next, implement the possibility to find recipes based on their cooking time. This is done with the command `find cooking time`, after which the user is asked for the longest acceptable cooking time. The program should react by printing all the recipes whose cooking times don't exceed the cooking time given by the user (so equal or less time).",
+      "Finding recipes based on their ingredients",
+      "Finally, add the functionality to search for recipes based on their ingredients. This is done by choosing the command `find ingredient`, after which the user is asked for a string. The program should then print all the recipes that contain the specified string. Notice that with this option the given string must match exactly the ingredient that is searched for (e.g. \"ugar\" will return different results than \"sugar\").",
+      "<!--"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Pancake dough",
+          "60",
+          "milk",
+          "egg",
+          "flour",
+          "salt",
+          "butter",
+          "Meatballs",
+          "20",
+          "ground meat",
+          "egg",
+          "breadcrumbs",
+          "Tofu rolls",
+          "30",
+          "tofu",
+          "rice",
+          "water",
+          "carrot",
+          "cucumber",
+          "avocado",
+          "wasabi"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "File to read:",
+          {
+            "text": "recipes.txt",
+            "isInput": true
+          },
+          "Commands:",
+          "list - lists the recipes",
+          "stop - stops the program",
+          "Enter command:",
+          {
+            "text": "list",
+            "isInput": true
+          },
+          "Recipes:",
+          "Pancake dough, cooking time: 60",
+          "Meatballs, cooking time: 20",
+          "Tofu rolls, cooking time: 30",
+          "Enter command:",
+          {
+            "text": "stop",
+            "isInput": true
+          }
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "File to read:",
+          {
+            "text": "recipes.txt",
+            "isInput": true
+          },
+          "Commands:",
+          "list - lists the recipes",
+          "stop - stops the program",
+          "find name - searches recipes by name",
+          "Enter command:",
+          {
+            "text": "list",
+            "isInput": true
+          },
+          "Recipes:",
+          "Pancake dough, cooking time: 60",
+          "Meatballs, cooking time: 20",
+          "Tofu rolls, cooking time: 30",
+          "Enter command:",
+          {
+            "text": "find name",
+            "isInput": true
+          },
+          "Searched word:",
+          {
+            "text": "roll",
+            "isInput": true
+          },
+          "Recipes:",
+          "Tofu rolls, cooking time: 30",
+          "Enter command:",
+          {
+            "text": "stop",
+            "isInput": true
+          }
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "File to read:",
+          {
+            "text": "recipes.txt",
+            "isInput": true
+          },
+          "Commands:",
+          "list - lists the recipes",
+          "stop - stops the program",
+          "find name - searches recipes by name",
+          "find cooking time - searches recipes by cooking time",
+          "Enter command:",
+          {
+            "text": "find cooking time",
+            "isInput": true
+          },
+          "Max cooking time:",
+          {
+            "text": "30",
+            "isInput": true
+          },
+          "Recipes:",
+          "Meatballs, cooking time: 20",
+          "Tofu rolls, cooking time: 30",
+          "Enter command:",
+          {
+            "text": "find cooking time",
+            "isInput": true
+          },
+          "Max cooking time:",
+          {
+            "text": "15",
+            "isInput": true
+          },
+          "Recipes:",
+          "Enter command:",
+          {
+            "text": "find name",
+            "isInput": true
+          },
+          "Searched word:",
+          {
+            "text": "roll",
+            "isInput": true
+          },
+          "Recipes:",
+          "Tofu rolls, cooking time: 30",
+          "Enter command:",
+          {
+            "text": "stop",
+            "isInput": true
+          }
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Mistä luetaan?",
+          {
+            "text": "reseptit.txt",
+            "isInput": true
+          },
+          "Komennot:",
+          "listaa - listaa reseptit",
+          "lopeta - lopettaa ohjelman",
+          "hae nimi - hakee reseptiä nimen perusteella",
+          "hae keittoaika - hakee reseptiä keittoajan perusteella",
+          "hae aine - hakee reseptiä raaka-aineen perusteella",
+          "Syötä komento:",
+          {
+            "text": "hae keittoaika",
+            "isInput": true
+          },
+          "Keittoaika korkeintaan:",
+          {
+            "text": "30",
+            "isInput": true
+          },
+          "Reseptit:",
+          "Lihapullat, keittoaika: 20",
+          "Tofurullat, keittoaika: 30",
+          "Syötä komento:",
+          {
+            "text": "hae aine",
+            "isInput": true
+          },
+          "Mitä raaka-ainetta haetaan:",
+          {
+            "text": "sokeri",
+            "isInput": true
+          },
+          "Reseptit:",
+          "Lettutaikina, keittoaika: 60",
+          "Syötä komento:",
+          {
+            "text": "hae aine",
+            "isInput": true
+          },
+          "Mitä raaka-ainetta haetaan:",
+          {
+            "text": "muna",
+            "isInput": true
+          },
+          "Reseptit:",
+          "Lettutaikina, keittoaika: 60",
+          "Lihapullat, keittoaika: 20",
+          "Syötä komento:",
+          {
+            "text": "hae aine",
+            "isInput": true
+          },
+          "Mitä raaka-ainetta haetaan:",
+          {
+            "text": "una",
+            "isInput": true
+          },
+          "Reseptit:",
+          "Syötä komento:",
+          {
+            "text": "lopeta",
+            "isInput": true
+          }
+        ]
+      }
+    ]
+  }
+}

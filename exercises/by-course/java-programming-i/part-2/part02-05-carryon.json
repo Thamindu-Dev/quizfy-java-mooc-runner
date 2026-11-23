@@ -1,0 +1,38 @@
+{
+  "id": "part02-05-carryon",
+  "tmcname": "part02-Part02_05.CarryOn",
+  "title": "Carry on?",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program by using the loop example that asks \"Shall we carry on?\" until the user inputs the string \"no\"."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Shall we carry on?",
+          {
+            "text": "yes",
+            "isInput": true
+          },
+          "Shall we carry on?",
+          {
+            "text": "ye",
+            "isInput": true
+          },
+          "Shall we carry on?",
+          {
+            "text": "y",
+            "isInput": true
+          },
+          "Shall we carry on?",
+          {
+            "text": "no",
+            "isInput": true
+          }
+        ]
+      }
+    ]
+  }
+}

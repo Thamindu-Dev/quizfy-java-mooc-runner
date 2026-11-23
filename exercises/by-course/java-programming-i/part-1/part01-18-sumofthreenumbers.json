@@ -1,0 +1,56 @@
+{
+  "id": "part01-18-sumofthreenumbers",
+  "tmcname": "part01-Part01_18.SumOfThreeNumbers",
+  "title": "Sum of three numbers",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for three numbers. After this the program prints the sum of the numbers given by the user.",
+      "The program should work like this:"
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "Give the third number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "The sum of the numbers is 14"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "-1",
+            "isInput": true
+          },
+          "Give the third number:",
+          {
+            "text": "2",
+            "isInput": true
+          },
+          "The sum of the numbers is 4"
+        ]
+      }
+    ]
+  }
+}

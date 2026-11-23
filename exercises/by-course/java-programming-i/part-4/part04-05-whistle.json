@@ -1,0 +1,23 @@
+{
+  "id": "part04-05-whistle",
+  "tmcname": "part04-Part04_05.Whistle",
+  "title": "Whistle",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a class named `Whistle`. Add the variable `private String sound` to the class. After that, create the constructor `public Whistle(String whistleSound)`, which is used to create a new whistle that's given a sound.",
+      "Then create the method `public void sound()` that prints the whistle's sound."
+    ],
+    "codeSnippet": "Whistle duckWhistle = new Whistle(\"Kvaak\");\nWhistle roosterWhistle = new Whistle(\"Peef\");\n\nduckWhistle.sound();\nroosterWhistle.sound();\nduckWhistle.sound();",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Kvaak",
+          "Peef",
+          "Kvaak"
+        ]
+      }
+    ]
+  }
+}

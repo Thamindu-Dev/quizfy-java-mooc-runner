@@ -1,0 +1,26 @@
+{
+  "id": "part04-11-film",
+  "tmcname": "part04-Part04_11.Film",
+  "title": "Film",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a film class with the instance variables `name` (String) and `ageRating` (int). Write the constructor `public Film(String filmName, int filmAgeRating)` for the class, and also the methods `public String name()` and `public int ageRating()`. The first of these returns the film title and the second returns its rating.",
+      "Below is an example use case of the class."
+    ],
+    "codeSnippet": "Film chipmunks = new Film(\"Alvin and the Chipmunks: The Squeakquel\", 0);\n\nScanner reader = new Scanner(System.in);\n\nSystem.out.println(\"How old are you?\");\nint age = Integer.valueOf(reader.nextLine());\n\nSystem.out.println();\nif (age >= chipmunks.ageRating()) {\n    System.out.println(\"You may watch the film \" + chipmunks.name());\n} else {\n    System.out.println(\"You may not watch the film \" + chipmunks.name());\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "How old are you?",
+          {
+            "text": "7",
+            "isInput": true
+          },
+          "You may watch the film Alvin and the Chipmunks: The Squeakquel"
+        ]
+      }
+    ]
+  }
+}

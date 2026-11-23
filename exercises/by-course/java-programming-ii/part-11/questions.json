@@ -1,0 +1,493 @@
+{
+  "part11-01-customer": {
+    "id": "part11-01-customer",
+    "tmcname": "part11-Part11_01.Customer",
+    "title": "Customer",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The class diagram below shows the class Customer. Implement the class in the exercise."
+      ]
+    }
+  },
+  "part11-02-abookandaplane": {
+    "id": "part11-02-abookandaplane",
+    "tmcname": "part11-Part11_02.ABookAndAPlane",
+    "title": "Book and plane",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The class diagram below depicts the classes Book and Plane. Implement the classes in the exercise."
+      ]
+    }
+  },
+  "part11-03-showandticket": {
+    "id": "part11-03-showandticket",
+    "tmcname": "part11-Part11_03.ShowAndTicket",
+    "title": "Show and ticket",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the class diagram below, the classes Show and Ticket and their connection are depicted. The star is at the Ticket end of the connection -- in this case the star gives some extra information of the connection; even though a show doesn't know about the tickets that have been sold to it, you can still sell many tickets to one show.",
+        "Implement the classes in the diagram in the exercise base."
+      ]
+    }
+  },
+  "part11-04-studentanduniversity": {
+    "id": "part11-04-studentanduniversity",
+    "tmcname": "part11-Part11_04.StudentAndUniversity",
+    "title": "StudentAndUniversity",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Two classes, Student and University, are depicted below, as well as the connection between them. Implement these classes in the exercise base."
+      ]
+    }
+  },
+  "part11-05-theplayerandthebot": {
+    "id": "part11-05-theplayerandthebot",
+    "tmcname": "part11-Part11_05.ThePlayerAndTheBot",
+    "title": "The Player And the Bot",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The classes Player and Bot and the connection between them are depicted in the class diagram below. Implement these classes in the exercise.",
+        "A model answer is not supplied for this exercise."
+      ]
+    }
+  },
+  "part11-06-saveableperson": {
+    "id": "part11-06-saveableperson",
+    "tmcname": "part11-Part11_06.SaveablePerson",
+    "title": "Saveable person",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Below you'll see the interface Saveable and the class Person. Implement the contents of this class diagram in the exercise base.",
+        "> Saveable ||+save():void;+delete():void;+load(address:String):void]^-.-[Person|-name:String;-address:String]\">"
+      ]
+    }
+  },
+  "part11-07-biggerclassdiagram": {
+    "id": "part11-07-biggerclassdiagram",
+    "tmcname": "part11-Part11_07.BiggerClassDiagram",
+    "title": "Bigger class diagram",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Below you'll see a somewhat larger class diagram. In it are the classes A, B, C, D, and E, as well as the interfaces IA, IB, and IC. Create these classes and interfaces in the exercise.",
+        ">;IA][>;IB][>;IC][A]-.-^[>;IA][B]-.-^[>;IB][C]-.-^[>;IC][D]->[>;IA][E]*-*[C][C]-^[B][B]-^[A]\">"
+      ]
+    }
+  },
+  "part11-08-firstpackages": {
+    "id": "part11-08-firstpackages",
+    "tmcname": "part11-Part11_08.FirstPackages",
+    "title": "First packages (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "UserInterface",
+        "There is a package called `mooc` included in the exercise. We will create the functionality of the program inside this package. Add the package `ui` inside the package `mooc` (after which the package `mooc.ui` should be available), and add an interface called `UserInterface` in it.",
+        "The interface `UserInterface` defines the method `void update()`.",
+        "Text user interface",
+        "In the same package, create the class `TextInterface` that implements the `UserInterface` interface. Implement the method `public void update()`, required by the interface `UserInterface`, so that the only thing it does is print the string `\"Updating UI\"` by calling the method `System.out.println`.",
+        "Application logic",
+        "Then create the package `mooc.logic`. Create the class `ApplicationLogic` in it. The functionality that the application logic offers should be as follows:",
+        "- `public ApplicationLogic(UserInterface ui)`The constructor of the ApplicationLogic class. It receives as a parameter a class that implements the UserInterface interface. NB: For application logic to see the interface, it must be \"imported\". Add the line `import mooc.ui.UserInterface` at the beginning of the file.",
+        "- `public void execute(int times)`Prints the string \"Application logic is working\" the number of times that is indicated by the variable `times`. After each print, the method should call the `update()` method of the object that was received as a constructor parameter (which implements the `UserInterface` interface).",
+        "You can test the program with the following main program class."
+      ],
+      "codeSnippet": "import mooc.logic.ApplicationLogic;\nimport mooc.ui.UserInterface;\nimport mooc.ui.TextInterface;\n\npublic class Main {\n\n    public static void main(String[] args) {\n        UserInterface ui = new TextInterface();\n        new ApplicationLogic(ui).execute(3);\n    }\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Application logic is working",
+            "Updating UI",
+            "Application logic is working",
+            "Updating UI",
+            "Application logic is working",
+            "Updating UI"
+          ]
+        }
+      ]
+    }
+  },
+  "part11-09-thethreepackages": {
+    "id": "part11-09-thethreepackages",
+    "tmcname": "part11-Part11_09.TheThreePackages",
+    "title": "Three packages",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Within the exercise base, create three packages: `a`, `b`, and `c`. Create class `A` inside the package `a`, class `B` inside the package `b`, and class `C` inside the package `c`. The classes don't need object variables, constructors, or methods."
+      ]
+    }
+  },
+  "part11-10-flightcontrol": {
+    "id": "part11-10-flightcontrol",
+    "tmcname": "part11-Part11_10.FlightControl",
+    "title": "FlightControl (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise, you will implement the application that was described above. You are free to design the structure as you wish, or you can follow the structure sketched out above. The appearance of the user interface and the required commands are predefined. This exercise is worth two normal exercise points.",
+        "**NB: for the tests to work, you can only create one Scanner object in your program to read user input.**",
+        "In this exercise, you will implement a flight control application. It is used to control the airplanes and their flight routes. The system always knows the identifier and the capacity of an airplane. The flight information consists of the used airplane, the departure airport id (e.g. HEL), and the destination airport ID (e.g. BAL).",
+        "There can be multiple airplanes and flights. The same airplane can be used to make several flights.",
+        "The application should operate in two parts: first, the user enters information about airplanes and flights in the airport asset control, after which the program offers the flight information service for the user. There are three operations in this latter flight control -- printing the airplanes, printing the flights, and printing the information of a single airplane. In addition, the user may exit the program by choosing the option `x`. If the user enters an invalid command, the program asks for a command again.",
+        "**The program should start when the main method of the Main class inside the package `FlightControl` is executed**",
+        "Example output of the program is presented below:",
+        "**NB** For the purposes of the test it is essential that the *user interface* work **exactly** as described above. You should probably copy the options printed by the program from here to your code. The tests won't assume that your program is prepared to handle improper input."
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Airport Asset Control",
+            "--------------------",
+            "Choose an action:",
+            "[1] Add an airplane",
+            "[2] Add a flight",
+            "[x] Exit Airport Asset Control",
+            ">",
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "Give the airplane id:",
+            {
+              "text": "HA-LOL",
+              "isInput": true
+            },
+            "Give the airplane capacity:",
+            {
+              "text": "42",
+              "isInput": true
+            },
+            "Choose an action:",
+            "[1] Add an airplane",
+            "[2] Add a flight",
+            "[x] Exit Airport Asset Control",
+            ">",
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "Give the airplane id:",
+            {
+              "text": "G-OWAC",
+              "isInput": true
+            },
+            "Give the airplane capacity:",
+            {
+              "text": "101",
+              "isInput": true
+            },
+            "Choose an action:",
+            "[1] Add an airplane",
+            "[2] Add a flight",
+            "[x] Exit Airport Asset Control",
+            ">",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "Give the airplane id:",
+            {
+              "text": "HA-LOL",
+              "isInput": true
+            },
+            "Give the departure airport id:",
+            {
+              "text": "HEL",
+              "isInput": true
+            },
+            "Give the target airport id:",
+            {
+              "text": "BAL",
+              "isInput": true
+            },
+            "Choose an action:",
+            "[1] Add an airplane",
+            "[2] Add a flight",
+            "[x] Exit Airport Asset Control",
+            ">",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "Give the airplane id:",
+            {
+              "text": "G-OWAC",
+              "isInput": true
+            },
+            "Give the departure airport id:",
+            {
+              "text": "JFK",
+              "isInput": true
+            },
+            "Give the target airport id:",
+            {
+              "text": "BAL",
+              "isInput": true
+            },
+            "Choose an action:",
+            "[1] Add an airplane",
+            "[2] Add a flight",
+            "[x] Exit Airport Asset Control",
+            ">",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "Give the airplane id:",
+            {
+              "text": "HA-LOL",
+              "isInput": true
+            },
+            "Give the departure airport id:",
+            {
+              "text": "BAL",
+              "isInput": true
+            },
+            "Give the target airport id:",
+            {
+              "text": "HEL",
+              "isInput": true
+            },
+            "Choose an action:",
+            "[1] Add an airplane",
+            "[2] Add a flight",
+            "[x] Exit Airport Asset Control",
+            ">",
+            {
+              "text": "x",
+              "isInput": true
+            },
+            "Flight Control",
+            "------------",
+            "Choose an action:",
+            "[1] Print airplanes",
+            "[2] Print flights",
+            "[3] Print airplane details",
+            "[x] Quit",
+            ">",
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "G-OWAC (101 capacity)",
+            "HA-LOL (42 capacity)",
+            "Choose an action:",
+            "[1] Print airplanes",
+            "[2] Print flights",
+            "[3] Print airplane details",
+            "[x] Quit",
+            ">",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "HA-LOL (42 capacity) (HEL-BAL)",
+            "HA-LOL (42 capacity) (BAL-HEL)",
+            "G-OWAC (101 capacity) (JFK-BAL)",
+            "Choose an action:",
+            "[1] Print airplanes",
+            "[2] Print flights",
+            "[3] Print airplane details",
+            "[x] Quit",
+            ">",
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "Give the airplane id:",
+            {
+              "text": "G-OWAC",
+              "isInput": true
+            },
+            "G-OWAC (101 capacity)",
+            "Choose an action:",
+            "[1] Print airplanes",
+            "[2] Print flights",
+            "[3] Print airplane details",
+            "[x] Quit",
+            ">",
+            {
+              "text": "x",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part11-11-validatingparameters": {
+    "id": "part11-11-validatingparameters",
+    "tmcname": "part11-Part11_11.ValidatingParameters",
+    "title": "Validating parameters (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Let's practise a little parameter validation with the `IllegalArgumentException` exception. There are two classes included with the exercise base: `Person` and `Calculator`. Modify the classes in the following manner:",
+        "Validating a person",
+        "The constructor of the class `Person` should ensure that the name given as the parameter is not null, empty, or over 40 characters in length. The age should between 0 and 120. If some of these conditions are not met, the constructor should throw an `IllegalArgumentException`.",
+        "Validating the calculator",
+        "The methods of the `Calculator` class should be as follows: The method `factorial` should only work if the parameter is a non-negative number (0 or greater). The method `binomialCoefficient` should only work when the parameters are non-negative and the subset size does not exceed the set size. If these methods receive invalid parameters when they are called, they should throw an `IllegalArgumentException`"
+      ]
+    }
+  },
+  "part11-12-sensorsandtemperature": {
+    "id": "part11-12-sensorsandtemperature",
+    "tmcname": "part11-Part11_12.SensorsAndTemperature",
+    "title": "Sensors and temperature (4 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "All the classes should be placed inside the `application` package.",
+        "We have the following interface at our disposal:",
+        "Standard sensor",
+        "Create a class called `StandardSensor` that implements the interface `Sensor`.",
+        "A standard sensor is always on. Calling the methods setOn and setOff have no effect. The StandardSensor must have a constructor that takes one integer parameter. The method call `read` returns the number that was given to the constructor.",
+        "An example:",
+        "TemperatureSensor",
+        "Create a class `TemperatureSensor` that implements the `Sensor` interface.",
+        "At first a temperature sensor is off. When the method `read` is called and the sensor is on, the sensor randomly chooses an integer in the range -30...30 and returns it. If the sensor is off, the method `read` throws an `IllegalStateException`.",
+        "Use the ready-made Java class Random to choose the random number. You'll get an integer in the range 0...60 by calling `new Random().nextInt(61);` -- to get a random integer in the range -30...30 you'll have to subtract a suitable number from the random number in the range 0...60.",
+        "Average sensor",
+        "Create a class called `AverageSensor` that implements the interface `Sensor`.",
+        "An average sensor includes multiple sensors. In addition to the methods defined in the `Sensor` interface, the AverageSensor has the method `public void addSensor(Sensor toAdd)` that can be used to add a new sensor for the average sensor to control.",
+        "An AverageSensor is on when *all* its sensors are on. When `setOn` is called, all the sensors must be set on. When `setOff` is called, at least one of the sensors must be set off. It's also acceptable to set off all the sensors.",
+        "The method `read` of AverageSensor returns the average of the `read` methods of its sensors (since the return value is `int`, the number is rounded down as is the case with integer division). If this method is called while the AverageSensor is off, or if no sensors have been added to it, the method should throw an `IllegalStateException`.",
+        "Here follows an example program that uses the sensors (NB: the constructors of both TemperatureSensor and AverageSensor are non-parameterized):",
+        "The print statements below depend on which temperatures are randomly returned:",
+        "All readings",
+        "Add to the class AverageSensor the method `public List readings()`. The method should return the results of all the executed readings that the average sensor has done as a list. Here is an example:",
+        "Again, the exact print statements depend on the randomized readings:"
+      ],
+      "codeSnippet": "public interface Sensor {\n    boolean isOn();    // returns true if the sensor is on\n    void setOn();      // sets the sensor on\n    void setOff();     // sets the sensor off\n    int read();        // returns the value of the sensor if it's on\n                       // if the sensor is not on, throw an IllegalStateException\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "10",
+            "-5",
+            "true",
+            "true"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "temperature in Kumpula 11 degrees Celsius",
+            "temperature in Helsinki region 8 degrees Celsius"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "temperature in Helsinki region -10 degrees Celsius",
+            "temperature in Helsinki region -4 degrees Celsius",
+            "temperature in Helsinki region 5 degrees Celsius",
+            "readings: [-10, -4, 5]"
+          ]
+        }
+      ]
+    }
+  },
+  "part11-13-saveabledictionary": {
+    "id": "part11-13-saveabledictionary",
+    "tmcname": "part11-Part11_13.SaveableDictionary",
+    "title": "Saveable Dictionary (4 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise we will extend the dictionary, so that it can read words from a file and write words to a file.\nThe dictionary must also be able to translate both from Finnish to another language and from another language to Finnish (in this exercise we ignore the fact that some words might be written the same in Finnish and in other languages). Your mission is to create a dictionary in the class `SaveableDictionary`. Implement the class in the package `dictionary`.",
+        "The basic functionality",
+        "For the dictionary, implement a constructor which takes no parameters, and the following methods:",
+        "- `public void add(String words, String translation)` adds a word to the dictionary. Every word has just one translation, and if the same word is added for the second time, nothing happens.",
+        "- `public String translate(String word)` returns the translation for the given word. If the word is not in the dictionary, returns null.",
+        "In this phase, the dictionary should work as follows:",
+        "Prints",
+        "As can be seen from the output, after a translation has been added to the dictionary, it can translate the word to and from Finnish.",
+        "NB: the methods `add` and `translate` do not read from a file or write to a file! The constructor does not use a file either.",
+        "Deleting words",
+        "Add the dictionary method `public void delete(String word)` which deletes the given word and its translation from the dictionary.",
+        "It might be worth reviewing the material concerning deleting objects from an ArrayList from previous weeks.",
+        "NB: the method `delete` does not write to a file.",
+        "In this phase, the dictionary should work as follows:",
+        "Prints",
+        "Deleting also works both ways: Both the word and its translation are removed if either the word or the translation are deleted.",
+        "Reading from file",
+        "Make a constructor `public SaveableDictionary(String file)` and method `public boolean load()`, which loads the dictionary from the file given to the constructor as a parameter. If the program is unable to open the file or read from it, the method returns false, otherwise it returns true.",
+        "NB: the constructor only tells the dictionary the name of the file to load the dictionary from. The constructor does not read the file. Only the method `load` reads the file.",
+        "In the dictionary file, one line contains a word and its translation separated by \":\".\nThe exercise template contains a file `words.txt` which contains the following:",
+        "Read the dictionary file line by line with the method `nextLine`. You can split a line using the String method `split` like so:",
+        "The dictionary can be used as follows:",
+        "Prints",
+        "Saving to a file",
+        "Create the method `public boolean save()`, which saves the dictionary to the file given to the dictionary as a parameter to the constructor. If the program cannot save to the file, the method returns false. Otherwise it returns true. The dictionary files have to be saved in the form described above, so the program can read the files it has written.",
+        "NB: Only the method `save` writes to the file.",
+        "**NB:** Even though the dictionary can translate both ways, the dictionary file should only contain one way. So if the dictionary, for example, knows that *computer = tietokone*, the file should contain:",
+        "or",
+        "but not both!",
+        "It is best to handle the saving to, such that the whole dictionary is written on top of the previously saved version, so it might not be the best to use the `append` method described in the material.",
+        "The final version of the dictionary works as follows:",
+        "In the beginning, the dictionary is loaded from a file, and, in the end, it is saved back to the file, so that changes made to the dictionary are kept for the next time the dictionary is used."
+      ],
+      "codeSnippet": "SaveableDictionary dictionary = new SaveableDictionary();\ndictionary.add(\"apina\", \"monkey\");\ndictionary.add(\"banaani\", \"banana\");\ndictionary.add(\"apina\", \"apfe\");\n\nSystem.out.println(dictionary.translate(\"apina\"));\nSystem.out.println(dictionary.translate(\"monkey\"));\nSystem.out.println(dictionary.translate(\"ohjelmointi\"));\nSystem.out.println(dictionary.translate(\"banana\"));",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "monkey",
+            "apina",
+            "null",
+            "banaani"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "null",
+            "null",
+            "null",
+            "null",
+            "programming"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "apina:monkey",
+            "alla oleva:below",
+            "olut:beer"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Successfully loaded the dictionary from file",
+            "monkey",
+            "null",
+            "below"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "tietokone:computer"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "computer:tietokone"
+          ]
+        }
+      ]
+    }
+  }
+}

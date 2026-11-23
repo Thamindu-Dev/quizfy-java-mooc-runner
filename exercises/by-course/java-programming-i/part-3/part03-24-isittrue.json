@@ -1,0 +1,35 @@
+{
+  "id": "part03-24-isittrue",
+  "tmcname": "part03-Part03_24.IsItTrue",
+  "title": "Is it true",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that asks the user for a string. If the user writes the string \"true\", the program prints \"You got it right!\", otherwise it prints \"Try again!\"."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a string:",
+          {
+            "text": "true",
+            "isInput": true
+          },
+          "You got it right!"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give a string:",
+          {
+            "text": "trueish",
+            "isInput": true
+          },
+          "Try again!"
+        ]
+      }
+    ]
+  }
+}

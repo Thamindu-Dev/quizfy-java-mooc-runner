@@ -1,0 +1,621 @@
+{
+  "part09-01-abc": {
+    "id": "part09-01-abc",
+    "tmcname": "part09-Part09_01.ABC",
+    "title": "ABC (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Let's practice creating and inheriting classes.",
+        "Creating classes",
+        "Create the following three classes:",
+        "- Class `A`. Class should have no object variables nor should you specify a constructor for it. It only has the method `public void a()`, which prints a string \"A\".\n- Class `B`. Class should have no object variables nor should you specify a constructor for it. It only has the method `public void b()`, which prints a string \"B\".\n- Class `C`. Class should have no object variables nor should you specify a constructor for it. It only has the method `public void c()`, which prints a string \"C\".",
+        "Class inheritance",
+        "Modify the classes so that class B inherits class A, and class C inherits class B. In other words, class A will be a superclass for class B, and class B will be a superclass for class C."
+      ],
+      "codeSnippet": "A a = new A();\nB b = new B();\nC c = new C();\n\na.a();\nb.b();\nc.c();",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "A",
+            "B",
+            "C"
+          ]
+        }
+      ]
+    }
+  },
+  "part09-02-personandsubclasses": {
+    "id": "part09-02-personandsubclasses",
+    "tmcname": "part09-Part09_02.PersonAndSubclasses",
+    "title": "Person and subclasses (5 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Person",
+        "Create a class `Person`. The class must work as follows:",
+        "Student",
+        "Create a class `Student`, which inherits the class `Person`.",
+        "At creation, a student has 0 study credits. Every time a student studies, the amount of study credits goes up. The class must act as follows:",
+        "Student's toString",
+        "In the previous task, `Student`inherits the toString method from the class `Person`. However, you can also overwrite an inherited method, replacing it with your own version. Write a version of toString method specifically for the `Student` class. The method must act as follows:",
+        "Teacher",
+        "Create a class `Teacher`, which inherits the class `Person`.",
+        "The class must act as follows:",
+        "List all Persons",
+        "Write a method `public static void printPersons(ArrayList persons)` in the Main class. The method prints all the persons on the list given as the parameter. Method must act as follows when invoked from the `main` method:"
+      ],
+      "codeSnippet": "Person ada = new Person(\"Ada Lovelace\", \"24 Maddox St. London W1S 2QN\");\nPerson esko = new Person(\"Esko Ukkonen\", \"Mannerheimintie 15 00100 Helsinki\");\nSystem.out.println(ada);\nSystem.out.println(esko);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Ada Lovelace",
+            "24 Maddox St. London W1S 2QN",
+            "Esko Ukkonen",
+            "Mannerheimintie 15 00100 Helsinki"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Ollie",
+            "6381 Hollywood Blvd. Los Angeles 90028",
+            "Study credits 0",
+            "Study credits 1"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Ollie",
+            "6381 Hollywood Blvd. Los Angeles 90028",
+            "Study credits 0",
+            "Ollie",
+            "6381 Hollywood Blvd. Los Angeles 90028",
+            "Study credits 1"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Ada Lovelace",
+            "24 Maddox St. London W1S 2QN",
+            "salary 1200 euro/month",
+            "Esko Ukkonen",
+            "Mannerheimintie 15 00100 Helsinki",
+            "salary 5400 euro/month",
+            "Ollie",
+            "6381 Hollywood Blvd. Los Angeles 90028",
+            "Study credits 25"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Ada Lovelace",
+            "24 Maddox St. London W1S 2QN",
+            "salary 1200 euro/month",
+            "Ollie",
+            "6381 Hollywood Blvd. Los Angeles 90028",
+            "Study credits 0"
+          ]
+        }
+      ]
+    }
+  },
+  "part09-03-warehousing": {
+    "id": "part09-03-warehousing",
+    "tmcname": "part09-Part09_03.Warehousing",
+    "title": "Warehousing (7 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains a class `Warehouse`, which has the following constructors and methods:",
+        "- **public Warehouse(double capacity)** - Creates an empty warehouse, which has the capacity provided as a parameter; an invalid capacity (<=0) creates a useless warehouse, with the the capacity 0.",
+        "- **public double getBalance()** - Returns the balance of the warehouse, i.e. the capacity which is taken up by the items in the warehouse.",
+        "- **public double getCapacity()** - Returns the total capacity of the warehouse (i.e. the one that was provided in the constructor).",
+        "- **public double howMuchSpaceLeft()** - Returns a value telling how much space is left in the warehouse.",
+        "- **public void addToWarehouse(double amount)** - Adds the desired amount to the warehouse; if the amount is negative, nothing changes, and if everything doesn't fit, then the warehouse is filled up and the rest is \"thrown away\" / \"overflows\".",
+        "- **public double takeFromWarehouse(double amount)** - Take the desired amount from the warehouse. The method returns much we actually **get**. If the desired amount is negative, nothing changes and we return 0. If the desired amount is greater than the amount the warehouse contains, we get all there is to take and the warehouse is emptied.",
+        "- **public String toString()** - Returns the state of the object represented as a string like this `balance = 64.5, space left 123.5`",
+        "In this exercise we build variations of a warehouse based on the `Warehouse` class.",
+        "Product warehouse, step 1",
+        "The class `Warehouse` handles the functions related to the amount of a product. Now we want a product name for the product and a way to handle the name. **Let's write ProductWarehouse as a subclass of Warehouse!** First, we'll just create a private object variable for the product name, a constructor, and a getter for the name field:",
+        "- **public ProductWarehouse(String productName, double capacity)** - Creates an empty product warehouse. The name of the product and the capacity of the warehouse are provided as parameters.",
+        "- **public String getName()** - Returns the name of the product.",
+        "*Remind yourself of how a constructor can run the constructor of the superclass as its first action!*",
+        "Example usage:",
+        "Product warehouse, step 2",
+        "As we can see from the previous example, the `toString()` inherited by the ProductWarehouse object doesn't (obviously!) know anything about the product name. *Something must be done!* Let's also add a setter for the product name while we're at it:",
+        "- **public void setName(String newName)** - sets a new name for the product.",
+        "- **public String toString()** -  Returns the state of the object represented as a string like this `Juice: balance = 64.5, space left 123.5`",
+        "The new `toString()` method could be written using the getters inherited from the superclass, which would give access to values of inherited, but still hidden fields. However, the superclass already has the desired functionality to provide a string representation of the warehouse state, so why bother recreating that functionality? Just take advantage of the inherited `toString()`.",
+        "*Remind yourself of how to call an overridden method in a subclass!*",
+        "Usage example:",
+        "Change History, step 1",
+        "Sometimes it might be useful to know how the inventory of a product changes over time: Is the inventory often low? Are we usually at the limit? Are the changes in inventory big or small? Etc. Thus we should give the `ProductWarehouse` class the ability to remember the changes in the amount of a product.",
+        "Let's begin by creating a tool that aids in the desired functionality.",
+        "The storing of the change history could of course have been done using an `ArrayList` object in the class *ProductWarehouse*, however, we want our own *specialized tool* for this purpose. The tool should be implemented by encapsulating the `ArrayList` object.",
+        "Public constructors and methods of the `ChangeHistory` class:",
+        "- **public ChangeHistory()** creates an empty `ChangeHistory` object.",
+        "- **public void add(double status)** adds provided status as the latest amount to remember in the change history.",
+        "- **public void clear()** empties the history.",
+        "- **public String toString()** returns the string representation of the change history. *The string representation provided by the ArrayList class is sufficient.*",
+        "Change History, step 2",
+        "Build on the `ChangeHistory` class by adding analysis methods:",
+        "- **public double maxValue()** returns the largest value in the change history. If the history is empty, the method should return zero.",
+        "- **public double minValue()** returns the smallest value in the change history. If the history is empty, the method should return zero.",
+        "- **public double average()** returns the average of the values in the change history. If the history is empty, the method should return zero.",
+        "The methods should not modify the order of the encapsulated list.",
+        "Product warehouse with history, step 1",
+        "Implement `ProductWarehouseWithHistory` as a subclass of `ProductWarehouse`. In addition to all the previous features this new warehouse also provides services related to the change history of the warehouse inventory. The history is managed using the `ChangeHistory` object.",
+        "Public constructors and methods:",
+        "- **public ProductWarehouseWithHistory(String productName, double capacity, double initialBalance)** creates a product warehouse. The product name, capacity, and initial balance are provided as parameters.\nSet the initial balance as the initial balance of the warehouse, as well as the first value of the change history.",
+        "- **public String history()** returns the product history like this `[0.0, 119.2, 21.2]`. Use the string representation of the ChangeHistory object as is.",
+        "**NB** in this initial version the history is not yet working properly; currently it only remembers the initial balance.",
+        "Usage example:",
+        "Product warehouse with history, step 2",
+        "*It's time to make history!* The first version didn't know anything but the initial state of the history. Expand the class with the following methods",
+        "- **public void addToWarehouse(double amount)** works just like the method in the `Warehouse` class, but we also record the changed state to the history. **NB:** the value recorded in the history should be the warehouse's balance after adding, not the amount added!",
+        "- **public double takeFromWarehouse(double amount)** works just like the method in the `Warehouse` class, but we also record the changed state to the history. **NB:** the value recorded in the history should be the warehouse's balance after removing, not the amount removed!",
+        "Usage example:",
+        "*Remember how an overriding method can take advantage of the overridden method!*",
+        "Product warehouse with history, step 3",
+        "Expand the class with the method",
+        "- **public void printAnalysis()**, which prints history related information for the product in the way presented in the example.",
+        "Usage example:"
+      ],
+      "codeSnippet": "ProductWarehouse juice = new ProductWarehouse(\"Juice\", 1000.0);\njuice.addToWarehouse(1000.0);\njuice.takeFromWarehouse(11.3);\nSystem.out.println(juice.getName()); // Juice\nSystem.out.println(juice);           // balance = 988.7, space left 11.3",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Juice",
+            "balance = 988.7, space left 11.3"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Juice",
+            "Juice: balance = 989.7, space left 10.299999999999955"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Juice",
+            "Juice: balance = 989.7, space left 10.299999999999955",
+            "[1000.0]"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Juice",
+            "Juice: balance = 989.7, space left 10.299999999999955",
+            "[1000.0, 988.7, 989.7]"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Product: Juice",
+            "History: [1000.0, 988.7, 989.7]",
+            "Largest amount of product: 1000.0",
+            "Smallest amount of product: 988.7",
+            "Average: 992.8"
+          ]
+        }
+      ]
+    }
+  },
+  "part09-04-differentkindsofboxes": {
+    "id": "part09-04-differentkindsofboxes",
+    "tmcname": "part09-Part09_04.DifferentKindsOfBoxes",
+    "title": "DifferentKindsOfBoxes (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template you'll find the classes `Item` and `Box`. `Box` is an abstract class, where adding multiple items is implemented by repeatedly calling the `add`-method. The `add`-method, meant for adding a single item, is abstract, so every class that inherits it, must implement it. Your assignment is to edit the `Box`-class and to implement different kinds of boxes based on the `Box` class.",
+        "Editing the Item class",
+        "Implement the `equals` and `hashCode` methods for the `Item`-class. They are needed, so that you can use the `contains`-methods of different lists and collections. Implement the methods in such a way that value of the `weight` instance variable of the `Item`-class isn't considered. *It's probably a good idea to make use of Netbeans's functionality to implement the `equals` and `hashCode` methods*",
+        "Box with a max weight",
+        "Implement the class `BoxWithMaxWeight`, that inherits the `Box` class. BoxWithMaxWeight has a constructor `public BoxWithMaxWeight(int capacity)`, that defines the max weight allowed for that box. You can add an item to a BoxWithMaxWeight when and only when, adding the item won't cause the boxes maximum weight capacity to be exceeded.",
+        "One item box and the misplacing box",
+        "Next, implement the class `OneItemBox`, that inherits the `Box` class. `OneItemBox` has the constructor `public OneItemBox()`, and it has the capacity of exactly one item. If there is already an item in the box, it must not be switched. The weight of the item added to the box is irrelevant.",
+        "Next implement the class `MisplacingBox`, that inherits the `Box`-class. MisplacingBox has a constructor `public MisplacingBox()`. You can add any items to a misplacing box, but items can never be found when looked for. In other words adding to the box must always succeed, but calling the method `isInBox` must always return false."
+      ],
+      "codeSnippet": "import java.util.ArrayList;\n\npublic abstract class Box {\n\n    public abstract void add(Item item);\n\n    public void add(ArrayList<Item> items) {\n        for (Item item : items) {\n            Box.this.add(item);\n        }\n    }\n\n    public abstract boolean isInBox(Item item);\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "true",
+            "true",
+            "false"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "true",
+            "false"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "false",
+            "false"
+          ]
+        }
+      ]
+    }
+  },
+  "part09-05-tacoboxes": {
+    "id": "part09-05-tacoboxes",
+    "tmcname": "part09-Part09_05.TacoBoxes",
+    "title": "TacoBoxes (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the exercise template you'll find Interface `TacoBox` ready for your use. It has the following methods:",
+        "- the method `int tacosRemaining()` return the number of tacos remaining in the box.",
+        "- the method `void eat()` reduces the number of tacos remaining by one. The number of tacos remaining can't become negative.",
+        "Triple taco box",
+        "Implement the class `TripleTacoBox`, that implements the `TacoBox` interface. `TripleTacobox` has a constructor with no parameters. `TripleTacobox` has an object variable `tacos` which is initialized at 3 when the constructor is called.",
+        "Custom taco box",
+        "Implement the class `CustomTacoBox`, that implements the `TacoBox` interface. `CustomTacoBox` has a constructor with one parameter defining the initial number of tacos in the box(`int tacos`)."
+      ],
+      "codeSnippet": "public interface TacoBox {\n    int tacosRemaining();\n    void eat();\n}"
+    }
+  },
+  "part09-06-interfaceinabox": {
+    "id": "part09-06-interfaceinabox",
+    "tmcname": "part09-Part09_06.InterfaceInABox",
+    "title": "Interface In A Box (4 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Packables",
+        "Moving houses requires packing all your belongings into boxes. Let's imitate that with a program. The program will have boxes, and items to pack into those boxes. All items must implement the following Interface:",
+        "Add the Interface to your program. Adding a new Interface is quite similar to adding a new class. Instead of selecting new Java class just select new Java interface.",
+        "Create classes `Book` and `CD`, which implement the Interface. Book has a constructor which  is given the author (String), name of the book (String), and the weight of the book (double) as parameters. CD has a constructor which is given the artist (String), name of the CD (String), and the publication year (int). The weight of all CDs is 0.1 kg.",
+        "Remember to implement the Interface `Packable` in both of the classes. The classes must work as follows:",
+        "Prints:",
+        "NB: The weight is not printed",
+        "Box",
+        "Make a class called `Box`. Items implementing the `Packable` interface can be packed into a box. The `Box` constructor takes the maximum capacity of the box in kilograms as a parameter. The combined weight of all items in a box cannot be more than the maximum capacity of the box.",
+        "Below is an example of using a box:",
+        "Prints",
+        "NB: As the weights are saved as a double, the calculations might have some small rounding errors. You don't need to worry about them.",
+        "Box weight",
+        "If you made an class variable `double weight` in the Box class, replace it with a method which calculates the weight of the box:",
+        "When you need the weight of the box, for example when adding a new item to the box, you can just call the weight method.",
+        "The method could also return the value of an object variable. However here we are practicing a situation, where we do not have to maintain an object variable explicitly, but can calculate its value as needed. After the next exercise storing the weight as an object variable would not necessary work anyway. After completing the exercise have a moment to think why that is.",
+        "A Box is packable too!",
+        "Implementing the `Packable` Interface requires a class to have the method `double weight()`. We just added this method to the Box class. This means we can make the Box packable as well!",
+        "Boxes are objects, which can contain objects implementing the `packable` Interface. Boxes implement this Interface as well. So **a box can contain other boxes!**",
+        "Try this out. Make some boxes containing some items, and add some smaller boxes to a bigger box. Try what happens, when you put a box in itself. Why does this happen?"
+      ],
+      "codeSnippet": "public interface Packable {\n    double weight();\n}",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Fyodor Dostoevsky: Crime and Punishment",
+            "Robert Martin: Clean Code",
+            "Kent Beck: Test Driven Development",
+            "Pink Floyd: Dark Side of the Moon (1973)",
+            "Wigwam: Nuclear Nightclub (1975)",
+            "Rendezvous Park: Closer to Being Here (2012)"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Box: 6 items, total weight 4.0 kg"
+          ]
+        }
+      ]
+    }
+  },
+  "part09-07-listasamethodparameter": {
+    "id": "part09-07-listasamethodparameter",
+    "tmcname": "part09-Part09_07.ListAsAMethodParameter",
+    "title": "List as a method parameter",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the mainProgram class, implement a class method `returnSize`, which is given a List-object as a parameter, and returns the size of the list as an integer.",
+        "The method should work as follows:"
+      ],
+      "codeSnippet": "List<String> names = new ArrayList<>();\nnames.add(\"First\");\nnames.add(\"Second\");\nnames.add(\"Third\");\n\nSystem.out.println(returnSize(names));",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "3"
+          ]
+        }
+      ]
+    }
+  },
+  "part09-08-mapasamethodparameter": {
+    "id": "part09-08-mapasamethodparameter",
+    "tmcname": "part09-Part09_08.MapAsAMethodParameter",
+    "title": "Map as a method parameter",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the class MainProgram implement a class method `returnSize` which gets a Map-object as a parameter, and returns its size as an integer.",
+        "The method should work as follows:"
+      ],
+      "codeSnippet": "Map<String, String> names = new HashMap<>();\nnames.put(\"1\", \"first\");\nnames.put(\"2\", \"second\");\n\nSystem.out.println(returnSize(names));",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "2"
+          ]
+        }
+      ]
+    }
+  },
+  "part09-09-setasmethodparameter": {
+    "id": "part09-09-setasmethodparameter",
+    "tmcname": "part09-Part09_09.SetAsMethodParameter",
+    "title": "Set as  method parameter",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the Main-class, implement the static method `returnSize`, which receives a Set object as a parameter and returns its size.",
+        "The method should work e.g. like this:",
+        "Prints:"
+      ],
+      "codeSnippet": "Set<String> names = new HashSet<>();\nnames.add(\"first\");\nnames.add(\"first\");\nnames.add(\"second\");\nnames.add(\"second\");\nnames.add(\"second\");\n\nSystem.out.println(returnSize(names));",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "2"
+          ]
+        }
+      ]
+    }
+  },
+  "part09-10-onlineshop": {
+    "id": "part09-10-onlineshop",
+    "tmcname": "part09-Part09_10.OnlineShop",
+    "title": "Online shop (8 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise we'll create program components, that can be used to run an online store.",
+        "Warehouse",
+        "Create the class `Warehouse` with the following methods:",
+        "- `public void addProduct(String product, int price, int stock)`, which adds a product to the warehouse with the price and stock balance given as parameters.\n- `public int price(String product)`, which returns the price of the product it received as a parameter. If the product hasn't been added to the warehouse, the method must return -99.",
+        "The products in the warehouse (and in the next part their stock) must be stored in a variable of the type `Map`! The object created can be a HashMap, but its type must be the Map-interface, rather than any implementation of that interface.",
+        "Prints:",
+        "Products stock balance",
+        "Save the stock balance of products in a variable with the `Map` type, in the same way the prices were stored. Supplement the warehouse with the following methods:",
+        "- `public int stock(String product)` returns the current remaining stock of the product in the warehouse. If the product hasn't been added to the warehouse, the method must return 0.\n- `public boolean take(String product)` reduces the stock remaining for the product it received as a parameter by one, and returns true if there was stock remaining. If the product was not available in the warehouse the method returns false. A products stock can't go below zero.",
+        "An example of the warehouse in use:",
+        "Prints:",
+        "Listing the products",
+        "Let's add one more method to the warehouse:",
+        "- `public Set products()` returns the names of the products in the warehouse as a *Set*",
+        "This method is easy to implement with HashMap. You can get the products in the warehouse from either the Map storing the prices or the one storing current stock, by using the method `keySet()`",
+        "An example use case:",
+        "Item",
+        "*Items* can be added to the shopping cart (which we'll add soon). An item is a product with a quantity. You for example add an item representing one bread to the cart, or add an item representing 24 coffees.",
+        "Create the class `Item` with the following methods:",
+        "- `public Item(String product, int qty, int unitPrice)`; a constructor that creates an item corresponding to the product given as a parameter. *qty* tells us how many of the product are in the item, while *unitPrice* is the price of a single product.\n- `public int price()` return the price of the item. You get the items price by multiplying its unit price by its quantity(qty).\n- `public void increaseQuantity` increases the quantity by one.\n- `public String toString()` returns the string representation of the item. which must match the format shown in the example below.",
+        "An example of the Item class being used:",
+        "NB: The *toString* is formatted like this: *product: qty* -- price is not included in the string representation.",
+        "Shopping cart",
+        "We finally get to implement the shopping cart class!",
+        "Internally, `ShoppingCart` stores products added there as *Item-objects*. ShoppingCart must have an instance variable with either the `Map` type, or the `List` type. Don't add any other instance variable to the ShoppingCart class, besides the List or Map used to store the items.",
+        "NB: If you save the items in a Map type variable, you'll finds its `values()` method to be quite useful for going though all the items objects stored in it for both this part of the exercise and the next.",
+        "First let's give `ShoppingCart` a constructor with no parameters and these methods:",
+        "- `public void add(String product, int price)` adds an item to the cart that matches the product given as a parameter, with the price given as a parameter.\n- `public int price()` returns the total price of the shopping cart.",
+        "Printing the cart",
+        "Implement the method `public void print()` for the shopping cart. The method prints the *Item-objects* in the cart. The order they are printed in is irrelevant. E.g the print of the cart in the previous example would be:",
+        "NB: the number printed is the quantity in the cart, not the price!",
+        "One item per product",
+        "Let's change our cart so that if a product is being added thats already in the cart, we don't add a new item, but instead update item already in the cart by calling its *increaseQuantity()* method.",
+        "E.g:",
+        "So in the example above, we first added milk and buttermilk  and they get their own Item-objects. When more milk is added to to cart, instead of adding new items we increase the quantity in the item representing milk.",
+        "Store",
+        "We now have all the parts we need for our \"online store\", except the store itself. Let's make that next. Our store has a warehouse that includes all our products. For each 'visit' we have a shopping cart. Every time the customer chooses a product its added to their cart if its available in the warehouse. At the same time, the stock in the warehouse is reduced by one.",
+        "Below you'll find a template for a text-based user interface for our store. Create a `Store` class for your project and copy-paste the code below there.",
+        "The following is a main method that stocks the stores warehouse and sends John to shop in the store.",
+        "The store is almost done. The method `public void shop(String customer)` has a part you need to complete, marked with comments. In the marked part, add code that checks if the product requested by the customer is available and has stock in the warehouse. If so, reduce the products stock in the warehouse and add the product to the shopping cart.",
+        "*In reality an online store would be implemented a little differently. Web-apps have an HTML-page as a user interface, and clicks there are sent to a server application. There are several courses related to web development available at the University Of Helsinki.*"
+      ],
+      "codeSnippet": "Warehouse warehouse = new Warehouse();\nwarehouse.addProduct(\"milk\", 3, 10);\nwarehouse.addProduct(\"coffee\", 5, 7);\n\nSystem.out.println(\"prices:\");\nSystem.out.println(\"milk: \" + warehouse.price(\"milk\"));\nSystem.out.println(\"coffee: \" + warehouse.price(\"coffee\"));\nSystem.out.println(\"sugar: \" + warehouse.price(\"sugar\"));",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "prices:",
+            "milk: 3",
+            "coffee: 5",
+            "sugar: -99"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "stock:",
+            "coffee:  1",
+            "sugar: 0",
+            "taking coffee true",
+            "taking coffee false",
+            "taking sugar false",
+            "stock:",
+            "coffee:  0",
+            "sugar: 0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "products:",
+            "buttermilk",
+            "yogurt",
+            "coffee",
+            "milk"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "an item that contains 4 milks has the total price of 8",
+            "milk: 4",
+            "milk: 5"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "cart price: 10",
+            "cart price: 909"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "buttermilk: 1",
+            "cheese: 1",
+            "computer: 1",
+            "milk: 1"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "milk: 1",
+            "cart price: 3",
+            "buttermilk: 1",
+            "milk: 1",
+            "cart price: 5",
+            "buttermilk: 1",
+            "milk: 2",
+            "cart price: 8",
+            "buttermilk: 1",
+            "milk: 3",
+            "cart price: 11"
+          ]
+        }
+      ]
+    }
+  },
+  "part09-11-herds": {
+    "id": "part09-11-herds",
+    "tmcname": "part09-Part09_11.Herds",
+    "title": "Herds (2 points)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise we are going to create organisms and herds of organisms that can move around. To represent the locations of the organisms we'll use a **two-dimensional coordinate system**. Each position involves two numbers: `x` and `y` coordinates. The `x` coordinate indicates how far from the origin (i.e. point zero, where x = 0, y = 0) that position is horizontally. The `y` coordinate indicates the distance from the origin vertically. If you are not familiar with using a coordinate system, you can study the basics from  [Wikipedia](https://en.wikipedia.org/wiki/Cartesian_coordinate_system).",
+        "The exercise base includes the interface `Movable`, which represents something that can be moved from one position to another. The interface includes the method `void move(int dx, int dy)`. The parameter `dx` tells how much the object moves on the x axis, and dy tells the distance on the y axis.",
+        "This exercise involves implementing the classes `Organism` and `Herd`, both of which are movable.",
+        "Implementing the Organism Class",
+        "Create a class called `Organism` that implements the interface `Movable`. An organism should know its own location (as x, y coordinates). The API for the class `Organism` is to be as follows:",
+        "- **public Organism(int x, int y)**The class constructor that receives the x and y coordinates of the initial position as its parameters.",
+        "- **public String toString()**Creates and returns a string representation of the organism. That representation should remind the following: `\"x: 3; y: 6\"`. Notice that a semicolon is used to separate the coordinates.",
+        "- **public void move(int dx, int dy)** Moves the object by the values it receives as parameters. The `dx` variable contains the change to coordinate `x`, and the `dy` variable ontains the change to the coordinate `y`. For example, if the value of `dx` is 5, the value of the object variable `x` should be incremented by five.",
+        "Use the following code snippet to test the `Organism` class.",
+        "Implementing the Herd",
+        "Create a class called `Herd` that implements the interface `Movable`. A herd consists of multiple objects that implement the Movable interface. They must be stored in e.g. a list data structure.",
+        "The `Herd` class must have the following API.",
+        "- **public String toString()** Returns a string representation of the positions of the members of the herd, each on its own line.",
+        "- **public void addToHerd(Movable movable)** Adds an object that implements the `Movable` interface to the herd.",
+        "- **public void move(int dx, int dy)** Moves the herd with by the amount specified by the parameters. Notice that here you have to move each member of the herd.",
+        "Test out your program with the sample code below:"
+      ],
+      "codeSnippet": "Organism organism = new Organism(20, 30);\nSystem.out.println(organism);\norganism.move(-10, 5);\nSystem.out.println(organism);\norganism.move(50, 20);\nSystem.out.println(organism);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "x: 20; y: 30",
+            "x: 10; y: 35",
+            "x: 60; y: 55"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "x: 57; y: 66",
+            "x: 73; y: 56",
+            "x: 46; y: 52",
+            "x: 19; y: 107"
+          ]
+        }
+      ]
+    }
+  },
+  "part09-12-animals": {
+    "id": "part09-12-animals",
+    "tmcname": "part09-Part09_12.Animals",
+    "title": "Animals (4 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise you'll demonstrate how to use inheritance and interfaces.",
+        "Animal",
+        "First implement an abstract class called `Animal`. The class should have a constructor that takes the animal's name as a parameter. The Animal class also has non-parameterized methods eat and sleep that return nothing (void), and a non-parameterized method getName that returns the name of the animal.",
+        "The sleep method should print \"(name) sleeps\", and the eat method should print \"(name) eats\". Here (name) is the name of the animal in question.",
+        "Dog",
+        "Implement a class called `Dog` that inherits from Animal. Dog should have a parameterized constructor that can be used to name it. The class should also have a non-parameterized constructor, which gives the dog the name \"Dog\". Another method that Dog must have is the non-parameterized bark, and it should not return any value (void). Like all animals, Dog needs to have the methods eat and sleep.",
+        "Below is an example of how the class Dog is expected to work.",
+        "Cat",
+        "Next to implement is the class `Cat`, that also inherits from the Animal class. Cat should have two constructors: one with a parameter, used to name the cat according to the parameter, and one without parameters, in which case the name is simply \"Cat\". Another method for Cat is a non-parameterized method called purr that returns no value (void). Cats should be able to eat and sleep like in the first part.",
+        "Here's an example of how the class Cat is expected to function:",
+        "NoiseCapable",
+        "Finally, create an interface called `NoiseCapable`. It should define a non-parameterized method makeNoise that returns no value (void). Implement the interface in the classes Dog and Cat. The interface should take use of the bark and purr methods you've defined earlier.",
+        "Below is an example of the expected functionality."
+      ],
+      "codeSnippet": "Dog dog = new Dog();\ndog.bark();\ndog.eat();\n\nDog fido = new Dog(\"Fido\");\nfido.bark();",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Dog barks",
+            "Dog eats",
+            "Fido barks"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Cat purrs",
+            "Cat eats",
+            "Garfield purrs"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Dog barks",
+            "Garfield purrs",
+            "Garfield purrs"
+          ]
+        }
+      ]
+    }
+  }
+}

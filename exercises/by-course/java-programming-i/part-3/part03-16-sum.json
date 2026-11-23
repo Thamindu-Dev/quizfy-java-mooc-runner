@@ -1,0 +1,21 @@
+{
+  "id": "part03-16-sum",
+  "tmcname": "part03-Part03_16.Sum",
+  "title": "Sum",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create the method `public static int sum(ArrayList numbers)` in the exercise template. The method is to return the sum of the numbers in the parameter list."
+    ],
+    "codeSnippet": "ArrayList<Integer> numbers = new ArrayList<>();\nnumbers.add(3);\nnumbers.add(2);\nnumbers.add(6);\nnumbers.add(-1);\nSystem.out.println(sum(numbers));\n\nnumbers.add(5);\nnumbers.add(1);\nSystem.out.println(sum(numbers));",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "10",
+          "16"
+        ]
+      }
+    ]
+  }
+}

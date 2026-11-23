@@ -1,0 +1,61 @@
+{
+  "id": "part01-30-largerthanorequalto",
+  "tmcname": "part01-Part01_30.LargerThanOrEqualTo",
+  "title": "Larger Than or Equal To",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Write a program that prompts the user for two integers and prints the larger of the two. If the numbers are the same, then the program informs us about this as well."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "3",
+            "isInput": true
+          },
+          "Greater number is: 5"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "8",
+            "isInput": true
+          },
+          "Greater number is: 8"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Give the first number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "Give the second number:",
+          {
+            "text": "5",
+            "isInput": true
+          },
+          "The numbers are equal!"
+        ]
+      }
+    ]
+  }
+}

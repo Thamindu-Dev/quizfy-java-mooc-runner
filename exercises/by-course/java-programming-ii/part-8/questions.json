@@ -1,0 +1,857 @@
+{
+  "part08-01-cubes": {
+    "id": "part08-01-cubes",
+    "tmcname": "part08-Part08_01.Cubes",
+    "title": "Cubes",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that reads strings from the user until the user inputs the string \"end\". As long as the input is not \"end\" the program should handle the input as an integer and print the cube of the integer (meaning number * number * number). Below are some sample outputs"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "3",
+              "isInput": true
+            },
+            "27",
+            {
+              "text": "-1",
+              "isInput": true
+            },
+            "-1",
+            {
+              "text": "11",
+              "isInput": true
+            },
+            "1331",
+            {
+              "text": "end",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "end",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part08-02-averageofpositivenumbers": {
+    "id": "part08-02-averageofpositivenumbers",
+    "tmcname": "part08-Part08_02.AverageOfPositiveNumbers",
+    "title": "Average of positive numbers",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Write a program that asks user for input until the user inputs 0.\nAfter this, the program prints the average of the positive numbers (numbers that are greater than zero).",
+        "If no positive number is inputted, the program prints \"Cannot calculate the average\"",
+        "Below a few examples of the program's output"
+      ],
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "3",
+              "isInput": true
+            },
+            {
+              "text": "5",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "-3",
+              "isInput": true
+            },
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "3.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "Cannot calculate the average"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "-3",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "1.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "1",
+              "isInput": true
+            },
+            {
+              "text": "0",
+              "isInput": true
+            },
+            "1.0"
+          ]
+        }
+      ]
+    }
+  },
+  "part08-03-liquidcontainers": {
+    "id": "part08-03-liquidcontainers",
+    "tmcname": "part08-Part08_03.LiquidContainers",
+    "title": "Liquid containers (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Let's create an interactive program to control two liquid containers. The containers are named \"first\" and \"second\". Each are capable of containing 100 liters of liquid at a time.",
+        "The program offers the functionality to add, move and remove liquid. Using the \"add\" command will add liquid to the first container, \"move\" will move liquid from the first container to the second container and \"remove\" will remove liquid from the second container.",
+        "The commands must be defined as following:",
+        "- `add amount` adds the amount of liquid specified by the parameter to the first container. The inserted amount must be specified as an integer. The container can't hold more than a hundred liters and everything added past that will go to waste.",
+        "- `move amount` moves the amount of liquid specified by the parameter from the first container to the second container. The given amount must be specified as an integer. If the program is requested to move more liquid than than the first container currently holds, move all the remaining liquid. The second container can't hold more than one hundred liters of liquid and everything past that will go to waste.",
+        "- `remove amount` removes the amount of liquid specified by the parameter from the second container. If the program is requested to remove more liquid than the container currently holds, remove all the remaining liquid.",
+        "After every command the program will print the contents of both containers. You don't have to take negative values into consideration.",
+        "All the functionality must be added to the method `main` in the class `LiquidContainers` (do not create new methods). The template already contains a loop which exits the program with the command \"quit\".",
+        "A reminder of how to split a string below.",
+        "Adding",
+        "Implement the functionality to add liquid to the first container. The user interface should work as follows:",
+        "Moving",
+        "Implement the functionality to move liquid from the first container to the second. The user interface should work as follows:",
+        "Second example:",
+        "Removing",
+        "Implement the functionality to remove liquid from the second container. The user interface should work as follows:"
+      ],
+      "codeSnippet": "String input = scan.nextLine();\nString[] parts = input.split(\" \");\n\nString command = parts[0];\nint amount = Integer.valueOf(parts[1]);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "add 5",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 0/100",
+            {
+              "text": "add 25",
+              "isInput": true
+            },
+            "First: 30/100",
+            "Second: 0/100",
+            {
+              "text": "add 60",
+              "isInput": true
+            },
+            "First: 90/100",
+            "Second: 0/100",
+            {
+              "text": "add 1000",
+              "isInput": true
+            },
+            "First: 100/100",
+            "Second: 0/100",
+            {
+              "text": "add -5",
+              "isInput": true
+            },
+            "First: 100/100",
+            "Second: 0/100",
+            {
+              "text": "quit",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "add 1000",
+              "isInput": true
+            },
+            "First: 100/100",
+            "Second: 0/100",
+            {
+              "text": "move 50",
+              "isInput": true
+            },
+            "First: 50/100",
+            "Second: 50/100",
+            {
+              "text": "add 100",
+              "isInput": true
+            },
+            "First: 100/100",
+            "Second: 50/100",
+            {
+              "text": "move 100",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 100/100",
+            {
+              "text": "quit",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "move 30",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "add 10",
+              "isInput": true
+            },
+            "First: 10/100",
+            "Second: 0/100",
+            {
+              "text": "move -5",
+              "isInput": true
+            },
+            "First: 10/100",
+            "Second: 0/100",
+            {
+              "text": "move 20",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 10/100",
+            {
+              "text": "move 10",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 10/100",
+            {
+              "text": "quit",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "remove 10",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "add 20",
+              "isInput": true
+            },
+            "First: 20/100",
+            "Second: 0/100",
+            {
+              "text": "remove 5",
+              "isInput": true
+            },
+            "First: 20/100",
+            "Second: 0/100",
+            {
+              "text": "move 15",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 15/100",
+            {
+              "text": "remove 5",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 10/100",
+            {
+              "text": "remove 20",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 0/100",
+            {
+              "text": "quit",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part08-04-liquidcontainers2": {
+    "id": "part08-04-liquidcontainers2",
+    "tmcname": "part08-Part08_04.LiquidContainers2",
+    "title": "Liquid Containers 2.0 (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Let's redo the previous program for handling two liquid containers. This time we'll create a class `Container`, which is responsible for managing the contents of a container.",
+        "Container",
+        "Make a class called `Container`. The class must have a constructor which does not take any parameters, and the following methods:",
+        "-  `public int contains()` which returns the amount of liquid in a container as an integer.",
+        "-  `public void add(int amount)` which adds the amount of liquid given as a parameter to the container. If the amount is negative, no liquid is added.\n A container can hold maximum of 100 units of liquid.",
+        "-  `public void remove(int amount)` which removes the amount of liquid given as a parameter from the container. If the amount is negative, no liquid is removed. A container can never hold less than 0 units of liquid.",
+        "-  `public String toString()` which returns the container as a string formatted \"amount of liquid/100\", for example \"32/100\".",
+        "The class should work as follows:",
+        "Functionality",
+        "Copy the user interface you implemented for the previous example, and modify it to use the new `Container` class.\nThe main method in the class `LiquidContainers2` must start the program.",
+        "Below is some sample output. The user interface should work as follows:"
+      ],
+      "codeSnippet": "Container container = new Container();\nSystem.out.println(container);\n\ncontainer.add(50);\nSystem.out.println(container);\nSystem.out.println(container.contains());\n\ncontainer.remove(60);\nSystem.out.println(container);\n\ncontainer.add(200);\nSystem.out.println(container);",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "0/100",
+            "50/100",
+            "50",
+            "0/100",
+            "100/100"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "remove 10",
+              "isInput": true
+            },
+            "First: 0/100",
+            "Second: 0/100",
+            {
+              "text": "add 20",
+              "isInput": true
+            },
+            "First: 20/100",
+            "Second: 0/100",
+            {
+              "text": "remove 5",
+              "isInput": true
+            },
+            "First: 20/100",
+            "Second: 0/100",
+            {
+              "text": "move 15",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 15/100",
+            {
+              "text": "remove 5",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 10/100",
+            {
+              "text": "remove 20",
+              "isInput": true
+            },
+            "First: 5/100",
+            "Second: 0/100",
+            {
+              "text": "quit",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part08-05-todolist": {
+    "id": "part08-05-todolist",
+    "tmcname": "part08-Part08_05.TodoList",
+    "title": "To do list (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In this exercise we are going to create a program that can be used to create and modify a to-do list. The final product will work in the following manner.",
+        "We will build the program in parts.",
+        "TodoList",
+        "Create a class called `TodoList`. It should have a constructor without parameters and the following methods:",
+        "- `public void add(String task)` - add the task passed as a parameter to the todo list.\n- `public void print()` - prints the exercises. Each task has a number associated with it on the print statement -- use the task's index here (+1).\n- `public void remove(int number)` - removes the task associated with the given number; the number is the one seen associated with the task in the print.",
+        "**NB!** You may assume that the `remove` method is given a number that corresponds to a real task. The method only has to correctly work once after each print call.",
+        "Another example:",
+        "User interface",
+        "Next, implement a class called `UserInterface`. It should have a constructor with two parameters. The first parameter is an instance of the class `TodoList`, and the second is an instance of the class `Scanner`. In addition to the constructor, the class should have the method `public void start()` that is used to start the text user interface. The text UI works with an eternal looping statement (`while-true`), and it must offer the following commands to the user:",
+        "- The command `stop` stops the execution of the loop, after which the execution of the program advances out of the `start` method.",
+        "- The command `add` asks the user for the next task to be added. Once the user enters this task, it should be added to the to-do list.",
+        "- The commmand `list` prints all the tasks on the to-do list.",
+        "- The command `remove` asks the user to enter the id of the task to be removed. When this has been entered, the specified task should be removed from the list of tasks.",
+        "Below is an example of how the program should work.",
+        "NB! The user interface is to use the TodoList and Scanner that are passed as parameters to the constructor."
+      ],
+      "codeSnippet": "TodoList list = new TodoList();\nlist.add(\"read the course material\");\nlist.add(\"watch the latest fool us\");\nlist.add(\"take it easy\");\n\nlist.print();\nlist.remove(2);\n\nSystem.out.println();\nlist.print();",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "Task:",
+            {
+              "text": "go to the store",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "Task:",
+            {
+              "text": "vacuum clean",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: go to the store",
+            "2: vacuum clean",
+            "Command:",
+            {
+              "text": "completed",
+              "isInput": true
+            },
+            "Which task was completed?",
+            {
+              "text": "2",
+              "isInput": true
+            },
+            "Task go to the store tehty",
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: go to the store",
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "Task:",
+            {
+              "text": "program",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: go to the store",
+            "2: program",
+            "Command:",
+            {
+              "text": "stop",
+              "isInput": true
+            }
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "1: read the course material",
+            "2: watch the latest fool us",
+            "3: take it easy",
+            "1: read the course material",
+            "2: take it easy"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "1: read the course material",
+            "2: watch the latest fool us",
+            "3: take it easy",
+            "1: read the course material",
+            "2: take it easy",
+            "1: read the course material",
+            "2: take it easy",
+            "3: buy rasins",
+            "1: buy rasins"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "To add:",
+            {
+              "text": "write an essay",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "To add:",
+            {
+              "text": "read a book",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: write an essay",
+            "2: read a book",
+            "Command:",
+            {
+              "text": "remove",
+              "isInput": true
+            },
+            "Which one is removed?",
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: read a book",
+            "Command:",
+            {
+              "text": "remove",
+              "isInput": true
+            },
+            "Which one is removed?",
+            {
+              "text": "1",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "add",
+              "isInput": true
+            },
+            "To add:",
+            {
+              "text": "stop",
+              "isInput": true
+            },
+            "Command:",
+            {
+              "text": "list",
+              "isInput": true
+            },
+            "1: stop",
+            "Command:",
+            {
+              "text": "stop",
+              "isInput": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "part08-06-nicknames": {
+    "id": "part08-06-nicknames",
+    "tmcname": "part08-Part08_06.Nicknames",
+    "title": "Nicknames",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "In the `main`-method create a new `HashMap` object. Store the names and nicknames of the following people in this hashmap so, that the name is the key and the nickname is the value. Use only lower case letters.",
+        "-  matthew's nickname is matt\n -  michael's nickname is mix\n -  arthur's nickname is artie",
+        "Then get Matthew's nickname from the hashmap, and print it.",
+        "There is no automated tests for this exercise. Just submit the exercise when you think it works as it should."
+      ]
+    }
+  },
+  "part08-07-abbreviations": {
+    "id": "part08-07-abbreviations",
+    "tmcname": "part08-Part08_07.Abbreviations",
+    "title": "Abbreviations",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a class `Abbreviations` for managing common abbreviations. The class must have a constructor, which does not take any parameters. The class must also provide the following methods:",
+        "- `public void addAbbreviation(String abbreviation, String explanation)` adds a new abbreviation and its explanation.\n- `public boolean hasAbbreviation(String abbreviation)` checks if an abbreviation has already been added; returns `true` if it has and `false` if it has not.\n- `public String findExplanationFor(String abbreviation)` finds the explanation for an abbreviation; returns `null` if the abbreviation has not been added yet.",
+        "Example:"
+      ],
+      "codeSnippet": "Abbreviations abbreviations = new Abbreviations();\nabbreviations.addAbbreviation(\"e.g.\", \"for example\");\nabbreviations.addAbbreviation(\"etc.\", \"and so on\");\nabbreviations.addAbbreviation(\"i.e.\", \"more precisely\");\n\nString text = \"e.g. i.e. etc. lol\";\n\nfor (String part: text.split(\" \")) {\n    if(abbreviations.hasAbbreviation(part)) {\n        part = abbreviations.findExplanationFor(part);\n    }\n\n    System.out.print(part);\n    System.out.print(\" \");\n}\n\nSystem.out.println();",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "for example more precisely and so on lol"
+          ]
+        }
+      ]
+    }
+  },
+  "part08-08-printmemyhashmap": {
+    "id": "part08-08-printmemyhashmap",
+    "tmcname": "part08-Part08_08.PrintMeMyHashmap",
+    "title": "Print me my hash map",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Exercise template contains a class `Program`. Implement the following class methods in the class:",
+        "-  `public static void printKeys(HashMap hashmap)`, prints all the keys in the hashmap given as a parameter.\n -  `public static void printKeysWhere(HashMap hashmap, String text)` prints the keys in the hashmap given as a parameter, which contain the string given as a parameter.\n - `public static void printValuesOfKeysWhere(HashMap hashmap, String text)`, prints the values in the given hashmap whichs keys contain the given string.",
+        "Example of using the class methods:",
+        "NB! The order of the output can vary, because the implementation of hashmaps does not guarantee the order of the objects in it."
+      ],
+      "codeSnippet": "HashMap<String, String> hashmap = new HashMap<>();\nhashmap.put(\"f.e\", \"for example\");\nhashmap.put(\"etc.\", \"and so on\");\nhashmap.put(\"i.e\", \"more precisely\");\n\nprintKeys(hashmap);\nSystem.out.println(\"---\");\nprintKeysWhere(hashmap, \"i\");\nSystem.out.println(\"---\");\nprintValuesOfKeysWhere(hashmap, \".e\");",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "f.e",
+            "etc.",
+            "i.e",
+            "---",
+            "i.e",
+            "---",
+            "for example",
+            "more precisely"
+          ]
+        }
+      ]
+    }
+  },
+  "part08-09-printmeanotherhashmap": {
+    "id": "part08-09-printmeanotherhashmap",
+    "tmcname": "part08-Part08_09.PrintMeAnotherHashmap",
+    "title": "Print me another hash map",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains the already familiar classes `Book` and `Program`.\nIn the class `Program` implement the following class methods:",
+        "- `public static void printValues(HashMap hashmap)`, which prints all the values in the hashmap given as a parameter using\n the toString method of the Book objects.",
+        "- `public static void printValueIfNameContains(HashMap hashmap, String text)`, which prints only the Books in the given hashmap which name contains the given string. You can find out the name of a Book with the method `getName`.",
+        "An example of using the class methods:",
+        "NB! The order of the output may vary. The implementation of a hashmap does not guarantee the order of the objects in it."
+      ],
+      "codeSnippet": "HashMap<String, Book> hashmap = new HashMap<>();\nhashmap.put(\"sense\", new Book(\"Sense and Sensibility\", 1811, \"...\"));\nhashmap.put(\"prejudice\", new Book(\"Pride and prejudice\", 1813, \"....\"));\n\nprintValues(hashmap);\nSystem.out.println(\"---\");\nprintValueIfNameContains(hashmap, \"prejud\");",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Name: Pride and prejudice (1813)",
+            "Contents: ...",
+            "Name: Sense and Sensibility (1811)",
+            "Contents: ...",
+            "---",
+            "Name: Pride and prejudice (1813)",
+            "Contents: ..."
+          ]
+        }
+      ]
+    }
+  },
+  "part08-10-ioweyou": {
+    "id": "part08-10-ioweyou",
+    "tmcname": "part08-Part08_10.IOweYou",
+    "title": "I owe you",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Create a class called `IOU` which has the following methods:",
+        "- constructor `public IOU()` creates a new IOU",
+        "- `public void setSum(String toWhom, double amount)` saves the amount owed and the person owed to to the IOU.",
+        "- `public double howMuchDoIOweTo(String toWhom)` returns the amount owed to the person whose name is given as a parameter. If the person\n cannot be found, it returns 0.",
+        "The class can be used like this:",
+        "The code above prints:",
+        "Be careful in situations, when a person does not owe anything to anyone.",
+        "NB! The IOU does not care about old debt. When you set a new sum owed to a person when there is some money already owed to the same person, the old debt is forgotten."
+      ],
+      "codeSnippet": "IOU mattsIOU = new IOU();\nmattsIOU.setSum(\"Arthur\", 51.5);\nmattsIOU.setSum(\"Michael\", 30);\n\nSystem.out.println(mattsIOU.howMuchDoIOweTo(\"Arthur\"));\nSystem.out.println(mattsIOU.howMuchDoIOweTo(\"Michael\"));",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "51.5",
+            "30.0"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "10.5"
+          ]
+        }
+      ]
+    }
+  },
+  "part08-11-samedate": {
+    "id": "part08-11-samedate",
+    "tmcname": "part08-Part08_11.SameDate",
+    "title": "Same date",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "The exercise template contains a class `SimpleDate`, which defines a date object based on a given day, month, and year. In this exercise you will expand the SimpleDate class with an equals method, which can tell if the dates are exactly the same.",
+        "Create a method `public boolean equals(Object object)` for the `SimpleDate` class, which returns true if the date of the object passed to the method as a parameter is the same as the date of the object used to call the method.",
+        "The method should work as follows:"
+      ],
+      "codeSnippet": "SimpleDate d = new SimpleDate(1, 2, 2000);\nSystem.out.println(d.equals(\"heh\"));\nSystem.out.println(d.equals(new SimpleDate(5, 2, 2012)));\nSystem.out.println(d.equals(new SimpleDate(1, 2, 2000)));",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "false",
+            "false",
+            "true"
+          ]
+        }
+      ]
+    }
+  },
+  "part08-12-hasheddate": {
+    "id": "part08-12-hasheddate",
+    "tmcname": "part08-Part08_12.HashedDate",
+    "title": "Hash for date",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Let's expand the `SimpleDate` class from the previous exercise to also have its own `hashCode` method.",
+        "Create a method `public int hashCode()` for the `SimpleDate` class, which calculates a hash for the the SimpleDate object. Implement the calculation of the hash in way that there are as few similar hashes as possible between the years 1900 and 2100."
+      ]
+    }
+  },
+  "part08-13-vehicleregistry": {
+    "id": "part08-13-vehicleregistry",
+    "tmcname": "part08-Part08_13.VehicleRegistry",
+    "title": "Vehicle Registry (3 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Equals and hashCode for the LicensePlate class",
+        "European license plates have two parts: a two letter country code and a nationally unique license number. The license number is made up of numbers and characters. License plates are represented by the following class:",
+        "We want to be able to save the license plates in ArrayLists and to use them as keys in a HashMap. This, as explained above, means that the `equals` and `hashcode` methods need to be overwritten, or they won't work as intended. Implement the methods `equals` and `hashCode` for the LicensePlate class.",
+        "Example program:",
+        "Implement the methods `equals` and `hashCode`. When they are implemented correctly the example program above will print:",
+        "Pairing plates with owners",
+        "Implement the class `VehicleRegistry`, which has the following methods:",
+        "- `public boolean add(LicensePlate licensePlate, String owner)` assigns the owner it received as a parameter to a car that corresponds to the license plate received as a parameter. If the license plate doesn't have an owner, the method returns true. If the license already has an owner attached, the method returns false and does nothing.",
+        "- `public String get(LicensePlate licensePlate)` returns the owner of the car corresponding to the license plate received as a parameter. If the car isn't in the registry, the method returns null.",
+        "- `public boolean remove(LicensePlate licensePlate)` removes the license plate and attached data from the registry. The method returns true if removed successfully and false if the license plate wasn't in the registry.",
+        "Expanded vehicle registry",
+        "Add the following methods to the `VehicleRegistry`:",
+        "- `public void printLicensePlates()`prints the license plates in the registry.",
+        "- `public void printOwners()` prints the owners of the cars in the registry. Each name should only be printed once, even if a particular person owns more than one car.",
+        "Useful tip! In the printOwners method, you can create a list used for remembering the owners that were already printed. If an owner is not on the list, their name is printed and they are added to the list; conversely, if an owner is on the list, their name isn't printed."
+      ],
+      "codeSnippet": "public class LicensePlate {\n\n    // these instance variables have been defined as final, meaning\n    // that once set, their value can't be changed\n    private final String liNumber;\n    private final String country;\n\n    public LicensePlate(String country, String liNumber) {\n        this.liNumber = liNumber;\n        this.country = country;\n    }\n\n    @Override\n    public String toString() {\n        return country + \" \" + liNumber;\n    }",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "Finnish: [FI ABC-123, FI UXE-465]",
+            "owners:",
+            "Arto",
+            "Jürgen"
+          ]
+        }
+      ]
+    }
+  },
+  "part08-15-storagefacility": {
+    "id": "part08-15-storagefacility",
+    "tmcname": "part08-Part08_15.StorageFacility",
+    "title": "Storage facility (2 parts)",
+    "prompt": {
+      "points": 1,
+      "paragraphs": [
+        "Adding items and examining contents",
+        "Your task is creating a class called `StorageFacility` that can be used to keep track of storage units and their contents. The class is to implement the following methods:",
+        "- `public void add(String unit, String item)` adds the parameter item to the storage unit that is also given as a parameter.",
+        "- `public ArrayList contents(String storageUnit)` returns a list that contains all the items in the storage unit indicated by the parameter. If there is no such storage unit or it contains no items, the method should return an empty list.",
+        "Here's an example:",
+        "Listing the units and removing from unit",
+        "- Now the class `StorageFacility` contains the functionality to add an item to a storage unit and to list the contents of a unit. Next add the possibilities to remove an item from a storage unit and to list all the units.",
+        "- `public void remove(String storageUnit, String item)` removes the given item from the given storage unit. NB! Only removes one item -- if there are several items with the same name, the rest still remain. If the storage unit would be empty after the removal, the method also removes the unit.",
+        "- `public ArrayList storageUnits()` returns the names of the storage units as a list. NB! Only the units that contain items are listed.",
+        "An example:",
+        "The order of the storage units in the output may be different from this example."
+      ],
+      "codeSnippet": "StorageFacility facility = new StorageFacility();\nfacility.add(\"a14\", \"ice skates\");\nfacility.add(\"a14\", \"ice hockey stick\");\nfacility.add(\"a14\", \"ice skates\");\n\nfacility.add(\"f156\", \"rollerblades\");\nfacility.add(\"f156\", \"rollerblades\");\n\nfacility.add(\"g63\", \"six\");\nfacility.add(\"g63\", \"pi\");\n\nSystem.out.println(facility.contents(\"a14\"));\nSystem.out.println(facility.contents(\"f156\"));",
+      "sampleOutputs": [
+        {
+          "caption": "Sample output",
+          "lines": [
+            "[ice skates, ice hockey stick, ice skates]",
+            "[rollerblades, rollerblades]"
+          ]
+        },
+        {
+          "caption": "Sample output",
+          "lines": [
+            "[rollerblades]",
+            "[a14, g63]"
+          ]
+        }
+      ]
+    }
+  }
+}

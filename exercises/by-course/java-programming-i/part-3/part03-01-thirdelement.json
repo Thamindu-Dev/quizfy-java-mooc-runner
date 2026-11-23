@@ -1,0 +1,54 @@
+{
+  "id": "part03-01-thirdelement",
+  "tmcname": "part03-Part03_01.ThirdElement",
+  "title": "Third element",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise contains a base that asks the user for strings and adds them to a list. The program stops reading when the user enters an empty string. The program then prints the first element of the list.",
+      "Your assignment is to modify the program so that instead of the first value, the third value on the list is printed. Remember that programmers start counting from zero! The program is allowed to malfunction if there are fewer than three entries on the list, so you don't need to prepare for such an event at all."
+    ],
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "Tom",
+            "isInput": true
+          },
+          {
+            "text": "Emma",
+            "isInput": true
+          },
+          {
+            "text": "Alex",
+            "isInput": true
+          },
+          {
+            "text": "Mary",
+            "isInput": true
+          },
+          "Alex"
+        ]
+      },
+      {
+        "caption": "Sample output",
+        "lines": [
+          {
+            "text": "Emma",
+            "isInput": true
+          },
+          {
+            "text": "Alex",
+            "isInput": true
+          },
+          {
+            "text": "Mary",
+            "isInput": true
+          },
+          "Mary"
+        ]
+      }
+    ]
+  }
+}

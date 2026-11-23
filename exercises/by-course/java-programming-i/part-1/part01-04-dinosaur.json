@@ -1,0 +1,23 @@
+{
+  "id": "part01-04-dinosaur",
+  "tmcname": "part01-Part01_04.Dinosaur",
+  "title": "Dinosaur",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The exercise comes ready with the following template:",
+      "Edit the program so that it will print the following text. Use the \"sout\"-shorthand for writing the print commands."
+    ],
+    "codeSnippet": "public class Dinosaur {\n    public static void main(String[] args) {\n        // Write your program here\n    }\n}",
+    "sampleOutputs": [
+      {
+        "caption": "Sample output",
+        "lines": [
+          "Once upon a time",
+          "there was",
+          "a dinosaur"
+        ]
+      }
+    ]
+  }
+}

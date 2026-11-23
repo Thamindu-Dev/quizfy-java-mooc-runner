@@ -1,0 +1,11 @@
+{
+  "id": "part13-01-myfirstapplication",
+  "tmcname": "part13-Part13_01.MyFirstApplication",
+  "title": "My first application",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "Create a GUI app with the title \"My first application\". The app should start when the main method is executed."
+    ]
+  }
+}

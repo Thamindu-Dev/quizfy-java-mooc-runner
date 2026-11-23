@@ -1,0 +1,11 @@
+{
+  "id": "part11-02-abookandaplane",
+  "tmcname": "part11-Part11_02.ABookAndAPlane",
+  "title": "Book and plane",
+  "prompt": {
+    "points": 1,
+    "paragraphs": [
+      "The class diagram below depicts the classes Book and Plane. Implement the classes in the exercise."
+    ]
+  }
+}
